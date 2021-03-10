@@ -23,11 +23,19 @@
         }
     </style>
 
-    <script>
+    <!-- <script>
 
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
         // ▲▼▲▼▲▼▲▼ Exercício 1 ▲▼▲▼▲▼▲▼
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let produto = [];
+
+        produto.nome = "TNT Original";
+        produto.marca = "TNT";
+        produto.precoDeCusto = 3.5;
+        produto.precoDeVenda = 6.8;
+        produto.estoque = 165;
 
         let arr = [
             obterNumero(),
@@ -51,7 +59,57 @@
             }
             return numInp;
         }
+    </script> -->
+
+    <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 2 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let nums = [
+            obterNumero(),
+            obterNumero(),
+            obterNumero(),
+            obterNumero(),
+            obterNumero()
+        ];
+
+        escreverNaTela("Array ficou: ", arrayParaString(nums));
+        escreverNaTela("Invertida ela fica: ", arrayParaString(nums, true));
+
+
+        function arrayParaString(umaArray, invertida) {
+            let strFinal = "";
+            console.log(strFinal)
+            if (invertida == undefined || invertida == false) {
+                for (item of umaArray) {
+                    strFinal = strFinal + item + ", ";
+                }
+            } else {
+                for (item = umaArray.length - 1; item >= 0; item--) {
+                    strFinal = strFinal + umaArray[item] + ", ";
+                }
+            }
+            console.log(strFinal)
+            return strFinal.slice(0, -2);
+        }
+
+        function escreverNaTela(mensagem, valor) {
+            document.writeln(mensagem + " <span>" + valor + " </span></br>");
+        }
+
+        function obterNumero() {
+            let numInp;
+            while (numInp <= 0 || isNaN(numInp)) {
+                numInp = parseInt(prompt("Insira um número inteiro"));
+            }
+            return numInp;
+        }
+
+
     </script>
+
 
 
 </head>

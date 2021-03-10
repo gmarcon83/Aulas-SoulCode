@@ -1,0 +1,84 @@
+/* Elementos de estruturais */
+
+body {
+  background-color: whitesmoke;
+}
+
+article {
+  background-color: skyblue;
+  width: 70%;
+  max-width: 900px;
+  min-width: 600px;
+  height: max-content;
+  margin: 3% auto;
+  padding: 5px 40px 20px 40px;
+  border-radius: 16px;
+}
+
+/* Formatação do Texto */
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  font-size: 1.15em;
+  color: #222;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h4 {
+  text-align: center;
+}
+
+p {
+  text-indent: 25px;
+}
+
+ul {
+  text-align: center;
+  background-color: beige;
+  padding: 10px 30px 30px 30px;
+  width: max-content;
+  margin: auto;
+  border-radius: 16px;
+}
+
+li {
+  list-style-type: none;
+  line-height: 1.8;
+}
+
+/* Intro */
+
+#intro {
+  line-height: 1.2;
+}
+
+/* Ingredientes */
+
+#ingredientes {
+  background-color: beige;
+}
+
+#obrigatorio {
+  color: green;
+}
+
+#opcional {
+  color: blue;
+}
+
+#tadoido {
+  color: red;
+  text-decoration: line-through;
+}
+
+/* Modo de Preparo */
+
+#modopreparo {
+  line-height: 1.4;
+}

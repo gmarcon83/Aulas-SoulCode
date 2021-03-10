@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Switch Atividade 2</title>
+
+    <script>
+        let salario = parseFloat(prompt("Digite o salário:"));
+        let plano = prompt("Digite o plano:\nA = 10%\nB = 15%\nC = 20%").toUpperCase();
+
+        switch (plano) {
+            case "A":
+                alert("O novo salário é = R$ " + (salario * 1.1).toFixed(2));
+                break;
+            case "B":
+                alert("O novo salário é = R$ " + (salario * 1.15).toFixed(2));
+                break;
+            case "C":
+                alert("O novo salário é = R$ " + (salario * 1.20).toFixed(2));
+                break;
+            default:
+                alert("Plano inválido");
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

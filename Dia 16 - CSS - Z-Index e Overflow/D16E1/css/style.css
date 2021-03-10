@@ -1,0 +1,107 @@
+body {
+  font-family: arial;
+}
+
+header,
+div {
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+header {
+  width: 90%;
+  background-color: beige;
+  margin: auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+}
+
+.duas-colunas {
+  background-color: beige;
+  width: 49%;
+  min-height: 50px;
+  height: 100%;
+  position: relative;
+}
+
+.duas-colunas div {
+  font-size: 1.6em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esq {
+  float: left;
+}
+
+.dir {
+  float: right;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-container {
+  border: none;
+  position: absolute;
+  width: 25%;
+  max-width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.frente {
+  background-color: lightgreen;
+}
+
+.tras {
+  background-color: lightskyblue;
+}
+
+.esq .frente {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 50%;
+  height: 50%;
+}
+
+.esq .tras {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.dir .frente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+}
+
+.dir .tras {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}

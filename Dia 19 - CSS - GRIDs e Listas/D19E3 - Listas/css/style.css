@@ -1,0 +1,16 @@
+body {
+  background-color: lightgray;
+}
+
+.lista1 {
+  list-style-image: url(../img/icone-soul-code.png);
+}
+.lista2 {
+  list-style: upper-latin;
+}
+.lista3 {
+  list-style: georgian;
+}
+.lista4 {
+  list-style: lower-greek;
+}

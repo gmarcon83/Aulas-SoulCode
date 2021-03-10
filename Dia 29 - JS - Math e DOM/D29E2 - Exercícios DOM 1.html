@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Giovanni Marcon -->
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercícios JS - DOM 1</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1 class="uma-classe">Titulo 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur mollitia blanditiis maiores</p>
+        <h2 id="uma-id">Titulo 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur mollitia blanditiis maiores
+            veritatis sint </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tenetur mollitia blanditiis maiores
+            veritatis sint </p>
+    </div>
+    <div> </div>
+    <script>
+        let tit1 = document.getElementsByClassName("uma-classe");
+        let tit2 = document.getElementById("uma-id");
+        let div1 = document.getElementsByTagName("div")[0];
+        let div2 = document.getElementsByTagName("div")[1];
+        let p1 = document.getElementsByTagName("p")[0];
+        let p2 = document.getElementsByTagName("p")[1];
+        let p3 = document.getElementsByTagName("p")[2];
+
+        p1.style.backgroundColor = "white";
+        p1.style.color = "black";
+
+        p2.style.fontSize = "26px";
+
+        div1.style.backgroundColor = "green";
+
+        div2.innerText = "aqui eu consigo";
+
+        document.write(tit2.innerText);
+
+
+
+    </script>
+
+</body>
+
+</html>

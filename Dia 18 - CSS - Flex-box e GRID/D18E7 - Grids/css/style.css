@@ -1,0 +1,65 @@
+.grid-container {
+  display: grid;
+  height: 90vh;
+  width: 80vw;
+  margin: 5vh auto 0;
+  background-color: aquamarine;
+  grid-template-columns: 10vw 1fr 2fr 1fr 10vw;
+  grid-template-rows: 10vh 1fr 2fr 1fr 10vh;
+  padding: 10px;
+  gap: 10px;
+}
+
+.flex-item {
+  background-color: cadetblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.tipo-1 {
+  background-color: chocolate;
+  box-shadow: 5px 5px 4px black;
+  overflow: hidden;
+}
+
+.tipo-1 a {
+  padding: 50%;
+  color: azure;
+}
+
+.tipo-1:hover {
+  font-size: 2.5em;
+}
+
+.tipo-1:active {
+  box-shadow: inset 5px 5px 4px black;
+}
+
+.tipo-2 {
+  background: url(../img/logo-sc2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.527);
+}
+
+.tipo-3 {
+  background: radial-gradient(rgb(204, 0, 255), rgb(50, 205, 197));
+  border-radius: 2vmin;
+}
+
+.tipo-3:hover {
+  background: radial-gradient(rgb(50, 205, 197), rgb(204, 0, 255));
+}
+
+.tipo-4 {
+  background-color: rgb(238, 213, 104);
+  transition: 1s;
+}
+
+.tipo-4:hover {
+  box-shadow: 5px 5px 4px black;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Flexbox - Exemplo</title>
+    <style>
+        .container {
+            background-color: limegreen;
+            height: calc(100vh - 60px);
+            width: 70%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            background-color: fuchsia;
+            color: #fff;
+            padding: 10px;
+            margin: 15px;
+            text-align: center;
+            font-size: 2em;
+            border-radius: 8px 32px 8px 32px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.36);
+        }
+
+        .item:hover {
+            box-shadow: -3px -3px rgba(0, 0, 0, 0.26);
+            cursor: pointer;
+        }
+
+        .item::selection {
+            background-color: transparent;
+        }
+
+        .item1 {
+            height: 100px;
+            line-height: 100px;
+            width: 160px;
+        }
+
+        .item2 {
+            height: 110px;
+            line-height: 110px;
+            width: 230px;
+        }
+
+        .item3 {
+            height: 90px;
+            line-height: 90px;
+            width: 90px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+
+</html>

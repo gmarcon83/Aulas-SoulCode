@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<!-- Dupla: Amanda Borim e Giovanni Marcon - 19/02/2021 -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Soul Code & TNT - Formulário</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/layout-base.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/pagina-form.css'>
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <h1>TNT & Soul Code</h1>
+        <!-- Aqui vai ter position -->
+        <ul class="nav">
+            <!-- Aqui vai ter float e clear -->
+            <li><a href="index.html">Soul Code</a></li>
+            <li><a href="tnt.html">    TNT    </a></li>
+            <li><a href="form.html">Contato</a></li>
+        </ul>
+    </header>
+    <main>
+        <div id="banner">
+            <h2>Contato</h2>
+            <p><small><em>Preencha os campos abaixo para entrar em contato.</em></small></p>
+        </div>
+        <div id="divisor-banner"></div>
+        <!-- Colunas vão aqui -->
+        <div id="conteudo">
+            <div id="destaque">
+                <h3>Um formulário, mil utilidades</h3>
+                <p>Pintou uma dúvida, sugestão ou vontade de dar um oi, preencha o formulário ai.</p>
+                <p>Queir se tornar um representante ou fazer parte do nosso time? Também use o formulário ao lado.
+                </p>
+                <p>Precisa de patrocínio, apoio ou só uma caixa a mais de TNT para ajudar nos estudos? Mande ver no
+                    formulário.</p>
+                <p>Entediado no fim da noite e não sabe o que fazer? Bora escrever no formulário também. </p>
+            </div>
+            <div id="container-formulario">
+                <form action="" method="POST">
+
+                    <!-- Coluna da esquerda -->
+
+                    <div class="esquerdo">
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" placeholder="Nome Completo">
+                        </div>
+                        <div>
+                            <label for="Rua">Rua:</label>
+                            <input type="text" id="rua" placeholder="Informe o nome da rua" />
+                        </div>
+                        <div>
+                            <label for="numRua">Número:</label>
+                            <input type="text" id="numRua" placeholder="Numero da Residência">
+                        </div>
+                        <div>
+                            <label for="Bairro">Bairro:</label>
+                            <input type="text" id="Bairro" placeholder="Nome do Bairro" />
+                        </div>
+                        <div>
+                            <label for="Cidade">Cidade:</label>
+                            <input type="text" id="Cidade" placeholder="Nome de sua cidade" />
+                        </div>
+                        <div>
+                            <label>Estado:</label>
+                            <input list="uf" placeholder="Selecione seu estado">
+                            <datalist id="uf">
+                                <option value="Acre">Acre</option>
+                                <option value="Alagoas">Alagoas</option>
+                                <option value="Amapá">Amapá</option>
+                                <option value="Amazonas">Amazonas</option>
+                                <option value="Bahia">Bahia</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Distrito Federal">Distrito Federal</option>
+                                <option value="Espirito Santo">Espirito Santo</option>
+                                <option value="Goiás">Goiás</option>
+                                <option value="Maranhão">Maranhão</option>
+                                <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                <option value="Mato Grosso">Mato Grosso</option>
+                                <option value="Minas Gerais">Minas Gerais</option>
+                                <option value="Pará">Pará</option>
+                                <option value="Paraíba">Paraíba</option>
+                                <option value="Paraná">Paraná</option>
+                                <option value="Pernambuco">Pernambuco</option>
+                                <option value="Piauí">Piauí</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                <option value="Rondônia">Rondônia</option>
+                                <option value="Roraima">Roraima</option>
+                                <option value="Santa Catarina">Santa Catarina</option>
+                                <option value="São Paulo">São Paulo</option>
+                                <option value="Sergipe">Sergipe</option>
+                                <option value="Tocantins">Tocantins</option>
+                            </datalist>
+                        </div>
+                    </div>
+
+                    <!-- Coluna da Direita -->
+
+                    <div class="direito">
+                        <div>
+                            <label for="CEP">CEP:</label>
+                            <input type="tel" id="CEP" pattern="^\d{5}-\d{3}$" placeholder="xxxxx-xxx">
+                        </div>
+
+                        <div>
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" pattern="^\d{2}-\d{5}-\d{4}$" placeholder="xx-xxxxx-xxxx">
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" placeholder="Informe o seu email">
+                        </div>
+                        <div>
+                            <label for="Obs">Mensagem:</label>
+                            <textarea id="Obs" class="obs"></textarea>
+                        </div>
+                        <button id="btnSend">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Imagem fixa vai aqui com o Z-index -->
+        <div id="logos-fixos">
+            <img src="img/logo-sc2.png" alt="Logo marca SoulCode">
+            <img src="img/logo-tnt.png" alt="Logo marca TNT">
+        </div>
+        <!-- <div class="icons-footer">
+            <a href="https://www.youtube.com/user/tntenergetico" title="Youtube" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/tntenergydrink" title="Facebook" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tntenergydrink/" title="Instagram" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/energydrinktnt" title="Twitter" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-twitter"></i></a>
+        </div> -->
+        <p><small><strong>TNT & Soul Code - 2021, todos os direitos reservados.</strong></small></p>
+    </footer>
+</body>
+
+<!-- Sayure Paiva -->
+
+</html>

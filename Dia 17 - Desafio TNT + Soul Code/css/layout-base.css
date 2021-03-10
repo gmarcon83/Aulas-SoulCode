@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+/* --- Cores --- */
+
+/* Apenas como fallback, cores definitivas no documento específico da página */
+
+:root {
+  --cor-primaria: #17a2b8;
+  --cor-primaria-suave: #7ac3ce;
+  --cor-primaria-media: #27c9e2;
+  --cor-primaria-acento: #00d6f7;
+  --cor-secundaria: #fd7e14;
+  --cor-secundaria-suave: #ffc107;
+  --cor-secundaria-acento: #dc3545;
+  --cor-acento: blue;
+  --cor-fundo: whitesmoke;
+  --cor-fundo-escura: #c2dce0;
+  --cor-fundo-clara: #e1f0f1;
+  --cor-texto-escuro: #08192c;
+  --cor-texto-claro: #c2dce0;
+}
+
+body {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--cor-primaria-suave);
+}
+
+/* --- Header --- */
+header {
+  background-color: var(--cor-primaria);
+  background: linear-gradient(
+    35deg,
+    var(--cor-primaria),
+    var(--cor-primaria-media)
+  );
+  height: 10vh;
+  position: relative;
+  text-align: center;
+  padding: 2.5vh 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 10vh;
+  margin: 0;
+  color: var(--cor-texto-escuro);
+  text-shadow: 2px 2px 2px var(--cor-primaria-acento);
+  font-variant: small-caps;
+}
+
+/* Menu de navegação */
+
+.nav {
+  background-color: var(--cor-secundaria);
+  position: absolute;
+  right: 3%;
+  top: 4vh;
+  padding: 0;
+  font-size: 2.5vh;
+  line-height: 2.5vh;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.nav li {
+  list-style: none;
+  float: left;
+  margin: 0vh 0;
+}
+
+.nav li:first-of-type a {
+  border-radius: 20px 0 0 20px;
+}
+
+.nav li:last-of-type a {
+  border-radius: 0 20px 20px 0;
+}
+
+.nav li a {
+  background-color: var(--cor-secundaria-suave);
+  padding: 2vh 1vw;
+  text-decoration: none;
+  color: var(--cor-texto-escuro);
+  outline: none;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+  background-color: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+.nav li a:active {
+  background-color: var(--cor-secundaria-acento);
+}
+
+/* --- Main --- */
+
+main {
+  width: 80vw;
+  max-width: 160vh;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--cor-fundo);
+}
+
+#banner {
+  height: 18vh;
+  width: 100%;
+  background: linear-gradient(
+    165deg,
+    var(--cor-secundaria),
+    var(--cor-secundaria-suave)
+  );
+  text-shadow: 2px 2px 2px var(--cor-secundaria-suave);
+}
+
+#banner h2 {
+  padding: 2% 2% 0 2%;
+  margin: 0;
+  color: var(--cor-texto-escuro);
+  font-size: 4vh;
+}
+
+#banner p {
+  padding: 0 0 0 2%;
+  font-size: 2.5vh;
+}
+
+#divisor-banner {
+  background-color: var(--cor-secundaria);
+  width: 100%;
+  height: 2vh;
+}
+
+/* --- Main Conteudo--- */
+
+#conteudo {
+  background-color: var(--cor-fundo-escura);
+  height: 53vh;
+  font-size: 1em;
+  text-shadow: 1px 1px 1px var(--cor-texto-claro);
+}
+
+@media (min-width: 1400px) and (min-height: 788px) {
+  #conteudo {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1550px) and (min-height: 822px) {
+  #conteudo {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1700px) and (min-height: 900px) {
+  #conteudo {
+    font-size: 1.3em;
+  }
+}
+
+#conteudo h3 {
+  margin: 0;
+}
+
+#conteudo p {
+  text-align: justify;
+}
+
+/* Primeira coluna */
+
+#destaque {
+  background-color: var(--cor-fundo-clara);
+  height: calc(100% - 40px);
+  width: calc(33.33% - 33px);
+  margin: 10px 0px 10px 10px;
+  padding: 10px;
+  float: left;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#destaque:hover {
+  overflow-y: auto;
+}
+
+/* Segunda coluna */
+
+#duas-colunas {
+  height: calc(100% - 20px);
+  width: calc(33.33% - 13px);
+  margin: 10px 0px 10px 10px;
+  float: left;
+}
+
+#duas-colunas div {
+  width: calc(100% -20px);
+  height: calc(50% - 25px);
+  padding: 10px;
+  background-color: var(--cor-fundo-clara);
+  margin: 0px 0px 10px;
+  overflow-x: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#duas-colunas div:hover {
+  overflow-y: auto;
+}
+
+/* Terceira coluna */
+
+#artigos {
+  overflow: hidden;
+  height: calc(100% - 20px);
+  width: calc(33.33% - 13px);
+  margin: 10px 0px 10px 10px;
+  float: left;
+  border-radius: 8px;
+}
+
+#artigos:hover {
+  overflow-y: auto;
+}
+
+/* --- Footer --- */
+
+footer {
+  background-color: var(--cor-primaria);
+  background: linear-gradient(
+    215deg,
+    var(--cor-primaria),
+    var(--cor-primaria-media)
+  );
+  color: var(--cor-texto-claro);
+  height: 8vh;
+  position: relative;
+  text-align: center;
+  padding: 2vh 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  line-height: 8vh;
+  font-size: 2.4vh;
+  text-shadow: 1px 1px 1px var(--cor-primaria-acento);
+}
+
+/* --- Os dois logos que ficam fixos no canto esquerdo --- */
+
+#logos-fixos {
+  position: fixed;
+  left: 5vh;
+  bottom: calc(6vh - 25px);
+  display: flex;
+  align-items: center;
+}
+
+#logos-fixos img {
+  max-width: 85px;
+  max-height: 50px;
+  margin-right: 10px;
+  width: auto;
+  height: auto;
+}
+
+/* --- Botões Links --- */
+
+.icons-footer {
+  position: absolute;
+  right: 2.5%;
+  bottom: 3vh;
+}
+
+footer i {
+  padding: 0.8vh;
+  margin: 0 0.7vh;
+  color: var(--cor-secundaria-suave);
+  border: 2px solid var(--cor-secundaria-suave);
+  min-width: 2.5vh;
+  min-height: 2.65vh;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2.5vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+footer a {
+  outline: none !important;
+}
+
+footer a:focus i,
+footer i:hover {
+  color: var(--cor-secundaria-acento);
+  background-color: var(--cor-secundaria-suave);
+}
+
+/* --- Cards --- */
+
+.cards {
+  height: calc(32% - 20px);
+  width: calc(100% - 20px);
+  padding: 10px;
+  background-color: var(--cor-fundo-clara);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Remove a margem do ultimo cartão */
+#artigos .cards:last-of-type {
+  margin-bottom: 0;
+}
+
+#artigos h3 {
+  text-align: center;
+  display: block;
+  margin: 0 0 5px calc(calc(33% - 20px) + 7px);
+  background-color: rgba(0, 0, 0, 0.075);
+  border-radius: 4px;
+}
+
+#artigos p {
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Fotos Cards --- */
+
+.card-img-cont {
+  float: left;
+  width: calc(33% - 20px);
+  height: 100%;
+  position: relative;
+  margin-right: 7px;
+}
+
+.card-img-cont img {
+  max-width: 100%;
+  height: auto;
+}

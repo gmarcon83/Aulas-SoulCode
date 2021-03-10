@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercícios Gradiente</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+    <!-- Usando CSS aqui pra simplificar o envio -->
+    <!-- Giovanni, terminado dia 11/02/2021 as 11:24 -->
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        main {
+            width: 800px;
+            height: 1200px;
+            margin: auto;
+        }
+
+        div {
+            width: 400px;
+            height: 300px;
+            border: 2px solid white;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        span {
+            line-height: normal;
+            vertical-align: middle;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+
+        div.line {
+            width: 800px;
+            display: flex;
+        }
+
+        #d1 {
+            background: linear-gradient(to top, green, blue);
+
+        }
+
+        #d2 {
+            background: radial-gradient(75% 75% at left, yellow, pink);
+        }
+
+        #d3 {
+            background: linear-gradient(to left, red, green);
+
+        }
+
+        #d4 {
+            background: radial-gradient(50% 50% at top, cyan, blue);
+        }
+
+        #d5 {
+            background: linear-gradient(to bottom, red, blue);
+
+        }
+
+        #d6 {
+            background: radial-gradient(75% 75% at right, cyan, pink);
+        }
+
+        #d7 {
+            background: linear-gradient(to right, green, blue);
+
+        }
+
+        #d8 {
+            background: radial-gradient(50% 50% at bottom, cyan, yellow);
+        }
+
+        #d9 {
+            background: linear-gradient(to top, red, blue);
+
+        }
+
+        #d10 {
+            background: radial-gradient(50% 50% at center, cyan, pink);
+        }
+
+        #d11 {
+            background: linear-gradient(to right, magenta, blue);
+
+        }
+
+        #d12 {
+            background: radial-gradient(50% 50% at center, green, yellow);
+        }
+
+        #quarta {}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="line">
+            <div id="d1"><span>Usando um gradiente linear,de baixo para cima e da cor verde para a azul.</span></div>
+            <div id="d2"><span>Usando um gradiente radial que vai do amarelo para o rosa, começando na esquerda e com
+                    ponto médio a 75%.</span></div>
+        </div>
+        <div class="line">
+            <div id="d3"><span>Usando um gradiente linear,da direita para esquerda e da cor vermelha para a
+                    verde.</span>
+            </div>
+            <div id="d4"><span>Usando um gradiente radial que vai do cyano para o azul, começando no topo e com ponto
+                    médio a 50%.</span></div>
+        </div>
+        <div class="line">
+            <div id="d5"><span>Usando um gradiente linear,de cima para baixo e da cor vermelha para a azul.</span></div>
+            <div id="d6"><span>Usando um gradiente radial que vai do cyano para o rosa, começando da esquerda e com
+                    ponto médio a 75%.</span></div>
+        </div>
+        <div class="line">
+            <div id="d7"><span>Usando um gradiente linear,da esquerda para direita e da cor verde para a azul.</span>
+            </div>
+            <div id="d8"><span>Usando um gradiente radial que vai do cyano para o amarelo, começando em baixo e com
+                    ponto
+                    médio a 50%.</span></div>
+        </div>
+        <div class="line">
+            <div id="d9"><span>Usando um gradiente linear,de baixo para cima e da cor vermelha para a azul.</span></div>
+            <div id="d10"><span>Usando um gradiente radial que vai do cyano para o rosa, começando no centro e com ponto
+                    médio a 50%.</span></div>
+        </div>
+        <div class="line">
+            <div id="d11"><span>Usando um gradiente linear,da direita para esquerda e da cor magenta para a
+                    azul.</span></div>
+            <div id="d12"><span>Usando um gradiente radial que vai do verde para o amarelo, começando no centro e com
+                    ponto médio a 50%.</span></div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Operadores Lógicos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+        var idade = parseInt(prompt("Digite sua idade:"));
+        var resultado = "Inicial";
+
+        while (isNaN(idade))
+            idade = parseInt(prompt("Digite sua idade:"))
+
+        if (idade < 16)
+            resultado = "Não pode votar"
+        else if (idade < 18)
+            resultado = "Voto opcional"
+        else if (idade < 70)
+            resultado = "Voto obrigatório"
+        else
+            resultado = "Não obrigatório"
+
+        document.writeln("<h1>Resultado:</h1>");
+        document.writeln("<p><span>" + resultado + "</span></br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

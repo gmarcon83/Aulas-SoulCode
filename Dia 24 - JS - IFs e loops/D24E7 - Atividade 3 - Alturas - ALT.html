@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Atividade 3 - Alturas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+
+        let numeroDeAlturas = 15;
+        let menorAltura = 3000;
+        let menorNome;
+        let maiorAltura = 0;
+        let maiorNome;
+        let alturaTotal = 0;
+        let altura;
+        let nome;
+
+        numeroDeAlturas = parseInt(prompt("Bem vindo ao altura tester 9000!\nQuantas alturas deseja testar?"));
+
+        document.write("<h1>As pessoas comparadas são:</h1><span>");
+
+        for (i = 0; i < numeroDeAlturas; i++) {
+            nome = prompt("Digite o nome (" + (i + 1) + "/" + numeroDeAlturas + ").");
+            altura = parseFloat(prompt("Digite a altura (" + (i + 1) + "/" + numeroDeAlturas + ")."));
+            if (altura < menorAltura) {
+                menorAltura = altura;
+                menorNome = nome;
+            }
+            if (altura > maiorAltura) {
+                maiorAltura = altura;
+                maiorNome = nome;
+            }
+            alturaTotal += altura;
+            document.write(nome + "</span> tem <span>" + altura.toFixed(2) + "m</span> de altura.<span></br>");
+        }
+
+        document.writeln("</span> </br>");
+        document.writeln("A menor altura é a de <span>" + menorNome + "</span> com <span>" + menorAltura.toFixed(2) + "m</span> de altura.</br>");
+        document.writeln("A maior altura é a de <span>" + maiorNome + "</span> com <span>" + maiorAltura.toFixed(2) + "m</span> de altura.</br>");
+        document.writeln("A altura média é <span>" + (alturaTotal / numeroDeAlturas).toFixed(2) + "m</span>.</br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Laços de Repetição</title>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+
+        var opcaoScript = parseInt(prompt("Escolha qual script deseja rodar:\n1 = Numeros ímpares entre 100 e 200\n2 = 10 números\n3 = N números\n4 = Tabuada\n5 = Soma de números impares até 500\n6 = Ler mútiplos números pares e ímpares até 0\n7 = Progressão Aritimética"));
+
+        switch (opcaoScript) {
+            case 1:
+                caso1();
+                break;
+            case 2:
+                caso2();
+                break;
+            case 3:
+                caso3();
+                break;
+            case 4:
+                caso4();
+                break;
+            case 5:
+                caso5();
+                break;
+            case 6:
+                caso6();
+                break;
+            case 7:
+                caso7();
+                break;
+            default:
+                alert("Opção Inválida.")
+        }
+
+        // Caso 1
+        function caso1() {
+            document.writeln("<h1>Os números ímpares entre 100 e 200 são:</h1>\n<p><span>")
+            let i = 100;
+            while (i <= 200) {
+                if ((i % 2) == 0) {
+                    i++;
+                } else {
+                    document.write(" " + i);
+                    i++;
+                }
+            }
+            document.write("</p></span>");
+        }
+        // Caso 2
+        function caso2() {
+            let numero, somaTotal = 0;
+            document.writeln("<h1>Os números inseridos são:</h1>\n<p><span>");
+            for (i = 1; i <= 10; i++) {
+                numero = parseFloat(prompt("Insira um número (" + i + "/10)"));
+                document.write(" " + numero);
+                somaTotal += numero;
+            }
+            document.writeln("</p></span>");
+            document.writeln("<h1>A soma deles é:</h1>\n<p><span>" + somaTotal + "</p></span>");
+            document.writeln("<h1>A media deles é:</h1>\n<p><span>" + (somaTotal / 10) + "</p></span>");
+        }
+        // Caso 3
+        function caso3() {
+            let numero, maiorNumero, quantosNumeros;
+            document.writeln("<h1>Os números inseridos são:</h1>\n<p><span>");
+            quantosNumeros = parseFloat(prompt("Quantos números deseja testar?"));
+            for (i = 1; i <= quantosNumeros; i++) {
+                numero = parseFloat(prompt("Insira um número (" + i + "/" + quantosNumeros + ")"));
+                document.write(" " + numero);
+                if (i == 1)
+                    maiorNumero = numero;
+                if (numero > maiorNumero)
+                    maiorNumero = numero;
+            }
+            document.writeln("</p></span>");
+            document.writeln("<h1>O maior deles é:</h1>\n<p><span>" + maiorNumero + "</p></span>");
+        }
+        // Caso 4
+        function caso4() {
+            let numero = parseFloat(prompt("Qual número deseja usar?"));
+            document.writeln("<h1>O número escolhido foi:</h1>\n<p><span>" + numero + "</p></span>\n<h1>O resultado é:</h1><p>");
+            let i = 0;
+            do {
+                document.writeln(numero + " x " + i + " = <span>" + (numero * i) + "</span></br>");
+                i++
+            } while (i <= 10);
+            document.writeln("</p>");
+        }
+        // Caso 5
+        function caso5() {
+            let soma = 0;
+            document.writeln("<h1>O soma dos numeros ímpares entre 1 e 500 é:</h1>\n<p><span>");
+            let i = 1;
+            do {
+                if (i % 2 != 0 && i % 3 == 0)
+                    soma += i;
+                i++;
+            } while (i <= 500);
+            document.writeln(soma + "</span></p>");
+        }
+        // Caso 6
+        function caso6() {
+            let quantosNumeros, quantosPares = 0, quantosImpares = 0, somaPares = 0, somaTotal = 0;
+            quantosNumeros = parseInt(prompt("Quantos números deseja testar?"));
+            for (i = (quantosNumeros - 1); i > 0; i--) {
+                if (i == 0) {
+                    continue;
+                }
+                if (i % 2 == 0) {
+                    quantosPares++;
+                    somaPares += i;
+                } else {
+                    quantosImpares++;
+                }
+                somaTotal += i;
+            }
+            document.writeln("<h1>Testamos os numeros de " + quantosNumeros + " até 0</h1>");
+            document.writeln("<h1>O total de números ímpares foi:</h1>\n<p><span>" + quantosImpares + "</p></span>");
+            document.writeln("<h1>O total de números pares foi:</h1>\n<p><span>" + quantosPares + "</p></span>");
+            document.writeln("<h1>A media dos pares é:</h1>\n<p><span>" + (somaPares / quantosPares) + "</p></span>");
+            document.writeln("<h1>A media geral é:</h1>\n<p><span>" + (somaTotal / quantosNumeros) + "</p></span>");
+        }
+        // Caso 7
+        function caso7() {
+            let numero = parseFloat(prompt("Qual número deseja usar?"));
+            let razao = parseFloat(prompt("Qual razão deseja usar?"));
+            document.writeln("<h1>O número escolhido foi: <span>" + numero + "</span>.</br>A progressão aritimética contendo 10 valores com a razão de <span>" + razao + "</span> fica:</h1><p>");
+            let i = 0;
+            do {
+                document.writeln("<span>" + (numero + (razao * i)) + "</span></br>");
+                i++
+            } while (i <= 9);
+            document.writeln("</p>");
+        }
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

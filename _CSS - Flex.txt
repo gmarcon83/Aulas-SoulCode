@@ -1,0 +1,76 @@
+           ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+           ---- Aplicados no elemento pai ----
+           ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+display: flex; -> transforma o elemento box em um container flex
+
+flex-direction: Define o eixo central de alinhamento
+
+  * row -> alinha da esqueda para a direita
+    row-reverse -> alinha da direita para a esquerda
+    column -> alinha de cima para baixo
+    column-reverse -> alinha de baixo para cima
+
+flex-wrap: define como o flex "quebra" a linha se precisar
+
+  * nowrap: não quebra a linha
+    wrap: da esquerda para a direita ou de cima para baixo
+    wrap-reverse: da direita para a esquerda ou de baixo para cima
+
+flex-flow: junta as duas tags anteriores;
+
+justify-content: Alinha os itens em relação ao eixo principal
+
+  * flex-start -> alinha no inicio do flex-direction
+    center -> alinha os itens no meio
+    flex-end -> alinha no fim do flex-direction
+    space-evenly -> alinha os itens com espaços iguais entre eles e a as bordas
+    space-around -> como o anterior, mas com apenas metade do espaço nas bordas
+    space-between -> como o anterior, mas sem espaço nas bordas
+
+align-items: Alinha os items pelo eixo perpendicular
+
+  * stretch -> espicha os itens para ocupar todo o container
+    flex-start -> alinha no topo ou a esquerda
+    center -> alinha no meio
+    flex-end -> alinha em baixo ou a direita
+    baseline -> alinha os itens pela sua linha base do texto
+
+align-content: Define como multiplas linhas são distrubuidas no eixo principal
+
+  * stretch -> espicha os itens para ocupar todo o container
+    flex-start -> alinha no topo ou a esquerda
+    center -> alinha no meio
+    flex-end -> alinha em baixo ou a direita
+    space-between -> como o anterior, mas sem espaço nas bordas
+    space-around -> como o anterior, mas com apenas metade do espaço nas bordas
+
+            ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+            ---- Aplicados nos elementos filhos ----
+            ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+order: x: -> altera a ordem que os elementos são organizados dentro do
+      elemento pai (o padrão é a ordem do html). x pode ser negativo ou
+      positivo.
+
+flex-grow: x; -> permite que o elemento expanda se possível. Um elemento
+      com x=2 expande o dobro que um com x=1
+
+flex-shrink: x; -> permite que o elemento encolha se necessário. Um
+      elemento com X=2 encolhe o dobro que um com x=1
+
+flex-basis: x(un); -> define o tamanho base do elemento. x é um valor
+      e (un) é uma unidade em px, em, %, etc...
+
+flex: x y z; -> combina as três proprieades anteriores na ordem:
+      x = grow, y = shrink, z= basis
+
+align-self: ajusta o alinhamento do item individualmente, tem prioridade
+      sobre align-items do elemento pai.
+
+  * auto -> obedece o elemento pai
+    center -> alinha o item no meio
+    flex-start -> alinha a esquerda
+    flex-end -> alinha a esquerda
+    stretch -> espicha os itens para ocupar todo o container
+    baseline -> alinha os itens pela sua linha base do texto

@@ -1,0 +1,17 @@
+/* --- Cores --- */
+
+:root {
+  --cor-primaria: #17a2b8;
+  --cor-primaria-suave: #7ac3ce;
+  --cor-primaria-media: #27c9e2;
+  --cor-primaria-acento: #00ddff;
+  --cor-secundaria: #fd7e14;
+  --cor-secundaria-suave: #ffc107;
+  --cor-secundaria-acento: #dc3545;
+  --cor-acento: blue;
+  --cor-fundo: whitesmoke;
+  --cor-fundo-escura: #c2dce0;
+  --cor-fundo-clara: #d2f2f8;
+  --cor-texto-escuro: #08192c;
+  --cor-texto-claro: #c2dce0;
+}

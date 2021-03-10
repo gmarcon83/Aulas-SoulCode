@@ -1,0 +1,161 @@
+-------Por Atributo------
+
+    "Y"[atributo="X"]
+        "Y" com atributo igual a "X"
+    "Y"[atributo^="X"]
+        "Y" com atributo que comece com "X"
+    "Y"[atributo$=”"X"]
+        "Y" com atributo que termine "X"
+    "Y"[atributo*="X"]
+        "Y" com atributo que contenha "X"
+
+-------Por Posição------
+
+    E:nth-child(N)
+        Elemento do tipo E que seja o filho N de um pai
+    E:nth-of-type(N)
+        Elemento que seja o N do seu tipo
+    E:only-child
+        Elemento que seja do tipo E que seja filho unico
+    E:only-of-type
+        Elemento que seja do tipo E que unico do seu tipo dentro de um pai
+
+-------Por Estado------
+
+    E:empty:
+        Seleciona o elemento E que esteja vazio, sem nenhum elemento filho
+    :target:
+        Seleciona o objeto alvo de uma âncora
+    E:enabled:
+        Seleciona o elemento E que esteja habilitado para o usuário
+    E:disabled:
+        Semelhante ao anterior, mas para elementos desabilitados
+    E:checked:
+        Seleciona elementos que estejam “marcados” (radios e checkboxes)
+    ::selection:
+        Formata o conteúdo selecionado pelo usuário
+    :not(P):
+        Seleciona os elementos que não atendem ao seletor P
+    E~F:
+        Seleciona todo elemento F que seja precedido por um elemento E.
+
+
+       \\   ----  -----------------------  ----   //
+       //  ---- Lista completa de seletores ----  \\
+       \\   ----  -----------------------  ----   //
+
+
+Pseudo Elements
+
+    ::after Ex-> p::after
+        Insert something after the content of each <p> element
+
+    ::before Ex-> p::before
+        Insert something before the content of each <p> element
+
+    ::first-letter Ex-> p::first-letter
+        Selects the first letter of each <p> element
+
+    ::first-line Ex-> p::first-line
+        Selects the first line of each <p> element
+
+    ::marker Ex-> ::marker
+        Selects the markers of list items
+
+    ::selection Ex-> p::selection
+        Selects the portion of an element that is selected by a user
+
+Pseudo Classes
+
+    :active Ex-> a:active
+        Selects the active link
+
+    :checked Ex-> input:checked
+        Selects every checked <input> element
+
+    :disabled Ex-> input:disabled
+        Selects every disabled <input> element
+
+    :empty Ex-> p:empty
+        Selects every <p> element that has no children
+
+    :enabled Ex-> input:enabled
+        Selects every enabled <input> element
+
+    :first-child Ex-> p:first-child
+        Selects every <p> elements that is the first child of its parent
+
+    :first-of-type Ex-> p:first-of-type
+        Selects every <p> element that is the first <p> element of its parent
+
+    :focusEx-> input:focus
+        Selects the <input> element that has focus
+
+    :hoverEx-> a:hover
+        Selects links on mouse over
+
+    :in-range Ex-> input:in-range
+        Selects <input> elements with a value within a specified range
+
+    :invalid Ex-> input:invalid
+        Selects all <input> elements with an invalid value
+
+    :lang(language) Ex-> p:lang(it)
+        Selects every <p> element with a lang attribute value starting with "it"
+
+    :last-child Ex-> p:last-child
+        Selects every <p> elements that is the last child of its parent
+
+    :last-of-type Ex-> p:last-of-type
+        Selects every <p> element that is the last <p> element of its parent
+
+    :link Ex->a:link
+        Selects all unvisited links
+
+    :not(selector) Ex-> :not(p)
+        Selects every element that is not a <p> element
+
+    :nth-child(n) Ex-> p:nth-child(2)
+        Selects every <p> element that is the second child of its parent
+
+    :nth-last-child(Ex-> n) p:nth-last-child(2)
+        Selects every <p> element that is the second child of its parent, counting from the last child
+
+    :nth-last-of-typEx-> e(n) p:nth-last-of-type(2)
+        Selects every <p> element that is the second <p> element of its parent, counting from the last child
+
+    :nth-of-type(n) Ex-> p:nth-of-type(2)
+        Selects every <p> element that is the second <p> element of its parent
+
+    :only-of-type Ex-> p:only-of-type
+        Selects every <p> element that is the only <p> element of its parent
+
+    :only-child Ex-> p:only-child
+        Selects every <p> element that is the only child of its parent
+
+    :optional Ex-> input:optional
+        Selects <input> elements with no "required" attribute
+
+    :out-of-range Ex-> input:out-of-range
+        Selects <input> elements with a value outside a specified range
+
+    :read-only Ex-> input:read-only
+        Selects <input> elements with a "readonly" attribute specified
+
+    :read-write Ex-> input:read-write
+        Selects <input> elements with no "readonly" attribute
+
+    :required Ex-> input:required
+        Selects <input> elements with a "required" attribute specified
+
+    :root Ex-> root
+        Selects the document's root element
+
+    :target Ex-> #news:target
+        Selects the current active #news element (clicked on a URL containing that anchor name)
+
+    :valid Ex-> input:valid
+        Selects all <input> elements with a valid value
+
+    :visited Ex-> a:visited
+        Selects all visited links

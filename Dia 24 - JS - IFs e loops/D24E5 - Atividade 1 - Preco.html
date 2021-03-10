@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Atividade 1 - Cálculo de preço</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+
+        var preco = parseFloat(prompt("Digite o preço do produto:"))
+        var condPgto = parseInt(prompt("Escolha a condição de pagamento:\n1 = À vista no cartão \n2 = À vista no dinheiro \n3 = Duas parcelas \n4 = Três parcelas"))
+
+        switch (condPgto) {
+            case 1:
+                var resultado = preco - preco * 0.1;
+                break;
+            case 2:
+                var resultado = preco - preco * 0.15;
+                break;
+            case 3:
+                var resultado = preco;
+                break;
+            case 4:
+                var resultado = preco + preco * 0.1;
+                break;
+        }
+
+        document.writeln("<p>O valor final é <span> R$ " + resultado + "</span>.</br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

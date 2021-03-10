@@ -1,0 +1,185 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Formulário de Vacinação</title>
+
+
+    <style>
+        main {
+            max-width: 650;
+            margin: auto;
+        }
+
+        label {
+            line-height: 26;
+            vertical-align: top;
+        }
+
+        textarea {
+            height: 66;
+            width: 100%;
+            resize: none;
+            margin-top: 0px;
+            font-size: smaller;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .esquerdo {
+            float: left;
+            width: 49%;
+        }
+
+        .direito {
+            padding-left: 2%;
+            padding-right: 8px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <H3>Formulário de vacinação</H3>
+        <form action="/lugar-nenhum" method="POST">
+
+            <!-- Coluna da esquerda -->
+
+            <div class="esquerdo">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Informe o seu nome">
+                </div>
+                <div>
+                    <label for="dataatend"> Data de Nascimento:</label>
+                    <input type="date" id="dataatend">
+                </div>
+                <div>
+                    <label for="telefone"> Numero telefone:</label>
+                    <input type="tel" id="telefone" pattern="^\d{2}-\d{5}-\d{4}$" placeholder="xx-xxxxx-xxxx">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" placeholder="Informe o seu email">
+                </div>
+                <div>
+                    <label for="Rua">Rua:</label>
+                    <input type="text" id="rua" placeholder="Informe o nome da rua" />
+                </div>
+                <div>
+                    <label for="numRua">Número:</label>
+                    <input type="text" id="numRua" placeholder="Numero da Residência">
+                </div>
+                <div>
+                    <label for="Bairro">Bairro:</label>
+                    <input type="text" id="Bairro" placeholder="Informe o nome do Bairro" />
+                </div>
+                <label>Estado:</label>
+                <input list="uf" placeholder="Selecione seu estado">
+                <datalist id="uf">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </datalist>
+                <div>
+                    <label for="CEP">CEP:</label>
+                    <input type="tel" id="CEP" pattern="^\d{5}-\d{3}$" placeholder="xxxxx-xxx">
+                </div>
+            </div>
+
+            <!-- Coluna da Direita -->
+
+            <div class="direito">
+                <div>
+                    <label for="dataatend"> Data do atendimento:</label>
+                    <input type="date" id="dataatend">
+                </div>
+                <div>
+                    <label></label>Tipo Sanguíneo:</label>
+                    <input placeholder="Selecione seu tipo sanguíneo" list="tSang">
+                    <datalist id="tSang">
+                        <option value="A">
+                        <option value="B">
+                        <option value="AB">
+                        <option value="O">
+                    </datalist>
+                    <div>
+                    </div>
+                    <label for="rh">Fator RH:</label>
+                    <input list="rh" placeholder="Selecione o fator RH">
+                    <datalist id="rh">
+                        <option value="+">
+                        <option value="-">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="vacinas">Vacinas aplicadas:</label>
+                    <input type="text" id="vacinas" placeholder="Quais vacinas foram aplicadas" />
+                </div>
+                <div>
+                    <label for="comorbidades">Comorbidades:</label>
+                    <input type="text" id="comobidades" placeholder="Liste as comorbidades existentes">
+                </div>
+                <div>
+                    <label for="contato"> Contato de Emergência:</label>
+                    <input type="tel" id="contato" pattern="^\d{2}-\d{5}-\d{4}$" placeholder="xx-xxxxx-xxxx">
+                </div>
+                <div>
+                    <label for="cor">Prioridade do atendimento:</label>
+                    <input type="color" value="#0000ff" id="cor" />
+                </div>
+                <div>
+                    <label>Velocidade do atendimento:</label>
+                    <input list="avaliacao" type="range" min="0" max="60" step="1">
+                    <datalist id="avaliacao">
+                        <option value="0" label="Lento">
+                        <option value="30" label="Aceitavel">
+                        <option value="60" label="Rápido">
+                    </datalist>
+                </div>
+                <div>
+                    <label for="Obs">Observações:</label>
+                    <textarea id="Obs" class="obs">
+Vermelho – Emergência: atendimento imediato;
+Laranja – Muito urgente: até 10 minutos;
+Amarelo – Urgente: até 1 hora;
+Verde – Pouco urgente: até 2 horas;
+Azul – Não urgente: até 4 horas.</textarea>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

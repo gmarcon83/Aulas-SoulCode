@@ -1,0 +1,4 @@
+calc(); -> permite calcular valores, usar espaço entre os operadores
+
+repeat(x, y); -> retorna valor y repetido x vezes
+

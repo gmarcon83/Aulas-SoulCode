@@ -1,0 +1,14 @@
+float:left ou right - Posiciona a direita ou a esquerda, dentro do
+    elemento que o contém.
+
+clear: Usado para "limpar" os floats, pode ser pensado como um enter
+    se imaginarmos cada elemento como um item de texto.
+
+
+Adicione a um elemento pai para permitir que o elemento float expanda ele:
+
+  .fixfloat::after {
+  content: "";
+  clear: both;
+  display: table;
+  }

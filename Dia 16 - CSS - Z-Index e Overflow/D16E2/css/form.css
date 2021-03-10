@@ -1,0 +1,93 @@
+#form {
+  position: fixed;
+  bottom: -215px;
+  left: 5px;
+  z-index: 1000;
+  background: #fff;
+  width: 250px;
+  padding: 5px 50px 30px;
+  box-shadow: 10px 10px 13px #00000062;
+  transition: 0.5s;
+  border-radius: 16px;
+}
+
+#form:hover {
+  box-shadow: 10px 10px 13px #000000;
+  bottom: 5px;
+}
+
+#form .conteudo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form .conteudo img {
+  max-width: 80px;
+}
+
+#form .conteudo h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin: 15px 0 0;
+  text-align: center;
+}
+
+#form .conteudo p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#form .conteudo ol {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#form .conteudo .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form .conteudo .inputBox input,
+#form .conteudo .inputBox textarea {
+  width: 250px;
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+  resize: none;
+}
+
+.fa-envelope-open-text {
+  font-size: 6em;
+  color: #d4c117;
+}
+
+#btnSend {
+  width: 90%;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #262626;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  margin-left: 11px;
+}
+
+#btnSend:hover {
+  background-color: rgb(250, 112, 112);
+  color: #262626;
+  font-weight: 550;
+}

@@ -1,0 +1,100 @@
+#popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  width: 250px;
+  padding: 5px 50px 30px;
+  box-shadow: 10px 10px 13px #00000062;
+  transition: 0.5s;
+  visibility: hidden;
+  border-radius: 16px;
+}
+
+#popup:hover {
+  box-shadow: 10px 10px 13px #000000;
+}
+
+#popup.active {
+  visibility: visible;
+  top: 50%;
+}
+
+#popup .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#popup .content img {
+  max-width: 80px;
+}
+
+#popup .content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin: 15px 0 0;
+  text-align: center;
+}
+
+#popup .content p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#popup .content ol {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#popup .content .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup .content .inputBox input,
+#popup .content .inputBox textarea {
+  width: 250px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.fa-envelope-open-text {
+  font-size: 6em;
+  color: #d4c117;
+}
+
+#btnSend {
+  width: 90%;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #262626;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+#btnSend:hover {
+  background-color: rgb(250, 112, 112);
+  color: #262626;
+  font-weight: 550;
+}

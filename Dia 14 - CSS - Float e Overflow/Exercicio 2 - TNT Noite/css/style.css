@@ -1,0 +1,144 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  max-width: 1350px;
+  height: 12vh;
+  min-width: 750px;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  height: 63.5vh;
+  max-width: 1350px;
+  min-width: 750px;
+}
+
+footer {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  line-height: 10vh;
+  max-width: 1350px;
+  min-width: 750px;
+  clear: both;
+  text-align: center;
+  background-color: rgb(165, 0, 0);
+  color: whitesmoke;
+  font-size: 1.2em;
+  background-image: url(../img/tnt-energy-drink.png);
+  background-size: 12vh;
+  background-position: 0px 2px;
+}
+
+aside {
+  background-color: rgb(195, 125, 125);
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 64vh;
+}
+
+aside img {
+  margin-right: 1.5vh;
+  margin-bottom: 1vh;
+  height: 100%;
+}
+
+h1 {
+  background-color: rgb(165, 0, 0);
+  color: whitesmoke;
+  text-align: center;
+  line-height: 7vh;
+  font-size: 3.5vh;
+  max-height: 7vh;
+}
+
+#rolagem {
+  height: 54.7vh;
+  background-color: rgb(165, 0, 0);
+  font-size: 1.35em;
+  color: whitesmoke;
+  overflow: auto;
+  text-align: justify;
+}
+
+#rolagem p {
+  margin: 15px 25px;
+}
+
+/* -- Adicionado depois do horário -- */
+
+.icons {
+  float: right;
+  padding-top: 1.7vh;
+  padding-right: 2vh;
+}
+
+footer i {
+  padding: 0.8vh;
+  margin: 0 0.7vh;
+  color: white;
+  border: 2px solid white;
+  min-width: 2.5vh;
+  min-height: 2.65vh;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 2.5vh;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+footer i:hover {
+  color: red;
+  background-color: white;
+}
+
+footer p {
+  padding-left: 29vh;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgb(165, 75, 75),
+    rgb(195, 125, 125),
+    rgb(195, 125, 125),
+    rgb(165, 75, 75)
+  );
+  background-size: 150vw 150vh;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+/* -- Animações -- */
+
+#rolagem:hover span {
+  animation-name: texto;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes texto {
+  0% {
+    color: white;
+  }
+  20% {
+    color: red;
+  }
+  50% {
+    color: white;
+  }
+}

@@ -1,0 +1,18 @@
+Usar junto com top, bottom, left e right. Marca a distância da borda declarada
+
+
+Relative - Ocupa o espaço original no documento. Posiciona relativamente,
+    em relação ao lugar que deveria ocupar.
+
+Absolute - Não ocupa espaço no documento, posiciona em  relação ao
+    primeiro elemento ancestral não estático. Se não existir nenhum
+    posiciona em relação ao "body".
+
+Fixed - Não ocupa espaço no documento, posiciona em relação a
+    janela do navegador, ou seja, não se move quando rolamos a
+    pagina.
+
+Stick - Mistura de absolute e Fixed. Ocupa uma posição absoluta, até
+    que passe o scroll por ele, dai passa a se comportar como fixed.
+
+Static - é o comportamento padrão.

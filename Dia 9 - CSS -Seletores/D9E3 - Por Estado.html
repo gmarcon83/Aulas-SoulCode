@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício CSS 3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            border: solid 1px;
+            height: 100px;
+        }
+
+        :target {
+            color: green;
+            font-weight: bold;
+        }
+
+        ::selection {
+            color: red;
+        }
+
+        :empty {
+            border: solid 1px;
+            height: 50px;
+            background: gray;
+        }
+
+        input:checked {
+            rotate: 15deg;
+        }
+
+        h1 {
+            font-family: "Courier New";
+
+        }
+
+        :not(h1) {
+            font-family: "Arial";
+        }
+
+        input~span {
+            color: orange;
+        }
+
+        input:disabled {
+            border: solid 1px red;
+            background-color: silver;
+            height: 25px;
+        }
+
+        input:enabled {
+            border: solid 2px blue;
+            background-color: #fff;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Selecione esse texto</h1>
+    <p><a href="#Texto1">Link para o Texto 1</a></p>
+    <p><a href="#Texto2">Link para o Texto 2</a></p>
+
+    <div>
+        <p id="Texto1">Esse e o TEXTO 1</p>
+        <p id="Texto2">Esse e o TEXTO 2</p>
+    </div>
+
+    <div id="divVazia"></div>
+
+    <div>
+        <span>Span antes do input</span><br />
+        <input type="checkbox" checked="checked" value="Opcao 1">Opcao 1
+        <input type="checkbox" value="Opcao 2">Opcao 2
+        <input type="text" disabled="disabled" value="desabilitado" />
+        <input type="text" value="habilitado" /><br />
+        <span>Span apos o input</span>
+    </div>
+</body>
+
+</html>

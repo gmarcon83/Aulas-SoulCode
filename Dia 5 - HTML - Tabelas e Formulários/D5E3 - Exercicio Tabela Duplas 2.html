@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE BOOK IS ON THE TABLE!</title>
+    <style>
+        table {
+            border: 1px solid black;
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        tr {
+            height: 150px;
+
+        }
+
+        td {
+            border: 1px solid black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <table cellpadding="10px" cellspacing="10px">
+
+        <thead>
+            <tr>
+                <td bgcolor="blue" colspan="3">CABEÇALHO 1</td>
+                <td bgcolor="blue" colspan="1">CABEÇALHO 2</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td bgcolor="yellow" colspan="4">Giovanni, Joseane, Roberto</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td bgcolor="green">LINHA 2 COLUNA 1 </td>
+                <td bgcolor="green">LINHA 2 COLUNA 2 </td>
+                <td bgcolor="green">LINHA 2 COLUNA 3 </td>
+                <td bgcolor="grey" rowspan="2">LINHA ROW </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="pink" colspan="2">LINHA 3 COLUNA 1 </td>
+                <td bgcolor="pink">LINHA 3 COLUNA 2 </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

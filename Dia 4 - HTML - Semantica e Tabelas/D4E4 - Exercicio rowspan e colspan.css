@@ -1,0 +1,33 @@
+table,
+td,
+th {
+    border: 1px solid#000;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+tr {
+    height: 150px;
+}
+
+#cabecalho {
+    background-color: lightskyblue;
+}
+
+#menu {
+    background-color: pink;
+    width: 20%;
+}
+
+#conteudo {
+    background-color: khaki;
+}
+
+#footer {
+    background-color: lightgreen;
+}

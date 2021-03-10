@@ -1,0 +1,147 @@
+body {
+  background-color: aliceblue;
+  margin: 0px;
+}
+
+nav {
+  background-color: aquamarine;
+  text-align: center;
+  position: fixed;
+  line-height: 60px;
+  margin-top: 0px;
+  padding: 15px 20px;
+}
+
+header {
+  height: 1800px;
+  background-color: cadetblue;
+}
+
+main {
+  height: 1800px;
+  background-color: steelblue;
+}
+
+footer {
+  height: 1800px;
+  background-color: turquoise;
+}
+
+a {
+  border-radius: 8px;
+}
+
+/* ---- Botão 1 ---- */
+
+a#bt1 {
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(to right, magenta, blue);
+  box-shadow: inset 0px 0px 25px white;
+  line-height: 50px;
+  padding: 10px 18px;
+  border-radius: 0px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to right, magenta, blue) 1;
+}
+
+/* a#bt1:visited {
+  color: darkolivegreen;
+  background-color: lightgreen;
+} */
+
+a#bt1:hover {
+  color: white;
+  box-shadow: none;
+  border: none;
+  padding: 14px 22px;
+}
+
+a#bt1:focus {
+  color: black;
+  background-color: khaki;
+  border: 5px dotted black;
+  outline: none;
+}
+
+a#bt1:active {
+  color: white;
+  background-color: magenta;
+  padding: 10px 18px;
+  border: 5px solid black;
+  box-shadow: inset 0px 0px 25px black;
+}
+
+/* ---- Botão 2 ---- */
+
+a#bt2 {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  line-height: 50px;
+  padding: 10px 18px;
+  border: 5px outset black;
+}
+
+/* a#bt2:visited {
+  color: darkolivegreen;
+  background-color: lightgreen;
+} */
+
+a#bt2:hover {
+  color: darkred;
+  background-color: lightcoral;
+  border: 5px double black;
+  border-radius: 15px;
+}
+
+a#bt2:focus {
+  color: black;
+  background-color: khaki;
+  border: 5px dotted black;
+  outline: none;
+}
+
+a#bt2:active {
+  color: dodgerblue;
+  background-color: lightblue;
+  border: 5px inset black;
+  border-radius: 30px;
+}
+
+/* ---- Botão 3 ---- */
+
+a#bt3 {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  line-height: 50px;
+  padding: 10px 18px;
+  border: 5px outset black;
+}
+
+/* a#bt3:visited {
+  color: darkolivegreen;
+  background-color: lightgreen;
+} */
+
+a#bt3:hover {
+  color: darkred;
+  background-color: lightcoral;
+  border: 5px solid red;
+  box-shadow: 0px 0px 15px lightcoral;
+}
+
+a#bt3:focus {
+  color: black;
+  background-color: khaki;
+  border: 5px dotted black;
+  outline: none;
+}
+
+a#bt3:active {
+  color: white;
+  background-color: red;
+  border: 5px inset rgba(0, 0, 0, 0.459);
+  box-shadow: 0px 0px 25px red;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Giovanni Marcon -->
+
+<!-- Apenas remover o comentário da parte do exercício que deseja testar -->
+
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercícios JS - Melhore seu código</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3em;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+
+    <!-- <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 1 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let num1 = obterNumero();
+        let num2 = obterNumero();
+        let resultado;
+
+        document.writeln("<p>O primeiro número escolhido foi: <span>" + num1 + "</span>.");
+        document.writeln("<p>O segundo número escolhido foi: <span>" + num2 + "</span>.");
+
+        if (num1 > num2)
+            resultado = Math.round(num1 / num2)
+        else
+            resultado = Math.round(num2 / num1)
+
+        document.writeln("<p>O resultado arredondado da divisão do maior pelo menor é: <span>" + resultado + "</span>.");
+
+        function obterNumero() {
+            let numInp;
+            while (numInp <= 0 || isNaN(numInp)) {
+                numInp = parseInt(prompt("Insira um número inteiro"));
+            }
+            return numInp;
+        }
+    </script> -->
+
+
+    <!-- <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 2 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        alert(deMaior(obterNumero()));
+
+        // retorna um numero válido entre 2021 e 1892
+        function obterNumero() {
+            let numInp;
+            while (numInp > 2021 || numInp <= 1891 || isNaN(numInp)) {
+                numInp = parseInt(prompt("Digite seu ano de nascimento"));
+            }
+            return numInp;
+        }
+
+        function deMaior(anoNascimento) {
+            if (anoNascimento == undefined)
+                anoNascimento = parseInt(prompt("Digite o ano de nascimento."));
+            if (2021 - anoNascimento < 18) {
+                return "Menor de idade";
+            } else {
+                return "Maior de idade";
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 3 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let num1 = obterNumero("Digite o número fixo que deseja.")
+        let num2 = Math.floor(Math.random() * obterNumero("Digite o maior número aleatório possível"));
+
+        document.writeln("<p>O número escolhido foi: <span>" + num1 + "</span>.");
+        document.writeln("<p>O número randômico é: <span>" + num2 + "</span>.");
+
+        document.writeln("<p>O resultado absoluto da subtração do número escolhido pelo randômico é: <span>" + Math.abs(num1 - num2) + "</span>.");
+
+        function obterNumero(mensagem) {
+            let numInp;
+            while (numInp < 0 || isNaN(numInp)) {
+                numInp = parseInt(prompt(mensagem));
+            }
+            return numInp;
+        }
+    </script> -->
+
+
+</head>
+
+<body>
+</body>
+
+</html>

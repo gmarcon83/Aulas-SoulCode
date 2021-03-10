@@ -1,0 +1,83 @@
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #2196f3;
+  padding: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas:
+    "cabecalho cabecalho aside"
+    "artigo1     foto    aside"
+    "artigo2     foto    aside"
+    "artigo3     foto    aside"
+    "artigo3      .      aside"
+    "rodape     rodape   aside";
+}
+
+@media (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "cabecalho cabecalho"
+      " aside     aside   "
+      "artigo1     foto   "
+      "artigo2     foto   "
+      "artigo3     foto   "
+      "artigo3      .     "
+      "rodape     rodape  ";
+  }
+}
+
+@media (max-width: 550px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cabecalho"
+      "  aside  "
+      " artigo1 "
+      " artigo2 "
+      " artigo3 "
+      "   foto  "
+      "    .    "
+      "  rodape ";
+  }
+}
+
+.grid-item {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.i1 {
+  grid-area: cabecalho;
+}
+
+.i2 {
+  grid-area: artigo1;
+}
+
+.i3 {
+  grid-area: artigo2;
+}
+
+.i4 {
+  grid-area: artigo3;
+}
+
+.i5 {
+  grid-area: foto;
+}
+
+.i6 {
+  grid-area: aside;
+}
+
+.i7 {
+  grid-area: rodape;
+}

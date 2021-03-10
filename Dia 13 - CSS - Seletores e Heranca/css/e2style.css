@@ -1,0 +1,67 @@
+body {
+  background-color: whitesmoke;
+  text-align: center;
+  font-size: larger;
+}
+
+header {
+  background-color: aqua;
+  margin: 5px auto;
+  width: 95%;
+  max-width: 1600px;
+  min-width: 900px;
+  min-height: 175px;
+}
+
+nav {
+  background-color: lightseagreen;
+  min-height: 60px;
+}
+
+main {
+  margin: 5px auto;
+  width: 95%;
+  max-width: 1600px;
+  min-width: 900px;
+  min-height: 50px;
+}
+
+#painel {
+  background-color: darkturquoise;
+  margin: auto;
+  min-height: 300px;
+}
+
+#destaque1,
+#destaque2 {
+  background-color: cornflowerblue;
+  min-height: 120px;
+  float: right;
+  width: 20%;
+  margin-left: 5px;
+}
+
+#noticias {
+  background-color: cornflowerblue;
+  min-height: 120px;
+  overflow: hidden;
+}
+
+#mainbaixo {
+  margin: 5px auto;
+}
+
+#mainbaixo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  background-color: cadetblue;
+  margin: 5px auto;
+  width: 95%;
+  max-width: 1600px;
+  min-width: 900px;
+  min-height: 50px;
+}

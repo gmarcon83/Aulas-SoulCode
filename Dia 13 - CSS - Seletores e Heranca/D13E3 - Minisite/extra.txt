@@ -1,0 +1,2 @@
+background do cabeçalho: #333333
+background do painel com o olho: #E6E6E6

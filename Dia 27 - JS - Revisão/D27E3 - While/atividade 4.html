@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>While Atividade 4</title>
+
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+        let maiorAltura = 0, sexoAltura, quantosM = 0, i = 1;
+        document.writeln("<h1>As pessoas que vamos comparar tem as seguintes características:</h1>\n<p>");
+
+        while (i <= 5) {
+            let sexo = prompt("Digite o sexo: (M/F)").toUpperCase();
+            let altura = parseFloat(prompt("Digite a Altura"));
+            document.write("Sexo = <span>" + sexo + "</span> Altura= <span>" + altura.toFixed(2) + "</span></br>");
+            if (sexo == "M") {
+                quantosM++
+            }
+            if (altura > maiorAltura) {
+                maiorAltura = altura;
+                if (sexo == "M") {
+                    sexoAltura = "masculino"
+                } else {
+                    sexoAltura = "feminino"
+                }
+            }
+            i++;
+        }
+        document.writeln("</p></span>");
+        document.writeln("<h1>O total de pessoas do sexo Masculino é:</h1>\n<p><span>" + quantosM + "</p></span>");
+        document.writeln("<h1>O total de pessoas do sexo Feminino é:</h1>\n<p><span>" + (5 - quantosM) + "</p></span>");
+        document.writeln("<h1>A pessoa mais alta é:</h1>\n<p>Do sexo <span>" + sexoAltura + "</span> e tem <span>" + maiorAltura.toFixed(2) + "</span> metros de altura.</p>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Align Content</title>
+    <style>
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 250px;
+            width: 450px;
+            margin: auto;
+            background-color: aquamarine;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            height: 90px;
+            width: 90px;
+            background-color: cadetblue;
+            margin: 5px;
+            line-height: 90px;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>Align Content - flex-start</p>
+    <div class="flex-container" style="align-content: flex-start;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+    <p>Align Content - flex-end</p>
+    <div class="flex-container" style="align-content: flex-end;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+    <p>Align Content - center</p>
+    <div class="flex-container" style="align-content: center;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+    <p>Align Content - space-between</p>
+    <div class="flex-container" style="align-content: space-between;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+    <p>Align Content - space-around</p>
+    <div class="flex-container" style="align-content: space-around;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+        <div class="flex-item">6</div>
+    </div>
+</body>
+
+</html>

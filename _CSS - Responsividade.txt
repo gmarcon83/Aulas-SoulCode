@@ -1,0 +1,32 @@
+// --- Unidades --- //
+
+ vw   (viewport width): 1% da largura da janela
+ vh   (viewport height): 1% da altura da janela
+vmin  (viewport minimum): 1% da menor dimensão da janela
+vmax  (viewport maximum): 1% da maior dimensão da janela
+ ch   (Character width): largura do Character "0"
+ em   relativo a fonte do elemento pai
+ rem  relativo a fonte do elemento root
+ %    relativo ao tamanho do elemento pai
+
+// --- Media Query --- //
+
+@media (max-width: "X"px) {  }
+
+@media (min-height: "X"px) {  }
+
+// ---  Para expandir imagens  --- //
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+object-fit: cover;
+    Objeto ocupa todo o espaço do pai, não distorçe a imagem.
+
+background-size: controla o tamanha do fundo.
+    contain: aumenta a imagem até que o um dos lados preencha
+             a box. O outro lado pode ficar mais curto.
+    cover: aumenta a imagem até que ambos os lados up preencham
+           a box. Um dos lados pode ficar maior que o box.

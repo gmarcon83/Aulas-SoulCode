@@ -1,0 +1,60 @@
+body {
+  background-color: aliceblue;
+  margin: 0px;
+}
+
+nav {
+  background-color: aquamarine;
+  text-align: center;
+  position: fixed;
+  margin-top: 0px;
+  padding: 15px 30px;
+}
+
+header {
+  height: 300px;
+  background-color: cadetblue;
+}
+
+main {
+  height: 800px;
+  background-color: steelblue;
+}
+
+footer {
+  height: 450px;
+  background-color: turquoise;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  line-height: 50px;
+  padding: 10px 18px;
+  border: 5px outset black;
+}
+
+a:visited {
+  color: darkolivegreen;
+  background-color: lightgreen;
+}
+
+a:hover {
+  color: darkred;
+  background-color: lightcoral;
+  border: 5px double black;
+}
+
+a:focus {
+  color: black;
+  background-color: khaki;
+  border: 5px dotted black;
+  outline: none;
+}
+
+a:active {
+  color: dodgerblue;
+  background-color: lightblue;
+  border: 5px inset black;
+}

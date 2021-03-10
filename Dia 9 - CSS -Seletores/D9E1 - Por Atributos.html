@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício CSS 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        /* p[id^="s"] {
+            background-color: green;
+        } */
+
+        p[id*="qu"] {
+            text-align: center;
+        }
+
+        p[id$="eira"] {
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        h1:nth-last-of-type(1) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>
+            <p id="domingo">Domingo</p>
+        </h1>
+        <h1>
+            <p id="segundaFeira">Segunda Feira</p>
+        </h1>
+        <h1>
+            <p id="tercaFeira">Terça Feira</p>
+        </h1>
+        <h1>
+            <p id="quartaFeira">Quarta Feira</p>
+        </h1>
+        <h1>
+            <p id="quintaFeira">Quinta Feira</p>
+        </h1>
+        <h1>
+            <p id="sextaFeira">Sexta Feira</p>
+        </h1>
+        <h1>
+            <p id="sabado">Sábado</p>
+        </h1>
+    </main>
+</body>
+
+</html>

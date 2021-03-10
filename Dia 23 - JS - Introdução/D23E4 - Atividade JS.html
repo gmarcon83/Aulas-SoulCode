@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Intro JS - Atividade</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.3em;
+        }
+    </style>
+
+    <script>
+
+        var strg = " Aqui estou fazendo o aprendizado de JS"
+        var num1 = 12;
+        var num2 = 24;
+
+        document.writeln("<h1> Sequência de forma concatenada. </h1>");
+        document.writeln("<p> Resultado = <span>" + strg + " " + num1 + " " + num2 + "</span></p>");
+
+        document.writeln("<h1> Soma dos valores das variáveis numéricas. </h1>");
+        document.writeln("<p> Resultado = <span>" + (num1 + num2) + "</span></p>");
+
+        document.writeln("<h1> Divisão por 2 do resultado anterior. </h1>");
+        document.writeln("<p> Resultado = <span>" + ((num1 + num2) / 2) + "</span></p>");
+
+        document.writeln("<h1> Inversão dos valores das váriaveis. </h1>");
+        var numTemp = num1;
+        num1 = num2;
+        num2 = numTemp;
+        document.writeln("<p> Resultado = <span> Váriavel 1 ficou " + num1 + ", váriavel 2 ficou " + num2 + "</span></p>");
+
+        document.writeln("<h1> Váriavel 1 é igual ( == ) a váriavel 2?</h1>");
+        document.writeln("<p> Resultado = <span>" + (num1 == num2) + "</span></p>");
+
+        document.writeln("<h1> Váriavel 1 é idêntica ( === ) a váriavel 2?</h1>");
+        document.writeln("<p> Resultado = <span>" + (num1 === num2) + "</span></p>");
+
+        alert("Acabei a atividade")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

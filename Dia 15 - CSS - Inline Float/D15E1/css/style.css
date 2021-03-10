@@ -1,0 +1,94 @@
+header,
+main,
+footer,
+div {
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: auto;
+  height: 10vh;
+  width: 80vw;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5vh;
+  font-family: "Arial";
+  font-weight: 200;
+  line-height: 10vh;
+  margin: 0;
+  padding: 0%;
+}
+
+main {
+  margin: auto;
+  height: 70vh;
+  width: 80vw;
+}
+
+#esquerda {
+  float: left;
+  height: 70vh;
+  width: 16vw;
+  border: none;
+}
+
+#central {
+  overflow: hidden;
+  height: 70vh;
+  padding: 1vh 1vw;
+}
+
+#c-topo {
+  height: 17vh;
+  margin-top: 0.4vh;
+  margin-bottom: 1vh;
+}
+
+#c-meio-1 {
+  height: 28vh;
+  width: 14.6vw;
+  float: left;
+  margin-right: 0.4vw;
+}
+
+#c-meio-2 {
+  height: 28vh;
+  overflow: hidden;
+}
+
+#c-meio-3 {
+  height: 28vh;
+  width: 14.6vw;
+  margin-left: 0.4vw;
+  float: right;
+}
+
+#direita {
+  float: right;
+  height: 70vh;
+  width: 16vw;
+  border: none;
+}
+
+#c-baixo-e {
+  float: left;
+  width: 22.2vw;
+  height: 18.7vh;
+  margin: 0.9vh 0.5vw 0 0;
+}
+#c-baixo-d {
+  overflow: hidden;
+  height: 18.7vh;
+  margin: 0.9vh 0 0;
+}
+
+footer {
+  margin: auto;
+  height: 10vh;
+  width: 80vw;
+}

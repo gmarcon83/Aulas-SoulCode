@@ -1,0 +1,79 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  max-width: 1350px;
+  height: 12vh;
+  min-width: 750px;
+}
+
+header img {
+  height: 12vh;
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  height: 70vh;
+  max-width: 1350px;
+  min-width: 750px;
+}
+
+footer {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  line-height: 10vh;
+  max-width: 1350px;
+  min-width: 750px;
+  clear: both;
+  text-align: center;
+  background-color: red;
+  color: whitesmoke;
+  font-size: 1.2em;
+  background-image: url(../img/tnt-energy-drink.png);
+  background-size: 12vh;
+  background-position: 0px 2px;
+}
+
+aside {
+  background-color: whitesmoke;
+  float: left;
+  padding: 0;
+  margin: 0;
+  height: 70vh;
+}
+
+aside img {
+  margin-right: 1.5vh;
+  margin-bottom: 1vh;
+  height: 100%;
+}
+
+h1 {
+  background-color: rgb(165, 0, 0);
+  color: whitesmoke;
+  text-align: center;
+  line-height: 7vh;
+  font-size: 3.5vh;
+  max-height: 7vh;
+}
+
+#rolagem {
+  height: 60.5vh;
+  background-color: rgb(165, 0, 0);
+  font-size: 1.35em;
+  color: whitesmoke;
+  overflow: auto;
+  text-align: justify;
+}
+
+#rolagem p {
+  margin: 15px 25px;
+}

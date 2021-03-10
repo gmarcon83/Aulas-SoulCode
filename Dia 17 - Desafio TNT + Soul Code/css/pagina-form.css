@@ -1,0 +1,190 @@
+/* --- Cores --- */
+
+:root {
+  --cor-primaria: #52c425;
+  --cor-primaria-suave: #88ce7a;
+  --cor-primaria-media: #64cf44;
+  --cor-primaria-acento: #1eff00;
+  --cor-secundaria: #fd7e14;
+  --cor-secundaria-suave: #ffc107;
+  --cor-secundaria-acento: #dc3545;
+  --cor-acento: blue;
+  --cor-fundo: whitesmoke;
+  --cor-fundo-escura: #c8e0c2;
+  --cor-fundo-clara: #d2f8d2;
+  --cor-texto-escuro: #0f2c08;
+  --cor-texto-claro: #f6fff6;
+}
+
+/* --- Caixa do Formulário --- */
+
+#container-formulario {
+  background-color: var(--cor-fundo-clara);
+  height: calc(100% - 40px);
+  width: calc(66.66% - 38px);
+  margin: 10px 0px 10px 10px;
+  padding: 10px;
+  float: left;
+  overflow: auto;
+  border-radius: 8px;
+}
+
+form {
+  height: 100%;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+}
+
+textarea {
+  height: 68px;
+  width: calc(100% - 20px);
+  padding: 5px;
+  resize: none;
+  margin-top: 0px;
+  border: 1px solid var(--cor-texto-escuro);
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 550;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  border: 1px solid var(--cor-texto-escuro);
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.esquerdo {
+  float: left;
+  width: calc(50% - 20px);
+  height: calc(100% - 10px);
+  padding-top: 5px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.direito {
+  float: left;
+  width: calc(50% - 15px);
+  height: calc(100% - 10px);
+  padding-top: 5px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#btnSend {
+  width: calc(100% - 8px);
+  margin-top: 10px;
+  line-height: 200%;
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--cor-secundaria-suave);
+  color: var(--cor-texto-escuro);
+  border-radius: 12px;
+  border: none;
+}
+
+#btnSend:hover {
+  background-color:var(--cor-secundaria);
+}
+
+#btnSend:active {
+  background-color:var(--cor-secundaria-acento);
+}
+
+
+/* Responsividade formulário */
+
+@media (min-height: 745px) {
+  textarea {
+    width: calc(100% - 22px);
+    padding: 6px;
+    height: 76px;
+  }
+
+  input {
+    width: calc(100% - 22px);
+    padding: 6px;
+  }
+
+  #btnSend {
+    width: calc(100% - 6px);
+    line-height: 210%;
+}
+@media (min-height: 788px) {
+  textarea {
+    width: calc(100% - 26px);
+    padding: 8px;
+    height: 82px;
+  }
+
+  input {
+    width: calc(100% - 26px);
+    padding: 8px;
+  }
+  #btnSend {
+    width: calc(100% - 8px);
+    line-height: 235%;
+}
+}
+
+@media (min-height: 822px) {
+  textarea {
+    width: calc(100% - 30px);
+    padding: 10px;
+    height: 92px;
+  }
+
+  input {
+    width: calc(100% - 30px);
+    padding: 10px;
+  }
+  #btnSend {
+    font-size: .95em;
+    margin-top: 15px;
+}
+}
+
+@media (min-height: 900px) {
+  textarea {
+    width: calc(100% - 34px);
+    padding: 12px;
+    height: 94px;
+  }
+
+  input {
+    width: calc(100% - 34px);
+    padding: 12px;
+  }
+  #btnSend {
+    line-height: 255%;
+}
+}
+
+@media (min-height: 950px) {
+  textarea {
+    height: 98px;
+  }
+}
+
+@media (min-height: 1010px) {
+  textarea {
+    height: 104px;
+  }
+}
+
+@media (min-height: 1055px) {
+  textarea {
+    height: 109px;
+  }
+}

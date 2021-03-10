@@ -1,0 +1,172 @@
+/* -----------  Estrutura  -------------- */
+
+::selection {
+  background-color: transparent;
+}
+
+body {
+  background-image: url(img/mapabrasil.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position: 3% 50px;
+  background-color: whitesmoke;
+}
+
+main {
+  padding-top: 45px;
+  margin: 50px 5% 50px 15%;
+  /* Coloca o corpo do doc no meio e limita o tamanho mínimo dele*/
+  width: 80%;
+  min-width: 950px;
+  max-width: 1600px;
+}
+
+div {
+  padding: 12px;
+  margin: auto;
+  background-color: silver;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* header */
+
+header {
+  margin: -30px 5% 0px 14.5%;
+  padding: 15px 5px 15px 5px;
+  /* Coloca o corpo do doc no meio e limita o tamanho mínimo dele*/
+  background-color: gray;
+  height: 45px;
+  width: 79%;
+  min-width: 950px;
+  max-width: 1600px;
+  border-radius: 12px;
+  /* alinha os itens internamente */
+  display: flex;
+  justify-content: space-around;
+  /* Deixa fixo em cima por cima dos outros elementos */
+  position: fixed;
+  z-index: 1;
+  box-shadow: 5px 5px 4px rgb(76, 77, 78);
+}
+
+.botao {
+  width: 20vh;
+  border-radius: 8px;
+  min-height: 45px;
+  min-width: 100px;
+  font-size: 1.3em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Move as ancoras pra cima para nao ir atrás do menu */
+
+.ancora {
+  position: relative;
+  top: -155px;
+}
+
+/* Contem as linhas de 3 */
+
+div.regiao {
+  padding: 25px;
+  margin: 30px 0px;
+}
+
+/* Contem 3 artigos */
+
+div.linhade3 {
+  padding: 0px;
+  /* Faz com que o conteúdo interno ocupe o espaço disponível */
+  display: flex;
+}
+
+/* ------------  Cartões  --------------- */
+
+h1 {
+  margin-top: 2px;
+}
+
+/* O article é cada cartãozinho que tem o conteúdo dentro */
+
+article {
+  margin: 12px;
+  min-height: 50px;
+  width: 30%;
+  background-color: lightgray;
+  border-radius: 8px;
+  text-align: justify;
+  vertical-align: auto;
+  padding: 14px;
+}
+
+article img {
+  max-width: 40%;
+  padding-top: 2px;
+  border-radius: 8px;
+  float: left;
+  /* ALinha melhor a altura da imagem com o texto */
+  margin: 0px 8px 0px 0px;
+}
+
+article h4 {
+  font-size: 1.6em;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+
+article p {
+  font-size: 1.1em;
+  margin: 0px;
+  text-align: justify;
+}
+
+/* sombras coloridas */
+
+#centrooestediv,
+#centrooestediv article {
+  box-shadow: 5px 5px lightgreen;
+}
+
+#nortediv,
+#nortediv article {
+  box-shadow: 5px 5px orange;
+}
+
+#nordestediv,
+#nordestediv article {
+  box-shadow: 5px 5px darkgreen;
+}
+
+#sudestediv,
+#sudestediv article {
+  box-shadow: 5px 5px yellow;
+}
+
+#suldiv,
+#suldiv article {
+  box-shadow: 5px 5px blue;
+}
+
+/* troca borda */
+
+#centrooestediv article:active {
+  box-shadow: inset 5px 5px lightgreen;
+}
+
+#nortediv article:active {
+  box-shadow: inset 5px 5px orange;
+}
+
+#nordestediv article:active {
+  box-shadow: inset 5px 5px darkgreen;
+}
+
+#sudestediv article:active {
+  box-shadow: inset 5px 5px yellow;
+}
+
+#suldiv article:active {
+  box-shadow: inset 5px 5px blue;
+}

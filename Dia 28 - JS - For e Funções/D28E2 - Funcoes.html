@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Giovanni Marcon -->
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercícios JS - Funções</title>
+
+    <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ //
+        // Para testar as funções é só tirar o comentário de uma das linhas //
+        // abaixo. Pode-se passar um valor opcional para evitar o prompt.   //
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ //
+
+
+        //alert(parImpar());
+        //alert(dividir());
+        //alert(desconto());
+        //alert(deMaior());
+        //alert(paraFahrenheit());
+        //alert(paraCelsius());
+
+        //Exercício 1
+        function parImpar(num) {
+            if (num == undefined)
+                num = parseInt(prompt("Digite um número inteiro."));
+            if (num % 2 == 0) {
+                return "par";
+            } else {
+                return "impar";
+            }
+        }
+
+        //Exercício 2
+        function dividir(dividendo, divisor) {
+            if (dividendo == undefined)
+                dividendo = parseInt(prompt("Digite o dividendo."));
+            if (divisor == undefined)
+                divisor = parseInt(prompt("Digite o divisor."));
+            return dividendo / divisor;
+        }
+
+        //Exercício 3
+        function desconto(num) {
+            if (num == undefined)
+                num = parseFloat(prompt("Digite o preço."));
+            return num * 0.95;
+        }
+
+        //Exercício 4
+        function deMaior(anoNascimento) {
+            if (anoNascimento == undefined)
+                anoNascimento = parseInt(prompt("Digite o ano de nascimento."));
+            if (2021 - anoNascimento < 18) {
+                return "Menor de idade";
+            } else {
+                return "Maior de idade";
+            }
+        }
+
+        //Exercício 5
+        function paraFahrenheit(temperatura) {
+            if (temperatura == undefined)
+                temperatura = parseFloat(prompt("Digite a temperatura."));
+            return (temperatura * 1.8) + 32;
+        }
+
+        //Exercício 6
+        function paraCelsius(temperatura) {
+            if (temperatura == undefined)
+                temperatura = parseFloat(prompt("Digite a temperatura."));
+            return (temperatura - 32) / 1.8;
+        }
+
+    </Script>
+</head>
+
+<body>
+    <h1>Obs: Ler comentário na linha 14 sobre como testar as diferentes funções.</h1>
+</body>
+
+</html>

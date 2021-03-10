@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Justify Content</title>
+    <style>
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 100px;
+            width: 700px;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .flex-item {
+            height: 90px;
+            width: 90px;
+            background-color: cadetblue;
+            margin: 5px;
+            line-height: 90px;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>Justify Content - flex-start</p>
+    <div class="flex-container" style="justify-content: flex-start;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+    <p>Justify Content - flex-end</p>
+    <div class="flex-container" style="justify-content: flex-end;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+    <p>Justify Content - center</p>
+    <div class="flex-container" style="justify-content: center;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+    <p>Justify Content - space-between</p>
+    <div class="flex-container" style="justify-content: space-between;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+    <p>Justify Content - space-around</p>
+    <div class="flex-container" style="justify-content: space-around;">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+    </div>
+</body>
+
+</html>

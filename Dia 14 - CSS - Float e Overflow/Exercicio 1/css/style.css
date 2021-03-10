@@ -1,0 +1,98 @@
+/* Giovanni Marcon 15/12/2021 */
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* --- Controla o Menu -- */
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+  padding: 15px 35px;
+}
+
+li a:hover {
+  color: black;
+}
+
+ul {
+  background-color: #555;
+  font-size: 1.3em;
+  margin: 0px;
+  padding: 0px;
+}
+
+ul::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+li {
+  list-style-type: none;
+  float: right;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: aquamarine;
+}
+
+li::selection {
+  background-color: transparent;
+}
+
+li:nth-child(1) {
+  background-color: lime;
+}
+
+li:nth-child(1):hover {
+  background-color: aquamarine;
+}
+
+/* --- Alinha os Headers -- */
+
+h1,
+h3 {
+  text-align: center;
+}
+
+/* --- Controla as imagens -- */
+
+.clear {
+  clear: both;
+}
+
+.c1 {
+  float: left;
+  width: 50%;
+  margin: 15px 25%;
+}
+
+.c2 {
+  float: left;
+  width: 40%;
+  margin: 15px 5%;
+}
+
+.c3 {
+  float: left;
+  width: 23.33%;
+  margin: 15px 5%;
+}
+
+.c4 {
+  float: left;
+  width: 20%;
+  margin: 15px 2.5%;
+}
+
+.c5 {
+  float: left;
+  width: 18%;
+  margin: 15px 1%;
+}

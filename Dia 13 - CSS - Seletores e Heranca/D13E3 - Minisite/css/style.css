@@ -1,0 +1,234 @@
+body {
+  background: linear-gradient(to bottom, rgb(19, 202, 248), rgb(21, 151, 199));
+  background-repeat: no-repeat;
+  background-color: rgb(21, 151, 199);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 97vh;
+}
+
+/* Para cima do quadro */
+
+header {
+  background-color: transparent;
+  background-image: url(../img/logo_gif.gif);
+  background-size: auto 116px;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 678px;
+  height: 116px;
+}
+
+/* Barra de menu */
+
+nav {
+  background-color: black;
+  background-image: url(../img/menu.gif);
+  background-size: auto 25px;
+  height: 25px;
+  color: whitesmoke;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0px 0px 0px -25px;
+}
+
+nav ul li {
+  margin-top: 2px;
+  position: relative;
+  float: left;
+  background-image: url(../img/toal.gif); /*Não parece ser exatamente essa imagem*/
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+nav ul li:hover {
+  color: rgb(99, 187, 51);
+  cursor: pointer;
+}
+
+/* Dentro do quadrado */
+
+main {
+  margin: auto;
+  width: 678px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 0px;
+  box-shadow: 0px 0px 4px black;
+}
+
+/* Parte do olho */
+
+#painel {
+  background-color: #e6e6e6;
+  margin: auto;
+  background-image: url(../img/img_edito.gif);
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 160px;
+  padding-left: 15px;
+}
+
+h1 {
+  color: rgb(99, 187, 51);
+  font-variant: small-caps;
+  font-size: 16px;
+  padding: 20px 0px 7px 0px;
+}
+
+#painel p {
+  width: 400px;
+  height: 50px;
+  font-size: 10px;
+}
+
+#painel button {
+  width: 150px;
+  height: 25px;
+  margin-left: 264px;
+  border: none;
+  background-image: url(../img/large_button.gif);
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 16px;
+  color: #e6e6e6;
+  padding-bottom: 2px;
+}
+
+#painel button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Divisor */
+
+#divisorh {
+  background-color: black;
+  background-image: url(../img/toal.gif);
+  background-size: auto 16px;
+  height: 16px;
+  /* box-shadow: 0px 0px 1px black; */
+}
+
+/* Parte dos 3 quadros */
+
+#mainbaixo {
+  margin: auto;
+  background-color: #e6e6e6;
+}
+
+#mainbaixo div {
+  float: left;
+  height: 210px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+/* Inicio tipografia inferior */
+
+#mainbaixo h2 {
+  color: rgb(0, 140, 255);
+  font-size: 14px;
+  font-variant: small-caps;
+  padding: 0px 0px 0px 10px;
+}
+
+#mainbaixo h3 {
+  color: rgb(99, 187, 51);
+  font-size: 11px;
+  padding: 0px 0px 0px 10px;
+}
+
+#mainbaixo p {
+  font-size: 10.5px;
+  padding: 0px 0px 0px 10px;
+}
+
+#mainbaixo a {
+  text-decoration: none;
+  color: black;
+}
+
+#mainbaixo a:hover {
+  text-decoration: underline;
+}
+
+#mainbaixo time {
+  color: rgb(99, 187, 51);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#mainbaixo ul {
+  margin-top: -3px;
+  font-weight: 600;
+}
+
+#mainbaixo ul li {
+  line-height: 17px;
+  margin-left: -15px;
+}
+
+#mainbaixo ul li a {
+  color: rgb(99, 187, 51);
+}
+
+/* Fim tipografia inferior */
+
+#mainbaixo button {
+  width: 75px;
+  height: 15px;
+  margin-left: 10px;
+  border: none;
+  background-image: url(../img/little_button.gif);
+  font-weight: bold;
+  font-size: 10px;
+  color: #e6e6e6;
+  padding-bottom: 1px;
+}
+
+#mainbaixo button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+div#divisorv {
+  background-color: rgb(23, 166, 223);
+  width: 2px;
+  margin: 15px 5px;
+  height: 185px;
+}
+
+#about {
+  margin-left: 5px;
+}
+
+#about,
+#news,
+#services {
+  background-color: transparent;
+  float: right;
+  width: 204px;
+  padding-left: 10px;
+}
+
+#mainbaixo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Fora do quadro pra baixo */
+
+footer {
+  text-align: center;
+  margin: auto;
+  width: 678px;
+  padding-top: 10px;
+  color: #e6e6e6;
+}

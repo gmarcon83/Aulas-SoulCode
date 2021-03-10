@@ -1,0 +1,111 @@
+Em grids chamamos o pai de container, os filhos de items e os espaços
+      da grade de células.
+
+               ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+               ---- Aplicados no elemento pai ----
+               ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+display: grid; -> transforma o elemento box em um container grid
+
+grid-template-columns: n1(un) n2(un) etc...; Define a quantidade de
+      colunas em uma grid, quanto mais 'n's mais colunas, a (un) deve
+      ser uma unidade válida.
+
+grid-template-rows: n1(un) n2(un) etc...; Define a quantidade de linhas
+      em uma grid, quanto mais 'n's mais linhas, a (un) deve ser uma
+      unidade válida.
+
+OBS: Unidades válidas -> px, em, rem, %, vh, vw, vmin e vmax funcionam
+      como o esperado. A unidade -- fr -- é novidade e representa uma
+      fração do espaço disponível. Auto também é válido.
+
+minmax(min, max) -> Usado no lugar de um dos 'n's e especifica um valor
+      maximo e minimo. A unidade fr não funciona no min. Aceita também:
+            max-content -> tamanho do conteudo sem quebras
+            min-conteudo -> tamanho minimo sem overflow do conteudo
+
+repeat(x, y); -> retorna valor y repetido x vezes. Podemos usar o auto-fit
+      ou auto-fill no lugar do x para repetir quantas vezes for necessário.
+            auto-fill: coloca quantas colunas quanto possivel.
+            auto-fit: igual o anterior mas expande as colunas para ocupar
+                      os espaços em branco disponíveis.
+
+column-gap: x(un); -> adiciona um espaço entre as colunas
+
+row-gap: x(un); -> adiciona um espaço entre as linhas
+
+gap: x(un) y(un); -> usando apenas x adiciona espaço entre linhas
+      e colunas, usando os dois x adiciona espaço entra as colunas e y
+      entre as linhas.
+
+justify-items: -> alinha todos os items da grid horizontalmente
+      start -> alinha do lado esquerdo
+      center -> alinha no meio
+      end -> alinha do lado direito
+
+align-items: -> alinha todos os items da grid verticalmente
+      start -> alinha do lado esquerdo
+      center -> alinha no meio
+      end -> alinha do lado direito
+
+            ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+            ---- Aplicados nos elementos filhos ----
+            ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+grid-column: x / y; especifica em que coordenadas das colunas da grid
+      uma célula começa e termina.
+
+grid-row: x / y; especifica em que coordenadas das linhas da grid uma
+      célula começa e termina.
+
+OBS: -Usando apenas o x o elemento começa na coordenada indicada e segue
+      até a próxima.
+     -Usando valores negativos a contagem começa de trás
+      para frente.
+     -Usando -- span y -- y passa a indicar quantas "casas"
+      um item deve avançar
+     -Podemos pensar as coordenadas como divisores criados automáticamente
+      em uma grid, como no exemplo abaixo:
+
+                         1   2   3   4
+                        1╔═══╦═══╦═══╗
+                         ║   ║   ║   ║
+                        2╠═══╬═══╬═══╣
+                         ║   ║   ║   ║
+                        3╠═══╬═══╬═══╣
+                         ║   ║   ║   ║
+                        4╚═══╩═══╩═══╝
+
+justify-self: controla o alinhamento horizontal do item dentro da célula
+      start -> alinha do lado esquerdo
+      center -> alinha no meio
+      end -> alinha do lado direito
+
+align-self: controla o alinhamento vertical do item dentro da célula
+      start -> alinha em cima
+      center -> alinha no meio
+      end -> alinha em baixo
+
+            ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+            -------------- Grid Areas --------------
+            ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+grid-template-area: -> Atribui um nome aos espaços de uma grid. Aplicado
+      no elemento pai.
+
+      EX: grid-template-areas:
+            "header header header"
+            "advert content content"
+            "footer footer footer";
+
+      Uma grid 3x3 com um grupo de 3 celulas denominda header, na
+      segunda linha uma celula advert e um grupo de duas com o nome
+      de content, e na ultima linha um grupo de três chamada footer.
+
+      OBS: Pode se usar um ponto (.) para designar um espoaço vazio.
+
+grid-area: X; -> Posiciona um item em uma area X na grid. Aplicado no
+      elemento filho.
+
+      OBS: X pode ser definido também usando -- li / ci / lf / cf --
+            onde c = coluna, l = linha, i = inicio, f = fim;

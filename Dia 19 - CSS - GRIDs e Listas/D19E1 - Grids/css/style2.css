@@ -1,0 +1,37 @@
+.grid-container {
+  display: grid;
+  height: 90vh;
+  width: 80vw;
+  margin: 5vh auto 0;
+  background-color: aquamarine;
+  grid-template-columns: 213px auto auto auto;
+  grid-template-rows: min-content(50px, auto);
+  padding: 10px;
+  gap: 10px;
+  /* row-gap: 80px; */
+}
+
+.flex-item {
+  background-color: cadetblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.tipo-1 {
+  background-color: chocolate;
+}
+
+.tipo-2 {
+  background-color: fuchsia;
+}
+
+.tipo-3 {
+  background-color: mediumslateblue;
+}
+
+.tipo-4 {
+  background-color: orange;
+}

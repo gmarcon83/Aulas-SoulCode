@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Giovanni Marcon -->
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Operadores</title>
+    <style>
+        body {
+            font-size: 1.3em;
+            background-color: #eee;
+        }
+
+
+        span {
+            color: red;
+            font-weight: 600;
+        }
+    </style>
+
+    <!-- <script>
+        let numA = parseFloat(prompt("Digite um número (1/2)"));
+        let numB = parseFloat(prompt("Digite um número (2/2)"));
+
+        if (numA == numB)
+            alert("Os números são iguais");
+        else
+            alert("Os números são diferentes");
+    </script> -->
+
+    <!-- <script>
+        let numA = parseFloat(prompt("Digite um número A"));
+        let numB = parseFloat(prompt("Digite um número B"));
+
+        if (numA < numB)
+            alert(numB);
+        else
+            alert(numA);
+    </script> -->
+
+    <!-- <script>
+        let notaA = parseFloat(prompt("Digite a primeira nota"));
+        let notaB = parseFloat(prompt("Digite a segunda nota"));
+        let notaC = parseFloat(prompt("Digite a terceira nota"));
+        let notaMedia = parseFloat(((notaA + notaB + notaC) / 3).toFixed(1));
+
+        if (notaMedia >= 7)
+            alert("Aprovado com " + notaMedia)
+
+        if (notaMedia < 7)
+            alert("Reprovado com " + notaMedia)
+    </script> -->
+
+    <!-- <script>
+        let num = parseFloat(prompt("Digite um número"));
+
+        if (num < 0)
+            alert("Número é negativo");
+        if (num == 0)
+            alert("Número não nem negativo nem positivo");
+        else
+            alert("Número é positivo");
+
+    </script> -->
+
+
+    <!-- <script>
+        let num = parseInt(prompt("Digite um número inteiro"));
+
+        if (num % 3 == 0)
+            alert("É multiplo de 3");
+        else
+            alert("Número não é múltiplo de 3");
+
+    </script> -->
+
+    <!-- <script>
+        let num = parseInt(prompt("Digite a idade do nadador"));
+
+        if (num < 5)
+            alert("Muito novo");
+        else if (num < 8)
+            alert("Infantil A");
+        else if (num < 11)
+            alert("Infantil B");
+        else if (num < 14)
+            alert("Juvenil A");
+        else if (num < 18)
+            alert("Juvenil B");
+        else
+            alert("Adulto");
+
+    </script> -->
+
+    <!-- <script>
+        let num = parseInt(prompt("Digite um número inteiro"));
+
+        let i = parseInt((num / 2));
+        let ePrimo = true;
+
+        while (i > 1) {
+            if (num % i == 0) {
+                ePrimo = false;
+                break;
+            }
+            i--;
+        }
+        if (num <= 1)
+            ePrimo = false
+
+        if (ePrimo)
+            alert(num + " é um número primo.");
+        else
+            alert(num + " não é um número primo.");
+
+    </script> -->
+
+    <script>
+        for (num = 1; num <= 1000; num++) {
+
+            // Usa até a metade do valor pois um número nunca vai
+            // ser divisível por mais que a metade do seu valor
+            let i = parseInt((num / 2));
+
+            // A variável onde vamos armazenar se o número é primo
+            // ou não
+            let ePrimo = true;
+
+            // O loop onde testamos todas as possibilidades
+            while (i > 1) {
+                // Testa se o numero causa uma divisão exata
+                // com o numero inicial
+                if (num % i == 0) {
+                    // Se existir divisão falamos que o número não
+                    // é primo e encerramos o loop antecipadamente
+                    ePrimo = false;
+                    break;
+                }
+                i--;
+            }
+            // Assinala todos valores menores que um como falsos pois
+            // eles não passam no loop
+            if (num <= 1)
+                ePrimo = false
+
+            // Só retorna o resultado
+            if (ePrimo)
+                document.writeln("<span> " + num + "</span> é um número primo.</br>");
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

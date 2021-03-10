@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Atividade 2 - IMC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+
+        var peso = parseFloat(prompt("Digite o seu peso:"))
+        var altura = parseFloat(prompt("Digite a sua altura:"))
+
+        var imc = peso / (altura * 2)
+
+        if (imc <= 18.5)
+            var resultado = "abaixo do peso."
+        else if (imc <= 25)
+            var resultado = "com o peso normal."
+        else if (imc <= 30)
+            var resultado = "acima do peso."
+        else
+            var resultado = "obeso."
+
+        document.writeln("<p>Com um IMC de <span>" + imc + "</span> você está <span>" + resultado + "</span></br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

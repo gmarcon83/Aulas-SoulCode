@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>While Atividade 3</title>
+
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+        let idade, quantasIdades, maiorDeIdade = 0, i = 1;
+        document.writeln("<h1>As idades inseridas são:</h1>\n<p><span>");
+        quantasIdades = parseFloat(prompt("Quantos idades deseja testar?"));
+
+        while (i <= quantasIdades) {
+            idade = parseFloat(prompt("Insira um número (" + i + "/" + quantasIdades + ")"));
+            document.write(" " + idade);
+            if (idade >= 18)
+                maiorDeIdade++;
+            i++;
+        }
+        document.writeln("</p></span>");
+        document.writeln("<h1>O total de maiores de idade é:</h1>\n<p><span>" + maiorDeIdade + "</p></span>");
+        document.writeln("<h1>O total de menores de idade é:</h1>\n<p><span>" + (quantasIdades - maiorDeIdade) + "</p></span>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

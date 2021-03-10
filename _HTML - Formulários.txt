@@ -1,0 +1,22 @@
+accesskey="" -> usado dentro de um link para adicionar uma tecla de atalho.
+tabindex="" -> usado em um elemento para permitir acesso via tab, e qual ordem,
+    ativa o :focus para aquele elemento também. Valor de -1 ativa mas sem, o tab.
+
+
+checkbox -> Seletores "quadradinhos", esolha varios
+radio -> Seletores "bolinha", escolha apenas um
+fieldset -> Coloca um quadrado em volta de varios radios de um mesmo grupo
+legend -> Coloca um titulo no quadrado
+
+      <fieldset>
+        <legend>What level ninja are you?</legend>
+
+        <input id="newbie" type="radio" name="levels" value="newbie">
+        <label for="newbie">Newbie Kitten</label><br>
+
+        <input id="intermediate" type="radio" name="levels" value="intermediate">
+        <label for="intermediate">Developing Student</label><br>
+
+        <input id="master" type="radio" name="levels" value="master">
+        <label for="master">Master</label>
+      </fieldset>

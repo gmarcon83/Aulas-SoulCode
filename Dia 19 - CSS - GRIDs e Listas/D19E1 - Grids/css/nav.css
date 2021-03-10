@@ -1,0 +1,63 @@
+header {
+  background-color: aqua;
+  height: 10vh;
+  position: relative;
+  text-align: center;
+  padding: 2.5vh 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 10vh;
+  margin: 0;
+  font-variant: small-caps;
+}
+
+/* --- Nav --- */
+
+.nav {
+  position: absolute;
+  right: 3%;
+  top: 4vh;
+  padding: 0;
+  font-size: 2.5vh;
+  line-height: 2.5vh;
+  font-weight: 600;
+  font-variant: small-caps;
+}
+
+.nav li {
+  list-style: none;
+  float: left;
+  margin: 0vh 0;
+}
+
+.nav li:first-of-type a {
+  border-radius: 20px 0 0 20px;
+}
+
+.nav li:last-of-type a {
+  border-radius: 0 20px 20px 0;
+}
+
+.nav li a {
+  background-color: rgb(255, 255, 0);
+  padding: 2vh 1vw;
+  text-decoration: none;
+  color: var(--cor-texto-escuro);
+  outline: none;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+  background-color: lightyellow;
+  cursor: pointer;
+}
+
+.nav li a:active {
+  background-color: gold;
+}
+
+#current {
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.541);
+}

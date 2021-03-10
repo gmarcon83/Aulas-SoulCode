@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Estruturas de Condição</title>
+    <script>
+
+        while (true) {
+            var opcaoScript = parseInt(prompt("Escolha qual script deseja rodar:\n1 = A+B < C?\n2 = Ordem crescente\n3 = A e B, soma ou multiplicação\n4 = Encontrar o dobro ou o triplo\n5 = Meses com Switch"));
+
+            switch (opcaoScript) {
+                case 1:
+                    eMaior();
+                    break;
+                case 2:
+                    ordemCrescente();
+                    break;
+                case 3:
+                    somaMultiplicacao();
+                    break;
+                case 4:
+                    dobroTriplo();
+                    break;
+                case 5:
+                    qualMes();
+                    break;
+                default:
+                    alert("Opção Inválida.")
+            }
+        }
+
+        // Caso 1
+        function eMaior() {
+            let a = parseFloat(prompt("Digite um valor para A"));
+            let b = parseFloat(prompt("Digite um valor para B"));
+            let c = parseFloat(prompt("Digite um valor para C"));
+
+            if ((a + b) < c)
+                alert("A soma de " + a + " + " + b + " é menor que " + c)
+            else
+                alert("A soma de " + a + " + " + b + " não é menor que " + c)
+        }
+
+        // Caso 2
+        function ordemCrescente() {
+            let a = parseFloat(prompt("Digite um valor para A"));
+            let b = parseFloat(prompt("Digite um valor para B"));
+
+            if (a < b)
+                alert(a + " (A) vem antes que " + b + " (B)")
+            else
+                alert(b + " (B) vem antes que " + a + " (A)")
+        }
+
+        // Caso 3
+        function somaMultiplicacao() {
+            let a = parseFloat(prompt("Digite um valor para A"));
+            let b = parseFloat(prompt("Digite um valor para B"));
+
+            if (a == b) {
+                let c = (a + b);
+                alert("A é igual a B e a soma deles é " + c)
+            } else {
+                let c = (a * b);
+                alert("A não é igual a B e a multiplicação deles é " + c)
+            }
+        }
+
+        // Caso 4
+        function dobroTriplo() {
+            let a = parseFloat(prompt("Digite um valor"));
+
+            if (a == 0)
+                alert("O valor é 0 e não é nem negativo nem positivo")
+            else if (a > 0)
+                alert("O valor é positivo e o seu dobro é " + (a * 2))
+            else
+                alert("O valor é negativo e o seu triplo é " + (a * 3))
+        }
+
+        // Caso 5
+        function qualMes() {
+            let a = parseFloat(prompt("Digite um o mês, de um 1 a 12"));
+
+            switch (a) {
+                case 1:
+                    alert("Janeiro");
+                    break;
+                case 2:
+                    alert("Fevereiro");
+                    break;
+                case 3:
+                    alert("Março");
+                    break;
+                case 4:
+                    alert("Abril");
+                    break;
+                case 5:
+                    alert("Maio");
+                    break;
+                case 6:
+                    alert("Junho");
+                    break;
+                case 7:
+                    alert("Julho");
+                    break;
+                case 8:
+                    alert("Agosto");
+                    break;
+                case 9:
+                    alert("Setembro");
+                    break;
+                case 10:
+                    alert("Outubro");
+                    break;
+                case 11:
+                    alert("Novembro");
+                    break;
+                case 12:
+                    alert("Dezembro");
+                    break;
+                default:
+                    alert("Opção Inválida.")
+            }
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

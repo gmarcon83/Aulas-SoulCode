@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Align Items</title>
+    <style>
+        p {
+            width: 100%;
+            text-align: center;
+        }
+
+        .flex-container {
+            display: flex;
+            height: 250px;
+            width: 450px;
+            margin: auto;
+            background-color: aquamarine;
+            flex-wrap: wrap;
+        }
+
+        .flex-item {
+            width: 90px;
+            background-color: cadetblue;
+            margin: 5px;
+            text-align: center;
+        }
+
+        .i1 {
+            line-height: 80px;
+        }
+
+        .i2 {
+            line-height: 60px;
+        }
+
+        .i3 {
+            line-height: 110px;
+        }
+
+        .i4 {
+            line-height: 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>Align Items - center</p>
+    <div class="flex-container" style="align-items: center;">
+        <div class="flex-item i1">1</div>
+        <div class="flex-item i2">2</div>
+        <div class="flex-item i3">3</div>
+        <div class="flex-item i4">4</div>
+    </div>
+    <p>Align Items - flex-start</p>
+    <div class="flex-container" style="align-items: flex-start;">
+        <div class="flex-item i1">1</div>
+        <div class="flex-item i2">2</div>
+        <div class="flex-item i3">3</div>
+        <div class="flex-item i4">4</div>
+    </div>
+    <p>Align Items - flex-end</p>
+    <div class="flex-container" style="align-items: flex-end;">
+        <div class="flex-item i1">1</div>
+        <div class="flex-item i2">2</div>
+        <div class="flex-item i3">3</div>
+        <div class="flex-item i4">4</div>
+    </div>
+    <p>Align Items - stretch</p>
+    <div class="flex-container" style="align-items: stretch;">
+        <div class="flex-item i1">1</div>
+        <div class="flex-item i2">2</div>
+        <div class="flex-item i3">3</div>
+        <div class="flex-item i4">4</div>
+    </div>
+    <p>Align Items - baseline</p>
+    <div class="flex-container" style="align-items: baseline;">
+        <div class="flex-item i1">1</div>
+        <div class="flex-item i2">2</div>
+        <div class="flex-item i3">3</div>
+        <div class="flex-item i4">4</div>
+    </div>
+</body>
+
+</html>

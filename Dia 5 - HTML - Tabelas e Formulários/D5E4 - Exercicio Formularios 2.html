@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário de Vacinação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Eliabe, Giovanni e Guilherme">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script> -->
+    <style>
+        label {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<h3>Formulário de Vacinação</h3>
+
+<form action="/lugar-nenhum" method="POST">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+    </div>
+    <div>
+        <label for="data"> Data de Nascimento:</label>
+        <input type="date" id="data">
+    </div>
+    <div>
+        <label for="telefone"> Numero telefone:</label>
+        <input type="tel" id="telefone" pattern="^\d{2}-\d{5}-\d{4}$" placeholder="xx-xxxxx-xxxx">
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Digite seu email">
+    </div>
+    <div>
+        <label for="Rua">Rua:</label>
+        <input type="text" id="rua" placeholder="Digite nome da rua" />
+    </div>
+    <div>
+        <label for="numRua">Numero da Rua:</label>
+        <input type="number" id="numRua" placeholder="Numero da Residência">
+    </div>
+    <div>
+        <label for="Bairro">Bairro:</label>
+        <input type="text" id="Bairro" placeholder="Digite o nome do Bairro" />
+    </div>
+    <div>
+        <label for="CEP">CEP:</label>
+        <input type="tel" id="CEP" pattern="^\d{5}-\d{3}$" placeholder="xxxxx-xxx">
+    </div>
+    <div>
+        <label for="Obs">Obs.:</label>
+        <textarea id="Obs" placeholder="Observações"></textarea>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </div>
+</form>
+
+</body>
+
+</html>

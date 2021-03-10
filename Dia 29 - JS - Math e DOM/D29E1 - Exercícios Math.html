@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Giovanni Marcon -->
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercícios JS - Math</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3em;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+
+    <!-- <script>
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 1 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let num1 = parseFloat(prompt("Insira um número"));
+        let num2 = parseFloat(prompt("Insira outro número"));
+
+        calcule(num1);
+        calcule(num2);
+
+        function calcule(num) {
+        document.writeln("<p>A raiz quadrada (arredondada) de: <span>" + num + "</span> é <span>" + Math.round(Math.sqrt(num)) + "</span>");
+        }
+
+    </script> -->
+
+    <!-- <script>
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 2 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let num1 = parseFloat(prompt("Insira um número"));
+        let num2 = parseFloat(prompt("Insira outro número"));
+        let num3 = parseFloat(prompt("Insira o último numero"));
+
+        num1 = calcule(num1, 2);
+        num2 = calcule(num2, 3);
+        num3 = calcule(num3, 4);
+
+        document.writeln("<p>O soma dos cálculos anteriores é: <span>" + num1 + num2 + num3 + "</span>");
+
+        function calcule(num, potencia) {
+            document.writeln("<p>O número <span>" + num + "</span> elevado a potência de <span>" + potencia + "</span> resulta em <span>" + Math.pow(num, potencia) + "</span>");
+            return Math.pow(num, potencia);
+        }
+
+    </script> -->
+
+    <!-- <script>
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 3 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let num1 = parseInt(prompt("Insira um número"));
+        let num2 = parseInt(prompt("Insira outro número"));
+        let resultado;
+
+        document.writeln("<p>O primeiro número escolhido foi: <span>" + num1 + "</span>.");
+        document.writeln("<p>O segundo número escolhido foi: <span>" + num2 + "</span>.");
+
+        if (num1 > num2)
+            resultado = Math.floor(num1 / num2)
+        else
+            resultado = Math.floor(num2 / num1)
+
+        document.writeln("<p>O resultado arredondado da divisão do maior pelo menor é: <span>" + resultado + "</span>.");
+
+    </script> -->
+
+    <!-- <script>
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 4 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let num1 = parseInt(prompt("Insira um número"));
+        let num2 = Math.floor(Math.random() * 1001);
+
+        document.writeln("<p>O número escolhido foi: <span>" + num1 + "</span>.");
+        document.writeln("<p>O número randômico é: <span>" + num2 + "</span>.");
+
+        document.writeln("<p>O resultado absoluto da subração do número escolhido pelo randômico é: <span>" + Math.abs(num1 - num2) + "</span>.");
+
+    </script> -->
+
+    <!-- <script>
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 5 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let ang = parseInt(prompt("Digite o valor do ângulo"));
+
+        document.writeln("<p>O ângulo escolhido foi: <span>" + ang + "</span>.");
+        document.writeln("<p>O seu seno é: <span>" + Math.sin(ang) + "</span>.");
+        document.writeln("<p>O seu cosseno é: <span>" + Math.cos(ang) + "</span>.");
+        document.writeln("<p>E a tangente é: <span>" + Math.tan(ang) + "</span>.");
+
+    </script> -->
+
+</head>
+
+<body>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Giovanni Marcon -->
+
+<!-- Apenas remover o comentário da parte do exercício que deseja testar -->
+
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercícios JS - Array</title>
+
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.3em;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+
+    <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 1 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let arr = [
+            obterNumero(),
+            obterNumero(),
+            obterNumero()
+        ];
+
+        escreverNaTela("O valor é:", arr[0]);
+        escreverNaTela("O valor é:", arr[1]);
+        escreverNaTela("O valor é:", arr[2]);
+
+
+        function escreverNaTela(mensagem, valor) {
+            document.writeln(mensagem + " <span>" + valor + " </span></br>");
+        }
+
+        function obterNumero() {
+            let numInp;
+            while (numInp <= 0 || isNaN(numInp)) {
+                numInp = parseInt(prompt("Insira um número inteiro"));
+            }
+            return numInp;
+        }
+    </script>
+
+
+</head>
+
+<body>
+</body>
+
+</html>

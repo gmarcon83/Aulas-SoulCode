@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Switch Atividade 3</title>
+
+    <script>
+        let codigo = parseInt(prompt("Digite o código do produto:\n100 = Cachorro quente\n101 = Bauru simples\n102 = Bauru com ovo\n103 = Hambúrger\n104 = Cheesburguer\n105 = Refrigerante"));
+        let quantidade = parseInt(prompt("Digite a quantidade:"));
+
+        switch (codigo) {
+            case 100:
+                alert("O valor total é = R$ " + (quantidade * 1.2).toFixed(2));
+                break;
+            case 101:
+                alert("O valor total é = R$ " + (quantidade * 1.3).toFixed(2));
+                break;
+            case 102:
+                alert("O valor total é = R$ " + (quantidade * 1.5).toFixed(2));
+                break;
+            case 103:
+                alert("O valor total é = R$ " + (quantidade * 1.2).toFixed(2));
+                break;
+            case 104:
+                alert("O valor total é = R$ " + (quantidade * 1.3).toFixed(2));
+                break;
+            case 105:
+                alert("O valor total é = R$ " + (quantidade).toFixed(2));
+                break;
+            default:
+                alert("Plano inválido");
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

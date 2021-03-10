@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>While Atividade 1</title>
+
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+        let valor, cobaias = 0, i = 1;
+        document.writeln("<h1>Os testes realizados foram:</h1>\n<p>");
+
+        while (i <= 15) {
+            let repeat = true;
+            while (repeat) {
+                valor = parseInt(prompt("Digite o código do teste (" + i + "/15):"));
+                if (valor != 1 ^ valor != 2)
+                    repeat = false;
+                else
+                    alert("Codigo inválido!\nOpções válidas são os números 1 ou 2.")
+            }
+            document.write("Teste <span>" + i + "</span> Código = <span>" + valor + "</span></br>");
+            if (valor == 1) {
+                cobaias++;
+            } else {
+                cobaias += 2;
+            }
+            i++;
+        }
+        document.writeln("</p></span>");
+        document.writeln("<h1>O total de cobaias usadas foi:</h1>\n<p><span>" + cobaias + "</p></span>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model e Bordas</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 50px auto;
+            padding: 2px 20px 20px;
+            border-top: 10px dashed blue;
+            border-right: 10px solid green;
+            border-bottom: 10px groove orange;
+            border-left: 10px dotted red;
+        }
+
+        h1,
+        h2,
+        p {
+            border: 5px outset black;
+            padding: 5px;
+            background-color: silver;
+            border-radius: 8px;
+        }
+
+        h1:active,
+        h2:active,
+        p:active {
+            border: 5px inset black;
+        }
+
+        strong,
+        a,
+        em {
+            border: 2px dashed red;
+        }
+
+        p {
+            font-size: 1.25em;
+        }
+
+        ::selection {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desenvolvimento Web</h1>
+    <h2>HTML</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident esse, eaque quisquam laborum consequuntur
+        ducimus, itaque distinctio ipsum animi voluptates optio fugiat sunt. Quo aperiam quos commodi
+        <strong>repellat</strong>?
+    </p>
+    <a href="#">Mais Sobre</a>
+    <h2>CSS</h2>
+    <p>
+        Lorem ipsum dolor, sit amet <em>consectetur</em> adipisicing elit. Veritatis repellat quisquam, doloribus iure
+        in recusandae veniam adipisci earum error autem laborum saepe reprehenderit odit pariatur eligendi omnis
+        molestias quaerat dolor.
+    </p>
+    <a href="#">Mais Sobre</a>
+</body>
+
+
+</html>

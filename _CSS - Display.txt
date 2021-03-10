@@ -1,0 +1,2 @@
+display: block; - Muda o elemento inline para um elemento do tipo
+    bloco.

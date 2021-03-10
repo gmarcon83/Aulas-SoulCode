@@ -1,0 +1,221 @@
+body {
+  font-family: arial;
+  background: linear-gradient(to bottom, #00ffbf, #00ffff);
+  background-color: #00ffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header,
+.duas-colunas,
+.tres-colunas {
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+h1 {
+  font-variant: small-caps;
+}
+
+header button {
+  position: absolute;
+  transform: translate(0, -50%);
+  right: 20px;
+  top: 40px;
+  border-radius: 0px;
+  border: 1px solid black;
+  background-color: darkmagenta;
+}
+
+header button:hover {
+  background-color: deeppink;
+}
+
+header button:active {
+  background-color: gold;
+  box-shadow: 0 0 5px black;
+}
+
+header button a {
+  text-decoration: none;
+  font-size: 2em;
+  color: whitesmoke;
+  padding: 5px 25px;
+}
+
+#img-grande {
+  position: fixed;
+  width: 75%;
+  height: 100vh;
+  z-index: -2;
+}
+
+#img-grande img {
+  position: relative;
+  left: 2.5%;
+  opacity: 0.65;
+}
+
+.duas-colunas,
+.tres-colunas {
+  min-height: 50px;
+  height: 45vh;
+  margin-top: 35vh;
+  margin-bottom: 500px;
+}
+
+header {
+  position: sticky;
+  top: 10px;
+  width: 80%;
+  background-color: aquamarine;
+  margin: auto;
+  margin-bottom: 2%;
+  text-align: center;
+  z-index: 10;
+}
+
+main {
+  width: 80%;
+  height: 75vh;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Da página 1 */
+
+.duas-colunas {
+  background-color: aquamarine;
+  width: 49%;
+  position: relative;
+}
+
+.duas-colunas div {
+  font-size: 1.6em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.duas-colunas .img-container {
+  border: none;
+  position: absolute;
+  width: 25%;
+  max-width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.frente {
+  background-color: lightgreen;
+}
+
+.tras {
+  background-color: lightskyblue;
+}
+
+.esq {
+  float: left;
+}
+
+.dir {
+  float: right;
+}
+
+.esq .frente {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 50%;
+  height: 50%;
+}
+
+.esq .tras {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.dir .frente {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 50%;
+}
+
+.dir .tras {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+/* Da página 2 */
+
+.tres-colunas {
+  width: 32%;
+  position: relative;
+}
+
+.tres-colunas {
+  float: left;
+}
+
+.t-esq {
+  background-color: mediumaquamarine;
+  margin-right: 2%;
+}
+
+.t-meio {
+  background-color: whitesmoke;
+  margin-right: 2%;
+}
+
+.t-meio .img-container {
+  z-index: -1;
+}
+
+#t-meio-content {
+  background-color: transparent;
+  height: 100%;
+  border: 0;
+  overflow-x: auto;
+  font-size: 1.1em;
+}
+
+#t-meio-content h2 {
+  text-align: center;
+}
+
+#t-meio-content p {
+  text-align: justify;
+  text-indent: 1em;
+}
+
+.t-dir {
+  background-color: #aaa;
+}
+
+.tres-colunas .img-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  border: none;
+}

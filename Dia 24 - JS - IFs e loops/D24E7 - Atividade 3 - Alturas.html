@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Atividade 3 - Alturas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+
+        let alturas = [1.68, 1.52, 1.59, 1.75, 1.69, 1.85, 1.94, 1.65, 1.66, 1.58, 1.86, 1.96, 1.55, 1.88, 1.82];
+        let menorAltura = 30
+        let maiorAltura = 0
+        let alturaTotal = 0
+
+        for (i = 0; i < alturas.length; i++) {
+            if (alturas[i] < menorAltura)
+                menorAltura = alturas[i];
+            if (alturas[i] > maiorAltura)
+                maiorAltura = alturas[i];
+            alturaTotal += alturas[i];
+        }
+
+        document.writeln("As alturas são: <span>" + alturas + "</span>.</br>");
+        document.writeln("A menor altura é <span>" + menorAltura + "</span>.</br>");
+        document.writeln("A maior altura é <span>" + maiorAltura + "</span>.</br>");
+        document.writeln("A altura média é <span>" + (alturaTotal / alturas.length) + "</span>.</br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

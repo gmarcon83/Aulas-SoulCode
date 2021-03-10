@@ -1,0 +1,28 @@
+:root {
+  --cor-primaria: #be4051;
+  --cor-primaria-suave: #ecc5c3;
+  --cor-primaria-media: #d4273a;
+  --cor-primaria-acento: #ff1141;
+  --cor-secundaria: #fd7e14;
+  --cor-secundaria-suave: #ffc107;
+  --cor-secundaria-acento: #dc3545;
+  --cor-acento: blue;
+  --cor-fundo: whitesmoke;
+  --cor-fundo-escura: #c7c0c0;
+  --cor-fundo-clara: #fcf9f9;
+  --cor-texto-escuro: #08192c;
+  --cor-texto-claro: #ebdddd;
+}
+
+/* Ajuste nas imagens */
+
+.card-img-cont {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards img {
+  position: absolute;
+  clip: rect(10px, 504px, 520px, 0px);
+  top: -10px;
+}

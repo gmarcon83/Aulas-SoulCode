@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="author" content="Giovanni Marcon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Exercício das Listas e Ancoras</title>
+    <style>
+        body {text-align: left;}
+    </style>
+</head>
+<body>
+    <h1>Lista das Listas</h1>
+    <dl>
+        <dt style="font-size: larger;">Item <strong>um</strong> da lista principal</dt>
+            <dd>
+                <h2>Sublista 1 - Lista Ordenada com 4 itens</h2>
+                <ol type="A">
+                    <li><strong>Item 1</strong>
+                    <li><strong>Item 2</strong>: <em>Sub-Sublista 1 - Lista de Definições</em><dd>
+                        <dl>
+                            <Dt><strong>Primeiro termo:</strong>Texto</Dt>
+                                <dd>Definição do item</dd>
+                            <Dt><strong>Segundo Termo:</strong>Imagem</Dt>
+                                <dd><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+                                    alt="Era pra ser o logo do Google aqui" width="80px"></dd>
+                            <Dt><strong>Terceiro Termo:</strong>Link</Dt>
+                                <dd><a href="https://www.google.com/">Link</a></dd>
+                                <dd>Direciona ao Google</dd>
+                        </dl>
+                    </dd>
+                    <li><strong>Item 3</strong>
+                    <li><strong>Item 4</strong>
+                </ol>
+            </dd>
+        <p><!--Pra da um espaço--></p>
+        <dt style="font-size: larger;">Item <strong>dois</strong> da lista principal</dt>
+            <dd>
+                <h2>Sublista 2 - Lista Não Ordenada com três itens</h2>
+                <ul type="square">
+                    <li><strong>Item 1</strong>
+                    <li><strong>Item 2</strong>: <em>Sub-Sublista 2 - Lista de Definições</em><dd>
+                        <dl>
+                            <Dt id="meio"><strong>Primeiro Termo:</strong>Meio da página</Dt>
+                                <dd><a href="#fim">Rola para o fim</a></dd>
+                            <Dt><strong>Segundo termo:</strong>Espaço pra Rolar</Dt>
+                                <dd><br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                    <br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|<br />|
+                                </dd>
+                        </dl>
+                    </dd>
+                    <li><strong>Item 3</strong>
+                </ul>
+            </dd>
+            <p id="fim"><a href="#meio">Volta ao meio</a></p>
+    </dl>
+</body>
+</html>

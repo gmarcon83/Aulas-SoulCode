@@ -1,0 +1,36 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 150px;
+}
+
+ul li {
+  position: relative;
+}
+
+li ul {
+  position: absolute;
+  left: 149px;
+  top: 0;
+  display: none;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: #e2144a;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+li:hover ul {
+  display: block;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  background: #ccc;
+}

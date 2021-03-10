@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--  Giovanni Marcon -->
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Operadores Lógicos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0 0 40px 30px;
+        }
+
+        span {
+            color: red;
+            font-weight: 800;
+            font-size: 1.3em;
+        }
+    </style>
+
+    <script>
+
+        var bol1 = true;
+        var bol2 = false;
+        var num1 = 12;
+        var num2 = 24;
+
+        document.writeln("<h1> Variáveis: </h1>");
+        document.writeln("<p> bol1 = <span>" + bol1 + "</span></br>");
+        document.writeln("bol2 = <span>" + bol2 + "</span></br>");
+        document.writeln("num1 = <span>" + num1 + "</span></br>");
+        document.writeln("num2 = <span>" + num2 + "</span></p>");
+
+        document.writeln("<h1>Resultados: </h1>");
+
+        document.writeln(bol1 || bol2 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(num2 < 15 || bol2 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(bol1 && bol2 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(num1 == 12 && num2 <= 7 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(bol1 ^ num2 > 6 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(num2 === num1 ^ bol2 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(!bol2 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+        document.writeln(!num1 < 5 ? "<span>Verdade</span></br>" : "<span>Falso</span></br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

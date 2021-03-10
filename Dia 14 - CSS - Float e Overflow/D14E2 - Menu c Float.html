@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercícios com Float</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul {
+            background-color: #555;
+            font-size: 1.3em;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        li {
+            list-style-type: none;
+            float: left;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: aquamarine;
+        }
+
+        li:nth-child(1) {
+            background-color: lime;
+        }
+
+        li:nth-child(1):hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Inicio</li>
+        <li>Noticias</li>
+        <li>Meio</li>
+        <li>Contato</li>
+        <li>Sobre nós</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<!-- OBS: Para aparecer a rolagem, diminuir o tamanho da tela se necessário -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>TNT Energy Drink</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/menupop.css'>
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script>
+        function popupToggle() {
+            const popup = document.getElementById('popup');
+            popup.classList.toggle('active')
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="img/atletas_destaque.jpg" alt="Imagem do cabeçalho com o logo da TNT">
+    </header>
+    <main>
+        <aside>
+            <img src="img/tnt-produto-grande.jpg" alt="Imagem com uma lata de TNT">
+        </aside>
+        <h1>TNT Energy Drink</h1>
+        <div id="rolagem">
+            <p>O mundo está cheio de obstáculos e não vai parar pra você se preparar. TNT é uma marca de
+                resistência,
+                que te dá energia para encarar e não perder. A resistência da autoexpressão. A resistência das ideias
+                contestadoras. A resistência das atitudes revolucionárias. </p>
+            <p>Não importa se você contesta através do seu
+                jeito de vestir, ou da música que você ouve, ou das coisas que você grita. Não deixe que a opinião dos
+                outros ganhe. Não deixe que a censura ganhe. Não deixe que os conservadores ganhem. Não deixe que o
+                silêncio ganhe. Não deixe que a vergonha ganhe. Não deixe que o medo ganhe. </p>
+            </p>
+            <p>Quanto maior o desafio, maior a nossa resistência.
+            </p>
+            <p><span>#PODEVIR</span></p>
+        </div>
+    </main>
+    <footer>
+        <div class="icons">
+            <a href="https://www.youtube.com/user/tntenergetico" title="Youtube" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/tntenergydrink" title="Facebook" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tntenergydrink/" title="Instagram" target="_blank"
+                rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/energydrinktnt" title="Twitter" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-twitter"></i></a>
+        </div>
+        <p><small>TNT Energy Drink&#169;, 2021</small></p>
+        <button id="botaomenu" class="btn" onclick="popupToggle();">SEJA TNT</button>
+    </footer>
+    <div id="popup">
+        <div class="content">
+            <i class="fas fa-envelope-open-text" style="color: red;"></i>
+            <h2>Faça parte do time TNT!</h2>
+            <div id="formulario">
+                <form id="form">
+                    <div class="inputBox">
+                        <input id="name" type="text" placeholder="Nome completo">
+                    </div>
+                    <div class="inputBox">
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" id="cursos" list="sabores" placeholder="Selecione seu sabor preferido.">
+                        <datalist id="sabores">
+                            <option value="Original">Original</option>
+                            <option value="Zero Açúcar">Zero Açúcar</option>
+                            <option value="Maçã Verde">Maçã Verde</option>
+                            <option value="Tangerina">Tangerina</option>
+                            <option value="Açaí com Guaraná">Açaí com Guaraná</option>
+                            <option value="Citrus">Citrus</option>
+                            <option value="Pêssego">Pêssego</option>
+                        </datalist>
+                    </div>
+                    <button id="btnSend">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+
+
+
+</html>

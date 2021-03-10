@@ -22,6 +22,31 @@
             color: red;
         }
     </style>
+    <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Funções Gerais ▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        function arrayParaString(umaArray, invertida) {
+            let strFinal = "";
+            if (invertida == undefined || invertida == false) {
+                for (item of umaArray) {
+                    strFinal = strFinal + item + ", ";
+                }
+            } else {
+                for (item = umaArray.length - 1; item >= 0; item--) {
+                    strFinal = strFinal + umaArray[item] + ", ";
+                }
+            }
+            return strFinal.slice(0, -2);
+        }
+
+        function escreverNaTela(mensagem, valor) {
+            document.writeln(mensagem + " <span>" + valor + " </span></br>");
+        }
+    </script>
+
 
     <!-- <script>
 
@@ -61,7 +86,7 @@
         }
     </script> -->
 
-    <script>
+    <!-- <script>
 
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
         // ▲▼▲▼▲▼▲▼ Exercício 2 ▲▼▲▼▲▼▲▼
@@ -78,35 +103,57 @@
         escreverNaTela("Array ficou: ", arrayParaString(nums));
         escreverNaTela("Invertida ela fica: ", arrayParaString(nums, true));
 
-
-        function arrayParaString(umaArray, invertida) {
-            let strFinal = "";
-            console.log(strFinal)
-            if (invertida == undefined || invertida == false) {
-                for (item of umaArray) {
-                    strFinal = strFinal + item + ", ";
-                }
-            } else {
-                for (item = umaArray.length - 1; item >= 0; item--) {
-                    strFinal = strFinal + umaArray[item] + ", ";
-                }
-            }
-            console.log(strFinal)
-            return strFinal.slice(0, -2);
-        }
-
-        function escreverNaTela(mensagem, valor) {
-            document.writeln(mensagem + " <span>" + valor + " </span></br>");
-        }
-
         function obterNumero() {
             let numInp;
-            while (numInp <= 0 || isNaN(numInp)) {
+            while (isNaN(numInp)) {
                 numInp = parseInt(prompt("Insira um número inteiro"));
             }
             return numInp;
         }
 
+    </script> -->
+
+    <!-- <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 3 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let pessoas = [
+            prompt("Digite um nome"),
+            prompt("Digite um nome"),
+            prompt("Digite um nome"),
+            prompt("Digite um nome"),
+            prompt("Digite um nome"),
+            prompt("Digite um nome")
+        ];
+
+        escreverNaTela("Array ficou: ", arrayParaString(pessoas));
+
+    </script> -->
+
+    <script>
+
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+        // ▲▼▲▼▲▼▲▼ Exercício 4 ▲▼▲▼▲▼▲▼
+        // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+
+        let quantosAnimais = obterNumero();
+        let animais = [];
+
+        for (i = 0; i < quantosAnimais; i++) {
+            animais[i] = prompt("Digite o nome de um animal " + (i + 1) + "/" + quantosAnimais)
+        }
+
+        escreverNaTela("Array ficou: ", arrayParaString(animais));
+
+        function obterNumero() {
+            let numInp;
+            while (isNaN(numInp) || numInp < 1 || numInp > 20) {
+                numInp = parseInt(prompt("Insira um número inteiro entre 1 e 20"));
+            }
+            return numInp;
+        }
 
     </script>
 

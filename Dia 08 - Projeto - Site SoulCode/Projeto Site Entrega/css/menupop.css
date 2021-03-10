@@ -1,0 +1,121 @@
+#popup {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  width: 450px;
+  padding: 5px 50px 30px;
+  box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+  visibility: hidden;
+  border-radius: 16px;
+}
+
+#popup:hover {
+  box-shadow: 10px 10px 13px #c2c2c2;
+}
+
+#popup.active {
+  visibility: visible;
+  top: 50%;
+}
+
+#popup .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#popup .content img {
+  max-width: 80px;
+}
+
+#popup .content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin: 0px 0 10px;
+  text-align: center;
+}
+
+#popup .content p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#popup .content ol {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+
+#popup .content .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup .content .inputBox input,
+#popup .content .inputBox textarea {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.fa-envelope-open-text {
+  font-size: 6em;
+  color: #d4c117;
+}
+
+#btnSend {
+  width: 90%;
+  height: 40px;
+  margin-top: 15px;
+  font-size: 1em;
+  text-transform: uppercase;
+  background-color: #262626;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+#btnSend:hover {
+  background-color: #f8c100;
+  color: #262626;
+}
+
+@media only screen and (max-height: 900px) {
+
+  #popup .content .inputBox {
+    margin-top: 10px;
+}
+
+#popup .content .inputBox input,
+#popup .content .inputBox textarea {
+  padding: 7px 15px;
+}
+
+@media only screen and (max-height: 805px) {
+
+  #popup .content .inputBox {
+    margin-top: 10px;
+}
+
+#popup .content .inputBox input,
+#popup .content .inputBox textarea {
+  padding: 3px 15px;
+}

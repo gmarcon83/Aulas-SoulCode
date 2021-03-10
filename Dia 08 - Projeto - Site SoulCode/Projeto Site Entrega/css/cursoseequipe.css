@@ -1,0 +1,510 @@
+.equipe {
+  border: 1px solid #000;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid #b2b2b2;
+  width: 250px;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+.card p {
+  margin: 10px 0;
+}
+
+.card .imagem {
+  background-image: url("../img/1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.card .imagem2 {
+  background-image: url("../img/2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.card .imagem3 {
+  background-image: url("../img/3.png");
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.card .imagem4 {
+  background-image: url("../img/9.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.card .imagem5 {
+  background-image: url("../img/4.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+.card .imagemrosa {
+  background-image: url("../img/5.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.card .imagem6 {
+  background-image: url("../img/6.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 250;
+  height: 300px;
+}
+
+.card .imagemd {
+  background-image: url("../img/7.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.card .imagem8 {
+  background-image: url("../img/8.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.card .imagem9 {
+  background-image: url("../img/10.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.card .imagem10 {
+  background-image: url("../img/5");
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.card .imagem7 {
+  background-image: url("../img/6.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+/* CURSOS - CSS */
+.sec-design {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-design img {
+  width: 300px;
+  border: 1px solid #262626;
+  opacity: 0.5;
+  transition: 0.4;
+  border-radius: 12px;
+}
+.sec-design img:hover {
+  opacity: 1;
+}
+
+.desenvolvimento {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desenvolvimento img {
+  width: 300px;
+  border: 1px solid #262626;
+  opacity: 0.5;
+  transition: 0.4;
+  border-radius: 12px;
+}
+.desenvolvimento img:hover {
+  opacity: 1;
+}
+
+.ti {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ti img {
+  width: 300px;
+  border: 1px solid #262626;
+  opacity: 0.5;
+  transition: 0.4;
+  border-radius: 12px;
+}
+
+.ti img:hover {
+  opacity: 1;
+}
+
+.dev-pessoal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dev-pessoal img {
+  width: 300px;
+  border: 1px solid #262626;
+  opacity: 0.5;
+  transition: 0.4;
+  border-radius: 12px;
+}
+
+.dev-pessoal img:hover {
+  opacity: 1;
+}
+
+/*---- Bug fix tela pequena daqui pra baixo ----*/
+
+/*-- Equipe --*/
+
+@media only screen and (max-width: 1800px) {
+  .card {
+    font-size: 0.9em;
+  }
+
+  .card h2 {
+    font-size: 1.1em;
+  }
+
+  .card .imagem {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem2 {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem3 {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem4 {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem5 {
+    width: 200px;
+    height: 230px;
+  }
+  .card .imagemrosa {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem6 {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagemd {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem8 {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem9 {
+    width: 200px;
+    height: 230px;
+  }
+
+  .card .imagem10 {
+    width: 200px;
+    height: 230px;
+  }
+  .card .imagem7 {
+    width: 200px;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .card .imagem {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem2 {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem3 {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem4 {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem5 {
+    width: 180px;
+    height: 200px;
+  }
+  .card .imagemrosa {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem6 {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagemd {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem8 {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem9 {
+    width: 180px;
+    height: 200px;
+  }
+
+  .card .imagem10 {
+    width: 180px;
+    height: 200px;
+  }
+  .card .imagem7 {
+    width: 180px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1380px) {
+  .card .imagem {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem2 {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem3 {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem4 {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem5 {
+    width: 150px;
+    height: 175px;
+  }
+  .card .imagemrosa {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem6 {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagemd {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem8 {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem9 {
+    width: 150px;
+    height: 175px;
+  }
+
+  .card .imagem10 {
+    width: 150px;
+    height: 175px;
+  }
+  .card .imagem7 {
+    width: 150px;
+    height: 175px;
+  }
+}
+
+@media only screen and (max-width: 1230px) {
+  .card .imagem {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem2 {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem3 {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem4 {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem5 {
+    width: 120px;
+    height: 135px;
+  }
+  .card .imagemrosa {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem6 {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagemd {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem8 {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem9 {
+    width: 120px;
+    height: 135px;
+  }
+
+  .card .imagem10 {
+    width: 120px;
+    height: 135px;
+  }
+  .card .imagem7 {
+    width: 120px;
+    height: 135px;
+  }
+}
+
+/*  --- Cursos --- */
+
+@media only screen and (max-width: 1800px) {
+  .sec-design img {
+    width: 250px;
+  }
+
+  .desenvolvimento img {
+    width: 250px;
+  }
+
+  .ti img {
+    width: 250px;
+  }
+
+  .dev-pessoal img {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .sec-design img {
+    width: 200px;
+  }
+
+  .desenvolvimento img {
+    width: 200px;
+  }
+
+  .ti img {
+    width: 200px;
+  }
+
+  .dev-pessoal img {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .sec-design img {
+    width: 170px;
+  }
+
+  .desenvolvimento img {
+    width: 170px;
+  }
+
+  .ti img {
+    width: 170px;
+  }
+
+  .dev-pessoal img {
+    width: 170px;
+  }
+}

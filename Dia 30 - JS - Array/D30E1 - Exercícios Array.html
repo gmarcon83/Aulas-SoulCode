@@ -22,6 +22,7 @@
             color: red;
         }
     </style>
+
     <script>
 
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
@@ -46,7 +47,6 @@
             document.writeln(mensagem + " <span>" + valor + " </span></br>");
         }
     </script>
-
 
     <!-- <script>
 
@@ -92,13 +92,11 @@
         // ▲▼▲▼▲▼▲▼ Exercício 2 ▲▼▲▼▲▼▲▼
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
 
-        let nums = [
-            obterNumero(),
-            obterNumero(),
-            obterNumero(),
-            obterNumero(),
-            obterNumero()
-        ];
+        let nums = [];
+
+        for (i = 0; i < 5; i++) {
+            nums[i] = obterNumero();
+        }
 
         escreverNaTela("Array ficou: ", arrayParaString(nums));
         escreverNaTela("Invertida ela fica: ", arrayParaString(nums, true));
@@ -119,21 +117,17 @@
         // ▲▼▲▼▲▼▲▼ Exercício 3 ▲▼▲▼▲▼▲▼
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
 
-        let pessoas = [
-            prompt("Digite um nome"),
-            prompt("Digite um nome"),
-            prompt("Digite um nome"),
-            prompt("Digite um nome"),
-            prompt("Digite um nome"),
-            prompt("Digite um nome")
-        ];
+        let pessoas = [];
+
+        for (i = 0; i < 6; i++) {
+            pessoas[i] = prompt("Digite o nome de uma pessoa " + (i + 1) + "/6");
+        }
 
         escreverNaTela("Array ficou: ", arrayParaString(pessoas));
 
     </script> -->
 
-    <script>
-
+    <!-- <script>
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
         // ▲▼▲▼▲▼▲▼ Exercício 4 ▲▼▲▼▲▼▲▼
         // ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
@@ -154,10 +148,7 @@
             }
             return numInp;
         }
-
-    </script>
-
-
+    </script> -->
 
 </head>
 

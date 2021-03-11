@@ -79,3 +79,10 @@ Loops
     OBS:
         break -> Encerra todo o loop
         continue -> Encerra uma unica volta do loop
+
+
+Arrays
+    .push(elemento1, elemento2,...) -> Insere no final da array;
+    .unshift(elemento1, elemento2,...) -> Insere no inicio da array;
+    .pop() -> Remove o ultimo item da array e retorna seu valor;
+    .shift() -> Remove o primeiro item da array e retorna seu valor;

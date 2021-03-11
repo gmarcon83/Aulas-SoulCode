@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>JS - Atividade Frutas e Cores</title>
+
+    <style>
+        span {
+            color: red;
+            font-weight: 600;
+        }
+    </style>
+
+    <script>
+        let listaDeCoisas = [["frutas"], ["cores"]];
+
+        // for (i = 0; i < 6; i++) {
+        //     numeros.frutas.push(prompt("Digite uma fruta. (" + (i + 1) + "/6)"));
+        // }
+
+        // for (i = 0; i < 8; i++) {
+        //     numeros.frutas.push(prompt("Digite uma cor. (" + (i + 1) + "/8)"));
+        // }
+
+        listaDeCoisas.frutas = ["Maça", "Banana", "Pera", "Uva", "Kiwi", "Caqui"];
+        listaDeCoisas.cores = ["Vermelho", "Laranja", "Amarelo", "Verde", "Azul", "Rosa", "Preto", "Branco"];
+
+        document.write("Exite Banana na Array? <span>");
+        listaDeCoisas.frutas.find(item => item == "Banana") ? document.write(" Existe") : document.write(" Não existe");
+        document.writeln("</span></br>");
+
+        document.write("Exite Azul na Array? <span>");
+        let existeAzul = listaDeCoisas.cores.find(item => item == "Azul")
+        existeAzul ? document.write(" Existe") : document.write(" Não existe");
+        if (existeAzul)
+            document.write("</span> e esta no index <span>" + listaDeCoisas.cores.findIndex(item => item == "Azul"))
+
+        document.writeln("</span></br>");
+
+        document.write("Frutas: <span>");
+        listaDeCoisas.frutas.forEach(item => document.write(item + " "));
+        document.writeln("</span></br>");
+
+        document.write("Cores: <span>");
+        listaDeCoisas.cores.forEach(item => document.write(item + " "));
+        document.writeln("</span></br>");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

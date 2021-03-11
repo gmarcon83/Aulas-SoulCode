@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Array 2d</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script>
+
+        // Declarando da maneira mais extensa
+
+        // Criando a nova array
+        let produtos = [];
+
+        // Criando uma nova array no primeiro indice da array anterior
+        produtos[0] = []
+        // Criando os itens da array associativa com seus nomes
+        produtos[0]["nome"] = "Banana";
+        produtos[0]["marca"] = "Frutas do Zé";
+        produtos[0]["preco"] = 8;
+
+        produtos[1] = []
+        produtos[1]["nome"] = "Pasta de Dente";
+        produtos[1]["marca"] = "Nano";
+        produtos[1]["preco"] = 6;
+
+        produtos[2] = []
+        produtos[2]["nome"] = "Suco de Manga";
+        produtos[2]["marca"] = "Fresh";
+        produtos[2]["preco"] = 9;
+
+        console.log(produtos);
+
+    </script>
+
+    <script>
+
+        // Declarando da maneira simplificada usando objetos
+
+        let contaCorrente = [];
+        //Arrays associativas são basicamette objetos, e os {} servem para declarar objetos
+        //então podemos abreviar fazendo assim.
+        contaCorrente[0] = { nome: "Pedro", numeroDaConta: 135636, saldo: 1536 };
+        contaCorrente[1] = { nome: "Marcelo", numeroDaConta: 684653, saldo: 1683 };
+        contaCorrente[2] = { nome: "João", numeroDaConta: 986563, saldo: -356 };
+
+        console.table(contaCorrente);
+
+    </script>
+
+    <script>
+
+        // Usando construtures e funções
+
+        //Criando a array
+        let clientes = [];
+
+        //Adicionando um cliente na array e chamando a função que cria o novo cliente
+        clientes.push(inserirCliente());
+        clientes.push(inserirCliente());
+
+        //Mostrando os clientes
+        console.table(clientes);
+
+        //Obtem os dados que o usuario digita e passa para um novo cliente
+        function inserirCliente() {
+            // Pedindo os dados
+            let nome = prompt("Insira o nome do Cliente");
+            let rg = prompt("Insira o RG do Cliente");
+            let cpf = prompt("Insira o CPF do Cliente");
+            //Criando o cliente e passando os dados
+            let clienteNovo = new cliente(nome, rg, cpf);
+            //Retornando esse cliente novo cliente criado
+            return clienteNovo;
+        }
+
+        //função que construtor um novo cliente
+        function cliente(inNome, inRg, inCpf) {
+            this.nome = inNome;
+            this.rg = inRg;
+            this.cpf = inCpf;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

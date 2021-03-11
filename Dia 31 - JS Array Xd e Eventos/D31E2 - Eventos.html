@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JS - Eventos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        div {
+            width: 150px;
+            height: 150px;
+        }
+
+        #div1 {
+            background-color: aqua;
+        }
+
+        #div2 {
+            background-color: blueviolet;
+        }
+
+        #div3 {
+            background-color: darkolivegreen;
+        }
+
+        #div4 {
+            background-color: indigo;
+        }
+
+        #div5 {
+            background-color: hotpink;
+        }
+    </style>
+
+    <script>
+        function funcDiv1() {
+            alert("onclick")
+        }
+        function funcDiv2() {
+            alert("onmouseover")
+        }
+        function funcDiv3() {
+            alert("onmouseup")
+        }
+        function funcDiv4() {
+            alert("onmouseout")
+        }
+        function funcDiv5() {
+            alert("ondblclick")
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="div1" onclick="funcDiv1()">onclick</div>
+    <div id="div2" onmouseover="funcDiv2()">onmouseover</div>
+    <div id="div3" onmouseup="funcDiv3()">onmouseup</div>
+    <div id="div4" onmouseout="funcDiv4()">onmouseout</div>
+    <div id="div5" ondblclick="funcDiv5()">ondblclick</div>
+</body>
+
+</html>

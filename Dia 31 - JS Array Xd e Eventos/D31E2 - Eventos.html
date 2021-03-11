@@ -31,6 +31,10 @@
         #div5 {
             background-color: hotpink;
         }
+
+        section {
+            display: flex;
+        }
     </style>
 
     <script>
@@ -54,11 +58,17 @@
 </head>
 
 <body>
-    <div id="div1" onclick="funcDiv1()">onclick</div>
-    <div id="div2" onmouseover="funcDiv2()">onmouseover</div>
-    <div id="div3" onmouseup="funcDiv3()">onmouseup</div>
-    <div id="div4" onmouseout="funcDiv4()">onmouseout</div>
-    <div id="div5" ondblclick="funcDiv5()">ondblclick</div>
+    <section>
+        <div id="div1" onclick="funcDiv1()">onclick</div>
+        <div id="div2" onmouseover="funcDiv2()">onmouseover</div>
+        <div id="div3" onmouseup="funcDiv3()">onmouseup</div>
+        <div id="div4" onmouseout="funcDiv4()">onmouseout</div>
+        <div id="div5" ondblclick="funcDiv5()">ondblclick</div>
+    </section>
+    <div></div>
+    <input onkeydown="alert('onkeydown')" type="text">
+    <input onkeypress="alert('onkeypress')" type="text">
+    <input onkeyup="alert('onkeyup')" type="text">
 </body>
 
 </html>

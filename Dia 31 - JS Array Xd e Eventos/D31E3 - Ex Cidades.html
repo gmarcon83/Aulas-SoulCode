@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>JS - Atividade Cidades</title>
+
+    <style>
+
+    </style>
+
+    <script>
+        let cidades = [];
+
+        for (i = 0; i < 6; i++) {
+            cidades.push(prompt("Digite o nome de uma cidade. (" + (i + 1) + "/6)"));
+        }
+
+        //let cidades = ["São Paulo", "Cuiabá", "Fortaleza", "Porto Alegre", "Rio de Janeiro", "Gramado")]
+
+        cidades.shift();
+        cidades.pop();
+
+        if (cidades.find(value => value == "Rio de Janeiro"))
+            alert("Rio de Janeiro encontrado");
+        else
+            alert("Rio de Janeiro não encontrado");
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

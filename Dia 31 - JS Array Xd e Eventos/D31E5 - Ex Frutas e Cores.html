@@ -44,7 +44,9 @@
         document.writeln("</span></br>");
 
         document.write("Frutas: <span>");
-        listaDeCoisas.frutas.forEach(item => document.write(item + " "));
+        for (item of listaDeCoisas.frutas) {
+            document.write(item + " ");
+        }
         document.writeln("</span></br>");
 
         document.write("Cores: <span>");

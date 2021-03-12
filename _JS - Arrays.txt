@@ -20,6 +20,7 @@ Iterando
 
     .forEach() //semelhante ao for of
     .map() // semelhante ao forEach, mas retorna uma nova array
+    .filter() // retorna uma nova array com os elementos que passam o teste
 
     Ex1: // arr.forEach(i => console.log(i));
     Ex2: // arr.forEach(function(i){
@@ -30,6 +31,6 @@ Iterando
 Outras funções
 
     .find() // retorna o valor elemento se acha ele
-    .findIndex() // retorna o index do primeiro elemento que encontra,
-                 // retorna -1 se não acha.
+    .findIndex() // retorna o index do primeiro elemento buscado que
+                 // encontra, retorna -1 se não acha.
     .includes() // retorna true ou false se ele acha o o elemento;

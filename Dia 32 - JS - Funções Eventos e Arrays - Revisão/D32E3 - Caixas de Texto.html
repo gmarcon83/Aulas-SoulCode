@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Campos Coloridos</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            font-size: 1.3em;
+            width: 150px;
+            margin: 6px;
+            padding: 10px;
+        }
+    </style>
+
+    <script>
+        function ativar(elemento) {
+            elemento.style.backgroundColor = "Green";
+        }
+
+        function inativar(elemento) {
+            elemento.style.backgroundColor = "Red";
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <!-- O segredo tá aqui. O "this" se refere a "esse elemento" então
+        quanto ativa a função ela ja passa como parâmetro o "endereço"
+        do próprio elemento.-->
+    <input onfocus="ativar(this)" onblur="inativar(this)" type="text">
+    <input onfocus="ativar(this)" onblur="inativar(this)" type="text">
+    <input onfocus="ativar(this)" onblur="inativar(this)" type="text">
+</body>
+
+</html>

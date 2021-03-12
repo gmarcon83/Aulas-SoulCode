@@ -70,6 +70,8 @@
             arrayParaString(temperaturasC, "As temperaturas em Celsius ficam:");
         }
 
+
+
         // Tranforma de Farenheit para Celsius
         function paraC(tempF) {
             return parseFloat(((tempF - 32) * (5 / 9)).toFixed(2));
@@ -86,7 +88,6 @@
             document.writeln(strFinal + msgDepois + "</br>")
         }
 
-
         // retorna um numero válido entre minNum e maxNum
         function obterNumero(mensagem, minNum = NaN, maxNum = NaN) {
             let numInp;
@@ -101,8 +102,6 @@
 
 <body>
     <button onclick="clicou()">Clique aqui</button>
-
-
 </body>
 
 </html>

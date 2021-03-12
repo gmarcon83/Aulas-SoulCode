@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Exercício 1 - 2 Arrays</title>
+
+    <style>
+        button {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 1.3em;
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+
+    <script>
+
+        let nums = [];
+        let numsTriplo = [];
+
+
+        // Executa quando o usuário clica no botão
+        function clicou() {
+            // Pede o input do usuário e armazena na variavel
+            let tamanhoArray = obterNumero();
+
+            // Gera os números pares e passa eles para a array
+            for (i = 0; i <= tamanhoArray; i++) {
+                // Partimos do 2 e dobramos o i para ter 2, 4, 6 etc...
+                nums.push(2 + i * 2);
+            }
+
+            // Multiplicamos cada item da array anterior por 3 e armazenamos
+            // na outra array.
+            numsTriplo = nums.map(val => val * 3);
+
+            // Escrevemos na tela as arrays
+            arrayParaString(nums, "A primeira array ficou")
+            arrayParaString(numsTriplo, "A segunda array ficou")
+        }
+
+
+        // Escreve uma array na tela, com uma mensagem opcianal antes e depois
+        function arrayParaString(umaArray, msgAntes = "", msgDepois = "") {
+            let strFinal = msgAntes + " ";
+            umaArray.forEach(val => {
+                strFinal = strFinal + val + ", ";
+            })
+            // Tira a virgula extra do final
+            strFinal = strFinal.slice(0, -2);
+            document.writeln(strFinal + msgDepois + "</br>")
+        }
+
+
+        // retorna um numero válido entre 0 e 21
+        function obterNumero() {
+            let numInp;
+            while (numInp > 21 || numInp < 0 || isNaN(numInp)) {
+                numInp = parseInt(prompt("Digite um número maior que 0 e menor que 21."));
+            }
+            return numInp;
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="clicou()">Clique aqui</button>
+
+
+</body>
+
+</html>

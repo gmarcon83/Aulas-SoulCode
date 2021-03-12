@@ -1,0 +1,34 @@
+Declarando
+
+    let arr = Array();
+    let arr = [];
+
+
+Adicionando elementos
+
+    .push(elemento1, elemento2,...) // Insere no final da array;
+    .unshift(elemento1, elemento2,...) // Insere no inicio da array;
+    .pop() // Remove o ultimo item da array e retorna seu valor;
+    .shift() // Remove o primeiro item da array e retorna seu valor;
+
+
+Iterando
+
+
+    for (qqNome in nomeArray) // Pega o INDEX de cada elemento
+    for (qqNome of nomeArray) // Pega o VALOR de cada elemento
+
+    .forEach() //semelhante ao for of
+    .map() // semelhante ao forEach, mas retorna uma nova array
+
+    Ex1: // arr.forEach(i => console.log(i));
+    Ex2: // arr.forEach(function(i){
+                console.log(i);
+            })
+
+
+Outras funções
+
+    .find() // retorna true se acha o elemento
+    .findIndex() // retorna o index do primeiro elemento que encontra,
+                 // retorna -1 se não acha.

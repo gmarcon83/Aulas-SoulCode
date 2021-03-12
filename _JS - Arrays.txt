@@ -29,6 +29,7 @@ Iterando
 
 Outras funções
 
-    .find() // retorna true se acha o elemento
+    .find() // retorna o valor elemento se acha ele
     .findIndex() // retorna o index do primeiro elemento que encontra,
                  // retorna -1 se não acha.
+    .includes() // retorna true ou false se ele acha o o elemento;

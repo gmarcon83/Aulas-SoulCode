@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Exercício 2 - Nomes e Temperaturas</title>
+
+    <style>
+        button {
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 1.3em;
+            padding: 15px;
+            margin: auto;
+        }
+    </style>
+
+    <script>
+
+        let temperaturas = [];
+        let nomes = [];
+
+        // Executa quando o usuário clica no botão
+        function clicou() {
+
+            // Pede o input do usuário e armazena na variavel
+            let quantasTemperaturas = obterNumero("Digite um número entre 0 e 10", 0, 10);
+            let quantosNomes = obterNumero("Digite um número entre 0 e 10", 0, 10);
+
+            // Gera a array de temperaturas
+            for (i = 1; i <= quantasTemperaturas; i++) {
+                // O string comprido é so para colocar o contador, não é necessário
+                let temp = obterNumero("Insira uma temperatura (" + i + "/" + quantasTemperaturas + ")");
+                temperaturas.push(temp);
+            }
+
+            // Gera a array de nomes
+            for (i = 1; i <= quantosNomes; i++) {
+                // O string comprido é so para colocar o contador, não é necessário
+                let temp = prompt("Insira um nome (" + i + "/" + quantosNomes + ")");
+                nomes.push(temp);
+            }
+
+            // Existe Eliana
+            if (nomes.includes("Eliana"))
+                document.writeln("Eliana existe na array nomes. </br>");
+            else
+                document.writeln("Eliana não existe na array nomes. </br>");
+
+            // Mostrar temperaturas maiores que 20
+            arrayParaString(temperaturas.filter(val => val > 20), "As temperaturas maior que 20 são: ");
+
+            // Mostrar o index de Carlos
+            if (nomes.includes("Carlos"))
+                document.writeln("Carlos está na array nomes no index " + nomes.findIndex(val => val == "Carlos") + "</br>");
+            else
+                document.writeln("Carlos não existe na array nomes. </br>");
+
+            // Mostra o cubo da array de temperaturas
+            arrayParaString(temperaturas.map(val => val ** 3), "As temperaturas ao cubo ficam:");
+
+            // Cria uma nova Array com as temperaturas em celsius
+            let temperaturasC = temperaturas.map(val => paraC(val));
+
+            // Mostra na tela usando o forEach (A funçao usa o forEach)
+            arrayParaString(temperaturasC, "As temperaturas em Celsius ficam:");
+        }
+
+        // Tranforma de Farenheit para Celsius
+        function paraC(tempF) {
+            return parseFloat(((tempF - 32) * (5 / 9)).toFixed(2));
+        }
+
+        // Escreve uma array na tela, com uma mensagem opcianal antes e depois
+        function arrayParaString(umaArray, msgAntes = "", msgDepois = "") {
+            let strFinal = msgAntes + " ";
+            umaArray.forEach(val => {
+                strFinal = strFinal + val + ", ";
+            })
+            // Tira a virgula extra do final
+            strFinal = strFinal.slice(0, -2);
+            document.writeln(strFinal + msgDepois + "</br>")
+        }
+
+
+        // retorna um numero válido entre minNum e maxNum
+        function obterNumero(mensagem, minNum = NaN, maxNum = NaN) {
+            let numInp;
+            while (numInp < minNum || numInp > maxNum || isNaN(numInp)) {
+                numInp = parseInt(prompt(mensagem));
+            }
+            return numInp;
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="clicou()">Clique aqui</button>
+
+
+</body>
+
+</html>

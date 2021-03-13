@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Desafio</title>
+
+    <style>
+        input {
+            font-size: 1.3em;
+            width: 300px;
+            margin: 6px;
+            padding: 10px;
+        }
+
+        button {
+            font-size: 1.3em;
+            margin: 6px;
+            padding: 9px;
+        }
+    </style>
+
+    <script>
+
+        let caixaLetras, caixaNumeros, caractereInserido;
+
+        // Atribui valores as variáveis após finalizar o carregamento da página
+        window.onload = () => {
+            caixaLetras = document.getElementById("caixaLetras");
+            caixaNumeros = document.getElementById("caixaNumeros");
+        };
+
+        function detectadoCaractere(elemento) {
+            // Copia o que tem na caixa de texto para essa variavel
+            caractereInserido = elemento.value;
+            // Se que não tem caractere não faz nada
+            if (caractereInserido == "")
+                return
+            // Se não for um numero, envia o caractere para a caixa de texto
+            else if (isNaN(caractereInserido))
+                updadeTexto(caixaLetras, caractereInserido);
+            // Só pode ser um numero aqui, envia o caractere para os numeros
+            else
+                updadeTexto(caixaNumeros, caractereInserido);
+            // Limpa a caixa de input
+            elemento.value = "";
+        };
+
+        // Pega o que tem em local e concatena o caractere
+        function updadeTexto(local, caractere) {
+            local.value = local.value + caractere;
+        }
+
+        // Um extra só para limpar as caixas de input
+        function limparCampos() {
+            caixaLetras.value = "";
+            caixaNumeros.value = "";
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <!-- usando oninput pois detecta alteração na caixa de texto e dispara o evento
+        onkeypress/onkeydown e onkeyup tem chance de causar algumas inconsistencias
+        daria pra resolver usando ambos ao mesmo tempo, mas seria mais complicado o
+        codigo, assim funciona com menos gambiarra -->
+    <input oninput="detectadoCaractere(this)" id="caixaInput" name="caixaInput" type="text" placeholder="Digite aqui.">
+    <button onclick="limparCampos()">Limpar texto</button>
+    <hr>
+    <label for="caixaLetras">Letras:</label>
+    <input id="caixaLetras" name="caixaLetras" type="text" disabled>
+    <label for="caixaNumeros">Números:</label>
+    <input id="caixaNumeros" name="caixaNumero" type="text" disabled>
+    <hr>
+
+</body>
+
+</html>

@@ -1,6 +1,7 @@
 Inputs:
     onfocus = Entra no campo
     onblur = Sai do campo
+    oninput = Quando ocorre uma alteração do campo
 
 Seletores:
     onchange = Quando altera um seletor
@@ -11,3 +12,6 @@ Mouse:
     ondblclick = Quando clica 2x
     onmouseover = Quando passa o mouse
     onmouseout = Quando o mouse sai de cima
+
+Objeto:
+    onload = Quando termina de carregar

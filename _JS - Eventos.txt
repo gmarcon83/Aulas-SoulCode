@@ -15,3 +15,11 @@ Mouse:
 
 Objeto:
     onload = Quando termina de carregar
+
+
+Adicionar por JS:
+    nomeElem.addEventListener(tipoEv, funcQChama, capturing)
+        tipoEv = Qual o tipo do evento, em formato de string
+        fucQChama = Qual tipo de função vai chamar, passa this
+                    como parametro
+        capturing = false: usa bubbling (padrão), true: Usa capturing

@@ -11,9 +11,13 @@ Adicionando elementos
     .pop() // Remove o ultimo item da array e retorna seu valor;
     .shift() // Remove o primeiro item da array e retorna seu valor;
 
+Modificando
+        .splice(index, X, item) // Adiciona item no index, deletando X itens
+                                // item é opcional, nesse caso ela somente deleta
+
+
 
 Iterando
-
 
     for (qqNome in nomeArray) // Pega o INDEX de cada elemento
     for (qqNome of nomeArray) // Pega o VALOR de cada elemento

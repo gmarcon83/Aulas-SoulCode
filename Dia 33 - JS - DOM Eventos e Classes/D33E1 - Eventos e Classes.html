@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Eventos e Classes</title>
+
+    <style>
+        button {
+            min-width: 150px;
+            padding: 5px;
+        }
+
+        div {
+            height: 150px;
+            width: 301px;
+            border: 1px solid black;
+        }
+
+        p {
+            height: 50px;
+            width: 303px;
+        }
+
+        .estilo-0 {
+            background-color: aqua;
+        }
+
+        .estilo-1 {
+            background-color: mediumspringgreen;
+        }
+
+        .estilo-2 {
+            background-color: coral;
+        }
+
+        .estilo-3 {
+            background-color: mediumorchid;
+        }
+    </style>
+
+    <script>
+        let div, p;
+
+        window.onload = function () {
+            div = document.getElementById("div");
+            p = document.getElementById("p");
+        }
+
+        function mudarDiv(opcao) {
+            switch (opcao) {
+                case 1:
+                    div.className = "estilo-1";
+                    break;
+                case 2:
+                    div.className = "estilo-2";
+                    break;
+                case 3:
+                    div.className = "estilo-3";
+                    break;
+                case 0:
+                    div.className = "estilo-0";
+                    break;
+            }
+        }
+
+        function mudarP(opcao) {
+            switch (opcao) {
+                case 1:
+                    p.className = "estilo-1";
+                    break;
+                case 0:
+                    p.className = "estilo-0";
+                    break;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="div" class="estilo-0">Aqui temos uma div</div>
+    <button onclick="mudarDiv(1)">Estilo 1</button>
+    <button onclick="mudarDiv(2)">Estilo 2</button>
+    <br>
+    <button onclick="mudarDiv(3)">Estilo 3</button>
+    <button onclick="mudarDiv(0)">Estilo Padrão</button>
+    <hr>
+    <p id="p" class="estilo-0">Aqui temos um parágrafo</p>
+    <button onclick="mudarP(1)">Estilo 1</button>
+    <button onclick="mudarP(0)">Estilo Padrão</button>
+</body>
+
+</html>

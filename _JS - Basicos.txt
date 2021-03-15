@@ -9,14 +9,6 @@ document.writeln(); -> igual ao anterior mas adiciona um "enter" no final
 alert(); -> cria um popup
 prompt(Mensagem); -> Cria um popup e retorna uma string digitada
 
-Dentro de uma string
-    \' -> '
-    \" -> "
-    \\ -> \
-    \n -> enter
-    \t -> tab
-    \t -> backspace
-
 Operadores de decremento e incremento
     ++a -> incrementa 1 e retorna a
     a++ -> retorna a e incrementa 1
@@ -33,7 +25,7 @@ Operador condicional
     -> condição ? seVerdadeiro: seFalso;
     EX: eAdulto = idade<18 ? "Muito novo" : "Adulto";
 
-Testessim
+Testes
 
     if (condition) {
         statements

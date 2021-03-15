@@ -1,4 +1,5 @@
 Dentro de uma string
+
     \' -> '
     \" -> "
     \\ -> \
@@ -6,9 +7,25 @@ Dentro de uma string
     \t -> tab
     \t -> backspace
 
+
+Alterando a string
+
+    .toLowerCase() // Todas ficam minúsculas;
+    .toUpperCase() // Todas ficam maiúsculas;
+    .slice(x, y) // Retorna os caracteres iniciando do index x e y, Usando
+                 // (0, -X) removemos x de traz para frente;
+    .replace("texto1","texto2") // Retorna uma string com a primeira
+                                // ocorrencia de texto1 por texto2;
+    .split("X") // Retorna uma array com as substrings separadas por X;
+
+
 Outras funções
 
     .lenght // Retorna o tamanho da string';
     nomeString[x] // Como em arrays, retorna o caractere no indice x;
+    .charAt(x) // Igual a anterior;
+    .CharCodeAt(x) // Retorna o código do caractere no index x;
     .indexOf["texto"] // procura o texto dentro da string e retorna o
                       // index, -1 se não encontrar;
+    .includes["texto"] // procura o texto dentro da string e retorna
+                       // true ou false;

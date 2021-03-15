@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Giovanni Marcon">
+
+    <title>Sorteio Mega Sena</title>
+
+    <style>
+        input {
+            font-size: 1.3em;
+            width: 300px;
+            margin: 6px;
+            padding: 10px;
+        }
+
+        button {
+            font-size: 1.3em;
+            margin: 6px;
+            padding: 9px;
+        }
+    </style>
+
+    <script>
+
+        let display;
+
+        // Atribui valores as variáveis após finalizar o carregamento da página
+        window.onload = () => {
+            display = document.getElementById("display");
+        };
+
+        function sortear() {
+            // Onde vou armazenar os números sorteados
+            let nums = [];
+            // Roda até termos os 6 números
+            while (nums.length < 6) {
+                let num = gerarNumero();
+                // Só aceita o número se ele não for duplicado
+                if (!nums.includes(num))
+                    nums.push(num);
+            }
+            // Coloca em ordem
+            nums.sort((a, b) => a - b);
+            // Uma string para armazenar
+            let resultado = "";
+            // Concatena os números na string com o -
+            for (num of nums) {
+                resultado += num + " - "
+            }
+            // Atualiza com o resultado, menos os 3 útimos
+            // caracteres.
+            display.value = resultado.slice(0, -3);
+        }
+
+        // Gera um número entre 1 e 60
+        function gerarNumero() {
+            return Math.ceil(Math.random() * 60);
+        }
+
+        // Pega o que tem em local e concatena o caractere
+        function updadeTexto(local, caractere) {
+            local.value += caractere;
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <input id="display" class="sem-foco" name="caixaInput" type="text" placeholder="Resultado aqui." readonly>
+    <button onclick="sortear()">Sortear</button>
+    <hr>
+
+</body>
+
+</html>

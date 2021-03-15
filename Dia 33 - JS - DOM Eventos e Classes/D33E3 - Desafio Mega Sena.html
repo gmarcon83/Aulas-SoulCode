@@ -58,7 +58,7 @@
 
         // Gera um número entre 1 e 60
         function gerarNumero() {
-            return Math.ceil(Math.random() * 60);
+            return Math.floor(Math.random() * 60) + 1;
         }
 
         // Pega o que tem em local e concatena o caractere

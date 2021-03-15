@@ -44,6 +44,7 @@ Reorganizando array
 
 Outras funções
 
+    .lenght // Retorna o tamanha da array
     .find(elem) // retorna o valor elemento se acha ele;
     .findIndex(elem) // retorna o index do primeiro elemento buscado que
                  // encontra, retorna -1 se não acha;

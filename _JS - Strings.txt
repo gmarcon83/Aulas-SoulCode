@@ -1,0 +1,14 @@
+Dentro de uma string
+    \' -> '
+    \" -> "
+    \\ -> \
+    \n -> enter
+    \t -> tab
+    \t -> backspace
+
+Outras funções
+
+    .lenght // Retorna o tamanho da string';
+    nomeString[x] // Como em arrays, retorna o caractere no indice x;
+    .indexOf["texto"] // procura o texto dentro da string e retorna o
+                      // index, -1 se não encontrar;

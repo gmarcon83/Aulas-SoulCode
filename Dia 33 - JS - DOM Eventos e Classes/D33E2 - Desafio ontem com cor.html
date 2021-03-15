@@ -12,6 +12,8 @@
     <style>
         body {
             box-sizing: border-box;
+            padding: 10px;
+            margin: 0;
             height: 100vh;
         }
 
@@ -26,6 +28,10 @@
             font-size: 1.3em;
             margin: 6px;
             padding: 9px;
+        }
+
+        label {
+            margin-left: 8px;
         }
 
         .sem-foco {
@@ -93,7 +99,6 @@
 
         //Estiliza o fundo com outra cor
         function estilizarBody(selecionado) {
-            console.log(document.getElementsByTagName("body"))
             if (selecionado)
                 document.getElementsByTagName("body")[0].className = "fundo-doido";
             else

@@ -33,7 +33,7 @@ Operador condicional
     -> condição ? seVerdadeiro: seFalso;
     EX: eAdulto = idade<18 ? "Muito novo" : "Adulto";
 
-Sintaxes
+Testessim
 
     if (condition) {
         statements

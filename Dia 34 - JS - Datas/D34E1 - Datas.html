@@ -28,7 +28,7 @@
 
         let input, display;
         let data = new Date();
-        let agora = `O dia é ${pad(data.getDate() + 1, 2)}/${pad(data.getMonth() + 1, 2)}/${data.getFullYear()} - ${diaDaSemana(data.getDay())}`
+        let agora = `O dia é ${data.getDate() + 1}/${pad(data.getMonth() + 1, 2)}/${data.getFullYear()} - ${diaDaSemana(data.getDay())}`
 
         // Atribui valores as variáveis após finalizar o carregamento da página
         window.onload = () => {
@@ -37,11 +37,16 @@
             document.getElementById("dia-de-hoje").innerHTML = agora
         };
 
+
         function mostrar() {
-            let dataIn = input.value;
+            display.value = escreverData(input.value)
+        }
+
+
+        // Pega o input, divide a string, reformata e retorona ela
+        function escreverData(dataIn) {
             let dataPart = dataIn.split("/");
-            let dataOut = `${dataPart[0]} de ${mes(dataPart[1])} de ${dataPart[2]}`;
-            display.value = dataOut
+            return `${dataPart[0]} de ${mes(dataPart[1])} de ${dataPart[2]}`;
         }
 
         // Adiciona 0s
@@ -51,6 +56,7 @@
             return num;
         }
 
+        // Retorna os dias da semana
         function diaDaSemana(num) {
             switch (num) {
                 case 0:
@@ -70,25 +76,35 @@
             }
         }
 
+        // Retorna os Meses
         function mes(num) {
             switch (num) {
                 case "1":
+                case "01":
                     return "janeiro"
                 case "2":
+                case "02":
                     return "fevereiro"
                 case "3":
+                case "03":
                     return "março"
                 case "4":
+                case "04":
                     return "abril"
                 case "5":
+                case "05":
                     return "maio"
                 case "6":
+                case "06":
                     return "junho"
                 case "7":
+                case "07":
                     return "julho"
                 case "8":
+                case "08":
                     return "agosto"
                 case "9":
+                case "09":
                     return "setembro"
                 case "10":
                     return "outubro"

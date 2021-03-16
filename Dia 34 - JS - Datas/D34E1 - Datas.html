@@ -28,7 +28,7 @@
 
         let input, display;
         let data = new Date();
-        let agora = `O dia é ${data.getDate() + 1}/${pad(data.getMonth() + 1, 2)}/${data.getFullYear()} - ${diaDaSemana(data.getDay())}`
+        let agora = `O dia é ${data.getDate() + 1}/${ad0s(data.getMonth() + 1, 2)}/${data.getFullYear()} - ${diaDaSemana(data.getDay())}`
 
         // Atribui valores as variáveis após finalizar o carregamento da página
         window.onload = () => {
@@ -38,10 +38,9 @@
         };
 
 
-        function mostrar() {
+        function atualizar() {
             display.value = escreverData(input.value)
         }
-
 
         // Pega o input, divide a string, reformata e retorona ela
         function escreverData(dataIn) {
@@ -50,9 +49,11 @@
         }
 
         // Adiciona 0s
-        function pad(num, size) {
+        function ad0s(num, tamanho) {
             num = num.toString();
-            while (num.length < size) num = "0" + num;
+            while (num.length < tamanho) {
+                num = "0" + num;
+            }
             return num;
         }
 
@@ -123,7 +124,7 @@
     <h1 id="dia-de-hoje"></h1>
     <hr>
     <input id="input" class="sem-foco" name="caixaInput" type="text" placeholder="DD/MM/AAAA">
-    <button onclick="mostrar()">Mostrar</button>
+    <button onclick="atualizar()">Mostrar</button>
     <input id="display" class="sem-foco" name="caixaInput" type="text" placeholder="Resultado aqui." readonly>
     <hr>
 

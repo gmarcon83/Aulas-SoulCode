@@ -1,0 +1,24 @@
+Map
+
+    Um objeto mapa memoriza pares key-valor e a ordem que as chaves foram
+    inseridas. Qualquer tipo de objeto pode ser usado como chave ou valor.
+
+    Vantagens e desvantagems sobre objetos:
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#objects_vs._maps
+
+    Criando:
+        var mapName = new Map();
+
+    Propriedades
+        .size // Numero de pares key-value no mapa;'
+
+    Metodos
+        .clear() // "Esvazia" o mapa;
+        .delete(key) // Deleta uma chave, retorna true se ela existia;
+        .get(key) // Retorna o valor de uma chave;
+        .set(key, valor) // Atribui um valor a uma key
+
+    Iteradores
+        .keys() // Itera sobre as chaves;
+        .values() // Itera sobre os valores;
+        .entries() // Itera sobre arrays [key, valor];  -> pode usar for of;

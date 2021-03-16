@@ -1,0 +1,20 @@
+Datas são baseada em ms, contados desde 1 jan de 1970. Depois de criados
+objetos data não atualizam o tempo automáticamente.
+
+Declaraçoes:
+
+    var nomeVar = new Date()
+    var nomeVar = new Date(year, month, day, hours, minutes, seconds, milliseconds)
+    var nomeVar = new Date(milliseconds)
+    var nomeVar = new Date(date string)
+
+Metodos:
+
+    .getDate // Retorna o dia do mês;
+    .getDay // Retorna o dia da Semana, inicia do 0;
+    .getFullYear // Retorna o ano com 4 digitos;
+    .getMonth // Retorna o mês, inicia do 0;
+    .getHours // Retorna as horas;
+    .getMinutes // Retorna os minutos;
+    .getSeconds // Retorna os segundos;
+    .getMilliseconds // Retorna os milisegundos;

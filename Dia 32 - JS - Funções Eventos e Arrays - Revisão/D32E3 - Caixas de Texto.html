@@ -30,7 +30,7 @@
             elemento.style.backgroundColor = "Green";
         }
 
-        function inativar(elemento) {
+        function desativar(elemento) {
             elemento.style.backgroundColor = "Red";
         }
     </script>
@@ -42,9 +42,9 @@
     <!-- O segredo tá aqui. O "this" se refere a "esse elemento" então
         quanto ativa a função ela ja passa como parâmetro o "endereço"
         do próprio elemento.-->
-    <input onfocus="ativar(this)" onblur="inativar(this)" type="text">
-    <input onfocus="ativar(this)" onblur="inativar(this)" type="text">
-    <input onfocus="ativar(this)" onblur="inativar(this)" type="text">
+    <input onfocus="ativar(this)" onblur="desativar(this)" type="text">
+    <input onfocus="ativar(this)" onblur="desativar(this)" type="text">
+    <input onfocus="ativar(this)" onblur="desativar(this)" type="text">
 </body>
 
 </html>

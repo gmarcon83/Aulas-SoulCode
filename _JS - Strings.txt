@@ -25,7 +25,7 @@ Outras funções
     nomeString[x] // Como em arrays, retorna o caractere no indice x;
     .charAt(x) // Igual a anterior;
     .CharCodeAt(x) // Retorna o código do caractere no index x;
-    .indexOf["texto"] // procura o texto dentro da string e retorna o
+    .indexOf("texto") // procura o texto dentro da string e retorna o
                       // index, -1 se não encontrar;
-    .includes["texto"] // procura o texto dentro da string e retorna
+    .includes("texto") // procura o texto dentro da string e retorna
                        // true ou false;

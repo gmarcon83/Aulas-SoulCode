@@ -71,3 +71,11 @@ Loops
     OBS:
         break -> Encerra todo o loop
         continue -> Encerra uma unica volta do loop
+
+Seletores DOM
+
+    document.querySelector("Uma String"); acha a primeira ocorrencia de "Uma String" no DOM e retorna ele;
+    document.getElementByID("string"); Acha o elemento com a id "string";
+    document.getElementsByClassName("string"); Acha os elementos com as classes "string";
+    document.getElementsByTagName("string"); Acha os elementos com as tags "string";
+    document.getElementsByName("string"); Acha os elementos com a tag name com valor "string";

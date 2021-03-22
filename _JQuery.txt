@@ -1,0 +1,11 @@
+Sintaxe básica:
+
+    $(itemQueProcuramos).funcaoQueChama()
+        $ // Chama o jQuery;
+        (itemQueProcuramos) // Seletor estilo CSS;
+        .funcaoQueChama() // A função
+
+Seletores
+
+    ("TagName") // seleciona pela tag;
+    (.className) // seleciona pela tag;

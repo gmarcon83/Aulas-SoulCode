@@ -1,0 +1,20 @@
+declaraçao literal = let nomeObj = {propriedede1: valor, propriedede2: valor, etc}
+
+Iterando
+
+    for..in // Caminha pelas chaves de um objeto;
+    Object.keys(nomeObj)// retorna uma array com as chaves do objeto
+
+Função construtora
+
+    function Carro(marca, modelo) {
+        this.marca = marca;
+        this.modelo = modelo;
+    }
+
+Instanciando um novo
+
+    let umCarro = new Carro("Ford", "Pampa")
+
+
+

@@ -22,3 +22,9 @@ Map
         .keys() // Itera sobre as chaves;
         .values() // Itera sobre os valores;
         .entries() // Itera sobre arrays [key, valor];  -> pode usar for of;
+
+Queue
+
+    Uma estrutura de dados onde os itens permanecem em order, novos items
+    são adicionados no fim e os velhos podem ser removidos do início. Não
+    possui implementação nativa no JS.

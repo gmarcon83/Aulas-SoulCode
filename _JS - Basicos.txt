@@ -8,6 +8,7 @@ documento.write(); -> escreve no HTML
 document.writeln(); -> igual ao anterior mas adiciona um "enter" no final
 alert(); -> cria um popup
 prompt(Mensagem); -> Cria um popup e retorna uma string digitada
+typeof X; -> Retorna o tipo da variavel/valor
 
 Operadores de decremento e incremento
     ++a -> incrementa 1 e retorna a
@@ -34,7 +35,6 @@ Testes
     else
         statements
     }
-
 
     switch (expression) {
     case n1:

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>jQuery - Edição de elementos</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let mem;
+        $(function () {
+            $('#bt1').click(function () {
+                mem = $('li').detach();
+            })
+
+        })
+        });
+    </script>
+
+</head>
+
+<body>
+    <div style="background-color: aqua; min-height: 200px;">
+
+    </div>
+    <button id="bt1">Botão Attr</button>
+
+
+
+</body>
+
+</html>

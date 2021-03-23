@@ -10,8 +10,9 @@ Funçoes de texto
     .detach() // remove e retorna os elementos;
     .remove() // remove os elementos;
     .empty() // remove o html interno dos elementos;
-    .unwrap() // remove o elemento pai, mas não o elemento em si;
+    .unwrap() // remove o elemento pai, deixando os filhos;
 
     .replaceAll("destino") // substitui os elementos de "destino" pelo
                            // elemento que invocou a função e remove o mesmo;
-    ("destino").replaceWith("seletor") // como a anterior mas invertida;
+    ("destino").replaceWith("item") // como a anterior mas invertida, "item"
+                                    // pode ser um "seletor" ou uma string;

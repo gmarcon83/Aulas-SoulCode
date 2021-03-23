@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         let mem;
-        $(document).ready(function () {
+        $(function () {
             $('#bt1').click(function () {
                 mem = $('li').detach();
             })
@@ -28,6 +28,9 @@
             })
             $("#bt4").click(function () {
                 $("h1").replaceAll("p");
+            })
+            $("#bt5").click(function () {
+                $("h1").unwrap();
             })
         })
     </script>
@@ -51,6 +54,8 @@
     <button id="bt2">Botão Empty</button>
     <button id="bt3">Botão Remove</button>
     <button id="bt4">Botão replaceAll</button>
+    <button id="bt5">Botão unwrap</button>
+
 
 </body>
 

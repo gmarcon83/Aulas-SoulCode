@@ -1,0 +1,17 @@
+Funçoes de texto
+
+    .text("strg") // Retorna o texto dos itens selecionados, usando um
+                  // parâmetro ele altera o texto dos elementos;
+    .append("strg") // Adiciona "strg" no final do seletor;
+    ("strg").appendTo("seletor") // como a anterior mas invertido a sintaxe;
+    .preppend("strg") // Adiciona "strg" no inicio do seletor;
+    ("strg").preppendTo("seletor") // como a anterior mas outra sintaxe;
+
+    .detach() // remove e retorna os elementos;
+    .remove() // remove os elementos;
+    .empty() // remove o html interno dos elementos;
+    .unwrap() // remove o elemento pai, mas não o elemento em si;
+
+    .replaceAll("destino") // substitui os elementos de "destino" pelo
+                           // elemento que invocou a função e remove o mesmo;
+    ("destino").replaceWith("seletor") // como a anterior mas invertida;

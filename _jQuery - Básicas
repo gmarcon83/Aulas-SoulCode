@@ -1,0 +1,11 @@
+Sintaxe básica:
+
+    $(itemQueProcuramos).funcaoQueChama()
+        $ // Chama o jQuery;
+        (itemQueProcuramos) // Seletor estilo CSS;
+            OBS: Podemos usar múltiplos seletores usando a virgula ,
+        .funcaoQueChama() // A função que executamos;
+
+Funções de teste
+
+    .is("seletor") // Retorna true ou false

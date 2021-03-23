@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>jQuery - Edição de elementos</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let mem;
+        $(document).ready(function () {
+            $('#bt1').click(function () {
+                mem = $('li').detach();
+            })
+            $('#bt1-b').click(function () {
+                $('ol').append(mem);
+            })
+            $('#bt2').click(function () {
+                $('div').empty();
+            })
+            $('#bt3').click(function () {
+                $('div').remove();
+            })
+            $("#bt4").click(function () {
+                $("h1").replaceAll("p");
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <ol>
+        <li>Lista 1</li>
+        <li>Lista 2</li>
+        <li>Lista 3</li>
+    </ol>
+    <div style="background-color: aqua; min-height: 200px;">
+        <h1>Titulo</h1>
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p>Parágrafo 3</p>
+    </div>
+    <button id="bt1">Botão Detach</button>
+    <button id="bt1-b">Botão Append</button>
+    <button id="bt2">Botão Empty</button>
+    <button id="bt3">Botão Remove</button>
+    <button id="bt4">Botão replaceAll</button>
+
+</body>
+
+</html>

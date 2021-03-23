@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Seletores jQuery</title>
+
+    <style>
+        .escondido {
+            display: none;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function mostraParagrafo() {
+            $(".escondido").slideDown("slow");
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="mostraParagrafo()">Botão</button>
+    <p class="escondido">Paragrafo 1</p>
+    <p class="escondido">Paragrafo 2</p>
+    <p class="escondido">Paragrafo 3</p>
+</body>
+
+</html>

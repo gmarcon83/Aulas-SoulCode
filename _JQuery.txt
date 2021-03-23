@@ -5,7 +5,25 @@ Sintaxe básica:
         (itemQueProcuramos) // Seletor estilo CSS;
         .funcaoQueChama() // A função
 
+
 Seletores
 
     ("TagName") // seleciona pela tag;
     (.className) // seleciona pela tag;
+
+
+Funcões Seletoras (podemos filtrar com o seletor)
+
+    .parent("seletor") // Retorna o elemento pai;
+    .parents("seletor") // Retorna todos os elementos ancestrais";
+    .find("seletor") // Procura os elementos filhos com o seletor
+    .last() // o ultimo da array;
+    .first() // o primeiro da array;
+    .eq() // funciona como [] mas aceita valor negativo também;
+    .not("seletor") // Todos, excluindo os do seletor;
+    .has("seletor") // Retorna os que tenham elementos filhos com seletor
+
+
+Funções
+
+    .is("seletor") // Retorna true ou false

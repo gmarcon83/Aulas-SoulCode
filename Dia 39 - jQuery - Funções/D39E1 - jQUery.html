@@ -18,18 +18,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        function mostraParagrafo() {
-            $(".escondido").slideDown("slow");
-        }
+        $(document).ready(function () {
+            $('#bt1').click(function () {
+                $('p').append("<strong> Aqui estou adicionado via Append</strong>");
+            })
+            $('#bt2').click(function () {
+                $('ol').append("<li> Aqui estou adicionado via prepend</li>");
+            })
+        })
     </script>
 
 </head>
 
 <body>
-    <button onclick="mostraParagrafo()">Botão</button>
-    <p class="escondido">Paragrafo 1</p>
-    <p class="escondido">Paragrafo 2</p>
+    <button id="bt1">Botão</button>
+    <button id="bt2">Botão</button>
+    <p class="">Paragrafo 1</p>
+    <p class="">Paragrafo 2</p>
     <p class="escondido">Paragrafo 3</p>
+    <ol>
+        <li>Li 1</li>
+    </ol>
 </body>
 
 </html>

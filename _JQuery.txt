@@ -3,13 +3,21 @@ Sintaxe básica:
     $(itemQueProcuramos).funcaoQueChama()
         $ // Chama o jQuery;
         (itemQueProcuramos) // Seletor estilo CSS;
-        .funcaoQueChama() // A função
+            OBS: Podemos usar múltiplos seletores usando a virgula ,
+        .funcaoQueChama() // A função que executamos;
 
 
 Seletores
 
     ("TagName") // seleciona pela tag;
     (.className) // seleciona pela tag;
+    (["atributo"]) // seleciona os elementos que contem ["atributo"];
+    ([atributo="valor"]) // Elementos que contem atributo com "valor";
+        Obs: Podemos usar outros operadores no lugar do =;
+               != // Que não contenham;
+               ^= // Que começe com;
+               $= // Que termine com;
+               *= // Que exista em algum lugar;
 
 
 Funcões Seletoras (podemos filtrar com o seletor)
@@ -22,8 +30,23 @@ Funcões Seletoras (podemos filtrar com o seletor)
     .eq() // funciona como [] mas aceita valor negativo também;
     .not("seletor") // Todos, excluindo os do seletor;
     .has("seletor") // Retorna os que tenham elementos filhos com seletor
+    .next() // Retorna o próximo elemento irmão
+    .prev() // Retorna elemento irmão anterior
+    .sibilings() // Retorna todos elementos irmãos
 
 
-Funções
+Funções de teste
 
     .is("seletor") // Retorna true ou false
+
+
+Funçoes de texto
+
+    .text("strg") // Retorna o texto dos itens selecionados, usando um
+                  // parâmetro ele altera o texto dos elementos;
+    .append("strg") // Adiciona "strg" no final do seletor;
+    ("strg").appendTo("seletor") // como a anterior mas invertido a sintaxe;
+    .preppend("strg") // Adiciona "strg" no inicio do seletor;
+    ("strg").preppendTo("seletor") // como a anterior mas outra sintaxe;
+
+    .detach() // remove e retorna o html interno do elemento;

@@ -1,9 +1,11 @@
 declaraçao literal = let nomeObj = {propriedede1: valor, propriedede2: valor, etc}
 
+
 Iterando
 
     for..in // Caminha pelas chaves de um objeto;
-    Object.keys(nomeObj)// retorna uma array com as chaves do objeto
+    Object.keys(nomeObj)// retorna uma array com as chaves do objeto;
+
 
 Função construtora
 
@@ -12,9 +14,31 @@ Função construtora
         this.modelo = modelo;
     }
 
+
 Instanciando um novo
 
-    let umCarro = new Carro("Ford", "Pampa")
+    let umCarro = new Carro("Ford", "Pampa");
 
 
+Setters e Getters
 
+    get // Define um metodo getter para pegar um valor
+    set() // Define um metodo setter para definir um valor
+
+    Exemplo
+
+        const student = {
+            firstName: 'Monica',
+            get getName() {             // getter
+                return this.firstName;
+            }
+            set changeName(newName) {   // setter
+            this.firstName = newName;
+        }
+        };
+
+    student.getName -> retorna o firstName
+    student.setName("Pedro) -> muda o firsName
+
+    Obs: Podemos adicionar mais funcionalidade dentre de cada função,
+         conforme a necessidade.

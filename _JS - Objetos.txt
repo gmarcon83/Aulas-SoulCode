@@ -44,18 +44,18 @@ Setters e Getters
 
     Exemplo
 
-        const student = {
-            firstName: 'Monica',
-            get getName() {             // getter
-                return this.firstName;
+        const aluno = {
+            nome: 'Monica',
+            get buscarNome() {        // getter
+                return this.nome;
             }
-            set changeName(newName) {   // setter
-            this.firstName = newName;
-        }
+            set mudarNome(novoNome) {   // setter
+                this.nome = novoNome;
+            }
         };
 
-    student.getName -> retorna o firstName
-    student.setName("Pedro) -> muda o firsName
+    aluno.buscarNome -> Retorna o nome Monica
+    aluno.mudarNome("Pedro) -> muda o nome para Pedro
 
     Obs: Podemos adicionar mais funcionalidade dentro de cada função,
          conforme a necessidade.

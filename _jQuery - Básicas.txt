@@ -19,12 +19,3 @@ Atributos
     .css("parametro", "valor") // Adiciona no CSS
     .css("{Código CSS aqui}") // Para adicionar múltiplos no CSS
 
-Posição
-
-    Sem parametro, retorna um objeto contendo as propriedades top e left
-    do primeiro item encontrado pelo seletor.
-    Caso passemos um objeto com esses parametros, posicionamos o item
-    selecionado
-
-    .position("opcional")
-    .offset("opcional")

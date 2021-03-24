@@ -1,0 +1,17 @@
+Posição
+
+    Sem parametro, retorna um objeto contendo as propriedades top e left
+    do primeiro item encontrado pelo seletor.
+    Caso passemos um objeto com esses parametros, posicionamos o item
+    selecionado
+
+    .position("opcional")
+    .offset("opcional")
+
+Tamanho
+
+    Sem parametro retorna a altura ou largura, com parametro altera os
+    os mesmos.
+
+    .width("opcional") // largura
+    .height("opcional") // altura

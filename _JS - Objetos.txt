@@ -1,4 +1,7 @@
-declaraçao literal = let nomeObj = {propriedede1: valor, propriedede2: valor, etc}
+declaraçao literal => let nomeObj = {propriedede1: valor, propriedede2: valor, etc}
+
+    adicionando propriedades => nomeObj.novaPropriedade = parametros
+    removendo propriedades => delete nomeObj.propriedade
 
 
 Iterando
@@ -12,6 +15,9 @@ Função construtora
     function Carro(marca, modelo) {
         this.marca = marca;
         this.modelo = modelo;
+        this.soundHorn = function() {
+            console.log("Beep! Beep!");
+        }
     }
 
 

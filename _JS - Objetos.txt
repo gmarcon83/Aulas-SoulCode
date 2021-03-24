@@ -4,23 +4,6 @@ declaraçao literal => let nomeObj = {propriedede1: valor, propriedede2: valor, 
     removendo propriedades => delete nomeObj.propriedade
 
 
-funções
-
-    .hasOwnProperty("strg") = retorna true ou false
-
-
-Acessando parametros
-
-    Podemos acessar usando nomeObj.parametro ou nomeObj[parametro]
-    com o segundo podemos usar strings com espaços e variáveis
-
-
-Iterando
-
-    for..in // Caminha pelas chaves de um objeto;
-    Object.keys(nomeObj)// retorna uma array com as chaves do objeto;
-
-
 Função construtora
 
     function Carro(marca, modelo) {
@@ -34,7 +17,24 @@ Função construtora
 
 Instanciando um novo
 
-    let umCarro = new Carro("Ford", "Pampa");
+    let umCarro = new Carro("Ford", "Pampa"); // armazena um obj carro na variavel
+
+
+funções
+
+    .hasOwnProperty("strg") = caso o objeto possua a propriedade, retorna true
+
+
+Acessando parametros
+
+    Podemos acessar usando nomeObj.parametro ou nomeObj[parametro]
+    com a segunda maneira podemos usar strings com espaços e variáveis
+
+
+Iterando
+
+    for..in // Caminha pelas chaves de um objeto;
+    Object.keys(nomeObj)// retorna uma array com as chaves do objeto;
 
 
 Setters e Getters
@@ -57,5 +57,5 @@ Setters e Getters
     student.getName -> retorna o firstName
     student.setName("Pedro) -> muda o firsName
 
-    Obs: Podemos adicionar mais funcionalidade dentre de cada função,
+    Obs: Podemos adicionar mais funcionalidade dentro de cada função,
          conforme a necessidade.

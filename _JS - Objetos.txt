@@ -4,6 +4,17 @@ declaraçao literal => let nomeObj = {propriedede1: valor, propriedede2: valor, 
     removendo propriedades => delete nomeObj.propriedade
 
 
+funções
+
+    .hasOwnProperty("strg") = retorna true ou false
+
+
+Acessando parametros
+
+    Podemos acessar usando nomeObj.parametro ou nomeObj[parametro]
+    com o segundo podemos usar strings com espaços e variáveis
+
+
 Iterando
 
     for..in // Caminha pelas chaves de um objeto;

@@ -13,5 +13,12 @@ Tamanho
     Sem parametro retorna a altura ou largura, com parametro altera os
     os mesmos.
 
-    .width("opcional") // largura
-    .height("opcional") // altura
+        .width("opcional") // largura
+        .height("opcional") // altura
+
+    Apenas para obter o valor
+
+        .innerHeight() // Altura, incluindo o padding
+        .outerHeight() // Como antes, incluindo border e margin
+        .innerWidth() // Largura, incluindo o padding
+        .outerWidth() // Como antes, incluindo border e margin

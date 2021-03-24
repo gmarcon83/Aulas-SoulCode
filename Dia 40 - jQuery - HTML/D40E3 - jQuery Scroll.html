@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>jQuery - Scroll</title>
+
+    <style>
+        #duas {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .vermelha {
+            background-color: tomato;
+            height: 300px;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        .cinza {
+            background-color: gray;
+            height: 500px;
+            width: 500px;
+            margin: 50px auto;
+            display: none;
+        }
+
+        body {
+            margin: 0;
+            min-height: calc(101vh + 200px);
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let alerta = true
+        $(function () {
+            $(window).scroll(function () {
+                if (alerta) {
+                    // Req 1 mostra o alerthtml
+                    alert("Você ultilizou o scroll do mouse");
+                    alerta = false;
+                }
+                // Req 2 deixa vermelha
+                $(".vermelha").last().css("background-color", "yellow")
+                // Req 3 mostra o cinza
+                if ($("html")[0].scrollTop >= 200) {
+                    $(".cinza").show()
+                }
+            })
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="duas">
+        <div class="vermelha"></div>
+        <div class="vermelha"></div>
+    </div>
+    <div class="cinza"></div>
+
+</body>
+
+</html>

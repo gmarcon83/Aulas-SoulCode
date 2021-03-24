@@ -16,3 +16,5 @@ Atributos
     .attr("atrb", "valor") // Passa valor para o atributo;
     OBS: podemos usar {"atrb1":"valor1","atrb2":"valor2"} e passar
          varios atributos ao mesmo tempo.
+    .css("parametro", "valor") // Adiciona no CSS
+    .css("{Código CSS aqui}") // Para adicionar múltiplos no CSS

@@ -3,7 +3,7 @@ Seletores
     ("TagName") // seleciona pela tag;
     (.className) // seleciona pela tag;
     (["atributo"]) // seleciona os elementos que contem ["atributo"];
-    ([atributo="valor"]) // Elementos que contem atributo com "valor";
+    ('[atributo="valor"]') // Elementos que contem atributo com "valor";
         Obs: Podemos usar outros operadores no lugar do =;
                != // Que não contenham;
                ^= // Que começe com;

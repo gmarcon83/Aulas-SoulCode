@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Giovanni Marcon  -->
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>jQuery - Edição de elementos</title>
+
+    <style>
+        #list-cont {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #inputs {
+            display: flex;
+            align-items: center;
+        }
+
+        #azul {
+            background-color: aqua;
+            min-height: 200px;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        let campo;
+        let opcao;
+        let alvo;
+        $(function () {
+            campo = $("#campo")[0]
+            opcao = $('[checked="checked"]')[0].value
+
+            $('#bt1').click(function () {
+                campo.value = $(opcao).eq(0).detach()[0].outerHTML
+            })
+            $('#bt2').click(function () {
+                alert(campo.value)
+                $(opcao).parent().append(campo.value);
+                campo.value = "";
+            })
+            $('#bt3').click(function () {
+                $(opcao).parent().prepend(campo.value);
+                campo.value = "";
+            })
+            $('#bt4').click(function () {
+                $(opcao).parent().empty();
+            })
+            $('[type="radio"]').click(function () {
+                opcao = this.value
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <div id="list-cont">
+        <ol>
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+        </ol>
+        <ul>
+            <li>Lista 1</li>
+            <li>Lista 2</li>
+            <li>Lista 3</li>
+        </ul>
+    </div>
+    <div id="azul">
+        <p>Parágrafo 1</p>
+        <p>Parágrafo 2</p>
+        <p>Parágrafo 3</p>
+        <p>Parágrafo 4</p>
+    </div>
+    <button id="bt1">Botão Detach</button>
+    <button id="bt2">Botão Append</button>
+    <button id="bt3">Botão Prepend</button>
+    <button id="bt4">Botão Empty</button>
+    <br>
+    <div id="inputs">
+        <div>
+            <label for="campo">Escreva aqui</label> <br>
+            <input id="campo" type="text">
+        </div>
+        <fieldset>
+            <legend>Escolha a opcao</legend>
+            <label for="ol">ol</label>
+            <input type="radio" value="ol *" name="opcao" checked="checked">
+            <label for="ul">ul</label>
+            <input type="radio" value="ul *" name="opcao">
+            <label for="div">div</label>
+            <input type="radio" value="#azul *" name="opcao">
+        </fieldset>
+    </div>
+
+
+
+</body>
+
+</html>

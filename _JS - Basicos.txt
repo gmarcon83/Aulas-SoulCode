@@ -1,5 +1,6 @@
 Casting -> Transformar um tipo de dado para outro
-    parseInt() -> converte para inteiro
+    parseInt(num, base) -> converte para inteiro, base é opcional para converter
+                           de outras bases numéricas
     parseFloat() -> converte para float
     umNumeroFloat.toFixed(x) -> transforma para uma string com x casas decimais
 
@@ -9,6 +10,11 @@ document.writeln(); -> igual ao anterior mas adiciona um "enter" no final
 alert(); -> cria um popup
 prompt(Mensagem); -> Cria um popup e retorna uma string digitada
 typeof X; -> Retorna o tipo da variavel/valor
+
+  window.innerWidth => largura da janela
+  window.innerHeight => altura da janela
+  screen.width => largura da tela
+  screen.height => altura da tela
 
 Operadores de decremento e incremento
     ++a -> incrementa 1 e retorna a

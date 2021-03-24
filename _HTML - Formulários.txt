@@ -11,7 +11,7 @@ legend -> Coloca um titulo no quadrado
       <fieldset>
         <legend>What level ninja are you?</legend>
 
-        <input id="newbie" type="radio" name="levels" value="newbie">
+        <input id="newbie" type="radio" name="levels" value="newbie" checked="checked">
         <label for="newbie">Newbie Kitten</label><br>
 
         <input id="intermediate" type="radio" name="levels" value="intermediate">

@@ -1,0 +1,23 @@
+// Aparece para baixo e para direita
+
+    .hide(ms) // esconde os elementos, pode ser passado um tempo
+    .show(ms) // mostra os elementos, pode ser passado um tempo
+    .toggle(ms) // altera a exibição, pode ser passado um tempo
+
+
+// Mudando a tranparência
+
+    .fadeOut(ms) // esconde os elementos, pode ser passado um tempo
+    .fadeIn(ms) // mostra os elementos, pode ser passado um tempo
+    .fadeToggle (ms) // alterna entre os dois anteriores
+    .fadeTo(ms, alpha) // muda o alpha dos elementos, pode ser passado um tempo
+
+
+// Aparece para baixo
+
+    .slideUp(ms) // esconde os elementos, pode ser passado um tempo
+    .slideDown(ms) // mostra os elementos, pode ser passado um tempo
+    .slideToggle(ms) // altera a exibição, pode ser passado um tempo
+
+    OBS: ms é o tempo em milisegundos, pode ser usado também
+         "fast" ~= 200ms; "medium" ~= 400ms; "fast" ~= 600ms

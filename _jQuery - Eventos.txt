@@ -20,6 +20,7 @@ Formulários
     blur // quando desseleciona o campo
     submit // quando os dados são enviados
 
+
 Mouse
 
     click // clique do Mouse
@@ -32,6 +33,15 @@ Mouse
     mouseleave// o cursor sai do elemento
     mouseout // implementação antiga do anterior
     mousemove // move o mouse sobre
+
+
+Mouse hover
+
+    Funciona como a combinação de mouseenter e mouse leave,
+    precisamos passar duas funções, separadas por , para os
+    dois eventos.
+
+    .hover({foo1},{foo2});
 
 
 Teclado

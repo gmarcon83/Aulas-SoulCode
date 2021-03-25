@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+
+    <style>
+        #div-cont,
+        #span-cont,
+        form,
+        p {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .divs {
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 8px;
+            display: none;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // Ao clicar no primeiro botão, as 5 divs devem aparecer com cores diferentes,
+            // largura e altura diferentes e com um efeito que você aprendeu em Jquery
+            $("#btn1").click(function () {
+                for (let i = 1; i < 6; i++) {
+                    let div = `#div${i}`;
+                    $(div).slideDown(500);
+                    $(div).css({ "width": rand75a150(), "height": rand75a150() })
+                    $(div).css("background-color", randRGB());
+                }
+            });
+
+            // Ao clicar no segundo botão, todas as divs deverão ficar com a cor
+            // azul, largura de 300px e altura de 150px.
+            $("#btn2").click(function () {
+                for (let i = 1; i < 6; i++) {
+                    $(`#div${i}`).css({ "background-color": "blue", "width": "300", "height": "150" });
+                }
+            });
+
+            // Ao dar um duplo clique no terceiro botão, você deverá esconder
+            // duas divs à sua escolha, também utilizando um efeito do Jquery.
+            $("#btn3").dblclick(function () {
+                $("#div2").hide();
+                $("#div4").hide();
+            })
+
+            // Coloque um foco nos campos do formulário com uma cor agradável ao
+            // usuário, e ao tirar o foco do campo de formulário remova esse efeito.
+            $(".inputs").focus(elem =>
+                $(elem.target).css("background-color", "lightblue")
+            )
+            $(".inputs").blur(elem =>
+                $(elem.target).css("background-color", "transparent")
+            )
+
+            // Pegue o valor do nome e do email do usuário e apresente na tela em
+            // uma tag de span os dados que foram digitados pelo usuário.
+            $("#enviar").click(function () {
+                let nome = $("#nome")[0].value;
+                let email = $("#email")[0].value;
+                $("#saida").text(nome + "  " + email)
+            })
+
+
+        });
+
+        function randRGB() {
+            return `rgb(${rand255()}, ${rand255()}, ${rand255()})`;
+        }
+
+        function rand255() {
+            return Math.floor(Math.random() * 256);
+        }
+
+        function rand75a150() {
+            return Math.floor(Math.random() * 76 + 75);
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Eventos</h1>
+    </header>
+
+    <main>
+        <div id="div-cont">
+            <div class="divs" id="div1"></div>
+            <div class="divs" id="div2"></div>
+            <div class="divs" id="div3"></div>
+            <div class="divs" id="div4"></div>
+            <div class="divs" id="div5"></div>
+        </div>
+        <hr />
+        <button id="btn1" type="button">Clique aqui</button>
+        <button id="btn2" type="button">Clique aqui</button>
+        <button id="btn3" type="button">Clique aqui 2x</button>
+        <hr />
+
+        <h3>Formulário</h3>
+        <form>
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input class="inputs" type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div>
+                <label for="CPF">CPF:</label><br>
+                <input class="inputs" type="tel" id="CPF" placeholder="Digite seu cpf">
+            </div>
+            <div>
+                <label for="endereco">Endereço:</label><br>
+                <input class="inputs" type="text" id="endereco" placeholder="Digite o seu endereço" />
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label><br>
+                <input class="inputs" type="tel" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div>
+                <label for="email">E-mail:</label><br>
+                <input class="inputs" type="email" id="email" placeholder="Digite seu email">
+            </div>
+
+
+            <button id="enviar" type="button">Enviar</button>
+        </form>
+        <br>
+        <div id="span-cont">
+            <span id="saida"></span>
+        </div>
+    </main>
+</body>
+
+</html>

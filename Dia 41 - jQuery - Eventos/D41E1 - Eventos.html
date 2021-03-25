@@ -38,6 +38,16 @@
                 }
             })
 
+            $("#email").focus(function (elem) {
+                $(elem.target).css("background-color", "lightblue")
+            })
+            $("#email").blur(elem =>
+                $(elem.target).css("background-color", "transparent")
+            )
+            $("#enviar").focus(function () {
+                console.log("Enviado Formulário")
+            })
+
         });
     </script>
 </head>
@@ -82,10 +92,10 @@
         <h3>Formulário</h3>
         <form>
             <span>Nome:</span>
-            <input type="text" />
+            <input id="nome" type="text" />
 
             <span>E-mail:</span>
-            <input type="text" />
+            <input id="email" type="text" />
 
             <span>Motivo do contato:</span>
             <select>
@@ -94,7 +104,7 @@
                 <option value="sugestao">Sugestão</option>
             </select>
 
-            <button type="button">Enviar</button>
+            <button id="enviar" type="button">Enviar</button>
         </form>
     </div>
 </body>

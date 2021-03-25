@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+
+    <style>
+        #divExterna {
+            background-color: #ccc;
+            width: 80px;
+            height: 80px;
+            padding: 70px;
+        }
+
+        #divInterna {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#btn1").click(function () {
+                $("#div2").css("background-color", "green")
+            })
+            $("#btn1").dblclick(function () {
+                $("#div2").css("background-color", "yellow")
+            })
+
+            $("#teclado").keydown(function (evento) {
+                $("#resultadoInput").text(evento.key)
+                if (!(evento.keyCode == 8 || evento.keyCode >= 48 && evento.keyCode <= 57 || evento.keyCode >= 96 && evento.keyCode <= 105)) {
+                    return false;
+                }
+            })
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="topo">
+        <h1>Eventos</h1>
+    </div>
+
+    <div>
+        <h3>Browser</h3>
+        <span>Onload: </span><span id="onload">?</span><br />
+        <span>Scroll: </span><span id="scroll">?</span><br />
+        <span>Resize window: </span><span id="xyz">?</span>
+        <div id="div1" style="height: 100px; width: 100px; border: solid 1px; overflow-y: scroll">
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        <hr />
+
+        <h3>Mouse</h3>
+        <button id="btn1" type="button">Clique aqui</button>
+        <button id="btn2" type="button">Clique aqui 2x</button>
+        <div id="div2" style="background-color: red; width: 80px; height: 50px; margin-top: 10px; margin-bottom: 10px">
+        </div>
+        <span>Resultado do evento sobre a div</span><span id="resultadoDiv"></span>
+
+        <div id="divExterna">
+            <div id="divInterna"></div>
+        </div>
+        <span>Div Externa: </span><span id="resultadoDiv1"></span>
+        <br />
+        <span>Div Interna: </span><span id="resultadoDiv2"></span>
+        <hr />
+
+        <h3>Teclado</h3>
+        <span>Nome:</span>
+        <input id="teclado" type="text" />
+        <span id="resultadoInput">Resultado do evento sobre o input</span>
+        <hr />
+
+        <h3>Formulário</h3>
+        <form>
+            <span>Nome:</span>
+            <input type="text" />
+
+            <span>E-mail:</span>
+            <input type="text" />
+
+            <span>Motivo do contato:</span>
+            <select>
+                <option value="">-- Selecione --</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+            </select>
+
+            <button type="button">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

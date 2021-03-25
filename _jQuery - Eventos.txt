@@ -1,0 +1,41 @@
+Sintaxe básica
+
+    $("seletor").click(function () {foo...});
+
+
+Elemento
+
+    error // quando ocorre um erro no elemento
+    scroll // quando rola o elemento
+    resize // quando redimensiona o elemento
+    load // quando o elemento carrega
+    unload // quando o elemento é eliminado
+    select // quando seleciona algum texto
+
+
+Formulários
+
+    change // quando muda o value de um campo
+    focus // quando seleciona o campo
+    blur // quando desseleciona o campo
+    submit // quando os dados são enviados
+
+Mouse
+
+    click // clique do Mouse
+    dblClick // clique duplo
+    contextmenu // clique direito
+    mousedown // apertar o botao do mouse
+    mouseup // soltar o botao do mouse
+    mouseenter// o cursor entra no elemento
+    mouseover // implementação antiga do anterior
+    mouseleave// o cursor sai do elemento
+    mouseout // implementação antiga do anterior
+    mousemove // move o mouse sobre
+
+
+Teclado
+
+    keydown // pressiona uma tecla
+    keyup // solta uma tecla
+    keypress // a tecla é pressinada e solta

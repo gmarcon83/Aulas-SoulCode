@@ -40,21 +40,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         let alerta = true
-        $(function () {
-            $(window).scroll(function () {
-                if (alerta) {
-                    // Req 1 mostra o alerthtml
-                    alert("Você ultilizou o scroll do mouse");
-                    alerta = false;
-                }
-                // Req 2 deixa vermelha
-                $(".vermelha").last().css("background-color", "yellow")
-                // Req 3 mostra o cinza
-                if ($("html")[0].scrollTop >= 200) {
-                    $(".cinza").show()
-                }
-            })
-        });
+        $(window).scroll(function () {
+            if (alerta) {
+                // Req 1 mostra o alerthtml
+                alert("Você ultilizou o scroll do mouse");
+                alerta = false;
+            }
+            // Req 2 deixa vermelha
+            $(".vermelha").last().css("background-color", "yellow")
+            // Req 3 mostra o cinza
+            if ($("html")[0].scrollTop >= 200) {
+                $(".cinza").show()
+            }
+        })
     </script>
 
 </head>

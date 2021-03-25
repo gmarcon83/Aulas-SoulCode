@@ -42,7 +42,7 @@ Convertendo uma função tradicional
         return a + 100;
         }
 
-    // Arrow Function Break Down
+    // Arrow Function
 
     // 1. Elimine a palavra "função" e coloque a seta entre o argumento e a chave {}
         (a) => {

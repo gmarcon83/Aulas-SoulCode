@@ -1,3 +1,10 @@
+Obs:
+
+    - Arrow func. não tem escopo próprio, e usam o escopo do elemento
+          em que elas estão definidas;
+    - Não podem ser usadas como construtoras de um objeto;
+
+
 Sintaxe básica
 
 Parâmetros // Se tiver um só parametro nao precisa os ()

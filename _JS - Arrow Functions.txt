@@ -7,32 +7,36 @@ Obs:
 
 Sintaxe básica
 
-Parâmetros // Se tiver um só parametro nao precisa os ()
-Linhas // Se tiver uma só linha de código não precisa de {} e return
-Nome // Se tiver nome (não anônima) precisa atribuir a uma variável
+    const foo = (parametros) => {
+        //Código
+    };
+
+    Parâmetros // Se tiver um só parametro não precisa os ()
+    Linhas // Se tiver uma só linha de código não precisa de {} e return
+    Nome // Se tiver nome (não anônima) precisa atribuir a uma variável
 
 Exemplos
 
     // Nenhum parâmetro, uma linha, sem nome
-    () => função
+    () => função;
 
     // Um parâmetro, uma linha, sem nome
-    param => função
+    param => função;
 
     // Mais que um parâmetro, uma linha, sem nome
-    (param1, param2) => função
+    (param1, param2) => função;
 
     // Nenhum parâmetro, mais que uma linha, sem nome
     () => {
-        função linha 1
-        return função linha 2
-    }
+        função linha 1;
+        return função linha 2;
+    };
 
     // dois parâmetros, mais que uma linha, com nome
     const foo = (param1, param2) => {
-        função linha 1
-        return função linha 2
-    }
+        função linha 1;
+        return função linha 2;
+    };
 
 
 Convertendo uma função tradicional
@@ -40,14 +44,14 @@ Convertendo uma função tradicional
     // Função tradicional
         function (a){
         return a + 100;
-        }
+        };
 
     // Arrow Function
 
     // 1. Elimine a palavra "função" e coloque a seta entre o argumento e a chave {}
         (a) => {
         return a + 100;
-        }
+        };
 
     // 2. Remova os {} e a palavra return, o return é subentendido.
         (a) => a + 100;

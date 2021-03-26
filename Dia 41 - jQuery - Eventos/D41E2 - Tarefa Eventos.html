@@ -55,9 +55,7 @@
             // Ao clicar no segundo botão, todas as divs deverão ficar com a cor
             // azul, largura de 300px e altura de 150px.
             $("#btn2").click(function () {
-                for (let i = 1; i < 6; i++) {
-                    $(`#div${i}`).css({ "background-color": "blue", "width": "300", "height": "150" });
-                }
+                $(".divs").css({ "background-color": "blue", "width": "300", "height": "150" });
             });
 
             // Ao dar um duplo clique no terceiro botão, você deverá esconder
@@ -134,6 +132,41 @@
                 <label for="endereco">Endereço:</label><br>
                 <input class="inputs" type="text" id="endereco" placeholder="Digite o seu endereço" />
             </div>
+
+            <div>
+                <label for="uf">UF:</label><br>
+                <input class="inputs" list="uf" placeholder="Selecione seu estado">
+                <datalist id="uf">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </datalist>
+            </div>
+
             <div>
                 <label for="telefone">Telefone:</label><br>
                 <input class="inputs" type="tel" id="telefone" placeholder="xxxxx-xxxx" pattern="^\d{5}-\d{4}$">

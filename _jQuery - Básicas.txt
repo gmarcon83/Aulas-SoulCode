@@ -20,3 +20,6 @@ Atributos
          varios atributos ao mesmo tempo.
     .css("parametro", "valor") // Adiciona no CSS
     .css("{Código CSS aqui}") // Para adicionar múltiplos no CSS
+    .addClass("Classes Separadas") // Adiciona a(s) classe(s)
+    .removeClass("Classes Separadas") // Deleta a(s) classe(s)
+    .toggleClass("Classes Separadas") // Alterna a(s) classe(s)

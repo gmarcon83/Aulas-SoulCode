@@ -46,8 +46,7 @@
             $("#btn1").click(function () {
                 for (let i = 1; i < 6; i++) {
                     let div = `#div${i}`;
-                    $(div).css({ "width": rand75a150(), "height": rand75a150() })
-                    $(div).css("background-color", randRGB());
+                    $(div).css({ "background-color": randRGB(), "width": rand75a150(), "height": rand75a150() })
                     $(div).slideDown(500);
                 }
             });

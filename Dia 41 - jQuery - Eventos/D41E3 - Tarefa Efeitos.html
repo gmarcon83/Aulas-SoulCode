@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efeitos jQuery</title>
+    <meta name="author" content="Giovanni Marcon">
+
+    <style>
+        h1,
+        main {
+            text-align: center;
+        }
+
+        div {
+            height: 300px;
+            width: 75%;
+            border: 1px solid black;
+            background-image: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+            border-radius: 8px;
+            margin: auto;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // Crie uma página contendo uma div e aplique todos os efeitos que você aprender
+            // durante a aula(Hide(), show(), toggle(), fadeIn(), fadeOut(), fadeTo(), fadeToggle(),
+            // slideUp(), slideDown(), slideToggle()
+            $("#btn1").click(() => $("div").hide(500));
+            $("#btn2").click(() => $("div").show(500));
+            $("#btn3").click(() => $("div").toggle(500));
+            $("#btn4").click(() => $("div").fadeIn(500));
+            $("#btn5").click(() => $("div").fadeOut(500));
+            $("#btn6").click(() => $("div").fadeTo(500, 0.5));
+            $("#btn6B").click(() => $("div").fadeTo(500, 1));
+            $("#btn7").click(() => $("div").fadeToggle(500));
+            $("#btn8").click(() => $("div").slideUp(500));
+            $("#btn9").click(() => $("div").slideDown(500));
+            $("#btn10").click(() => $("div").slideToggle(500));
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Efeitos</h1>
+    </header>
+
+    <main>
+        <hr />
+        <button id="btn1" type="button">Hide</button>
+        <button id="btn2" type="button">Show</button>
+        <button id="btn3" type="button">Toggle</button>
+        <button id="btn4" type="button">Fade In</button>
+        <button id="btn5" type="button">Fade Out</button>
+        <button id="btn6" type="button">Fade To 0.5</button>
+        <button id="btn6B" type="button">Fade To 1</button>
+        <button id="btn7" type="button">Fade Toggle</button>
+        <button id="btn8" type="button">Slide Up</button>
+        <button id="btn9" type="button">Slide Down</button>
+        <button id="btn10" type="button">Slide Toggle</button>
+        <hr />
+
+        <div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

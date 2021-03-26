@@ -3,9 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>jQuery</title>
+    <title>Eventos jQuery</title>
+    <meta name="author" content="Giovanni Marcon">
 
     <style>
+        #div-cont {
+            height: 150px;
+        }
+
         #div-cont,
         #span-cont,
         form,
@@ -21,6 +26,14 @@
             border-radius: 8px;
             display: none;
         }
+
+        input:invalid {
+            box-shadow: 0 0 1px 1px red;
+        }
+
+        input:focus:invalid {
+            box-shadow: none;
+        }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -33,9 +46,9 @@
             $("#btn1").click(function () {
                 for (let i = 1; i < 6; i++) {
                     let div = `#div${i}`;
-                    $(div).slideDown(500);
                     $(div).css({ "width": rand75a150(), "height": rand75a150() })
                     $(div).css("background-color", randRGB());
+                    $(div).slideDown(500);
                 }
             });
 
@@ -70,8 +83,6 @@
                 let email = $("#email")[0].value;
                 $("#saida").text(nome + "  " + email)
             })
-
-
         });
 
         function randRGB() {
@@ -112,11 +123,12 @@
         <form>
             <div>
                 <label for="nome">Nome:</label><br>
-                <input class="inputs" type="text" id="nome" placeholder="Digite seu nome">
+                <input class="inputs" type="text" id="nome" placeholder="Digite seu nome" required>
             </div>
             <div>
                 <label for="CPF">CPF:</label><br>
-                <input class="inputs" type="tel" id="CPF" placeholder="Digite seu cpf">
+                <input class="inputs" type="tel" id="CPF" placeholder="xxx.xxx.xxx-xx"
+                    pattern="^\d{3}.\d{3}.\d{3}-\d{2}$">
             </div>
             <div>
                 <label for="endereco">Endereço:</label><br>
@@ -124,11 +136,11 @@
             </div>
             <div>
                 <label for="telefone">Telefone:</label><br>
-                <input class="inputs" type="tel" id="telefone" placeholder="Digite seu telefone">
+                <input class="inputs" type="tel" id="telefone" placeholder="xxxxx-xxxx" pattern="^\d{5}-\d{4}$">
             </div>
             <div>
                 <label for="email">E-mail:</label><br>
-                <input class="inputs" type="email" id="email" placeholder="Digite seu email">
+                <input class="inputs" type="email" id="email" placeholder="Digite seu email" required>
             </div>
 
 

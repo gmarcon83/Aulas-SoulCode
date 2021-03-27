@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- Giovanni Marcon  -->
+
+<head>
+    <!-- ▲▼▲▼▲▼▲▼ Meta tags ▲▼▲▼▲▼▲▼ -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Absolute Açaí</title>
+
+    <!-- ▲▼▲▼▲▼▲▼ CSS ▲▼▲▼▲▼▲▼ -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/sanitize-full.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.structure.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.theme.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+
+    <!-- ▲▼▲▼▲▼▲▼ Link Fonts Awesome ▲▼▲▼▲▼▲▼ -->
+    <script src="https://kit.fontawesome.com/5cf15c459a.js" crossorigin="anonymous"></script>
+
+
+    <!-- ▲▼▲▼▲▼▲▼ Scripts ▲▼▲▼▲▼▲▼ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+
+<body id="body">
+    <header>
+        <div id="header-conteudo">
+            <img src="images/logo.png" alt="Logo marca GMG">
+            <div>
+                <a id="dialog-abrir" href="#" title="??????"><i class="fas fa-question-circle"></i></a>
+            </div>
+            <div id="dialog" title="Açaí é bom">
+                <p>Compre açai.</p>
+            </div>
+        </div>
+        <div id="links-float"><a href="#header-conteudo"><i class="fas fa-arrow-circle-up"></i></a></div>
+    </header>
+    <main>
+        <div class="escondido-inicio" id="banner-fundo">
+            <div id="banner-cont">
+                <div id="banner">
+                    <h1>Absolute Açaí.</h1>
+                    <p>Lorem ipsum açaí e coisa e tal.</p>
+                </div>
+                <div id="form-cont">
+                    <div id="form">
+                        <p>Cadastre-se!</p>
+                        <div>
+                            <label for="nome">Nome:</label><br>
+                            <input class="inputs" type="text" id="nome">
+                        </div>
+
+                        <div id="contato-email">
+                            <label for="email">Email:</label><br>
+                            <input class="inputs" type="email" name="email" id="email"
+                                oninput="this.value=this.value.toLowerCase()">
+                        </div>
+
+                        <div>
+                            <label for="uf">UF:</label><br>
+                            <input class="inputs" type="text" id="uf" />
+                        </div>
+
+                        <div>
+                            <label for="sabor">Sabor Preferido:</label><br>
+                            <Select class="inputs" id="sabor" />
+                            <option disabled selected>Escolha um</option>
+                            <option>Açaí com Banana</option>
+                            <option>Açaí com Morango</option>
+                            <option>Açaí Extra</option>
+                            <option>Açaí Tradicional</option>
+
+                            </select>
+                        </div>
+
+                        <button>Cadastrar</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <div class="escondido-inicio" id="acai-fundo">
+            <div id="acai">
+                <div class="acai-cartao" id="acai1">
+                    <h4>Gabriela Calhau</h4>
+                    <img src="img/img-gabi.jpg" alt="Foto da Gabi">
+                    <p>Sempre correndo atrás do seus sonhos, Gabi cheia de responsabilidades com uma vida
+                        agitada e
+                        corrida do jeito que ela gosta. Ama ficar com a família e amigos. No momento o maior
+                        objetivo dela é crescer profissionalmente e se destacar no mercado de trabalho.</p>
+                </div>
+                <div class="acai-cartao" id="acai2">
+                    <h4>Mahonri Maia</h4>
+                    <img src="img/img-maho.jpg" alt="Foto do Mahonri">
+                    <p>"Mahon (Marrom)" para simplificar as coisas. É formado em Design Gráfico e um entusiasta
+                        de
+                        ilustrações e caligrafia. Tem experiência com diagramação de livros e revistas e
+                        atualmente
+                        está realizando seu sonho de adolescência de ser se tornar um desenvolvedor web.</p>
+                </div>
+                <div class="acai-cartao" id="acai3">
+                    <h4>Giovanni Marcon</h4>
+                    <img src="img/img-gio.jpg" alt="Foto do Giovanni">
+                    <p>Apaixonado por música e tecnologia desde criança, Giovanni é músico profissinal a mais de
+                        15
+                        anos e entusiasta de tecnologia por ainda mais tempo. Após anos estudando por hobby
+                        diversas
+                        linguagens de programação agora se dedica em tempo integral para se tornar um
+                        desenvolvedor.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="escondido-inicio">
+        <small>Abosulte Açaí© - 2021</small>
+    </footer>
+
+</body>
+
+</html>

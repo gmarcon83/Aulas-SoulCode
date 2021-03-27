@@ -1,0 +1,176 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cor-fundo-clara);
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲  Link float  ▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#links-float {
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+}
+
+#links-float i {
+  text-shadow: 0px 0px 2px rgba(245, 245, 245, 0.5);
+  color: var(--cor-texto-normal);
+  font-size: 45px;
+  opacity: 0.3;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#links-float i:hover {
+  text-shadow: 0px 0px 2px rgba(245, 245, 245, 0.1);
+  color: var(--azul-500);
+  font-size: 45px;
+  opacity: 0.5;
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲    Banner    ▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#banner-fundo {
+  background-color: var(--cor-fundo-clara);
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  height: calc(100vh - 50px);
+}
+
+#banner-cont {
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+#banner p {
+  font-weight: 400;
+  text-shadow: 1px 1px 3px #000;
+  color: var(--amarelo-300);
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲  Formulário  ▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#form-cont {
+  width: 320px;
+}
+
+#form p {
+  text-align: center;
+  margin: 0;
+}
+
+.inputs,
+#sabor-button {
+  min-width: 255px;
+  width: 32vh;
+  border-radius: 4px;
+  padding: 0.3em 0.6em;
+  font-weight: 400;
+  height: 42px;
+  background-color: transparent;
+  color: var(--cor-texto-normal);
+  border: 1px solid #7e1d66;
+}
+
+#form {
+  background-color: rgba(255, 255, 255, 0.822);
+  border-radius: 12px;
+  padding: 30px;
+  margin: 6vh 10vh 0;
+  min-width: 320px;
+  min-height: 500px;
+  width: 40vh;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputs {
+  border-radius: 4px;
+}
+
+#form button {
+  font-weight: 400;
+  border-radius: 8px;
+  border-style: none;
+  padding: 0.3em 0.6em;
+  width: 150px;
+  margin: 25px 0 0 0;
+}
+
+#contato-fundo {
+  background-color: var(--cor-fundo-clara);
+}
+
+#contato {
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: auto;
+  padding: 20px 40px;
+  text-align: justify;
+}
+
+#contato p {
+  font-weight: 300;
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼   Acais  ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+#acai-fundo {
+  background-color: var(--cor-fundo-clara);
+}
+
+#acai {
+  display: flex;
+  justify-content: space-around;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  padding: 40px 0;
+  margin: auto;
+}
+
+.acai-cartao {
+  margin: 20px;
+  padding: 0px 15px;
+  background-color: var(--cor-fundo-normal);
+  width: 30%;
+}
+
+.acai-cartao:hover {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.363);
+}
+
+.acai-cartao img {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.acai-cartao h4 {
+  background-color: rgba(0, 0, 0, 0.315);
+  padding: 10px 0 10px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.acai-cartao p {
+  text-align: justify;
+}

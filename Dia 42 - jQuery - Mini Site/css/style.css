@@ -1,0 +1,170 @@
+/* Typografia */
+
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;700;900&family=Montserrat:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap");
+
+body {
+  font-family: "Alegreya Sans";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-variant: small-caps;
+}
+
+/* Variáveis cores e tamanhos */
+
+:root {
+  --largura-meio: 90%;
+  --largura-maxima: 1400px;
+  --cinza-50: rgba(249, 250, 251);
+  --cinza-100: rgba(243, 244, 246);
+  --cinza-200: rgba(229, 231, 235);
+  --cinza-300: rgba(209, 213, 219);
+  --cinza-400: rgba(156, 163, 175);
+  --cinza-500: rgba(107, 114, 128);
+  --cinza-600: rgba(75, 85, 99);
+  --cinza-700: rgba(55, 65, 81);
+  --cinza-800: rgba(31, 41, 55);
+  --cinza-900: rgba(17, 24, 39);
+  --vermelho-50: rgba(254, 242, 242);
+  --vermelho-100: rgba(254, 226, 226);
+  --vermelho-200: rgba(254, 202, 202);
+  --vermelho-300: rgba(252, 165, 165);
+  --vermelho-400: rgba(248, 113, 113);
+  --vermelho-500: rgba(239, 68, 68);
+  --vermelho-600: rgba(220, 38, 38);
+  --vermelho-700: rgba(185, 28, 28);
+  --vermelho-800: rgba(153, 27, 27);
+  --vermelho-900: rgba(127, 29, 29);
+  --amarelo-50: rgba(255, 251, 235);
+  --amarelo-100: rgba(254, 243, 199);
+  --amarelo-200: rgba(253, 230, 138);
+  --amarelo-300: rgba(252, 211, 77);
+  --amarelo-400: rgba(251, 191, 36);
+  --amarelo-500: rgba(245, 158, 11);
+  --amarelo-600: rgba(217, 119, 6);
+  --amarelo-700: rgba(180, 83, 9);
+  --amarelo-800: rgba(146, 64, 14);
+  --amarelo-900: rgba(120, 53, 15);
+  --verde-50: rgba(236, 253, 245);
+  --verde-100: rgba(209, 250, 229);
+  --verde-200: rgba(167, 243, 208);
+  --verde-300: rgba(110, 231, 183);
+  --verde-400: rgba(52, 211, 153);
+  --verde-500: rgba(16, 185, 129);
+  --verde-600: rgba(5, 150, 105);
+  --verde-700: rgba(4, 120, 87);
+  --verde-800: rgba(6, 95, 70);
+  --verde-900: rgba(6, 78, 59);
+  --azul-50: rgba(239, 246, 255);
+  --azul-100: rgba(219, 234, 254);
+  --azul-200: rgba(191, 219, 254);
+  --azul-300: rgba(147, 197, 253);
+  --azul-400: rgba(96, 165, 250);
+  --azul-500: rgba(59, 130, 246);
+  --azul-600: rgba(37, 99, 235);
+  --azul-700: rgba(29, 78, 216);
+  --azul-800: rgba(30, 64, 175);
+  --azul-900: rgba(30, 58, 138);
+  --indigo-50: rgba(238, 242, 255);
+  --indigo-100: rgba(224, 231, 255);
+  --indigo-200: rgba(199, 210, 254);
+  --indigo-300: rgba(165, 180, 252);
+  --indigo-400: rgba(129, 140, 248);
+  --indigo-500: rgba(99, 102, 241);
+  --indigo-600: rgba(79, 70, 229);
+  --indigo-700: rgba(67, 56, 202);
+  --indigo-800: rgba(55, 48, 163);
+  --indigo-900: rgba(49, 46, 129);
+  --roxo-50: rgba(245, 243, 255);
+  --roxo-100: rgba(237, 233, 254);
+  --roxo-200: rgba(221, 214, 254);
+  --roxo-300: rgba(196, 181, 253);
+  --roxo-400: rgba(167, 139, 250);
+  --roxo-500: rgba(139, 92, 246);
+  --roxo-600: rgba(124, 58, 237);
+  --roxo-700: rgba(109, 40, 217);
+  --roxo-800: rgba(91, 33, 182);
+  --roxo-900: rgba(76, 29, 149);
+  --rosa-50: rgba(253, 242, 248);
+  --rosa-100: rgba(252, 231, 243);
+  --rosa-200: rgba(251, 207, 232);
+  --rosa-300: rgba(249, 168, 212);
+  --rosa-400: rgba(244, 114, 182);
+  --rosa-500: rgba(236, 72, 153);
+  --rosa-600: rgba(219, 39, 119);
+  --rosa-700: rgba(190, 24, 93);
+  --rosa-800: rgba(157, 23, 77);
+  --rosa-900: rgba(131, 24, 67);
+}
+
+/* --------------------- */
+
+body {
+  --cor-acento-suave: #c859ad;
+  --cor-acento-normal: #952a7b;
+  --cor-acento-forte: #801565;
+  --cor-ativo: #ffd51f;
+  --cor-fundo-claraX: #fdf9f7;
+  --cor-fundo-clara: #fff5f2;
+  --cor-fundo-normal: #ffc8ba;
+  --cor-fundo-escura: #dfa99c;
+  --cor-fundo-escuraX: #b68b81;
+  --cor-texto-clara: #222;
+  --cor-texto-normal: #111;
+  --cor-texto-escura: #000;
+  color: var(--cor-texto-normal);
+  font-size: 1.3em;
+}
+
+.escondido-inicio {
+  display: none;
+}
+
+header {
+  height: 60px;
+  background-color: var(--cor-acento-suave);
+}
+
+#header-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: auto;
+}
+
+#header-conteudo i {
+  font-size: 30px;
+  padding: 0 5px;
+  cursor: pointer;
+  line-height: 50px;
+  color: var(--cor-texto-normal);
+}
+
+#header-conteudo i:hover {
+  color: var(--amarelo-400);
+}
+
+header img {
+  height: 50px;
+  margin: 5px 0;
+}
+
+main {
+  min-height: calc(100vh - 120px);
+}
+
+footer {
+  background-color: var(--cor-fundo-escura);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

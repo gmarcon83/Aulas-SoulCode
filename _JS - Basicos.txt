@@ -82,8 +82,35 @@ Loops
 
 Seletores DOM
 
-    document.querySelector("Uma String"); acha a primeira ocorrencia de "Uma String" no DOM e retorna ele;
+    document.querySelector("Uma String"); // Scha a primeira ocorrencia de "Uma
+                                          // String" no DOM e retorna ele;
     document.getElementByID("string"); Acha o elemento com a id "string";
-    document.getElementsByClassName("string"); Acha os elementos com as classes "string";
-    document.getElementsByTagName("string"); Acha os elementos com as tags "string";
-    document.getElementsByName("string"); Acha os elementos com a tag name com valor "string";
+    document.getElementsByClassName("string"); //Acha os elementos com as
+                                               //classes "string";
+    document.getElementsByTagName("string"); // Acha os elementos com as
+                                             // tags "string";
+    document.getElementsByName("string"); // Acha os elementos com a tag name
+                                          // com valor "string";
+
+
+
+*-*-*-*-*-*-*-*-*-*- ES 6 -*-*-*-*-*-*-*-*-*-*
+
+
+var, let e const
+
+    var -> escopo global, não mostra erro quando redeclarada, hoisting
+    let -> escopo local, não pode ser declarada duas vezes
+    const -> escopo local, não pode ser reatribida, é comum nomear com
+             UPPER_CASE
+
+Rest Parameters
+
+    ... -> Permitem passar multiplos parâmetros para um função, que
+    serão armazenados em uma array.
+
+    EX: const umaFunção = (...args) => alguma coisa
+
+
+
+

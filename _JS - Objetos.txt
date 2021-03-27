@@ -22,7 +22,8 @@ Instanciando um novo
 
 funções
 
-    .hasOwnProperty("strg") = caso o objeto possua a propriedade, retorna true
+    .hasOwnProperty("strg") // caso o objeto possua a propriedade, retorna true
+    Object.freeze(nomeObjeto) // Nenhuma propriedade pode ser mais modificada
 
 
 Acessando parametros

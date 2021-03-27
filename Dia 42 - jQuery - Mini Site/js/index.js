@@ -35,7 +35,7 @@ function removerForm(){
     $("#form").fadeOut(500) // efeito 5
 }
 
-// ▲▼▲▼▲▼▲▼ Email ▲▼▲▼▲▼▲▼ //
+// ▲▼▲▼▲▼▲▼ Validação Email ▲▼▲▼▲▼▲▼ //
 
 function tirarVermelho(){
     document.getElementById("email").style.boxShadow = "";

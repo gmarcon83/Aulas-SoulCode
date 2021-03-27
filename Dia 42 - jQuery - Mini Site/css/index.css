@@ -3,7 +3,80 @@ html {
 }
 
 body {
+  --cor-acento-suave: #c859ad;
+  --cor-acento-normal: #952a7b;
+  --cor-acento-forte: #801565;
+  --cor-ativo: #ffd51f;
+  --cor-fundo-claraX: #fdf9f7;
+  --cor-fundo-clara: #fff5f2;
+  --cor-fundo-normal: #ffc8ba;
+  --cor-fundo-escura: #dfa99c;
+  --cor-fundo-escuraX: #b68b81;
+  --cor-texto-clara: #222;
+  --cor-texto-normal: #111;
+  --cor-texto-escura: #000;
+  color: var(--cor-texto-normal);
+  font-size: 1.3em;
+}
+
+.escondido-inicio {
+  display: none;
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲    Header    ▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+header {
+  height: 60px;
+  background-color: var(--cor-acento-suave);
+}
+
+#header-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: var(--largura-meio);
+  max-width: var(--largura-maxima);
+  margin: auto;
+}
+
+#header-conteudo i {
+  font-size: 30px;
+  padding: 0 5px;
+  cursor: pointer;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 0.05);
+}
+
+#header-conteudo i:hover {
+  color: var(--amarelo-400);
+}
+
+header img {
+  height: 50px;
+  margin: 5px 0;
+}
+
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲    Outros    ▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+
+main {
+  min-height: calc(100vh - 120px);
+}
+
+body {
   background-color: var(--cor-fundo-clara);
+}
+
+footer {
+  background-color: var(--cor-acento-suave);
+  color: var(--cor-ativo);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
@@ -27,7 +100,7 @@ body {
 
 #links-float i:hover {
   text-shadow: 0px 0px 2px rgba(245, 245, 245, 0.1);
-  color: var(--azul-500);
+  color: var(--amarelo-400);
   font-size: 45px;
   opacity: 0.5;
 }
@@ -90,7 +163,7 @@ body {
   background-color: rgba(255, 255, 255, 0.822);
   border-radius: 12px;
   padding: 30px;
-  margin: 6vh 10vh 0;
+  margin: 35px 10vh 0;
   min-width: 320px;
   min-height: 500px;
   width: 40vh;
@@ -114,24 +187,8 @@ body {
   margin: 25px 0 0 0;
 }
 
-#contato-fundo {
-  background-color: var(--cor-fundo-clara);
-}
-
-#contato {
-  width: var(--largura-meio);
-  max-width: var(--largura-maxima);
-  margin: auto;
-  padding: 20px 40px;
-  text-align: justify;
-}
-
-#contato p {
-  font-weight: 300;
-}
-
 /* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
-/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼   Acais  ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
+/* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼   Açaís  ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
 /* ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ */
 
 #acai-fundo {
@@ -152,6 +209,7 @@ body {
   padding: 0px 15px;
   background-color: var(--cor-fundo-normal);
   width: 30%;
+  border-radius: 14px;
 }
 
 .acai-cartao:hover {
@@ -165,7 +223,9 @@ body {
 }
 
 .acai-cartao h4 {
-  background-color: rgba(0, 0, 0, 0.315);
+  background-color: var(--cor-acento-normal);
+  color: var(--cor-ativo);
+  border-radius: 8px;
   padding: 10px 0 10px;
   margin-top: 16px;
   text-align: center;

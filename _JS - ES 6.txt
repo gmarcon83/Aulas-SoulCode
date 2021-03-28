@@ -7,7 +7,7 @@ var, let e const
 
 Spread operator
 
-    ...nome
+    ...nomeVar
 
     a) Na declaração de uma função oermitem passar multiplos parâmetros
        que serão armazenados em uma array para uso na função;
@@ -17,3 +17,25 @@ Spread operator
     b) Podem ser usador para "deconstruir" a array, passando os valores
        da mesma separados por vírgula;
 
+
+Destructiruing
+
+    Retorna os valores dos itens de arrays ou objetos de maneira mais
+    simples.
+
+        EX:
+            const nums = [5, 7, 9, 11];
+            const obj = {x:4, y:6, z:8};
+
+            let [a, b] = [1 , 2] // a = 1; b =2;
+
+            let [c, d] = nums // c = 5; d = 7;
+
+            let [e, ...f] = nums // e = 5; f = [7, 9, 11];
+
+            let {y, z} = obj // y = 6; z = 8;
+
+    Podemos usar a seguinte sintaxe para mudar o nome da
+    variável:
+
+            let {novoZ: z} = obj // novoZ = 8;

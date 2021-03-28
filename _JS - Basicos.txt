@@ -104,13 +104,14 @@ var, let e const
     const -> escopo local, não pode ser reatribida, é comum nomear com
              UPPER_CASE
 
-Rest Parameters
+Spread operator
 
-    ... -> Permitem passar multiplos parâmetros para um função, que
-    serão armazenados em uma array.
+    ...nome
 
-    EX: const umaFunção = (...args) => alguma coisa
+    a) Na declaração de uma função oermitem passar multiplos parâmetros
+       que serão armazenados em uma array para uso na função;
 
+       EX: const umaFunção = (...args) => alguma coisa
 
-
-
+    b) Podem ser usador para "deconstruir" a array, passadno os valores
+       da mesma separados por vírgula;

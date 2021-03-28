@@ -18,7 +18,7 @@ Spread operator
        da mesma separados por vírgula;
 
 
-Destructiruing
+Destructuring
 
     Retorna os valores dos itens de arrays ou objetos de maneira mais
     simples.
@@ -28,14 +28,22 @@ Destructiruing
             const obj = {x:4, y:6, z:8};
 
             let [a, b] = [1 , 2] // a = 1; b =2;
-
             let [c, d] = nums // c = 5; d = 7;
-
             let [e, ...f] = nums // e = 5; f = [7, 9, 11];
-
+            let [g,,,h] = nums // g = 5; h = 11;
             let {y, z} = obj // y = 6; z = 8;
 
-    Podemos usar a seguinte sintaxe para mudar o nome da
-    variável:
+    Podemos usar diretamente um uma função:
 
-            let {novoZ: z} = obj // novoZ = 8;
+        const fooName = ({x,z}) => etc...
+
+        fooName(obj) // vai ter x = 4 e z = 8;
+
+    Podemos usar a seguinte sintaxe para mudar o nome da variável:
+
+            let {z: novoZ} = obj // novoZ = 8;
+
+String literal
+
+    Usamos ` no lugar das aspas, com ${varName} podemos inserir variáveis
+    aceita também enter para separar as linhas.

@@ -1,0 +1,19 @@
+var, let e const
+
+    var -> escopo global, não mostra erro quando redeclarada, hoisting
+    let -> escopo local, não pode ser declarada duas vezes
+    const -> escopo local, não pode ser reatribida, é comum nomear com
+             UPPER_CASE
+
+Spread operator
+
+    ...nome
+
+    a) Na declaração de uma função oermitem passar multiplos parâmetros
+       que serão armazenados em uma array para uso na função;
+
+       EX: const umaFunção = (...args) => alguma coisa
+
+    b) Podem ser usador para "deconstruir" a array, passando os valores
+       da mesma separados por vírgula;
+

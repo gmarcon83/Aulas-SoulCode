@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Eventos</title>
+    <style>
+        h2 {
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            color: #f10000;
+        }
+
+        h1 {
+            font-family: Geneva, Verdana, sans-serif;
+            color: cornflowerblue;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14pt;
+            line-height: 0.7cm;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 100px auto;
+        }
+
+        div {
+            margin: 0 20px;
+            float: left;
+        }
+
+        .texto {
+            width: calc(60% - 40px);
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+        }
+
+        .anime_inicial {
+            opacity: 0;
+            transform: translate(-100px, 0);
+            transition: 1.5s;
+        }
+
+        .anime_final {
+            opacity: 1;
+            transform: translate(0px, 0);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $(window).scroll(() => {
+                updateAltura();
+            });
+            updateAltura();
+        });
+
+        function updateAltura() {
+            let elems = $(".anime_inicial");
+            let distMeio = $(window).scrollTop() + $(window).height() * 0.4;
+            for (elem of elems) {
+                if (distMeio > $(elem).offset().top) {
+                    console.log($(elem).offset().top)
+                    $(elem).addClass("anime_final");
+                } else {
+                    $(elem).removeClass("anime_final");
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Exemplo Animação</h1>
+
+    <section class="anime_inicial">
+        <div class="texto">
+            <h2>SoulCode Academy</h2>
+            <p>Uma Edtech brasileira, somos uma escola de educação não formal e inclusão digital, de metodologia ágil,
+                com a missão de gerar impacto social, através da capacitação tecnológica, com foco em diversidade,
+                equalidade e empregabilidade.</p>
+        </div>
+        <div>
+            <img src="chrome://branding/content/about-logo.png" alt="img1">
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="anime_inicial">
+        <div class="texto">
+            <h2>TNT Energy Drink</h2>
+            <p>Uma parceria que diz muito sobre nós: SoulCode Academy + TNT Energy Drink! É necessário muita energia e
+                muita resistência para codar. E aí, quem vem?</p>
+        </div>
+        <div>
+            <img src="chrome://branding/content/about-logo.png" alt="img2">
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="anime_inicial">
+        <div class="texto">
+            <h2>Web Full Stack</h2>
+            <p>o desenvolvedor full stack é o profissional habilitado para compreender e operar em todas as camadas do
+                desenvolvimento de um projeto, desde a criação de servidores internos até interfaces de comunicação com
+                o usuário final.</p>
+        </div>
+        <div>
+            <img src="chrome://branding/content/about-logo.png" alt="img3">
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="anime_inicial">
+        <div class="texto">
+            <h2>SoulCode Academy</h2>
+            <p>Uma Edtech brasileira, somos uma escola de educação não formal e inclusão digital, de metodologia ágil,
+                com a missão de gerar impacto social, através da capacitação tecnológica, com foco em diversidade,
+                equalidade e empregabilidade.</p>
+        </div>
+        <div>
+            <img src="chrome://branding/content/about-logo.png" alt="img1">
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="anime_inicial">
+        <div class="texto">
+            <h2>TNT Energy Drink</h2>
+            <p>Uma parceria que diz muito sobre nós: SoulCode Academy + TNT Energy Drink! É necessário muita energia e
+                muita resistência para codar. E aí, quem vem?</p>
+        </div>
+        <div>
+            <img src="chrome://branding/content/about-logo.png" alt="img2">
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="anime_inicial">
+        <div class="texto">
+            <h2>Web Full Stack</h2>
+            <p>o desenvolvedor full stack é o profissional habilitado para compreender e operar em todas as camadas do
+                desenvolvimento de um projeto, desde a criação de servidores internos até interfaces de comunicação com
+                o usuário final.</p>
+        </div>
+        <div>
+            <img src="chrome://branding/content/about-logo.png" alt="img3">
+        </div>
+    </section>
+    <br>
+    <br>
+
+</body>
+
+</html>

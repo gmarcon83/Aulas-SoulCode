@@ -1,0 +1,28 @@
+Permite a criação de objetos usando uma nova sintaxe.
+
+OBS: É convenção usar UpperCamelCase para nome de classes e _ antes de variáveis
+     privadas (mas isso não torna elas privadas).
+
+class Carro {
+    constructor(marca, modelo, dono) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this._dono = dono;
+    }
+    // getter
+    get dono() {
+        return this._dono;
+    }
+    // setter
+        set dono(novoDono) {
+    this._dono = dono;
+  }
+}
+
+function Carro(marca, modelo) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.soundHorn = function() {
+        console.log("Beep! Beep!");
+    }
+}

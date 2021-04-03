@@ -1,0 +1,9 @@
+
+    /umtexto/ => Procura por umtexto;
+    /txtA|txtB/ => Procura por txtA ou txtB;
+
+funções:
+
+    regEx.test(string) // Testa a string com uma regEx e retorna um booleano
+
+

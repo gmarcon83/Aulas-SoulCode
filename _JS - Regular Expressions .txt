@@ -1,9 +1,18 @@
+Expressões
 
     /umtexto/ => Procura por umtexto;
     /txtA|txtB/ => Procura por txtA ou txtB;
 
+
+Opções
+
+    /../i => ignora maiúsculas e minúsculas;
+    /../g => repete o comando varias vezes;
+
 funções:
 
-    regEx.test(string) // Testa a string com uma regEx e retorna um booleano
+    /rEx/.test(string) // Testa a string com uma regEx e retorna um booleano
+    string.match(/rEx/) // Retorna a string achada, o index, e a string
+                        // original em uma array;
 
 

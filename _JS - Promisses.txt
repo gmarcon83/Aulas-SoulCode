@@ -1,0 +1,53 @@
+Promisses são objetos que representam o sucesso ou a falha em executar
+uma tarefa assíncrona. Um exemplo de objeto promisse:
+
+    const tenteAlgo = new Promise((resolve, reject) => {
+        // resultadoTentativa é o que aconteceu
+        let resultadoTentativa;
+
+        if(resultadoTentativa) {
+            resolve("Deu certo");
+        } else {
+            reject("Deu Errado");
+        }
+    });
+
+    Enquanto uma Promise trabalha, o resultado é undefined;
+    Quando uma Promise tem sucesso", o resultado é um valor;
+    Quando uma Promise falha", o resultado é um objeto erro;
+
+Ex: Imagine chamar a função:
+
+    fazerAlgoAsync(algo, casoDerCerto, casoDerErro);
+
+Reescrevendo ela para ao invés retronar um promisse:
+
+    fazerAlgoAsync(algo).then(casoDerCerto, casoDerErro);
+
+    Chamadas feitas com .then nunca vão acontecer antes de finalizar
+    a execução do evento;
+    Podemos adicionar varias chamadas em sequência e usar apenas um
+    catch para executar em caso de erro;
+
+Ex (usando arrow functions)
+
+    fazerAlgoAsync()
+    .then(deuCerto1 => fazerOutraCoisa(deuCerto1))
+    .then(deuCerto2 => fazerUltimaCoisa(deuCerto2))
+    .then(deuCertoTudo => {
+        // O que fizemos com o resultado final;
+    })
+    .catch(deuErrado);
+
+ECMA 2017 adicionou uma nova sintaxe para isso, com async/await;
+
+    async function foo(){
+        try {
+            const deuCerto1 = await fazerAlgoAsync();
+            const deuCerto2 = await fazerOutraCoisa(deuCerto1);
+            const deuCertoTudo = await fazerUltimaCoisa(deuCerto2));
+            // O que fizemos com o resultado final;
+        } catch(erro) {
+            usarOErro(erro);
+        }
+    }

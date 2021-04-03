@@ -5,6 +5,7 @@ var, let e const
     const -> escopo local, não pode ser reatribida, é comum nomear com
              UPPER_CASE
 
+
 Spread operator
 
     ...nomeVar
@@ -43,7 +44,26 @@ Destructuring
 
             let {z: novoZ} = obj // novoZ = 8;
 
+
 String literal
 
     Usamos ` no lugar das aspas, com ${varName} podemos inserir variáveis
     aceita também enter para separar as linhas.
+
+
+Export
+
+    export {foo1, foo2, etc...} //Permite importar a função posteriormente;
+
+    export default function foo(x, y) { // Exporta essa função como padrão
+        return x + y;                   // em um arquivo. Cada arquivo pode
+    }                                   // ter apenas uma função padrão;
+
+Import
+
+    import {foo1, foo2,} from "./outro_arq.js" // Importa foo1 e foo2;
+
+    import * as nomeObj from "./outro_arq.js" // Importa todas as funçoes para
+                                              // um objeto nomeObj;
+
+    import umNome from "./outro_arq.js"; // Importa uma função padrão

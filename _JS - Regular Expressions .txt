@@ -1,15 +1,17 @@
 Expressões
 
-    /txt/ => Procura por txt;
-    /txtA|txtB/ => Procura por txtA ou txtB;
-    /txt./ => Aceita qualquer caractere no lugar do ponto;
-    /txt[xyz]/ => Aceita x, y ou z no final;
-    /txt[d-h]/ => Aceita d, e, f ,g ou h no final;
-    /txt[0-9]/ => Aceita qualquer número no final;
-    /txt[a-z0-9]/ => Aceita qualquer número ou letra no final;
-    /txt[^3-5]/ => Aceita qualquer caractere no final que não seja 3, 4 ou 5;
-    /txt[ba+]/ => Aceita b com um ou mais a no final, (ba, baa, baaa, etc);
-    /txt[ba*]/ => Aceita b com zero ou mais a no final, (b, ba, baa, baaa, etc);
+  /txt/ => Procura por txt;
+  /txtA|txtB/ => Procura por txtA ou txtB;
+  /txt./ => Aceita qualquer caractere no lugar do ponto;
+  /txt[xyz]/ => Aceita txt com x, y ou z no final;
+  /txt[d-h]/ => Aceita txt com d, e, f ,g ou h no final;
+  /txt[0-9]/ => Aceita txt com qualquer número no final;
+  /txt[a-z0-9]/ => Aceita txt com qualquer número ou letra no final;
+  /txt[^3-5]/ => Aceita txt com qualquer caractere no final que não seja 3, 4 ou 5;
+  /txt[ba+]/ => Aceita txt com b mais um ou mais "a"s no final, (ba, baa, baaa, etc);
+  /txt[ba*]/ => Aceita txt com b com zero ou mais "a"s no final, (b, ba, baa, etc);
+  /txt[0-9]*/ => Aceita txt com zero ou mais números no final;
+  /txt[0-9]+?/ => Busca o txt com zero ou mais números no final, que seja o mais curto;
 
 
 Opções

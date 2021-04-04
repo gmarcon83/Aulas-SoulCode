@@ -1,13 +1,22 @@
 Expressões
 
-    /umtexto/ => Procura por umtexto;
+    /txt/ => Procura por txt;
     /txtA|txtB/ => Procura por txtA ou txtB;
+    /txt./ => Aceita qualquer caractere no lugar do ponto;
+    /txt[xyz]/ => Aceita x, y ou z no final;
+    /txt[d-h]/ => Aceita d, e, f ,g ou h no final;
+    /txt[0-9]/ => Aceita qualquer número no final;
+    /txt[a-z0-9]/ => Aceita qualquer número ou letra no final;
+    /txt[^3-5]/ => Aceita qualquer caractere no final que não seja 3, 4 ou 5;
+    /txt[ba+]/ => Aceita b com um ou mais a no final, (ba, baa, baaa, etc);
+    /txt[ba*]/ => Aceita b com zero ou mais a no final, (b, ba, baa, baaa, etc);
 
 
 Opções
 
     /../i => ignora maiúsculas e minúsculas;
     /../g => repete o comando varias vezes;
+
 
 funções:
 

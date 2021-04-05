@@ -6,3 +6,35 @@ Links 4.6
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+
+Outros:
+
+    - O bootstrap por padrão trabalha com 12 colunas;
+
+
+Classes de estrutura:
+
+    container => cria uma grid;
+    row => cria uma linha;
+    col => cria uma coluna;
+    offset => cria um espaço em branco antes do elemento;
+
+    OBS: col pode ter -X onde X é quantas colunas que ocupa o elemento;
+
+
+Tamanhos (Breakpoints):
+
+    Breakpoints juntamos as classes para definir media queries pra os elementos
+
+    xs => extra small // > que 576
+    sm => small       // <= a 576
+    md => medium      // <= a 768
+    lg => large       // <= a 992
+    xl => extra large // <= a 1200
+
+    EX: col-sm-2 => vai ocupar 2 colunas em tamanhos entre 576 até 767
+        col-md-5 => vai ocupar 5 colunas em tamanhos entre 768 até 991
+
+
+Botões
+

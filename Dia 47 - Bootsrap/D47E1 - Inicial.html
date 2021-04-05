@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 5fr 2fr;
+            grid-template-rows: 3fr 11fr 2fr;
+            grid-template-areas:
+                "header header"
+                " main  aside "
+                "footer footer";
+        }
+
+        header {
+            grid-area: header;
+            background-color: gold;
+        }
+
+        main {
+            grid-area: main;
+            background-color: dodgerblue;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: green;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: tomato;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+</body>
+
+</html>

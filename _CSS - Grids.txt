@@ -7,9 +7,12 @@ Em grids chamamos o pai de container, os filhos de items e os espaços
 
 display: grid; -> transforma o elemento box em um container grid
 
-grid-template-columns: n1(un) n2(un) etc...; Define a quantidade de
-      colunas em uma grid, quanto mais 'n's mais colunas, a (un) deve
-      ser uma unidade válida.
+grid-template-columns: [nome] n1(un) [nome] n2(un) etc...; Define a
+      quantidade de colunas em uma grid, quanto mais 'n's mais colunas,
+      a (un) deve ser uma unidade válida.
+
+      OBS: [nome] é opcional, podemos usar eles para dar nomes as colunas,
+           e depois posicionar os elemtos nas mesmas usando os nomes;
 
 grid-template-rows: n1(un) n2(un) etc...; Define a quantidade de linhas
       em uma grid, quanto mais 'n's mais linhas, a (un) deve ser uma
@@ -53,7 +56,7 @@ align-items: -> alinha todos os items da grid verticalmente
             ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
 
 grid-column: x / y; especifica em que coordenadas das colunas da grid
-      uma célula começa e termina.
+      uma célula começa e termina. Podemos usar um [nome] dado também.
 
 grid-row: x / y; especifica em que coordenadas das linhas da grid uma
       célula começa e termina.

@@ -1,0 +1,12 @@
+Sintaxe básica:
+
+    $(selector).height() // Retorna o valor;
+    $(selector).height(valor) // Troca a altura do elemento;
+
+Outros comandos:
+
+    .innerHeight() // Altura Interna
+    .outerHeight() // Altura Externa
+    .width() // Largura
+    .innerWidth() // Largura Interna
+    .outerWidth() // Largura Externa

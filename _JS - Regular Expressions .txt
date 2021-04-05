@@ -26,4 +26,3 @@ funções:
     string.match(/rEx/) // Retorna a string achada, o index, e a string
                         // original em uma array;
 
-

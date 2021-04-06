@@ -26,3 +26,15 @@ Opções <tr> ou celula:
     .table-warning => troca a cor para "warning";
     .table-dark => troca a cor para "dark";
     .table-light => troca a cor para "light";
+
+
+Aplicando na <div> pai do <table>
+
+    .table-responsive => adiciona rolagem a tabala se necessário
+
+    Se quisermos responsividade a partir de um breakpoint podemos adicinar:
+
+    .table-sm => adiciona rolagem se a tela for menor que 576px;
+    .table-md => adiciona rolagem se a tela for menor que 768px;
+    .table-lg => adiciona rolagem se a tela for menor que 992px;
+    .table-xl => adiciona rolagem se a tela for menor que 1200px;

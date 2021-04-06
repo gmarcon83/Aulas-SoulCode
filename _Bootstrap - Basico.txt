@@ -26,7 +26,6 @@ Tamanhos (Breakpoints):
 
     Breakpoints juntamos as classes para definir media queries pra os elementos
 
-    xs => extra small // > que 576
     sm => small       // <= a 576
     md => medium      // <= a 768
     lg => large       // <= a 992

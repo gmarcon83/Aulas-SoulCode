@@ -30,16 +30,6 @@ Classes contextuais:
     .list-group-item-light => Aplica o estilo light;
     .list-group-item-dark => Aplica o estilo dark;
 
-
-▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
-▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼ Badges ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
-▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
-
-Podemos adicionar .badge com um elemento <span> dentro do item da lista e o
-elemento passa se comportar como uma badge;
-
-
-
     Queen - Fat Bottomed Girl
     Heart - Barracuda
     Van Hallen - Runnin' with the Devil

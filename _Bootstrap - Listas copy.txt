@@ -1,0 +1,25 @@
+Usando a tag <span> com a classe .badge, o elemento começa a se comportar como
+uma badge;
+
+
+Estilos de badge:
+
+    .badge-pil => Um estilo arredondado;
+
+
+Classes contextuais:
+
+    .badge-primary => Aplica o estilo primary;
+    .badge-secondary => Aplica o estilo secondary;
+    .badge-success => Aplica o estilo success;
+    .badge-danger => Aplica o estilo danger;
+    .badge-warning => Aplica o estilo warning;
+    .badge-info => Aplica o estilo info;
+    .badge-light => Aplica o estilo light;
+    .badge-dark => Aplica o estilo dark;
+
+
+
+    Queen - Fat Bottomed Girl
+    Heart - Barracuda
+    Van Hallen - Runnin' with the Devil

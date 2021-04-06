@@ -6,6 +6,7 @@ Opções para itens de lista:
     .disabled => Mostar o item como desativado;
     .active => Mostra o item como ativado;
     .list-group-flush => remove bordas e cantos do item;
+    .list-group-horizontal => mostra a lista na horizontal;
 
 
 Opções para <a> ou <button>:

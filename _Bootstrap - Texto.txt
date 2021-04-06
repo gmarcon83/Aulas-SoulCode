@@ -1,0 +1,26 @@
+Alinhamento:
+
+    .text-justify => Justifica o Texto;
+    .text-left => Alinha o texto a esquerda;
+    .text-center => Alinha o texto no meio;
+    .text-right => Alinha o texto a direita;
+    .text-nowrap => Texto não quebra;
+
+    Obs: Podemos adicionar os breakpoints para definir comportamento por tela, ex:
+
+        text-sm-right => alinha a direita em telas pequenas;
+
+
+Transformando texto:
+
+    .text-lowercase => mostra em letras minúsculas;
+    .text-uppercase => mostra em letras  maiúsculas;
+    .text-capitalize => mostra com as primeiras letras maiúsculas;
+
+
+Espessura e italização de fontes
+
+    .font-weight-bold => troca a fonte para bold
+    .font-weight-normal => troca a fonte para normal
+    .font-weight-light => troca a fonte para leve
+    .font-italic => troca a fonte para itálico

@@ -20,7 +20,17 @@ Transformando texto:
 
 Espessura e italização de fontes
 
-    .font-weight-bold => troca a fonte para bold
-    .font-weight-normal => troca a fonte para normal
-    .font-weight-light => troca a fonte para leve
-    .font-italic => troca a fonte para itálico
+    .font-weight-bold => troca a fonte para bold;
+    .font-weight-normal => troca a fonte para normal;
+    .font-weight-light => troca a fonte para leve;
+    .font-italic => troca a fonte para itálico;
+
+
+Alinhamento vertical
+
+    .align-baseline => alinha pelo padrão;
+    .align-top => alinha em cima da linha;
+    .align-middle => alinha pelo meio da linha;
+    .align-bottom => alinha em baixo da linha;
+    .align-text-top => alinha o topo do elemento com o topo da linha;
+    .align-text-bottom => alinha a base do elemento com a base da linha;

@@ -1,0 +1,28 @@
+Usando a tag <table> com a classe .table, a tabela é formatada automáticamente.
+
+Outras <table>:
+
+    .table-dark => troca para o tema escuro;
+    .table-striped => adiciona listas na tabela;
+    .table-hover => destaca quando passa o mouse;
+    .table-bordered => adiciona bordas extras;
+    .table-borderless => remove todas as bordas;
+    .table-sm => reduz o espaço entre linhas;
+
+
+Opções <thead>:
+
+    .thead-light => deixa o header mais claro;
+    .thead-dark => deixa o header mais escuro;
+
+
+Opções <tr> ou celula:
+
+    .table-active => troca a cor para "active";
+    .table-primary => troca a cor para "primary";
+    .table-secondary => troca a cor para "secondary";
+    .table-success => troca a cor para "success";
+    .table-info => troca a cor para "info";
+    .table-warning => troca a cor para "warning";
+    .table-dark => troca a cor para "dark";
+    .table-light => troca a cor para "light";

@@ -1,2 +1,0 @@
-box-sizing: border-box;
-    Coloca a margem para o lado de dentro do box

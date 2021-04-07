@@ -12,7 +12,14 @@ Expressões
   /txt[ba*]/ => Aceita txt com b com zero ou mais "a"s no final, (b, ba, baa, etc);
   /txt[0-9]*/ => Aceita txt com zero ou mais números no final;
   /txt[0-9]+?/ => Busca o txt com zero ou mais números no final, que seja o mais curto;
+  /^txt/ => Busca txt, mas apenas no início da string;
+  /txt$/ => Busca txt no fim da string;
 
+
+Abreviaturas
+
+  \w => equivalente a [A-Za-z0-9_];
+  \W => equivalente a [^A-Za-z0-9_];
 
 Opções
 
@@ -25,4 +32,5 @@ funções:
     /rEx/.test(string) // Testa a string com uma regEx e retorna um booleano
     string.match(/rEx/) // Retorna a string achada, o index, e a string
                         // original em uma array;
+
 

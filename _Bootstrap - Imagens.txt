@@ -1,0 +1,2 @@
+Classe Básica => .img-fluid => deixa a imagem responsiva;
+

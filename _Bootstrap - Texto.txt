@@ -5,10 +5,33 @@ Alinhamento:
     .text-center => Alinha o texto no meio;
     .text-right => Alinha o texto a direita;
     .text-nowrap => Texto não quebra;
+    .text-truncate => Adiciona ... quando o texto iria quebrar;
 
     Obs: Podemos adicionar os breakpoints para definir comportamento por tela, ex:
 
         text-sm-right => alinha a direita em telas pequenas;
+
+
+Alinhamento vertical
+
+    .align-baseline => alinha pelo padrão;
+    .align-top => alinha em cima da linha;
+    .align-middle => alinha pelo meio da linha;
+    .align-bottom => alinha em baixo da linha;
+    .align-text-top => alinha o topo do elemento com o topo da linha;
+    .align-text-bottom => alinha a base do elemento com a base da linha;
+
+
+Headings
+
+    .h1 até .h6 => A mesma formatação dos headings, mas sem semântica;
+    .display-1 até .display-6 => Um cabeçalho com mais destaque
+
+
+Estilos
+
+    .text-monospace => fonte com espaços iguais;
+    .lead => estilo corrido
 
 
 Transformando texto:
@@ -24,13 +47,18 @@ Espessura e italização de fontes
     .font-weight-normal => troca a fonte para normal;
     .font-weight-light => troca a fonte para leve;
     .font-italic => troca a fonte para itálico;
+    .mark => destaca o texto;
+    .small => deixa o texto menor;
 
 
-Alinhamento vertical
+Lista
 
-    .align-baseline => alinha pelo padrão;
-    .align-top => alinha em cima da linha;
-    .align-middle => alinha pelo meio da linha;
-    .align-bottom => alinha em baixo da linha;
-    .align-text-top => alinha o topo do elemento com o topo da linha;
-    .align-text-bottom => alinha a base do elemento com a base da linha;
+    .list-unstiled => no UL, remove o estilo da lista;
+    .list-inline no ul + .list-inline-item na li => Coloca a lista em linha;
+
+
+Blockquotes
+
+    .blockquote => Colocado na div pai, transforma o texto em uma citação;
+    .blockquote-footer => Formata a fonte da citação;
+

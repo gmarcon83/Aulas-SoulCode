@@ -1,0 +1,39 @@
+Tag Básica => .btn
+
+
+Classes contextuais:
+
+    .btn-primary => Aplica o estilo primary;
+    .btn-secondary => Aplica o estilo secondary;
+    .btn-success => Aplica o estilo success;
+    .btn-danger => Aplica o estilo danger;
+    .btn-warning => Aplica o estilo warning;
+    .btn-info => Aplica o estilo info;
+    .btn-light => Aplica o estilo light;
+    .btn-dark => Aplica o estilo dark;
+    .btn-link => Aplica o estilo link;
+
+    .btn-outline-primary => Aplica o estilo primary apenas na borda;
+    .btn-outline-secondary => Aplica o estilo secondary apenas na borda;
+    .btn-outline-success => Aplica o estilo success apenas na borda;
+    .btn-outline-danger => Aplica o estilo danger apenas na borda;
+    .btn-outline-warning => Aplica o estilo warning apenas na borda;
+    .btn-outline-info => Aplica o estilo info apenas na borda;
+    .btn-outline-light => Aplica o estilo light apenas na borda;
+    .btn-outline-dark => Aplica o estilo dark apenas na borda;
+
+
+Opções para botões:
+
+    .checked => Ja coloca o botão como se estivesse ativo;
+    data-toggle="button" => Alterna o estilo do botão;
+    btn-sm => Botão pequeno;
+    btn-lg => Botão grande;
+    btn-block => Botão bloco;
+
+Grupos: aplicados no elemento pai.
+
+    btn-group => Agrupa os botões;
+    btn-group-vertical => Agrupa os botões na vertical;
+
+    OBS: Podemos agrupar varios grupos de botões com .btn-toolbar

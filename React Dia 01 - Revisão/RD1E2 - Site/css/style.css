@@ -1,0 +1,44 @@
+header {
+    background-color: aliceblue;
+    position: sticky;
+    top: 0px;
+}
+
+#header-container {
+    max-width: 1300px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#nav ul {
+    padding: 0;
+    display: flex;
+}
+#nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#nav ul li a {
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#nav ul li a:hover {
+    color: green;
+}
+
+#banner-container {
+    background-image: url(../img/img-inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 100px);
+}
+
+#header-container img {
+    height: 100px;
+}

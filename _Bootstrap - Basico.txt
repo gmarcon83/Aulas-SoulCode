@@ -35,5 +35,13 @@ Tamanhos (Breakpoints):
         col-md-5 => vai ocupar 5 colunas em tamanhos entre 768 até 991
 
 
-Botões
+Margem
+
+    mx-auto => margem auto;
+
+
+Imagens
+
+    .image-responsive => deixa a imagem responsiva;
+    .image-thumbnail => adiciona uma borda arredondada;
 

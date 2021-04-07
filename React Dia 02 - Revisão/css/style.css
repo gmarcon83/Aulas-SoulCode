@@ -204,6 +204,7 @@ header li:last-child {
 
 .info .grid {
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
 }
 

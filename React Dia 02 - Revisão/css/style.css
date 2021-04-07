@@ -112,3 +112,61 @@ header li:last-child {
         font-size: 1.5em;
     }
 }
+
+/*HOTEL*/
+.hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.hotel h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.hotel p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.hotel hr {
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.hotel .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hotel .grid li {
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.hotel .grid li.small {
+    flex-basis: 40%;
+}
+
+.hotel .grid li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 700px) {
+    .hotel .grid li.small,
+    .hotel .grid li.large {
+        flex-basis: 100%;
+    }
+}

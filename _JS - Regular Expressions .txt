@@ -1,3 +1,5 @@
+https://blog.bitsrc.io/a-beginners-guide-to-regular-expressions-regex-in-javascript-9c58feb27eb4
+
 Expressões
 
   /txt/ => Procura por txt;
@@ -50,3 +52,12 @@ funções:
                         // original em uma array;
 
 
+Lookahead
+
+  Positivo => Testa se o elemento esta presente na string, mas não retorna ele;
+
+      (?=...) // a expressao a ser procurada é ...
+
+  Negativo =>   Positivo => Testa se o elemento não esta presente na string;
+
+      (?!...) // a expressao a ser procurada é ...

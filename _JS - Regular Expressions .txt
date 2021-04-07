@@ -8,21 +8,23 @@ Expressões
   /txt[0-9]/ => Aceita txt com qualquer número no final;
   /txt[a-z0-9]/ => Aceita txt com qualquer número ou letra no final;
   /txt[^3-5]/ => Aceita txt com qualquer caractere no final que não seja 3, 4 ou 5;
-  /txt[ba+]/ => Aceita txt com b mais um ou mais "a"s no final, (ba, baa, baaa, etc);
-  /txt[ba*]/ => Aceita txt com b com zero ou mais "a"s no final, (b, ba, baa, etc);
+  /txt[ba+]/ => Aceita txt com b e um ou mais "a"s no final, (ba, baa, baaa, etc);
+  /txt[ba*]/ => Aceita txt com b e zero ou mais "a"s no final, (b, ba, baa, etc);
   /txt[0-9]*/ => Aceita txt com zero ou mais números no final;
   /txt[0-9]+?/ => Busca o txt com zero ou mais números no final, que seja o mais curto;
-  /^txt/ => Busca txt, mas apenas no início da string;
-  /txt$/ => Busca txt no fim da string;
+  /^[0-9]txt/ => Busca um número no início da string;
+  /txt[0-9]$/ => Busca um número no fim da string;
+  /tx?t/ => O x é opcional, (tt ou txt);
 
 
 Modificadores
 
-  Podemos usar | para incluir um OU na expressão
-  Podemos usar ( ) parenteses para avaliar um trecho em separado
-  Podemos usar {min,max} para procurar no minimo e no máximo
+  | => para incluir um OU na expressão
+  () => para avaliar um trecho em separado
+  {min,max} => para aceitar no minimo e no máximo
+  {exato} => para aceitar um numero exato de caracteres
 
-  Ex /[0-9]{2,5}+(@|at)[0-9]+/ => de 2 a 5 numeros, @ ou at no meio, um numero ou mais;
+  Ex /[0-9]{2,5}+(@|at)[0-9]{3}/ => de 2 a 5 numeros, @ ou at no meio, 3 numeros;
 
 
 Abreviaturas

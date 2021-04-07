@@ -170,3 +170,66 @@ header li:last-child {
         flex-basis: 100%;
     }
 }
+
+/*INFO*/
+.info {
+    display: flex;
+    background-color: #191c03;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.info h3 {
+    font-size: 2em;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+.info p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+.info hr {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.info .grid {
+    display: flex;
+    width: 100%;
+}
+
+.info .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.info .grid li i {
+    color: #c3c63b;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.info .grid li h4 {
+    color: #c3c63b;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.info .grid li p {
+    color: white;
+}
+
+@media (max-width: 850px) {
+    .info .grid {
+        flex-direction: column;
+    }
+}

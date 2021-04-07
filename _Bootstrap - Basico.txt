@@ -45,3 +45,8 @@ Imagens
     .image-responsive => deixa a imagem responsiva;
     .image-thumbnail => adiciona uma borda arredondada;
 
+
+Video
+
+    .embed-responsive => deixa e elemento embed responsivo;
+    .embed-responsive-16by9 => deixa e elemento responsivo com formato 16:9;

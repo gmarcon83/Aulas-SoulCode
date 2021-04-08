@@ -54,6 +54,9 @@ Checkbox e Radio Custom
 Dropdowns
 
     .dropdown => na classe pai;
+    .dropup => na classe pai;
+    .dropleft => na classe pai;
+    .dropright => na classe pai;
     .dropdown-toggle => no botão;
     data-toggle="dropdown" => no botão;
     .dropdown-menu => em uma div;

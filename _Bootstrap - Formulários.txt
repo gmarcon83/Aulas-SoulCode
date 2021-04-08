@@ -1,28 +1,57 @@
-Formulários inline = Elementos em linha
+Básico
+
+    .form-control => adicionado nos inputs;
+
+
+Formulários inline
 
     .form-inline => adicionado na tag form;
 
-Form Group = Formularios em coluna
+
+Formularios em coluna
 
     .form-group => adicionado na div com label + input;
 
+
 Formularios em grid
 
+    .row => uma grid normal
     .form-row => menor gap entre as colunas que o row normal;
+    .col-form-label => usado junto nos labels para colocar em linha;
 
 
-.form-control => adicionado nos inputs;
+Tamanhos
 
-OBS: form-control pode incluir -sm ou -lg no final;
+    .form-control-sm => diminui o tamanho do input;
+    .form-control-lg => aumenta o tamanho do input;
+    .col-form-label-sm => diminui o tamanho da label;
+    .col-form-label-lg => aumenta o tamanho da label;
+
 
 Input Group
 
     .input-group => agrupa os elementos filhos em um grupo
     .input-group-prepend => adiciona o elemento como inicio do grupo
+    .input-group-append => adiciona o elemento como fim do grupo
     .input-group-text => forma o texto como elemento do grupo
 
 
+Checkbox e Radio
 
-Selects
+    .form-check => no elemento pai;
+    .form-check-inline => adicionado ao de cima para tornar inline;
+    .form-check-input => no input;
+    .form-check-label => no label;
 
-    .custom-select => adiciona um estilo diferente que form-control
+
+Checkbox e Radio Custom
+
+    .custom-control+custom-checkbox => no elemento pai
+    .custom-control-input => no input;
+    .custom-control-label => no label;
+
+
+Elementos custom
+
+    .custom-select => estilo alternativo para selects;
+    .custom-range => estilo alternativo para ranges;

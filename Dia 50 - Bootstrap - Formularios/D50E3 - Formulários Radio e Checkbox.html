@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Formulários Bootstrap</title>
+
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+
+    <!--PADRÃO (EMPILHADOS) CHECKBOX -->
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="">
+        <label class="form-check-label">
+            Checkbox padrão
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" disabled>
+        <label class="form-check-label">
+            Checkbox desativado
+        </label>
+    </div>
+
+    <!--PADRÃO EMPILHADOS RADIO BUTTON -->
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" value="opcao1">
+        <label class="form-check-label">
+            Radio padrão
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+        <label class="form-check-label">
+            Segundo radio padrão
+        </label>
+    </div>
+
+    <div class="form-check">
+        <input disabled class="form-check-input" type="radio" name="exampleRadios" value="option3">
+        <label class="form-check-label">
+            Radio desativado
+        </label>
+    </div>
+    <!--INLINE CHECKBOX-->
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="opcao1">
+        <labe class="form-check-label">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="opcao2">
+        <label class="form-check-label">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input disabled class="form-check-input" type="checkbox" value="opcao3" disabled>
+        <label class="form-check-label">3 (desativado)</label>
+    </div>
+
+    <!--INLINE RADIO-->
+    <br>
+
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" value="opcao1">
+        <label class="form-check-label">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+        <label class="form-check-label">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input disabled class="form-check-input" type="radio" name="inlineRadioOptions" value="opcao3">
+        <label class="form-check-label" for="inlineRadio3">3 (desativado)</label>
+    </div>
+
+
+    <!--FORMULÁRIOS PERSONALIZADOS-->
+
+    <!--CAIXAS DE SELEÇÃO -->
+
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+    </div>
+
+    <!--RÁDIOS -->
+
+    <div class="custom-control custom-checkbox">
+        <input type="radio" class="custom-control-input" name="customRadio" id="customRadio1">
+        <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+    </div>
+    <div class="custom-control custom-checkbox">
+        <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2">
+        <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+    </div>
+
+    <!--INLINE -->
+
+    <div class="custom-control custom-control-inline custom-checkbox">
+        <input type="radio" class="custom-control-input" name="customRadio2" id="customRadio3">
+        <label class="custom-control-label" for="customRadio3">Toggle this custom radio</label>
+    </div>
+    <div class="custom-control custom-control-inline custom-checkbox">
+        <input type="radio" class="custom-control-input" name="customRadio2" id="customRadio4">
+        <label class="custom-control-label" for="customRadio4">Or toggle this other custom radio</label>
+    </div>
+
+    <!--DESABILITADO -->
+
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheckDisabled1" disabled>
+        <label class="custom-control-label" for="customCheckDisabled1">Check this custom checkbox</label>
+    </div>
+
+    <div class="custom-control custom-radio">
+        <input type="radio" name="radioDisabled" id="customRadioDisabled2" class="custom-control-input" disabled>
+        <label class="custom-control-label" for="customRadioDisabled2">Toggle this custom radio</label>
+    </div>
+
+    <!-- CDN JS Bootstrap -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

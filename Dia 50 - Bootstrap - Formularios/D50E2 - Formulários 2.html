@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Formulários Bootstrap</title>
+
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+    <form>
+
+        <!-- FORMULÁRIOS HORIZONTAIS -->
+        <div class="form-group">
+            <label>Usuário</label>
+            <input class="form-control" type="text" placeholder="Digite seu usuário">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input class="form-control" type="email" id="email" placeholder="Digite seu email">
+            <small>Email será validado</small>
+        </div>
+
+        <!-- select -->
+        <div class="form-group">
+            <label>Estados</label>
+            <select class="form-control" id="estados">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div class="form-group">
+            <label>Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!-- range -->
+        <div class="form-group">
+            <label>Satisfação</label>
+            <input class="custom-range" type="range" id="range" min="1" max="5">
+        </div>
+
+        <div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+
+        <!-- Dimensionamento horizontal de labels-->
+
+        <form>
+            <div class="form-group row mt-4">
+                <label for="colFormLabelSm" class="col-md-1 col-form-label col-form-label-sm">Email</label>
+                <div class="col-md-11">
+                    <input type="email" class="form-control form-control-sm" id="colFormLabelSm"
+                        placeholder="col-form-label-sm">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabel" class="col-md-1 col-form-label">Email</label>
+                <div class="col-md-11">
+                    <input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="colFormLabelLg" class="col-md-1 col-form-label col-form-label-lg">Email</label>
+                <div class="col-md-11">
+                    <input type="email" class="form-control form-control-lg" id="colFormLabelLg"
+                        placeholder="col-form-label-lg">
+                </div>
+            </div>
+        </form>
+
+
+        <!--CAMPOS DE FORMULÁRIO PERSONALIZADOS-->
+        <form>
+            <div>
+                <div>
+                    <label>Preferência</label>
+                    <select>
+                        <option selected>Escolher...</option>
+                        <option value="1">Um</option>
+                        <option value="2">Dois</option>
+                        <option value="3">Três</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <input type="checkbox">
+                        <label>Lembrar preferências</label>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- CDN JS Bootstrap -->
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>

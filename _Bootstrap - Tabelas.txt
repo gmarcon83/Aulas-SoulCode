@@ -31,7 +31,7 @@ Opções <tr> ou celula:
 
 Aplicando na <div> pai do <table>
 
-    .table-responsive => adiciona rolagem a tabala se necessário
+    .table-responsive => adiciona rolagem a tabela se necessário
 
     Se quisermos responsividade a partir de um breakpoint podemos adicinar:
 

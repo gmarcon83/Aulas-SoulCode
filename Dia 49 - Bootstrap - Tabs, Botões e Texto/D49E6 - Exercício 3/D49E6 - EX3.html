@@ -12,80 +12,298 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <!-- Outros CSS     -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- CDN jQuery -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
 
-    <style>
-        header {
-            background-color: red;
-        }
-
-        body {
-            background-color: whitesmoke;
-        }
-
-        #img-header {
-            height: 100px;
-        }
-    </style>
+    <script src="js/floating-scroll.js"></script>
+    <script>
+        $(function () {
+            $(".table-responsive").floatingScroll();
+        })
+    </script>
 
 </head>
 
 <body>
 
     <header>
-        <div class="container">
-            <div id="img-header" class="d-flex justify-content-center">
-                <img class="img-fluid" src="img/logo-elixir.png" alt="Logomarca">
-            </div>
+        <div class="container d-flex justify-content-center">
+            <h1 class="p-3">Área administrativa</h1>
         </div>
     </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rstSERyycdU"></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6 mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_y5HlL2LbVc"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D8tKKXf4ZGU"></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6 mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y6Q4d1XAmbQ"></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RiEjeyE6u94"></iframe>
-                </div>
-            </div>
-            <div class="col-sm-6 mt-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6y2w3svHrgI"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
     <main>
+        <div class="container d-flex justify-content-center pt-3 pb-3">
+            <button class="btn btn-dark" type="button">Cadastrar novo cliente</button>
+        </div>
+        <div class="container table-responsive table-xl">
+            <table class="table table-light table-striped text-nowrap mb-0">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>Controle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>01</th>
+                        <td class="align-middle">Antônio Dias</td>
+                        <td>962.005.117-30</td>
+                        <td>Avenida Amália Mingossi, 859</td>
+                        <td>(16) 6864-6369</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>02</th>
+                        <td>Caio Souza</td>
+                        <td>630.622.739-33</td>
+                        <td>Quadra EQS 408/409, 1833</td>
+                        <td>(61) 7378-7633</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>03</th>
+                        <td>Matheus Cunha</td>
+                        <td>565.724.830-96</td>
+                        <td>Rua B-10, 876</td>
+                        <td>(16) 8123-7146</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>04</th>
+                        <td>Alex Ribeiro</td>
+                        <td>939.380.321-89</td>
+                        <td>Rua N, 1728</td>
+                        <td>(75) 7525-3561</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>05</th>
+                        <td>Davi Dias</td>
+                        <td>867.811.431-23</td>
+                        <td>Avenida Arlete Meirelles Ranieri, 169</td>
+                        <td>(12) 9786-8509</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>06</th>
+                        <td>Marina Dias</td>
+                        <td>695.581.925-97</td>
+                        <td>Avenida Sebastião de Brito, 848</td>
+                        <td>(31) 3626-9594</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>07</th>
+                        <td>Caio Correia</td>
+                        <td>520.088.996-08</td>
+                        <td>Servidão Cação, 439</td>
+                        <td>(47) 4512-9547</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>08</th>
+                        <td>Raissa Barbosa</td>
+                        <td>126.576.059-40</td>
+                        <td>Rua Guido Zanotto, 984</td>
+                        <td>(14) 4816-3835</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>09</th>
+                        <td>Marisa Alves</td>
+                        <td>457.987.481-11</td>
+                        <td>Rua Guilherme Trindade de Souza, 634</td>
+                        <td>(44) 7160-8036</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td>Paulo Alves</td>
+                        <td>990.734.274-28</td>
+                        <td>Rua J-1, 823</td>
+                        <td>(31) 8000-6326</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td>Isabella Fernandes</td>
+                        <td>640.514.678-21</td>
+                        <td>Rua Maria Stigar Rybinski, 974</td>
+                        <td>(41) 9409-4121</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td>Gabrielly Gomes</td>
+                        <td>851.661.444-14</td>
+                        <td>Travessa São Pedro, 284</td>
+                        <td>(79) 9693-6701</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td>Carla Rodrigues</td>
+                        <td>221.639.456-42</td>
+                        <td>Rua Antônio Pegoraro, 823</td>
+                        <td>(41) 3129-3795</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td>Marina Rocha</td>
+                        <td>807.724.198-09</td>
+                        <td>Rua Mendes Ribeiro, 234</td>
+                        <td>(21) 7908-6359</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td>Beatrice Rodrigues</td>
+                        <td>683.508.797-85</td>
+                        <td>Rua Geniguabinha, 355</td>
+                        <td>(85) 7499-7820</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td>Júlia Cunha</td>
+                        <td>425.474.671-78</td>
+                        <td>Quadra Quadra 21, 722</td>
+                        <td>(61) 3987-4173</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>17</th>
+                        <td>José Barbosa</td>
+                        <td>524.702.338-28</td>
+                        <td>Rua Paschoal Pisani Filho, 956</td>
+                        <td>(19) 9983-2775</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>18</th>
+                        <td>Gabriel Barbosa</td>
+                        <td>258.188.883-04</td>
+                        <td>Quadra SRES Quadra 10, 380</td>
+                        <td>(61) 8627-5565</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>19</th>
+                        <td>Marisa Azevedo</td>
+                        <td>759.168.771-96</td>
+                        <td>Rua Três, 407</td>
+                        <td>(35) 7025-4589</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>20</th>
+                        <td>Marcos Ferreira</td>
+                        <td>369.197.358-22</td>
+                        <td>Rua VM I, 1454</td>
+                        <td>(62) 6146-8921</td>
+                        <td class="btn-group">
+                            <button class="btn btn-success" type="button">Visualizar</button>
+                            <button class="btn btn-warning" type="button">Editar</button>
+                            <button class="btn btn-danger" type="button">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="d-flex justify-content-center mt-3">
+            <small class="p-3">MegaCorp© - Tabela clientes</small>
+        </footer>
 
     </main>
     <!-- CDN JS Bootstrap -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
         </script>
+
 </body>
 
 </html>

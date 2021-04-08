@@ -14,6 +14,7 @@ Alterando a string
     .toUpperCase() // Todas ficam maiúsculas;
     .slice(x, y) // Retorna os caracteres iniciando do index x e y, Usando
                  // (0, -X) removemos x de traz para frente;
+    .substring(x, y) // Igual a slice, mas não aceita negativos;
     .replace("texto1","texto2") // Retorna uma string com a primeira
                                 // ocorrencia de texto1 por texto2;
     .split("X") // Retorna uma array com as substrings separadas por X;

@@ -37,8 +37,14 @@ Tamanhos (Breakpoints):
 
 Margem
 
-    mx-auto => margem auto;
+    mx-X => margem dos lados, X de 0 a 5 ou auto;
+    my-X => margem de cima e baixo, X de 0 a 5;
+    mt-X => margem em cima, X de 0 a 5;
+    mr-X => margem direita, X de 0 a 5;
+    mb-X => margem em baixo, X de 0 a 5;
+    ml-X => margem esquerda, X de 0 a 5;
 
+    OBS: podemos adicionar os breakpoints tb
 
 Imagens
 
@@ -50,3 +56,8 @@ Video
 
     .embed-responsive => deixa e elemento embed responsivo;
     .embed-responsive-16by9 => deixa e elemento responsivo com formato 16:9;
+
+
+Leitor de tela
+
+    .sr-only => aparece apenas para leitores de tela;

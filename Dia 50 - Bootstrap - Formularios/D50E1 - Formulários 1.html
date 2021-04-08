@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta name="Author" content="Giovanni Marcon">
+
+    <title>Formulários Bootstrap</title>
+
+    <!-- CDN CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- CDN jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.slim.js"></script>
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+    <br /><br />
+
+    <!-- Formulário Inline-->
+    <form class="form-inline">
+        <label class="sr-only">Nome</label>
+        <input class="form-control mr-sm-2" type="text" placeholder="Nome">
+        <label class="sr-only">Usuário</label>
+        <div class="input-group mr-sm-2">
+            <div class="input-group-prepend">
+                <div class="input-group-text">@</div>
+            </div>
+            <input class="form-control" type="text" placeholder="Usuário">
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    <br /><br />
+    <!-- Controles de formuários e selects personalizados são suportados, também-->
+    <h3>Controles de formuários e selects personalizados são suportados, também-</h3>
+    <form class="form-inline">
+        <label class="mr-sm-2"">Preferência</label>
+        <select class=" custom-select my-1 mr-sm-2">
+            <option selected>Escolher...</option>
+            <option value="1">Um</option>
+            <option value="2">Dois</option>
+            <option value="3">Três</option>
+            </select>
+            <button class="btn btn-danger my-1" type="submit">Enviar</button>
+    </form>
+
+    <!-- GRUPO DE FORMULÁRIOS -->
+
+    <form>
+        <div class="form-group">
+            <label>Label exemplo</label>
+            <input class="form-control" type="text" placeholder="Input exemplo">
+        </div>
+        <div class="form-group">
+            <label>Outra label</label>
+            <input class="form-control" type="text" placeholder="Outro input">
+        </div>
+    </form>
+
+    <!-- GRID DE FORMULÁRIOS -->
+
+    <form>
+        <div class="row mb-2">
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </form>
+
+    <!--FORM ROW -->
+
+    <form>
+        <div class="form-row mb-2">
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </form>
+
+    <!--LAYOUTS MAIS COMPLEXOS COM GRID -->
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Senha</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress2">Endereço 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputCEP">CEP</label>
+                <input type="text" class="form-control" id="inputCEP">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Clique em mim
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+
+    </div>
+    <!-- CDN JS Bootstrap -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

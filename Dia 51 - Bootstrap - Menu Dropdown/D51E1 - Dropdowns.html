@@ -7,7 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <meta name="Author" content="Giovanni Marcon">
 
-    <title>Formulários Bootstrap</title>
+    <title>Dropdowns</title>
 
     <!-- CDN CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -28,177 +28,193 @@
         -->
 
     <div>
-        <button type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
+            aria-expanded="false" data-toggle="dropdown">
             Botão dropdown
         </button>
-        <div aria-labelledby="dropdownMenuButton">
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
 
     <!--EXEMPLO DE LINK COM DROPDOWN -->
 
     <div>
-        <a href="#" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
+        <a href="#" class="btn btn-primary dropdown-toggle mt-2" data-toggle="dropdown" role="button"
+            id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
             Link dropdown
         </a>
-        <div aria-labelledby="dropdownMenuLink">
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
 
     <!-- Exemplo de único botão danger -->
-    <div>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
+    <div class="btn-group mt-2">
+        <button class="btn btn-danger dropdown-toggle mt-2" data-toggle="dropdown" type="button" aria-haspopup="true"
+            aria-expanded="false">
             Ação
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
-            <div></div>
-            <a href="#">Link separado</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Link separado</a>
         </div>
     </div>
 
     <!--BOTÃO DIVIDIDO-->
 
     <!-- Exemplo de botão danger dividido -->
-    <div>
-        <button type="button">Ação</button>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
+    <div class="btn-group mt-2">
+        <button class="btn btn-danger" type="button">Ação</button>
+        <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true"
+            aria-expanded="false">
             <span class="sr-only">Dropdown</span>
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
-            <div></div>
-            <a href="#">Link separado</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Link separado</a>
         </div>
     </div>
+    <div></div>
 
     <!--BOTÂO GRANDE -->
 
-    <div>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
-            Botão grande
+    <div class="btn-group mt-2">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" data-toggle="dropdown" type="button"
+            aria-haspopup="true" aria-expanded="false"> Botão grande
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
 
     <!--BOTÃO GRANDE DIVIDIDO -->
-    <div>
-        <button type="button">
+    <div class="btn-group mt-2">
+        <button class="btn btn-warning btn-lg" type="button">
             Botão grande dividido
         </button>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-warning btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             <span class="sr-only">Dropdown</span>
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
+    <div></div>
 
     <!--BOTÃO PEQUENO-->
 
-    <div>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
-            Botão pequeno
+    <div class="btn-group mt-2">
+        <button class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true"
+            aria-expanded="false"> Botão pequeno
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
 
     <!--BOTÃO PEQUENO E DIVIDIDO -->
 
-    <div>
-        <button type="button">
+    <div class="btn-group mt-2">
+        <button class="btn btn-danger btn-sm" type="button">
             Botão pequeno dividido
         </button>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             <span class="sr-only">Dropdown</span>
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
+    <div></div>
 
     <!--COM DIREÇÃO PARA CIMA -->
 
-    <div>
+    <div class="btn-group mt-2 dropup">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Dropup
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
 
     <!--COM DIREÇÃO PARA CIMA E DIVIDIDO -->
 
-    <div>
-        <button type="button">
-            Dropup dividido
+    <div class="btn-group dropup mt-2">
+        <button class="btn btn-secondary" type="button">
+            Botão Dropup dividido
         </button>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Dropdown</span>
+        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="sr-only">Dropup</span>
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
+    <div></div>
 
     <!--COM DIREÇÃO PARA A DIREITA-->
-    <div>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
+
+    <div class="btn-group mt-2 dropright">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Dropright
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
 
     <!--COM DIREÇÃO PARA A DIREITA E DIVIDIDO -->
-    <div>
-        <button type="button">
-            Dropright dividido
+
+    <div class="btn-group dropright mt-2">
+        <button class="btn btn-primary" type="button">
+            Botão Dropright dividido
         </button>
-        <button type="button" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Dropright</span>
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="sr-only">Dropup</span>
         </button>
-        <div>
-            <a href="#">Alguma ação</a>
-            <a href="#">Outra ação</a>
-            <a href="#">Alguma coisa aqui</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Alguma ação</a>
+            <a class="dropdown-item" href="#">Outra ação</a>
+            <a class="dropdown-item" href="#">Alguma coisa aqui</a>
         </div>
     </div>
+    <div></div>
 
     <!--COM DIREÇÃO PARA A ESQUERDA-->
 
-    <div class="btn-group">
+    <div class="btn-group dropleft mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Dropleft
@@ -211,7 +227,7 @@
     </div>
 
     <!--COM DIREÇÃO PARA A ESQUERDA E DIVIDIDO-->
-    <div class="btn-group">
+    <div class="btn-group mt-2">
         <div class="btn-group dropleft" role="group">
             <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -227,10 +243,11 @@
             Dropleft dividido
         </button>
     </div>
+    <div></div>
 
     <!--ACTIVE -->
 
-    <div class="btn-group">
+    <div class="btn-group mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Menu ACTIVE
@@ -244,7 +261,7 @@
 
     <!--DESATIVADO-->
 
-    <div class="btn-group">
+    <div class="btn-group mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Menu DESATIVDADO
@@ -257,9 +274,9 @@
 
         </div>
     </div>
-
+    <div></div>
     <!--ALINHAMENTO DE MENU (left ou right)-->
-    <div class="btn-group">
+    <div class="btn-group mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Menu alinhado a direita
@@ -273,7 +290,7 @@
 
     <!--MENU COM CABEÇALHO-->
 
-    <div class="btn-group">
+    <div class="btn-group mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Menu com Cabeçalho
@@ -284,15 +301,15 @@
             <a class="dropdown-item" href="#">Outra ação</a>
         </div>
     </div>
-
+    <div></div>
     <!--MENU COM DIVISÓRIAS -->
 
-    <div class="btn-group">
+    <div class="btn-group mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
             Menu com Divisórias
         </button>
-        <div class="dropdown-menu">
+        <div class="dropdown-menu mt-2">
             <a class="dropdown-item" href="#">Alguma ação</a>
             <a class="dropdown-item" href="#">Outra ação</a>
             <a class="dropdown-item" href="#">Alguma coisa aqui</a>
@@ -301,21 +318,43 @@
         </div>
     </div>
 
-    <!--DROPDOWN COM TEXTOS-->
-    <div class="btn-group">
+    <!--DROPDOWN COM Formulário-->
+    <div class="btn-group mt-2">
         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">
-            Dropdown com Textos
+            Dropdown Form
         </button>
-        <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
-            <p>
-                Algum exemplo de texto, aqui dentro do menu.
-            </p>
-            <p class="mb-0">
-                Mais um exemplo de texto.
-            </p>
+        <div class="dropdown-menu">
+            <form class="px-4 py-3">
+                <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                        placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1"
+                        placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </form>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">New around here? Sign up</a>
+            <a class="dropdown-item" href="#">Forgot password?</a>
         </div>
     </div>
+    </div>
+
+
+
 
     <!-- CDN JS Bootstrap -->
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"

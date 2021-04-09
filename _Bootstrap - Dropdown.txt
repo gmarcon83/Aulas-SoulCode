@@ -1,0 +1,23 @@
+No botao => .dropdown-toggle e data-toggle="dropdown"
+Na div com os itens => .dropdown-menu
+Nos itens => .dropdown-item
+
+Opcões, junto com o btn-group
+
+    .dropup => Para cima
+    .dropleft => Para esquerda
+    .dropright => Para Direita
+
+Ex:
+
+<div class="btn-group dropleft">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+        Dropleft
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Item 1</a>
+        <a class="dropdown-item" href="#">Item 2</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Item 3</a>
+    </div>
+</div>

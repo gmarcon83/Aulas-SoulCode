@@ -61,3 +61,11 @@ Lookahead
   Negativo =>   Positivo => Testa se o elemento não esta presente na string;
 
       (?!...) // a expressao a ser procurada é ...
+
+
+Repetição
+
+  Podemos procurar um (grupo de regex) resultado repetido, usando \numero, onde numero
+  é a ordem que aparece o grupo de regex;
+
+  Ex: /(\w+)\s\1/ => \1 acha o que (\w+) achou, que é o primeiro grupo;

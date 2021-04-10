@@ -1,0 +1,64 @@
+/*
+#C154C1
+#9A439A
+#7B367B
+#622B62
+#4E224E
+#3E1B3E
+#321632
+#281228
+#200E20
+#1A0B1A
+Black
+
+#C154C1
+#C154C1
+#CD76CD
+#D791D7
+#DFA7DF
+#E5B9E5
+#EAC7EA
+#EED2EE
+#F1DBF1
+#F4E2F4
+#F6E8F6
+white
+*/
+
+header,
+footer {
+    background-color: rgb(42, 41, 41);
+    color: #f1f1f1;
+}
+
+main {
+    background-color: #f1f1f1;
+}
+
+.cards {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.cards p {
+    text-align: justify;
+}
+
+.fundoh {
+    background-color: #91d791;
+    margin: -5px -15px -17px;
+    padding: 5px 15px 5px;
+}
+
+.fundoint {
+    background-color: skyblue;
+    margin: -5px -15px -17px;
+    padding: 5px 15px 5px;
+}
+
+@media (max-width: 575px) {
+    .cards {
+        border-radius: 0px;
+    }
+}

@@ -19,27 +19,324 @@
 
 </head>
 
-
-<!--
-    Bootstrap, bem como funcionalidades específicas: grid do bootstrap; classes de texto, espaçamento,
-    margem e alinhamento; classes de cores e bordas; componentes botões (incluir dropdown) e campos de
-    texto input.
-
-    Os requisitos que serão abordados no tutorial em forma de conteúdo devem também fazer parte
-    obrigatória do desenvolvimento da one-page/mini site.
- -->
-
 <body>
 
     <header>
-        <div class="container">
-
+        <div class="container shadow-md py-2">
+            <p class="lead h1 ">Lorem Ipsum Tuts</p>
         </div>
     </header>
 
     <main>
+        <!-- Card Intro -->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h1>Bootstrap</h1>
+                </div>
+                <hr>
+                <p class="text-muted">Bootstrap é um framework de front end usado para facilitar o desenvolvimento de
+                    sites responsivos.</p>
+                <hr>
+                <p> O Bootstrap inclui templates HTML e CSS usados para estilizar componentes comuns em páginas web,
+                    entre eles podemos destacar: botões, campos de texto, dropdowns, cores, bordas, alinhamento,
+                    margens, estilos de texto, entre outros</p>
+                <p> Sendo desenvolvido inicialmente pelo Twitter em 2010, o Bootstrap foi disponibilizado em um modelo
+                    de framework open-source logo em seguida.</p>
+            </div>
+        </div>
+
+        <!-- Card Grid -->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Grid</h2>
+                </div>
+                <hr>
+                <p class="text-muted">O sistema de grid do bootstrap é uma maneira rápida de criar páginas responsivas.
+                </p>
+                <hr>
+                <p> A grid do Bootstrap é dividida em 12 colunas que mudam de tamanho de acordo com a resolução do
+                    dispositivo.</p>
+                <p> Pra usar as grids no Bootstrap adicionamos a classe <strong>"row"</strong>no elemento pai e
+                    adicionamos as classes <strong>"col"</strong> nos elementos filhos.
+                </p>
+                <p> Na classe <strong>"col"</strong> podemos opcionalmente adicionar no final o numero de colunas que
+                    queremos que o elemento ocupe e no meio a partir de que breakpoint essa configuração começa a fazer
+                    efeito. <strong>"col-md-6"</strong> por exemplo indicaria que queremos que o elemento ocupe 6
+                    colunas a partir do breakpoint medio.
+                </p>
+
+                <div class="py-3">
+                    <div class="container shadow-sm cards py-1">
+                        <div class="fundoint">
+                            <h3>Exemplo</h3>
+                        </div>
+                        <hr>
+                        <p class="text-muted">Uma coluna com largura de 4 e uma de 8, que quebram no breakpoint médio.
+                        </p>
+                        <hr>
+                        <div class="row px-3">
+                            <div class="col-md-4 px-3 pt-2 border text-center"
+                                style="height: 150px; background-color: whitesmoke;">
+                                col-md-4
+                            </div>
+                            <div class="col-md-8 px-3 pt-2 border text-center"
+                                style="height: 150px; background-color: whitesmoke;">
+                                col-md-8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Card Cores -->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Cores</h2>
+                </div>
+                <hr>
+                <p class="text-muted">Para ajudar a criar uma consistencia visual no site o Bootstrap ja vem com uma
+                    pré-seleção de cores para serem usadas.
+                </p>
+                <hr>
+                <p> As cores no Bootstrap são adicionadas no fim das classes dos elementos para alterar as cores dos
+                    mesmos. Em um elemento "btn" por exemplo adicionamos uma classe "btn-nomedacor" onde nome da cor
+                    pode ser:
+                    <strong class="text-primary">"primary"</strong>, <strong
+                        class="text-secondary">"secondary"</strong>,
+                    <strong class="text-success">"success"</strong>, <strong class="text-info">"info"</strong>,
+                    <strong class="text-warning">"warning"</strong>, <strong class="text-danger">"danger"</strong>
+                    e <strong class="text-muted">"muted"</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card Bordas -->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Bordas</h2>
+                </div>
+                <hr>
+                <p class="text-muted">O Bootstrap conta também com classes para adicionar bordas nos diversos elementos
+                    do site de maneira padronizada.
+                </p>
+                <hr>
+                <p> Para adicionar bordas nos elementos usando o Bootstrap usamos a classe <strong>"border"</strong>.
+                    Podemos adicionar <strong>"-top"</strong>, <strong>"-right"</strong>, <strong>"-bottom"</strong> e
+                    <strong>"-left"</strong> para adicionar bordas apenas em um dos lados do elemento.
+                </p>
+                <p>Para remover as bordas usamos a mesma sintaxe de adicionar mas com um <strong>"-0"</strong> no final.
+                    Por exemplo <strong>"border-top-0"</strong>.</p>
+                <p>Para adicionar cores nas bordas adicionamos a classe <strong>"border-nomedacor"</strong>, onde
+                    nomedacor é uma das cores faladas anteriormente. Por exemplo <strong>"border-danger"</strong>.
+                </p>
+
+                <div class="py-3">
+                    <div class="container shadow-sm cards pt-1 pb-3">
+                        <div class="fundoint">
+                            <h3>Exemplos</h3>
+                        </div>
+                        <hr>
+                        <div class="row px-3">
+                            <div class="col-8 col-md-3 offset-2 pt-2 text-center border border-right-0 border-danger"
+                                style="height: 150px; background-color: whitesmoke;">
+                                border <br> border-right-0 <br> border-danger
+                            </div>
+                            <div class="col-8 col-md-3 offset-2 pt-2 mt-2 mt-md-0 text-center border-top border-right border-dark"
+                                style="height: 150px; background-color: whitesmoke;">
+                                border-top <br> border-left <br> border-dark
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Tipografia -->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Tipografia</h2>
+                </div>
+                <hr>
+                <p class="text-muted">A tipografia do Bootstrap suporta estilizar e formatar os elementos de texto em
+                    headings, paragrafos, citações, entre outras.
+                </p>
+                <hr>
+                <p> As fontes no Bootstrap tem um tamanho padrão de <strong>1rem</strong> e uma altura de linha de
+                    <strong>1.5</strong>. Adicionalmente é aplicada uma margem em baixo de todos os parágrafos em uma
+                    altura de metade da altura das linhas.
+                </p>
+                <p> Os comandos de texto são adicionados com classes que iniciam em <strong>"text"</strong>.
+                    <strong>"text-left"</strong>, <strong>"text-center"</strong>, <strong>"text-right"</strong> e
+                    <strong>"text-justify"</strong> por exemplo ajustam o alinhamento do texto.
+                </p>
+                <p>Adicionando <strong>"lowercase"</strong>, <strong>"uppercase"</strong> ou <strong>"capitalize"
+                    </strong>alteramos as letras para <span class="text-lowercase">minúsculas</span>, <span
+                        class="text-uppercase">maiúsculas</span> e <span class="text-capitalize">primeira letra
+                        maiúscula</span>, respectivamente.
+                </p>
+                <p>
+                    Usando as classes <strong>"font-weight-bold"</strong>, <strong>"font-weight-normal"</strong> e
+                    <strong>"font-weight-light"</strong> deixamos o texto em <span class="font-weight-bold">
+                        negrito</span>, normal ou <span class="font-weight-light">leve</span>.
+                </p>
+                <p>Podemos adicinar as classes de cores do Bootstrap também para alterar a cor do texto. Por exemplo
+                    <strong class="text-danger">"text-danger"</strong> e <strong
+                        class="text-muted">"text-muted"</strong>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card Margens e Paddings -->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Margens e Paddings</h2>
+                </div>
+                <hr>
+                <p class="text-muted">Podemos adicionar paddings e margens nos elementos com o Bootstrap de maneira
+                    padronizada usando as algumas de suas classes.
+                </p>
+                <hr>
+                <p> Para adicionar margens com o Bootstrap usando <strong>m</strong>, para margem e <strong>p</strong>
+                    para padding. A isso podemos adicionar <strong>t</strong> para topo, <strong>b</strong> para baixo,
+                    <strong>l</strong> para esquerda, <strong>d</strong> para direita, <strong>x</strong> para
+                    horizontal e <strong>y</strong> para vertical. Os valores numéricos vão de <strong>-0</strong> até
+                    <strong>-5</strong>
+                </p>
+                <p>
+                    Exemplo: <strong>"mt-4"</strong> adicionaria uma margem no topo com espaçamento 4.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Card Botões e dropdowns-->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Botões e Dropdowns</h2>
+                </div>
+                <hr>
+                <p class="text-muted">Criar botões e dropdowns é muito prático usado as classes do Bootstrap.
+                </p>
+                <hr>
+                <p> A classe básica para criar um botão é a classe <strong>"btn"</strong>. Adicionando
+                    <strong>"btn-nomedacor"</strong>, onde nomedacor é uma das cores faladas anteriormente, escolhemos
+                    as cores dos botões.
+                </p>
+                <p> Para adicionarmos dropdowns usamos no botão a classe <strong>"dropdown-toggle"</strong> e o atributo
+                    <strong>data-toggle="dropdown"</strong>. Na div com os itens usamos a classe <strong>
+                        "dropdown-menu"</strong> e nos itens do dropdown usamos <strong>"dropdown-item"</strong>.
+                </p>
+
+                <div class="py-3">
+                    <div class="container shadow-sm cards pt-1 pb-3">
+                        <div class="fundoint">
+                            <h3>Exemplos</h3>
+                        </div>
+                        <hr>
+                        <div class="row px-3">
+                            <div class="col-8 col-md-3 offset-2 pt-2 text-center border"
+                                style="height: 150px; background-color: whitesmoke;">
+                                btn btn-primary <br><br>
+                                <button type="button" class="btn btn-primary mt-1">Um botão</button>
+
+                            </div>
+                            <div class="col-8 col-md-3 offset-2 pt-2 mt-2 mt-md-0 text-center border"
+                                style="height: 150px; background-color: whitesmoke;">
+                                btn btn-danger dropdown-toggle<br>
+                                <div class="btn-group mt-4 mt-md-1">
+                                    <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" type="button"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Sou um dropdown</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Campos de input-->
+        <div class="py-3">
+            <div class="container shadow-sm cards py-1">
+                <div class="fundoh">
+                    <h2>Campos de Input</h2>
+                </div>
+                <hr>
+                <p class="text-muted"> Para auxiliar na criação de formulários o Bootstrap conta com classes também para
+                    os campos de input.
+                </p>
+                <hr>
+                <p> Nos campos de input adicionamos a classe <strong>"form-control"</strong> para formatar o campo com
+                    display: block e width: 100%, além de ajustes na estilização do elemento.
+                </p>
+                <p> Como opção de layout de formulários podemos usar eles dentro das grids do Bootstrap, onde existe
+                    a classe <strong>"form-row"</strong> para usar no lugar de <strong>"row"</strong>, diminuindo o gap
+                    entre os elementos.</p>
+                <p> Podemos agrupar o campo com sua label colocando os dois dentro de uma div com a classe
+                    <strong>"form-group"</strong>. Se preferirmos os dois em linha usamos a classe <strong>
+                        "form-inline"</strong> nos elementos.
+                </p>
+                <p>
+                    Existe também a opção de usar <strong>"input-group"</strong> para agrupar elementos com os inputs,
+                    criando efeitos de continuidade com outros elementos, como textos e botões. A estes adicionamos
+                    <strong>"input-group-append"</strong> e <strong>"input-group-prepend"</strong> se eles aparecem no
+                    inicio ou no fim do grupo, respectivamente.
+                </p>
+
+                <div class="py-3">
+                    <div class="container shadow-sm cards pt-1 pb-3">
+                        <div class="fundoint">
+                            <h3>Exemplos</h3>
+                        </div>
+                        <hr>
+                        <div class="row px-3">
+                            <div class="col-10 col-md-4 offset-1 pt-2 border"
+                                style="height: 150px; background-color: whitesmoke;">
+                                <form class="form-group mt-4">
+                                    <label>form-group</label>
+                                    <input class="form-control" type="text" placeholder="Input exemplo">
+                                </form>
+                            </div>
+                            <div class="col-10 col-md-4 offset-md-2 offset-1 pt-2 mt-2 mt-md-0 border"
+                                style="height: 150px; background-color: whitesmoke;">
+                                <form class="form-group mt-4">
+                                    <label>input-group-prepend</label>
+                                    <div class="input-group mr-sm-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">@</div>
+                                        </div>
+                                        <input class="form-control" type="text" placeholder="Usuário">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
+
+    <footer>
+        <div class="container shadow-md text-center py-2">
+            <p class="small mt-2">Lorem Ipsum Tuts© - 2021</p>
+        </div>
+    </footer>
+
     <!-- JS Bootstrap -->
     <script src="js/bootstrap.min.js"> </script>
 </body>

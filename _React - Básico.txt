@@ -1,0 +1,5 @@
+Tags
+
+    As tags podem ser abertas e fechadas com <nometag />, essa é a sintaxe
+    usada também para tags que não tem conteudo, como <br>
+

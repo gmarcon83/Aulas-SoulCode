@@ -25,7 +25,7 @@ Alinhamento vertical
 Headings
 
     .h1 até .h6 => A mesma formatação dos headings, mas sem semântica;
-    .display-1 até .display-6 => Um cabeçalho com mais destaque
+    .display-1 até .display-4 => Um cabeçalho com mais destaque
 
 
 Estilos

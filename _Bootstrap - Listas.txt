@@ -1,5 +1,7 @@
-Usando a tag <ul> com a classe .list-group, a lista é formatada automáticamente;
-Em cada item da lista usamos .list-group-item. (<li>, <a>, <button>);
+Básico
+
+    .list-group => na <ul>, a lista é formatada automáticamente;
+    .list-group-item => Em cada item da lista usamos (<li>, <a>, <button>);
 
 Opções para itens de lista:
 

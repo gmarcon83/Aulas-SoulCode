@@ -1,0 +1,18 @@
+Básico
+
+    .card => uma div pai, coloca as bordas, cor, flex e word-wrap;
+    .card-header => um div dentro, coloca padding, flex, uma cor e borda;
+    .card-body => um div dentro, coloca padding e flexbox;
+    .card-group => um div pai, junta vários cards em um grupo;
+    .card-deck => um div pai, junta vários cards com espaço entre eles;
+
+
+Conteúdo
+
+    .card-title => Espaçamento para título;
+    .card-subtitle => Espaçamento para sub-titulo;
+    .card-text => Uma formatação para texto;
+    .card-link => Hover com mãozinha;
+    .card-img-top => Fora do card body, ajusta largura e bordas;
+    .card-img => Fora do card body, ajusta largura;
+    .card-img-bottom => Fora do card body, ajusta largura e bordas;

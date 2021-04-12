@@ -35,5 +35,7 @@ Grupos: aplicados no elemento pai.
 
     btn-group => Agrupa os botões;
     btn-group-vertical => Agrupa os botões na vertical;
+    btn-group-sm => Muda o tamanho dos botões;
+    btn-group-lg => Muda o tamanho dos botões;
 
     OBS: Podemos agrupar varios grupos de botões com .btn-toolbar

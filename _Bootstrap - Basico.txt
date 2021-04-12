@@ -61,3 +61,14 @@ Video
 Leitor de tela
 
     .sr-only => aparece apenas para leitores de tela;
+
+Cores de fundo
+
+    bg-primary => Cor primária
+    bg-secondary => Cor secundária
+    bg-success => Cor seucesso
+    bg-info => Cor info
+    bg-warning => Cor aviso
+    bg-danger => Cor perigo
+    bg-light => Cor luz
+    bg-dark => Cor escuro

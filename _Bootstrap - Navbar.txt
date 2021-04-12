@@ -1,0 +1,38 @@
+Básico menu nav
+
+    .nav => usada no ul;
+    .nav-item => usada no li;
+    .nav-link => usada no a;
+
+
+Opções do ul
+
+    .nav-pills // Nav estilo botões;
+    .nav-tabs // Nav estilo abas;
+    .nav-fill // Ocupa todo o espaço;
+    .nav-justified // Ocupa todo o espaço, com espaçamento igual;
+
+
+Com Navbar
+
+    .navbar => no div pai, se for usar o navbar;
+    .navbar-expand-XX => mostra a nav em linha depois de XX;
+
+    .navbar-nav => usada no ul;
+    .navbar-brand => na logo marca da empresa;
+
+
+Hamburger
+
+    .navbar-toggler => um <button>;
+    data-toggle="colapse" => no do mesmo button;
+    data-target="#umadiv" => no do mesmo button;
+    .navbar-togle-icon => em um <span> dentro do button;
+
+    OBS: Criamos uma div com a id definida no data-target e a classe
+    .collapese e colocamos o nosso nav dentro;
+
+
+Outros
+
+    .active => marca o link como ativo;

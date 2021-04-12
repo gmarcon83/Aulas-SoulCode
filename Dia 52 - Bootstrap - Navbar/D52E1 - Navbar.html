@@ -7,10 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
     <meta name="Author" content="Giovanni Marcon">
 
-    <title>Button Group<div class="btn-group" role="group" aria-label="Button group">
-
-        </div>
-    </title>
+    <title>Navbar </title>
 
     <!-- CDN CSS Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -23,42 +20,102 @@
 
 <body>
 
-    <!-- Navegação
-    Tipos de navegação:
-        nav-pills
-        nav-tabs
-    opções de alinhamento:
-        justify-content-center
-        justify-content-end
-        flex-column
-    -->
-    <h2>Navegação simples / abas</h2>
-    <ul>
-        <li>
-            <a href="">Home</a>
+    <h2>Navegação simples</h2>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
         </li>
-        <li>
-            <a href="">Sobre</a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
         </li>
-        <li>
-            <a href="">Serviços</a>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul>
+
+    <h2>Navegação abas</h2>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
+        </li>
+    </ul>
+
+    <h2>Navegação pills</h2>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
         </li>
     </ul>
 
 
+
     <h2>Barra de navegação simples</h2>
-    <nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <!--Logo-->
-
-        <a href="">Logomarca</a>
+        <a class="navbar-brand" href="#">Logomarca</a>
         <!--Navegação-->
-
-
+        <ul class="nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Destaques</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Preços</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+        </ul>
     </nav>
 
 
     <h2>Barra de navegação com menu responsivo</h2>
-
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Destaques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Desativado</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 
     <h2>Barra de navegação com formulário</h2>

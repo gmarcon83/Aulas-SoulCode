@@ -3,3 +3,21 @@ Tags
     As tags podem ser abertas e fechadas com <nometag />, essa é a sintaxe
     usada também para tags que não tem conteudo, como <br>
 
+
+Componente básico
+
+    import React from "react";
+
+    class CompName extends React.Component {
+        render() {
+            const { decompondo, variaveis } = this.props.umObjeto // Opcional
+            return (
+                <section className="nomesDeClasses">
+                    <p>Usando: {decomponto} as {variaveis}</p>
+                </section>
+            );
+        }
+    }
+
+    export default CompName;
+

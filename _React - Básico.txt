@@ -21,3 +21,4 @@ Componente básico
 
     export default CompName;
 
+    OBS: São as propriedades padrões dos objetos;

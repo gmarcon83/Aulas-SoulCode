@@ -23,4 +23,4 @@ Componente básico
 
     OBS: props -> são as propriedades padrões dos objetos;
          state -> são propriedades que podem variar, alteramos elas com o
-                  setState();
+                  setState();+

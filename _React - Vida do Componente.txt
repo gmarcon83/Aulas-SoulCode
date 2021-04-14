@@ -1,0 +1,36 @@
+Vida do Componente
+
+    Montagem
+
+        constructor();
+        render();
+        componentDidMount();
+
+    Atualização
+
+        render();
+        componentDidUpdate();
+
+    Desmontagem
+
+        componentWillUnmount();
+
+▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+constructor()
+    Não podemos usar setState no Constructor.
+
+render()
+    Único método obrigatório da classe, deve retornar o que
+    queremos mostrar na tela.
+
+componentDidMount()
+    Set state pode ser aplicado nessa fase.
+
+componentDidUpdate()
+    Gera um loop se usarmos um setState.
+
+componentWillUnmount()
+    Podemos usamar para limpar timers etc antes do componente ser
+    destruido.

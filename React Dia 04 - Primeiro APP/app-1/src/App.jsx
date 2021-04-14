@@ -1,6 +1,6 @@
-import Header from "./componentes/Header";
+//import Header from "./componentes/Header";
 //import Content from "./componentes/Content";
-import Footer from "./componentes/Footer";
+//import Footer from "./componentes/Footer";
 //import {pessoa1, pessoa2} from "./Data";
 import "./style.css"
 //import CustomClass from "./componentes/CustomClass";

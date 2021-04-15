@@ -93,7 +93,7 @@ align-self: controla o alinhamento vertical do item dentro da célula
             -------------- Grid Areas --------------
             ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
 
-grid-template-area: -> Atribui um nome aos espaços de uma grid. Aplicado
+grid-area: -> Atribui um nome aos espaços de uma grid. Aplicado
       no elemento pai.
 
       EX: grid-template-areas:

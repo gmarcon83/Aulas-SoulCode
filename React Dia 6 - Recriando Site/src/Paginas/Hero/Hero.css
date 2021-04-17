@@ -1,0 +1,39 @@
+.hero {
+    background-image: url(../../img/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.hero h1 {
+    font-size: 3.2em;
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.hero .btn {
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+    padding: 20px 50px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero h3 {
+        font-size: 1.5em;
+    }
+}

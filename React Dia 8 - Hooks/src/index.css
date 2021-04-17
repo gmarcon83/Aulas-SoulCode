@@ -27,6 +27,7 @@ input {
 button {
   border-radius: 10px;
   padding: 10px 25px;
+  margin: 0 10px;
   border: none;
   background-color: #0092c3;
   cursor: pointer;

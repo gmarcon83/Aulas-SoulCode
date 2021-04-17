@@ -18,23 +18,37 @@ function UseMemo() {
     console.log(dados);
   };
 
-  function ValidaSenha({ senha }) {
-    console.log("Validando")
+  function ValidaSenha1({ senha }) {
+    console.log("Validando1")
     if (senha === "") return <span>Preencha o campo</span>;
     if (senha.length <= 5) return <span>Senha com no mínimo 6 caracteres</span>;
-    return <span>Senha Valida</span>;
+    return <span>Senha Válida</span>;
   }
 
   //Roda caso tenha mudança na variavel
-  const validaSenha = useMemo(
+  const validaSenha1 = useMemo(
     ()=>{
-      return <ValidaSenha senha={dados.senha1} />
+      return <ValidaSenha1 senha={dados.senha1} />
     },[dados.senha1]//Variável que precisa mudar
   )
 
+  function ValidaSenha2({ senha1, senha2 }) {
+    console.log("Validando2")
+    if (senha2 === "") return <span> </span>;
+    if (senha1 !== senha2) return <span>Senhas Diferentes</span>;
+    return <span>Senha Válida</span>;
+  }
+
+  const validaSenha2 = useMemo(
+    ()=>{
+      return <ValidaSenha2 senha1={dados.senha1} senha2={dados.senha2}/>
+    },[dados.senha2, dados.senha1]//Variável que precisa mudar
+  )
+
+
   return (
     <>
-      <PageTitle title="useMemo" subtitle="Exemplo de Uso" />
+      <PageTitle title="useMemo" subtitle="Usado para evitar chamadas desnecessárias de funções" />
 
       <SectionTitle title="Exemplo 1" />
       <div className="center">
@@ -53,7 +67,7 @@ function UseMemo() {
             value={dados.email}
             onChange={handleInputChange}
           />
-          {validaSenha}
+          {validaSenha1}
           <input
             type="password"
             name="senha1"
@@ -61,6 +75,7 @@ function UseMemo() {
             value={dados.password}
             onChange={handleInputChange}
           />
+          {validaSenha2}
           <input
             type="password"
             name="senha2"

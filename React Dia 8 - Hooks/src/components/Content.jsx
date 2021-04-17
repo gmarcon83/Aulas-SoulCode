@@ -7,6 +7,8 @@ import UseEffect from "../exemplos/UseEffect";
 import UseRef from "../exemplos/UseRef";
 import FormDados from "../exemplos/FormDados";
 import UseMemo from "../exemplos/UseMemo";
+import CreateContext from "../exemplos/CreateContext";
+import UseReducer from "../exemplos/UseReducer";
 
 function Content() {
   return(
@@ -18,6 +20,8 @@ function Content() {
         <Route path="/useRef" component={UseRef}/>
         <Route path="/formDados" component={FormDados}/>
         <Route path="/useMemo" component={UseMemo}/>
+        <Route path="/createContext" component={CreateContext}/>
+        <Route path="/useReducer" component={UseReducer}/>
       </Switch>
     </main>
   )

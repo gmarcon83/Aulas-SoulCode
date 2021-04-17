@@ -1,5 +1,7 @@
 Biblioteca que troca componentes através dos links
 
+    npm install --save react-router-dom
+
 
 BrowserRouter => Marca a partir da onde esta sendo monitorado
               // Vai dentro da index.jsx e envolve o app

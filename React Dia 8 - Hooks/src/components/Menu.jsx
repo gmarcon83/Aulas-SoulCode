@@ -11,10 +11,19 @@ function Menu() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/useState">Use State</Link>
+            <Link to="/useState">useState</Link>
           </li>
           <li>
-            <Link to="/useEffect">Use Effect</Link>
+            <Link to="/useEffect">useEffect</Link>
+          </li>
+          <li>
+            <Link to="/useRef">useRef</Link>
+          </li>
+          <li>
+            <Link to="/formDados">formDados</Link>
+          </li>
+          <li>
+            <Link to="/useMemo">useMemo</Link>
           </li>
         </ul>
       </nav>

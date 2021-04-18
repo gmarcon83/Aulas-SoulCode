@@ -1,3 +1,8 @@
+      Roda os scripts só depois de carregar a pg
+                          ↓
+<script src="script.js" defer></script>
+
+
 Casting -> Transformar um tipo de dado para outro
     parseInt(num, base) -> converte para inteiro, base é opcional para converter
                            de outras bases numéricas
@@ -5,6 +10,10 @@ Casting -> Transformar um tipo de dado para outro
     umNumeroFloat.toFixed(x) -> transforma para uma string com x casas decimais
 
 console.log(); -> imprime no console
+                  // %c permite usar CSS no console.
+
+        Ex: console.log(`Uma %cString`, "cod css"), aplica css do %c em diante;
+
 documento.write(); -> escreve no HTML
 document.writeln(); -> igual ao anterior mas adiciona um "enter" no final
 alert(); -> cria um popup

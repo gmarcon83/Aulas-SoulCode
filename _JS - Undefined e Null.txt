@@ -1,0 +1,20 @@
+Valores padrão
+
+         //Nullish Coalescing
+                  ↓
+    valor = valor ?? outroValor // Seu valor é nulo ou undefined, valor
+                                // fica igual outro valor;
+
+    OBS: Podemos usar também || porem considera também 0, false ou "";
+
+
+Acessando apenas se existe
+
+  Usamos ? depois da variavel ou parametro
+
+  Exemplo: console.log(nomeObj?.propObj?.proProp?)
+          // Testa um item por vez e retorna undefined
+          // caso não exista, sem dar erro de acesso;
+
+  Usamos ?. se for tentar acessar um metodo/função  ou elemento
+            de uma array que não sabemos se existe;

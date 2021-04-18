@@ -1,0 +1,54 @@
+Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
+
+  Hooks Básicos:
+    - useState
+    - useEffect
+    - useContext
+
+  Outros Hooks:
+    - useReducer
+    - useCallback
+    - useMemo
+    - useRef
+    - useImperativeHandle
+    - useLayoutEffect
+    - useDebugValue
+
+  Recomendações:
+    - Não usar dentro de loops ou ifs, assim os hooks são executados na mesma
+      ordem cada vez que um componente renderiza;
+    - Não usar hooks em funções normais do JS, apenas de dentro de componentes
+      funcionais do React;
+    - Se for criar um Hook customizado usar sempre nomear ele com 'use';
+
+▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+--------------------------------   useState   ---------------------------------
+▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+  Cria um state (uma variável) e um setter pra alterar ele.
+
+  Sintaxe:
+
+    const [nome, setNome] = useState(valorInicial)
+            ↑         ↑
+        NomeVar  NomeSetter
+
+  Funcionamento:
+
+    - Quando usamos o setter trocamos o valor e o componente renderiza novamente
+    - Se o valor permanece inalterado o React encerra a renderização nesse ponto,
+      sem executar o resto das funções do componente;
+
+
+▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+-------------------------------   useEffect   ---------------------------------
+▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+  Executa uma ação quando o componente atualiza, nas etapas componentDidMount(),
+  componentDidUpdate(), and componentWillUnmount().
+
+  Sintaxe:
+
+    useEffect(() => {
+      // Executa algo
+    });

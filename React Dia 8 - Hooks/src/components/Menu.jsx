@@ -29,7 +29,13 @@ function Menu() {
             <Link to="/createContext">createContext</Link>
           </li>
           <li>
+            <Link to="/createContext2">createContext2</Link>
+          </li>
+          <li>
             <Link to="/useReducer">useReducer</Link>
+          </li>
+          <li>
+            <Link to="/useReducer">useReducer2</Link>
           </li>
         </ul>
       </nav>

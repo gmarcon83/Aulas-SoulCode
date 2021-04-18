@@ -21,6 +21,7 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
       funcionais do React;
     - Se for criar um Hook customizado usar sempre nomear ele com 'use';
 
+
 ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
 --------------------------------   useState   ---------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
@@ -30,25 +31,55 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
   Sintaxe:
 
     const [nome, setNome] = useState(valorInicial)
-            ↑         ↑
-        NomeVar  NomeSetter
+            ↑       ↑
+       NomeVar  NomeSetter
 
   Funcionamento:
 
-    - Quando usamos o setter trocamos o valor e o componente renderiza novamente
+    - Quando usamos o setter trocamos o valor e o componente renderiza novamente;
     - Se o valor permanece inalterado o React encerra a renderização nesse ponto,
       sem executar o resto das funções do componente;
+    - Não preserva os outros componentes de uma array ou um objeto quando altera
+      um dos itens, por isso precisamos desconstruir o valor antigo antes;
+    - Não usar diretamente o valor atual do state para calcular um novo valor,
+      para isso usar uma arrow function dentro do setter e ela automáticamente
+      recebe o valor atual como parâmetro.
+
+        Ex: setNome(nome + 1) // Não é recomendado, pois pode causar bugs;
+            setNome( oldVal => oldVal + 1) // Mais seguro;
+                        ↑
+            É o valor passado automáticamente pelo setter, e armazenamos ele
+            na variável nomeada oldVal;
 
 
 ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
--------------------------------   useEffect   ---------------------------------
+--------------------------------   useEffect   --------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
 
-  Executa uma ação quando o componente atualiza, nas etapas componentDidMount(),
+  Executa uma ação após o componente renderizar, nas etapas componentDidMount(),
   componentDidUpdate(), and componentWillUnmount().
 
   Sintaxe:
 
-    useEffect(() => {
-      // Executa algo
-    });
+    useEffect(
+      () => {
+        // Executa algo
+      return () => {Função de limpeza} // Return é opcional e explicado a seguir
+      }, [dependencias]      // , [dependencias] é opcional e explicado a seguir
+    );
+
+  Funcionamento
+
+    - Usamos [dependencias] para passar as variaveis locais usadas em useEffect,
+      assim ele só é executado se houver alteração nelas;
+    - Para executar uma vez na criação do componente, passamos a array vazia [];
+    - return pode retornar uma função que vai ser usada antes do componente ser
+      desmontado, faz a função de componentWillUnmount();
+    - Roda depois da renderização do componente, se quisermos rodar antes da
+      renderização devemos usar useLayoutEffect que é idêntico, com exceção do
+      momento em que é executado;
+
+
+▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+-------------------------------   useContext   --------------------------------
+▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼

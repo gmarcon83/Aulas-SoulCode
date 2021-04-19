@@ -8,7 +8,7 @@ function UseContext() {
   return (
     <>
       <p>{data.nome}</p>
-      <p>{data.preco}</p>
+      <p>{data.preco} </p>
       <FilhoDoUseContext />
     </>
   );

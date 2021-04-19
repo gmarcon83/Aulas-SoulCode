@@ -83,3 +83,32 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
 ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
 -------------------------------   useContext   --------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+  Permite passar data através da árvore de componentes, sem ter que passar props
+  manualmente em todos os níveis;
+
+  Sintaxe:
+
+    No elemento pai que possui os dados que quermos propagar:
+
+      const NomeDoContexto = React.createContext();
+
+
+    No return desse elemento pai:
+
+      <NomeDoContexto.provider value={DadosQueVamosPropagar} >
+        // Elementos onde vamos propagar os dados
+      <NomeDoContexto.provider/>
+
+
+    No elemento que vai usar o contexto:
+
+      import {NomeDoContexto} from "./ElementoPai";
+
+      const umaVariavel = useContext(NomeDoContexto);
+
+
+▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
+-------------------------------   useReducer   --------------------------------
+▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+

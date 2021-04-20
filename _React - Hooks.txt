@@ -26,7 +26,7 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
 --------------------------------   useState   ---------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
 
-  Cria um state (uma variável) e um setter pra alterar ele.
+Cria um state (uma variável) e um setter pra alterar ele.
 
   Sintaxe:
 
@@ -56,8 +56,8 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
 --------------------------------   useEffect   --------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
 
-  Executa uma ação após o componente renderizar, nas etapas componentDidMount(),
-  componentDidUpdate(), and componentWillUnmount().
+Executa uma ação após o componente renderizar, nas etapas componentDidMount(),
+componentDidUpdate(), and componentWillUnmount().
 
   Sintaxe:
 
@@ -84,8 +84,8 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
 -------------------------------   useContext   --------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
 
-  Permite passar data através da árvore de componentes, sem ter que passar props
-  manualmente em todos os níveis;
+Permite passar data através da árvore de componentes, sem ter que passar props
+manualmente em todos os níveis;
 
   Sintaxe:
 
@@ -111,4 +111,24 @@ Hooks são uma maneiras de usar funcionalidades do React sem precisar de classes
 ▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲
 -------------------------------   useReducer   --------------------------------
 ▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼▲▼
+
+  Serve para controlar states, é uma versão mais complexa de useState.
+
+
+  Sintaxe:
+
+    Fora da função principal
+
+      const funcRedut(valorAtual, acao) // retorna um novo valor, dependendo
+                                        // da ação que passamos com o dispatch,
+                                        // OBS: por conveção usamos um switch;
+
+    Dentro da função principal
+
+    const[valor, nomeDispatch] = useReducer(funcRedut, valorInicial)
+            ↑
+       variável que vamos manipular chamando nome nomeDispatch("comando");
+
+    OBS: tanto o valor, quanto o nomeDispatch podem ser objetos com múltiplos
+    parâmetros;
 

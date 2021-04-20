@@ -1,0 +1,11 @@
+Importando:
+
+  const express = require( "express");
+  const app = express();
+
+
+Adicionando rotas
+
+  app.get("/", (req, res) => {O que faz});
+           ↑
+        A Rota

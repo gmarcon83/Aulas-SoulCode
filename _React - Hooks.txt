@@ -87,6 +87,9 @@ componentDidUpdate(), and componentWillUnmount().
 Permite passar data através da árvore de componentes, sem ter que passar props
 manualmente em todos os níveis;
 
+OBS: Podemos passar também variaveis provenientes de useState/useReducer para
+manipular esses valores a partir de componentes filhos;
+
   Sintaxe:
 
     No elemento pai que possui os dados que quermos propagar:

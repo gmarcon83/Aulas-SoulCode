@@ -122,13 +122,14 @@ manipular esses valores a partir de componentes filhos;
 
     Fora da função principal
 
-      const funcRedut(valorAtual, acao) // retorna um novo valor, dependendo
-                                        // da ação que passamos com o dispatch,
-                                        // OBS: por conveção usamos um switch;
+      const valorInicial = ???
+      const funcRed (valorAtual, acao)=>{}// retorna um novo valor, dependendo
+                                          // da ação que passamos com o dispatch
+                                          // OBS: por conveção usamos um switch;
 
     Dentro da função principal
 
-    const[valor, nomeDispatch] = useReducer(funcRedut, valorInicial)
+    const[valor, nomeDispatch] = useReducer(funcRed, valorInicial)
             ↑
        variável que vamos manipular chamando nome nomeDispatch("comando");
 

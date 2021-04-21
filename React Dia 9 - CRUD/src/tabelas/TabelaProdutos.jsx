@@ -15,22 +15,23 @@ function TabelaProduto(props) {
           {
             props.produtos.length > 0 ? (
               props.produtos.map(
-
+                (produto) => (
+                  <tr key={produto.id}>
+                  <td>{produto.nomeProduto}</td>
+                  <td>R$ {produto.preco}</td>
+                  <td>
+                    <button>Editar</button>
+                    <button onClick={() => props.deletarProduto(produto.id)}>Excluir</button>
+                  </td>
+                </tr>
+                )
               )
             ) : (
-              <p>Sem dados</p>
+              <tr>
+                <td>Sem Produtos</td>
+              </tr>
             )
           }
-
-
-          <tr>
-            <td>Nome</td>
-            <td>R$ 0</td>
-            <td>
-              <button>Editar</button>
-              <button>Excluir</button>
-            </td>
-          </tr>
         </tbody>
       </table>
     </>

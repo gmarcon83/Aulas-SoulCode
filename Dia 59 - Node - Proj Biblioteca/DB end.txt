@@ -1,0 +1,1 @@
+mongodb+srv://dbUser:dbUser@cluster0.r34mk.mongodb.net/local_library?retryWrites=true&w=majority

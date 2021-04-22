@@ -1,55 +1,62 @@
 Declarando
 
-    let arr = Array();
-    let arr = [];
+  let arr = Array();
+  let arr = [];
 
 
 Adicionando elementos
 
-    .push(elemento1, elemento2,...) // Insere no final da array;
-    .unshift(elemento1, elemento2,...) // Insere no inicio da array;
-    .pop() // Remove o ultimo item da array e retorna seu valor;
-    .shift() // Remove o primeiro item da array e retorna seu valor;
+  .push(elemento1, elemento2,...) // Insere no final da array;
+  .unshift(elemento1, elemento2,...) // Insere no inicio da array;
+  .pop() // Remove o ultimo item da array e retorna seu valor;
+  .shift() // Remove o primeiro item da array e retorna seu valor;
+
 
 Modificando
-    .splice(index, X, item) // Adiciona item no index, deletando X itens
-                            // item é opcional, nesse caso ela somente deleta;
+  .splice(index, X, itens) // Adiciona itens no index, deletando X itens
+                           // items é opcional, nesse caso ela somente deleta
+                           // retorna uma array com os itens deletados;
+
+
+Copiando
+  .splice(indIni, indFim) // Retorna uma array com os elementos contidos entre
+                          // indIni e indFim (inclusos), não muda a original;
 
 
 Iterando
 
-    for (qqNome in nomeArray) // Pega o INDEX de cada elemento;
-    for (qqNome of nomeArray) // Pega o VALOR de cada elemento;
+  for (qqNome in nomeArray) // Pega o INDEX de cada elemento;
+  for (qqNome of nomeArray) // Pega o VALOR de cada elemento;
 
-    .forEach() //semelhante ao for of;
-    .map() // semelhante ao forEach, mas retorna uma nova array;
-    .filter() // retorna uma nova array com os elementos que passam o teste;
+  .forEach() //semelhante ao for of;
+  .map() // semelhante ao forEach, mas retorna uma nova array;
+  .filter() // retorna uma nova array com os elementos que passam o teste;
 
-    Ex1: // arr.forEach(i => console.log(i));
-    Ex2: // arr.forEach(function(i){
-                console.log(i);
-            })
+  Ex1: // arr.forEach(i => console.log(i));
+  Ex2: // arr.forEach(function(i){
+              console.log(i);
+          })
 
 Reorganizando array
 
-    .sort() // retorna uma array com os elementos ordenados, porém
-               com se os elementos fossem strings;
-    .inverse() // igual a sort, mas de trás para frente;
+  .sort() // retorna uma array com os elementos ordenados, porém
+              com se os elementos fossem strings;
+  .inverse() // igual a sort, mas de trás para frente;
 
-    obs: pode aceitar valores (a, b) e compara um elemento com o outro,
-         se retornamos um numero negativo ele ordena o menor numero primeiro,
-         se retornamos um numero positivo ele ordena o maior numero primmiro,
-         então dependendo do código que escrevermos é possivel ordenar numeros
-         sem sem tratados como strings.
+  obs: pode aceitar valores (a, b) e compara um elemento com o outro,
+        se retornamos um numero negativo ele ordena o menor numero primeiro,
+        se retornamos um numero positivo ele ordena o maior numero primmiro,
+        então dependendo do código que escrevermos é possivel ordenar numeros
+        sem sem tratados como strings.
 
 Outras funções
 
-    .lenght // Retorna o tamanha da array
-    .find(elem) // retorna o valor elemento se acha ele;
-    .findIndex(elem) // retorna o index do primeiro elemento buscado que
-                 // encontra, retorna -1 se não acha;
-    .includes(elem) // retorna true se ele acha o elemento;
-    .every(teste) // retorna true se todos os elementos passam no teste;
-    .some(teste) // retorna true so qq elemento passar no teste;
-    .reduce(acumulador, elem) // executa uma função em cada elem da array,
+  .lenght // Retorna o tamanha da array
+  .find(elem) // retorna o valor elemento se acha ele;
+  .findIndex(elem) // retorna o index do primeiro elemento buscado que
+                  // encontra, retorna -1 se não acha;
+  .includes(elem) // retorna true se ele acha o elemento;
+  .every(teste) // retorna true se todos os elementos passam no teste;
+  .some(teste) // retorna true so qq elemento passar no teste;
+  .reduce(acumulador, elem) // executa uma função em cada elem da array,
                               // acomulador por ir recebendo os valores;

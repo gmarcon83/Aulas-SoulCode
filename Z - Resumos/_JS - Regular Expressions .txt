@@ -45,22 +45,24 @@ Opções
     /../g => repete o comando varias vezes;
 
 
-funções:
+Funções:
 
     /rEx/.test(string) // Testa a string com uma regEx e retorna um booleano
-    string.match(/rEx/) // Retorna a string achada, o index, e a string
+    String.match(/rEx/) // Retorna a string achada, o index, e a string
                         // original em uma array;
+    String.replace(rEx, "xxx") // Substitui os matchs por "xxx", Podemos usar
+                               // grupos de busca no "xxx" usando $1 $2 $3 etc;
 
 
 Lookahead
 
   Positivo => Testa se o elemento esta presente na string, mas não retorna ele;
 
-      (?=...) // a expressao a ser procurada é ...
+    (?=...) // a expressao a ser procurada é ...
 
   Negativo =>   Positivo => Testa se o elemento não esta presente na string;
 
-      (?!...) // a expressao a ser procurada é ...
+    (?!...) // a expressao a ser procurada é ...
 
 
 Repetição
@@ -69,3 +71,4 @@ Repetição
   é a ordem que aparece o grupo de regex;
 
   Ex: /(\w+)\s\1/ => \1 acha o que (\w+) achou, que é o primeiro grupo;
+

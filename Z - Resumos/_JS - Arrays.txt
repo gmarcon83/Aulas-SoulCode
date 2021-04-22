@@ -20,7 +20,8 @@ Modificando
 
 Copiando
   .splice(indIni, indFim) // Retorna uma array com os elementos contidos entre
-                          // indIni e indFim (inclusos), não muda a original;
+                          // indIni (incluso) e indFim (não incluso), não muda
+                          // a array original;
 
 
 Iterando
@@ -60,3 +61,4 @@ Outras funções
   .some(teste) // retorna true so qq elemento passar no teste;
   .reduce(acumulador, elem) // executa uma função em cada elem da array,
                               // acomulador por ir recebendo os valores;
+  ...arr // retorna os elementos da array, mas fora de uma array;

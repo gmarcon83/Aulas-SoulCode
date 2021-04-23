@@ -8,6 +8,9 @@ const tableData = [
   { id: 3, titulo: "Spy vs. Spy", lancamento: "20/09/1986" },
 ];
 
+// fetch('http://localhost:3100/jogos')
+// .then(response => setData(response))
+
 function App() {
   const [data, setData] = useState(tableData);
 

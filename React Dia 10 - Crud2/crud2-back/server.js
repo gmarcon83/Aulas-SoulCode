@@ -3,6 +3,16 @@ const express = require("express");
 const JogoSchema = require("./models/jogo");
 const app = express();
 
+
+// Para permitir acesso interno
+const cors = require("cors");
+const corsConf = {
+  origin: 'http://localhost:3000'
+}
+
+app.use(cors(corsConf))
+
+
 // Link DB
 const dbLink =
   "mongodb+srv://gmarcon:FUENagYMog4wAlnZ@cluster0.baprm.mongodb.net/jogosDatabase?retryWrites=true&w=majority";

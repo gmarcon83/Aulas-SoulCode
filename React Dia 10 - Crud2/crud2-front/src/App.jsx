@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import DataTable from "./tables/DataTable";
 import AddDataForm from "./forms/AddDataForm";
+import axios from 'axios'
 
-const tableData = [
-  { id: 1, titulo: "After Burner", lancamento: "12/12/1987" },
-  { id: 2, titulo: "Phantasy Star", lancamento: "20/12/1987" },
-  { id: 3, titulo: "Spy vs. Spy", lancamento: "20/09/1986" },
-];
+const tableData = []
+//   { id: 1, titulo: "After Burner", lancamento: "12/12/1987" },
+//   { id: 2, titulo: "Phantasy Star", lancamento: "20/12/1987" },
+//   { id: 3, titulo: "Spy vs. Spy", lancamento: "20/09/1986" },
+// ];
 
 // fetch('http://localhost:3100/jogos')
 // .then(response => setData(response))
@@ -18,6 +19,17 @@ function App() {
     novaData.id = data.length + 1;
     setData([...data, novaData]);
   }
+
+  //Importa dados do servidor e coloca no
+  useEffect(() => {
+    axios
+      .get("http://localhost:3100/jogos")
+      .then((res) => {
+        console.log(res);
+        setData(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
 
   return (
     <div className="container">

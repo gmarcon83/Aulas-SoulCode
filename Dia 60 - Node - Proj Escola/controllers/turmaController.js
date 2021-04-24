@@ -4,10 +4,10 @@ exports.index = function (req, res) {
 };
 // Lista as turmas.
 exports.listar_turmas = function (req, res) {
-  res.send("Lista turmas");
+  res.render('index', { lugar: 'Lista de turmas' });
 };
 
 // Cria uma nova turma.
 exports.cadastrar_turma = function (req, res) {
-  res.send("Criar turma");
+  res.render('index', { lugar: 'Cadastro de turma' });
 };

@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= "Sistema Escola"
+  p Você está em <strong>#{lugar}</strong>
+
+  ul
+    li
+      a(href='/') Início
+    li
+      a(href='/alunos') Alunos
+    li
+      a(href='/aluno/create') Cadastrar aluno
+    li
+      a(href='/cursos') Cursos
+    li
+      a(href='/curso/create') Cadastrar curso
+    li
+      a(href='/matriculas') Matriculas
+    li
+      a(href='/matricula/create') Cadastrar matricula
+    li
+      a(href='/turmas') Turmas
+    li
+      a(href='/turma/create') Cadastrar turma
+

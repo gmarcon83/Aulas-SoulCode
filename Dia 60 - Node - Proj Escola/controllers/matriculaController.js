@@ -4,10 +4,10 @@ exports.index = function (req, res) {
 };
 // Lista as matriculas.
 exports.listar_matriculas = function (req, res) {
-  res.send("Lista matriculas");
+  res.render('index', { lugar: 'Lista de matriculas' });
 };
 
 // Cria uma nova matricula.
 exports.cadastrar_matricula = function (req, res) {
-  res.send("Criar matricula");
+  res.render('index', { lugar: 'Cadastro de matricula' });
 };

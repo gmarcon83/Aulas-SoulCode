@@ -4,10 +4,10 @@ exports.index = function (req, res) {
 };
 // Lista os cursos.
 exports.listar_cursos = function (req, res) {
-  res.send("Lista cursos");
+  res.render('index', { lugar: 'Lista de cursos' });
 };
 
 // Cria um novo curso.
 exports.cadastrar_curso = function (req, res) {
-  res.send("Criar curso");
+  res.render('index', { lugar: 'Cadastro de curso' });
 };

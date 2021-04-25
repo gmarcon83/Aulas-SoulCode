@@ -94,7 +94,7 @@ manipular esses valores a partir de componentes filhos;
 
     No elemento pai que possui os dados que quermos propagar:
 
-      const NomeDoContexto = React.createContext();
+    export const NomeDoContexto = React.createContext();
 
 
     No return desse elemento pai:

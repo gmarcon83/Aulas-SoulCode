@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const TurmaSchema = new Schema(
   {
-    nome_turma: {type: String, required: true, maxLength: 100},
-    cod_turma: {type: String, required: true, maxLength: 25},
+    nome_turma: {type: String, required: true, maxLength: 100, required: true},
+    cod_turma: {type: String, required: true, maxLength: 25, required: true},
   }
 );
 // Virtual

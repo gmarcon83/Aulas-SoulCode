@@ -1,6 +1,6 @@
 Biblioteca que troca componentes através dos links
 
-    npm install --save react-router-dom
+    npm i react-router-dom
 
 
 BrowserRouter => Marca a partir da onde esta sendo monitorado
@@ -37,6 +37,9 @@ Route => Recebe os componentes que serão roteados e é dado o
     Caminho escolhido            Renderizado
 
 
-Link => Recebe o parâmetro dizendo onde estamos.
+Link => Recebe o parâmetro para mudar o endereço.
+NavLink => Igual ao anterior, mas aplica um estilo elemento ativo.
+
+    import {Link} from "react-router-dom";
 
     <Link to="/">Home</Link>

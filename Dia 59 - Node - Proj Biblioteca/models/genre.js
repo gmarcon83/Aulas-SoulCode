@@ -1,15 +1,15 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const CursoSchema = new Schema(
+const GenreSchema = new Schema(
   {
     name: {type: String, required: true, maxLength: 100, minLength: 3},
   }
 );
 
 // Virtual
-CursoSchema
+GenreSchema
 .virtual('url')
-.get(() =>'/catalog/curso/' + this._id);
+.get(() =>'/catalog/Genre/' + this._id);
 
 //Export
-module.exports = mongoose.model('Curso', CursoSchema);
+module.exports = mongoose.model('Genre', GenreSchema);

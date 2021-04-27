@@ -9,7 +9,9 @@ const GenreSchema = new Schema(
 // Virtual
 GenreSchema
 .virtual('url')
-.get(() =>'/catalog/Genre/' + this._id);
+.get(function () {
+  return '/catalog/genre/' + this._id;
+});
 
 //Export
 module.exports = mongoose.model('Genre', GenreSchema);

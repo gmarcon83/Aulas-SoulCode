@@ -8,14 +8,21 @@ block content
       label(for='title') Title:
       input#title.form-control(type='text', placeholder='Name of book' name='title' required='true' value=(undefined===book ? '' : book.title) )
     div.form-group
-      label(for='author') Author:
-      select#author.form-control(type='select', placeholder='Select author' name='author' required='true' )
-        - authors.sort(function(a, b) {let textA = a.family_name.toUpperCase(); let textB = b.family_name.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
-        for author in authors
-          if book
-            option(value=author._id selected=(author._id.toString()===book.author._id.toString() ? 'selected' : false) ) #{author.name}
-          else
-            option(value=author._id) #{author.name}
+    label(for='author') Author:
+    select#author.form-control(type='select' placeholder='Select author' name='author' required='true' )
+      - authors.sort(function(a, b) {let textA = a.family_name.toUpperCase(); let textB = b.family_name.toUpperCase(); return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;});
+      for author in authors
+        if book
+          //- Handle GET form, where book.author is an object, and POST form, where it is a string.
+          option(
+            value=author._id
+            selected=(
+              author._id.toString()==book.author._id
+              || author._id.toString()==book.author
+            ) ? 'selected' : false
+          ) #{author.name}
+        else
+          option(value=author._id) #{author.name}
     div.form-group
       label(for='summary') Summary:
       textarea#summary.form-control(type='textarea', placeholder='Summary' name='summary' required='true') #{undefined===book ? '' : book.summary}

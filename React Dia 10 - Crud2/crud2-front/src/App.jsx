@@ -4,23 +4,16 @@ import AddDataForm from "./forms/AddDataForm";
 import axios from 'axios'
 
 const tableData = []
-//   { id: 1, titulo: "After Burner", lancamento: "12/12/1987" },
-//   { id: 2, titulo: "Phantasy Star", lancamento: "20/12/1987" },
-//   { id: 3, titulo: "Spy vs. Spy", lancamento: "20/09/1986" },
-// ];
-
-// fetch('http://localhost:3100/jogos')
-// .then(response => setData(response))
 
 function App() {
   const [data, setData] = useState(tableData);
+  const [swap, setSwap] = useState(true)
 
-  function addData(novaData) {
-    novaData.id = data.length + 1;
-    setData([...data, novaData]);
+  function refresh() {
+    setSwap(!swap)
   }
 
-  //Importa dados do servidor e coloca no
+  //Importa dados do servidor e coloca na tabela
   useEffect(() => {
     axios
       .get("http://localhost:3100/jogos")
@@ -29,7 +22,7 @@ function App() {
         setData(res.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [swap]);
 
   return (
     <div className="container">
@@ -37,7 +30,7 @@ function App() {
       <div className="flex-row">
         <div className="flex-large">
           <h2>Novo Título</h2>
-          <AddDataForm addData={addData} />
+          <AddDataForm refresh={refresh} />
         </div>
         <div className="flex-large">
           <h2>Títulos</h2>

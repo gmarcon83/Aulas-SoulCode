@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>CRUD</title>
+
+</head>
+
+<body>
+  <h2>Registros</h2>
+  <button><a href="/">Voltar</a></button>
+  <hr>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>Nome</td>
+        <td>Cidade</td>
+        <td>Ação</td>
+      </tr>
+    </thead>
+    <tbody>
+      <% dados.forEach(function(details) { %>
+        <tr>
+          <td>
+            <%= details.nome %>
+          </td>
+          <td>
+            <%= details.cidade %>
+          </td>
+          <td><a href="/editar/<%= details._id %>"> Editar </a> - <a href="/apagar/<%= details._id %>"> Apagar </a></td>
+        </tr>
+        <% }) %>
+    </tbody>
+    <script src="" async defer></script>
+</body>
+
+</html>

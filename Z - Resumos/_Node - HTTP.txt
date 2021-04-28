@@ -4,7 +4,6 @@ Importando:
 
   const http = require("http");
 
-
 Criando um Servidor
 
   // Criando um servidor e armazenando ele em uma variável
@@ -24,6 +23,10 @@ HTTP Requests
   req.url // Contém o URL da requisição;
   req.method // Contém o "verbo" da requisição;
 
+  OBS: O body normalmente chega em partes múltiplas e precisa ser tradado para
+       isso pode ser feito com os metodos do Buffer, ou usando alguma biblioteca
+       que facilita isso, como o express;
+
 
 HTTP Responses
 
@@ -32,3 +35,7 @@ HTTP Responses
   res.serStatusCode = num // Muda o código da resposta;
   res.write('x') // Envia uma resposta, linha a linha;
   res.end(); // Encerra a nossa resposta;
+
+Listeners
+
+  .on('evento', função) // Adiciona um listener que roda a função no 'evento';

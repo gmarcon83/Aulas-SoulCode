@@ -1,13 +1,19 @@
+    :is(SelA, SelB, SelC...)
+        Se for qualquer um dos seletores
+
+    A > B
+        Seleciona apenas os B filhos diretos de A
+
 -------Por Atributo------
 
-    "Y"[atributo="X"]
-        "Y" com atributo igual a "X"
-    "Y"[atributo^="X"]
-        "Y" com atributo que comece com "X"
-    "Y"[atributo$=”"X"]
-        "Y" com atributo que termine "X"
-    "Y"[atributo*="X"]
-        "Y" com atributo que contenha "X"
+    [atributo="X"]
+        Elemento com atributo igual a "X"
+    [atributo^="X"]
+        Elemento com atributo que comece com "X"
+    [atributo$=”"X"]
+        Elemento com atributo que termine "X"
+    [atributo*="X"]
+        Elemento com atributo que contenha "X"
 
 -------Por Posição------
 

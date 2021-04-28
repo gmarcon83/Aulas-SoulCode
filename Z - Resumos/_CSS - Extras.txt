@@ -7,6 +7,9 @@ aspect-ratio: X / Y; -> define uma proporção pro elemento;
 
 scroll-padding-top: X; -> adiciona um offset para as âncoras;
 
+conic-gradient(cor1 Xturn, cor2 Xturn Yturn, etc...)
+  Cria uma pie chart com as cores. Turn deve totalizar 1
+
 
 Alterando variavel CSS com o JS:
   document.documentElement.style.setProperty("nomeVar", novoValor)

@@ -1,0 +1,10 @@
+Permite manipulaçãod e arquivos do sistema
+
+Importando:
+
+  const fs = require("fs");
+
+Metodos
+
+  fs.writeFileSync("NomeArquivo", "Conteudo")
+    // Salva um arquivo no computador

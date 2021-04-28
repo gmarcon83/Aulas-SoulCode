@@ -21,7 +21,8 @@ Modificando
 Copiando
   .splice(indIni, indFim) // Retorna uma array com os elementos contidos entre
                           // indIni (incluso) e indFim (não incluso), não muda
-                          // a array original;
+                          // a array original; Usando em branco duplicamos a
+                          // array;
 
 
 Iterando

@@ -27,4 +27,8 @@ HTTP Requests
 
 HTTP Responses
 
-  res.setHeader() // Permite passar parametros para o header da resposta
+  res.setHeader('x') // Permite passar parametros para o header da resposta;
+                     // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
+  res.serStatusCode = num // Muda o código da resposta;
+  res.write('x') // Envia uma resposta, linha a linha;
+  res.end(); // Encerra a nossa resposta;

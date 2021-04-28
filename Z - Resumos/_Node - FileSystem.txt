@@ -6,5 +6,5 @@ Importando:
 
 Metodos
 
-  fs.writeFileSync("NomeArquivo", "Conteudo")
+  fs.writeFileSync("CaminhoArquivo", "Conteúdo")
     // Salva um arquivo no computador

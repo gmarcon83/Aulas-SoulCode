@@ -1,0 +1,12 @@
+Importando modulos
+
+  const nomeModl = require("arquivo");
+
+Conceitos
+
+  Event Loop: O node.js continua rodando enquanto existirem listeners ativos;
+
+Métodos
+
+  process.exit(); // Encerra um event listener;
+

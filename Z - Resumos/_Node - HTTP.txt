@@ -1,0 +1,30 @@
+Inicia um servidor, envia requisições
+
+Importando:
+
+  const http = require("http");
+
+
+Criando um Servidor
+
+  // Criando um servidor e armazenando ele em uma variável
+
+    const nomeServidor = http.createServer((req, res) =>{
+      // Cod que executa onde req é uma variável que
+      // contém a requisição e res é uma variavel que
+      // contém a resposta.
+    });
+
+  // Colocando o servidor para "ouvir" requisições;
+
+  nomeServidor.listen(numPorta)
+
+HTTP Requests
+
+  req.url // Contém o URL da requisição;
+  req.method // Contém o "verbo" da requisição;
+
+
+HTTP Responses
+
+  res.setHeader() // Permite passar parametros para o header da resposta

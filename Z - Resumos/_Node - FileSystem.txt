@@ -1,4 +1,4 @@
-Permite manipulaçãod e arquivos do sistema
+Permite manipulação de arquivos do sistema
 
 Importando:
 

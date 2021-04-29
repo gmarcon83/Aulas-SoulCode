@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <title>CRUD</title>
+
+</head>
+
+<body>
+  <h2>Editar Registros</h2>
+  <% dados.forEach(function(details) { %>
+    <form action="/editar/<%= details._id %>" method="POST">
+      <input type="text" value="<%= details.nome %>" name="nome">
+      <input type="text" value="<%= details.cidade %>" name="cidade">
+      <br />
+      <button><a href="/mostrar">Todos</a></button>
+      <button type="submit">Editar</button>
+    </form>
+    <% }) %>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ const app = express();
 
 // Importamos o cliente de mongodb
 const MongoClient = require("mongodb").MongoClient;
+const ObjectID = require('mongodb').ObjectID;
 
 // Usando urlencoded com Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -55,6 +56,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs");
 });
 
+
 app.get("/mostrar", (re,res) => {
   // Accesamos o banco de dados na coleçao "dados", fizemos uma busca "vazia"
   // então achamos tudo, colocamos os resultados em uma Array
@@ -76,3 +78,33 @@ app.post("/mostrar", (req, res) => {
     res.redirect("/");
   });
 });
+
+// Interceptados a requisição e isolamos o final dela dentro de do parametro id
+// colocamos esse valor em uma const id
+app.route("/editar/:id").get((req,res) =>{
+  const id = req.params.id
+  // Buscamos em nossa db pelo id id e armazenamos em uma array
+  db.collection('dados').find(ObjectID(id)).toArray((err,result) => {
+    if (err) return res.send(err);
+
+    // Chamamos a pagina editar, passando os resultado dentro de dados
+    res.render("editar.ejs", {dados: result})
+  })
+})
+.post((req,res) =>{
+  const id = req.params.id
+  const nome = req.body.nome
+  const cidade = req.body.cidade
+
+  db.collection("dados").updateOne({_id: ObjectID(id)},
+    { $set: {
+      nome: nome,
+      cidade: cidade
+      }
+    }, (err, result) => {
+      if (err) return res.send(err)
+
+      res.redirect("/mostrar")
+    }
+  )
+})

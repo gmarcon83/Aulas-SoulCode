@@ -1,8 +1,10 @@
 Inicia um servidor, envia requisições
 
+
 Importando:
 
   const http = require("http");
+
 
 Criando um Servidor
 
@@ -17,6 +19,7 @@ Criando um Servidor
   // Colocando o servidor para "ouvir" requisições;
 
   nomeServidor.listen(numPorta)
+
 
 HTTP Requests
 

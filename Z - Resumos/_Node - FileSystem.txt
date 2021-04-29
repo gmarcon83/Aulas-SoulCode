@@ -7,4 +7,6 @@ Importando:
 Metodos
 
   fs.writeFileSync("CaminhoArquivo", "Conteúdo")
-    // Salva um arquivo no computador
+    // Salva um arquivo no computador de maneira síncrona (Bloqueia o loop)
+  fs.writeFile("CaminhoArquivo", "Conteúdo", Callback(err))
+    // Salva um arquivo no computador de maneira assíncrona (Não bloqueia o loop)

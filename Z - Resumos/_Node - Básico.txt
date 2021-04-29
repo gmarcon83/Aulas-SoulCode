@@ -1,10 +1,27 @@
 Importando modulos
 
-  const nomeModl = require("arquivo");
+  const nomeModl = require("arquivo"); // modulos normais
+  const nomeModl = require("./arquivo"); // modulos custom
+
+
+Exportando modulos
+
+  exports.nomeQueVamosChamarFora = nomeFunçãoDentroDoModulo;
+
 
 Conceitos
 
-  Event Loop: O node.js continua rodando enquanto existirem listeners ativos;
+  Event Loop:
+    O node.js continua rodando enquanto existirem listeners ativos. É importante
+    nunca bloquear o event loop com eventos síncornos demorados;
+
+  Ordem de execução do Event Loop:
+    Timers = setTimeout, setInterval;
+    Callbacks = Callbacks que estão sendo chamados;
+    Poll = Eventos de I/O e seus callbacks;
+    Check = setImmediate() callbacks;
+    Close Callbacks = Todos os callbacks de enventos "close";
+
 
 Métodos
 

@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const disciplinas = require('../controllers/disciplinasController.js')
-const ObjectId = require("ObjectId")
 
 // Página Inicial.
 router.get('/', (req, res) => {

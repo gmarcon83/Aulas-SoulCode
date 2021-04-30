@@ -1,0 +1,23 @@
+<%- include('head'); -%>
+  <main>
+
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end">
+        <h1 class="my-3">Cadastrar Disciplina</h1> <a href="../disciplinas" class="btn btn-warning">Voltar</a>      </div>
+
+      <form action="/disciplinas/nova" method="post">
+        <div class="mb-3">
+          <label class="form-label" for="nome">Nome da Disciplina</label>
+          <input class="form-control" type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="cargahoraria">Carga Horária</label>
+          <input class="form-control" type="text" name="cargahoraria" id="cargahoraria" required>
+        </div>
+        <button class="btn btn-success" type="submit">Cadastrar</button>
+      </form>
+
+    </div>
+  </main>
+  <%- include('foot'); -%>

@@ -1,0 +1,35 @@
+<%- include('head'); -%>
+
+  <main>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end">
+        <h1 class="my-3">Disciplinas</h1> <a href="disciplinas/nova" class="btn btn-primary flex">Cadastrar Nova</a>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td scope="col">Disciplina</td>
+            <td scope="col">Carga Horária</td>
+            <td scope="col">Opções</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% dados.forEach(function(dados) { %>
+            <tr>
+              <td>
+                <%= dados.nome %>
+              </td>
+              <td>
+                <%= dados.cargahoraria %>
+              </td>
+              <td><a class="btn btn-warning" href="disciplinas/editar/<%= dados._id %>"> Editar </a> <a
+                  class="btn btn-danger" href="disciplinas/apagar/<%= dados._id %>"> Apagar </a></td>
+            </tr>
+            <% }) %>
+        </tbody>
+
+
+    </div>
+  </main>
+
+  <%- include('foot'); -%>

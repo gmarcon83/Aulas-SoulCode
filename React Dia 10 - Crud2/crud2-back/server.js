@@ -50,7 +50,7 @@ app.post("/novojogo", async (req, res) => {
     const result = await jogo.save();
     res.send("Cadastrado: " + result)
   } catch (err) {
-    res.send("Erro: " + ERR)
+    res.send("Erro: " + err)
   }
 });
 

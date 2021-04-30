@@ -19,6 +19,7 @@ router.post('/disciplinas/nova', disciplinas.cadastrarPost)
 
 // Editar
 router.get('/disciplinas/editar/:id', disciplinas.editar)
+router.post('/disciplinas/editar/:id', disciplinas.editarPOST)
 
 // Apagar
 router.get('/disciplinas/apagar/:id', disciplinas.apagar)

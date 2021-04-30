@@ -1,5 +1,4 @@
 const Disciplina = require("../models/disciplina");
-const async = require("async");
 
 // Listar
 exports.listar = (req, res) => {
@@ -22,7 +21,7 @@ exports.cadastrarPost = async (req, res) => {
       cargahoraria: req.body.cargahoraria,
     });
     await disciplina.save();
-    res.redirect("../disciplinas");
+    res.redirect("/disciplinas");
   } catch (err) {
     res.send(err);
   }

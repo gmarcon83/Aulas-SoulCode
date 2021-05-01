@@ -14,12 +14,9 @@ exports.cadastrar = (req, res) => {
   res.render("disciplinasnova.ejs");
 };
 
-exports.cadastrarPost = async (req, res) => {
+exports.cadastrarPOST = async (req, res) => {
   try {
-    const disciplina = new Disciplina({
-      nome: req.body.nome,
-      cargahoraria: req.body.cargahoraria,
-    });
+    const disciplina = new Disciplina({ ...req.body });
     await disciplina.save();
     res.redirect("/disciplinas");
   } catch (err) {
@@ -40,10 +37,7 @@ exports.editar = async (req, res) => {
 exports.editarPOST = async (req, res) => {
   try {
     // Acha a entrada pela id e subsitui
-    await Disciplina.replaceOne({_id: req.params.id},{
-      nome: req.body.nome,
-      cargahoraria: req.body.cargahoraria,
-    });
+    await Disciplina.replaceOne({ _id: req.params.id }, { ...req.body });
     res.redirect("/disciplinas");
   } catch (err) {
     res.send(err);

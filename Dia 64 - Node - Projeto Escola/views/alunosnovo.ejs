@@ -1,0 +1,46 @@
+<%- include('head'); -%>
+
+<main>
+
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end">
+      <h1 class="my-3">Cadastrar Aluno</h1> <a href="/alunos" class="btn btn-warning">Voltar</a></div>
+
+    <form action="/alunos/novo" method="post">
+      <div class="mb-3">
+        <label class="form-label" for="nome">Nome do Aluno</label>
+        <input class="form-control" type="text" name="nome" id="nome" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="cpf">CPF</label>
+        <input class="form-control" type="text" name="cpf" id="cpf" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="rg">RG</label>
+        <input class="form-control" type="text" name="rg" id="rg" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="endereco">Endereço</label>
+        <input class="form-control" type="text" name="endereco" id="endereco" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="telefone">Telefone</label>
+        <input class="form-control" type="text" name="telefone" id="telefone" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="matricula">Matrícula</label>
+        <input class="form-control" type="text" name="matricula" id="matricula" required>
+      </div>
+
+      <button class="btn btn-success" type="submit">Cadastrar</button>
+    </form>
+
+  </div>
+</main>
+
+  <%- include('foot'); -%>

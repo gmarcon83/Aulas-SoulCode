@@ -1,0 +1,55 @@
+<%- include('head'); -%>
+
+  <main>
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end">
+        <h1 class="my-3">Alunos</h1> <a href="alunos/novo" class="btn btn-primary flex">Cadastrar Novo</a>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <td scope="col">Nome</td>
+            <td scope="col">CPF</td>
+            <td scope="col">RG</td>
+            <td scope="col">Endereço</td>
+            <td scope="col">Telefone</td>
+            <td scope="col">Matrícula</td>
+            <td scope="col">Ações</td>
+          </tr>
+        </thead>
+        <tbody>
+          <% dados.forEach(function(dados) { %>
+            <tr>
+              <td>
+                <%= dados.nome %>
+              </td>
+              <td>
+                <%= dados.cpf %>
+              </td>
+              <td>
+                <%= dados.rg %>
+              </td>
+              <td>
+                <%= dados.endereco %>
+              </td>
+              <td>
+                <%= dados.telefone %>
+              </td>
+              <td>
+                <%= dados.matricula %>
+              </td>
+
+              <td>
+                <a class="btn btn-warning" href="alunos/editar/<%= dados._id %>"> Editar </a>
+                <a class="btn btn-danger" href="alunos/apagar/<%= dados._id %>"> Apagar </a>
+              </td>
+
+            </tr>
+            <% }) %>
+        </tbody>
+
+
+    </div>
+  </main>
+
+  <%- include('foot'); -%>

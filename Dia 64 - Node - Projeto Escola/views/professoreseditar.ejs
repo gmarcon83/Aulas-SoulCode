@@ -1,0 +1,43 @@
+<%- include('head'); -%>
+
+  <main>
+
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end">
+        <h1 class="my-3">Editar Professor</h1> <a href="/professores" class="btn btn-warning">Voltar</a>
+      </div>
+
+      <form action="/professores/editar/<%= dados._id %>" method="post">
+
+        <div class="mb-3">
+          <label class="form-label" for="nome">Nome do Professor</label>
+          <input class="form-control" type="text" name="nome" id="nome" value="<%= dados.nome %>" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="cpf">CPF</label>
+          <input class="form-control" type="text" name="cpf" id="cpf" value="<%= dados.cpf %>" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="rg">RG</label>
+          <input class="form-control" type="text" name="rg" id="rg" value="<%= dados.rg %>" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="endereco">Endereço</label>
+          <input class="form-control" type="text" name="endereco" id="endereco" value="<%= dados.endereco %>" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" for="telefone">Telefone</label>
+          <input class="form-control" type="text" name="telefone" id="telefone" value="<%= dados.telefone %>" required>
+        </div>
+
+        <button class="btn btn-success" type="submit">Alterar</button>
+      </form>
+
+    </div>
+  </main>
+
+  <%- include('foot'); -%>

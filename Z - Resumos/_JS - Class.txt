@@ -14,9 +14,9 @@ class Carro {
         return this._dono;
     }
     // setter
-        set dono(novoDono) {
-    this._dono = dono;
-  }
+    set dono(novoDono) {
+        this._dono = dono;
+    }
 }
 
 function Carro(marca, modelo) {
@@ -26,3 +26,6 @@ function Carro(marca, modelo) {
         console.log("Beep! Beep!");
     }
 }
+
+OBS: Metodos com "static" antes do nome, não são instanciados com os objetos, ao
+     invéz rodam diretamente na classe em si.

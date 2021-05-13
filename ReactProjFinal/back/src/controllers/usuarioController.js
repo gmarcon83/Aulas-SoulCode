@@ -3,7 +3,7 @@ const status = require("http-status");
 
 exports.Insert = (req, res, next) => {
   Usuario.create({
-    ...req.body
+    ...req.body,
   })
     .then((usuario) => {
       if (usuario) {
@@ -57,19 +57,19 @@ exports.Delete = (req, res, next) => {
 exports.Update = (req, res, next) => {
   const id = req.params.id;
 
-  const login = req.body.login;
-  const senha = req.body.senha;
-  const admin = req.body.admin;
-
-
-
   Usuario.findByPk(id)
     .then((usuario) => {
       if (usuario) {
-        usuario.destroy({
-          where: { id: id },
-        });
-        res.status(status.OK).send("Usuário deletado.");
+        usuario
+          .update(
+            {
+              ...req.body,
+            },
+            {
+              where: { id: id },
+            }
+          )
+          .then(res.status(status.OK).send(usuario));
       }
       res.status(status.NOT_FOUND).send();
     })

@@ -1,8 +1,8 @@
-const Colaborador = require("../models/colaborador");
+const Colaboradores = require("../models/colaborador");
 const status = require("http-status");
 
 exports.Insert = (req, res, next) => {
-  Colaborador.create({
+  Colaboradores.create({
     ...req.body,
   })
     .then((colaborador) => {
@@ -18,7 +18,7 @@ exports.Insert = (req, res, next) => {
 };
 
 exports.SearchAll = (req, res, next) => {
-  Colaborador.findAll()
+  Colaboradores.findAll()
     .then((colaborador) => {
       res.status(status.OK).send(colaborador);
     })
@@ -28,7 +28,7 @@ exports.SearchAll = (req, res, next) => {
 exports.SearchOne = (req, res, next) => {
   const id = req.params.id;
 
-  Colaborador.findByPk(id)
+  Colaboradores.findByPk(id)
     .then((colaborador) => {
       if (colaborador) {
         res.status(status.OK).send(colaborador);
@@ -41,7 +41,7 @@ exports.SearchOne = (req, res, next) => {
 exports.Delete = (req, res, next) => {
   const id = req.params.id;
 
-  Colaborador.findByPk(id)
+  Colaboradores.findByPk(id)
     .then((colaborador) => {
       if (colaborador) {
         colaborador.destroy({
@@ -57,7 +57,7 @@ exports.Delete = (req, res, next) => {
 exports.Update = (req, res, next) => {
   const id = req.params.id;
 
-  Colaborador.findByPk(id)
+  Colaboradores.findByPk(id)
     .then((colaborador) => {
       if (colaborador) {
         colaborador

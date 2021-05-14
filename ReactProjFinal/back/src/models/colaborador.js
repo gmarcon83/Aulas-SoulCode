@@ -1,8 +1,9 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../database/database.js");
+const EnvolvidosServicos = require("../models/envolvidosServicos");
 
 // Define o nome da tabela
-const Colaborador = sequelize.define("colaborador", {
+const Colaboradores = sequelize.define("colaboradores", {
   id: {
     allowNull: false,
     autoIncrement: true,
@@ -25,4 +26,11 @@ const Colaborador = sequelize.define("colaborador", {
   },
 });
 
-module.exports = Colaborador;
+Colaboradores.hasMany(EnvolvidosServicos, {
+  foreignKey: "idColaborador",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
+  as: "colabs",
+});
+
+module.exports = Colaboradores;

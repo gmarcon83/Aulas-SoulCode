@@ -17,6 +17,7 @@ router.post("/clientes", ClientesController.Insert);
 router.get("/clientes", ClientesController.SearchAll);
 router.get("/equipamentosDosClientes", ClientesController.SearchAllEquipsClientes);
 router.get("/clientes/:id", ClientesController.SearchOne);
+router.get("/clientesEquips/:id", ClientesController.SearchOneEquipsCliente);
 router.put("/excluirCliente/:id", ClientesController.Delete);
 router.put("/editarCliente/:id", ClientesController.Update);
 

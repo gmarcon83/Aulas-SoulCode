@@ -47,6 +47,19 @@ exports.SearchOne = (req, res, next) => {
     .catch((erro) => next(erro));
 };
 
+exports.SearchOneEquipsCliente = (req, res, next) => {
+  const id = req.params.id;
+
+  Cliente.findByPk(id, { include: [{ model: Equipamento, as: "equip" }]})
+    .then((cliente) => {
+      if (cliente) {
+        res.status(status.OK).send(cliente);
+      }
+      res.status(status.NOT_FOUND).send();
+    })
+    .catch((erro) => next(erro));
+};
+
 exports.Delete = (req, res, next) => {
   const id = req.params.id;
 

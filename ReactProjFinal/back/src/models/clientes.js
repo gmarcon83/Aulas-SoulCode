@@ -1,5 +1,6 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../database/database.js");
+const equipamentos = require("./equipamentos")
 
 // Define o nome da tabela
 const Clientes = sequelize.define("clientes", {
@@ -20,9 +21,16 @@ const Clientes = sequelize.define("clientes", {
     allowNull: false,
     type: Sequelize.STRING(25),
     validate: {
-      len: [2,25],
+      len: [2, 25],
     },
   },
+});
+
+Clientes.hasMany(equipamentos, {
+  foreignKey: "idCliente",
+  onDelete: "CASCADE",
+  onUpdate: "CASCADE",
+  as: "equip"
 });
 
 module.exports = Clientes;

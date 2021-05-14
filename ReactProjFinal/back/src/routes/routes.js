@@ -15,11 +15,12 @@ router.put("/editarUsuario/:id", UsuariosController.Update);
 // Rotas Clientes
 router.post("/clientes", ClientesController.Insert);
 router.get("/clientes", ClientesController.SearchAll);
+router.get("/equipamentosDosClientes", ClientesController.SearchAllEquipsClientes);
 router.get("/clientes/:id", ClientesController.SearchOne);
 router.put("/excluirCliente/:id", ClientesController.Delete);
 router.put("/editarCliente/:id", ClientesController.Update);
 
-// Rotas Clientes
+// Rotas Equipamentos
 router.post("/equipamentos", EquipamentosController.Insert);
 router.get("/equipamentos", EquipamentosController.SearchAll);
 router.get("/equipamentos/:id", EquipamentosController.SearchOne);

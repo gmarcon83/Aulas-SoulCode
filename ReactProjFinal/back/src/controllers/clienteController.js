@@ -1,4 +1,5 @@
 const Cliente = require("../models/clientes");
+const Equipamento = require("../models/equipamentos")
 const status = require("http-status");
 
 exports.Insert = (req, res, next) => {
@@ -19,6 +20,14 @@ exports.Insert = (req, res, next) => {
 
 exports.SearchAll = (req, res, next) => {
   Cliente.findAll()
+    .then((cliente) => {
+      res.status(status.OK).send(cliente);
+    })
+    .catch((erro) => next(erro));
+};
+
+exports.SearchAllEquipsClientes = (req, res, next) => {
+  Cliente.findAll({ include: [{ model: Equipamento, as: "equip" }]})
     .then((cliente) => {
       res.status(status.OK).send(cliente);
     })

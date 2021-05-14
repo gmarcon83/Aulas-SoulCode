@@ -3,6 +3,7 @@ const router = express.Router();
 
 const UsuariosController = require("../controllers/usuarioController");
 const ClientesController = require("../controllers/clienteController");
+const ColaboradorController = require("../controllers/colaboradorController");
 const EquipamentosController = require("../controllers/equipamentoController");
 
 // Rotas Usuarios
@@ -15,11 +16,21 @@ router.put("/editarUsuario/:id", UsuariosController.Update);
 // Rotas Clientes
 router.post("/clientes", ClientesController.Insert);
 router.get("/clientes", ClientesController.SearchAll);
-router.get("/equipamentosDosClientes", ClientesController.SearchAllEquipsClientes);
+router.get(
+  "/equipamentosDosClientes",
+  ClientesController.SearchAllEquipsClientes
+);
 router.get("/clientes/:id", ClientesController.SearchOne);
 router.get("/clientesEquips/:id", ClientesController.SearchOneEquipsCliente);
 router.put("/excluirCliente/:id", ClientesController.Delete);
 router.put("/editarCliente/:id", ClientesController.Update);
+
+// Rotas Colaboradores
+router.post("/colaborador", ColaboradorController.Insert);
+router.get("/colaborador", ColaboradorController.SearchAll);
+router.get("/colaborador/:id", ColaboradorController.SearchOne);
+router.put("/excluirColaborador/:id", ColaboradorController.Delete);
+router.put("/editarColaborador/:id", ColaboradorController.Update);
 
 // Rotas Equipamentos
 router.post("/equipamentos", EquipamentosController.Insert);

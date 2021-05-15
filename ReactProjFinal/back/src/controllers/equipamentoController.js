@@ -1,4 +1,5 @@
 const Equipamentos = require("../models/equipamentos");
+const ItensServicos = require("../models/itensServicos");
 const status = require("http-status");
 
 exports.Insert = (req, res, next) => {
@@ -70,6 +71,27 @@ exports.Update = (req, res, next) => {
             }
           )
           .then(res.status(status.OK).send(equipamento));
+      }
+      res.status(status.NOT_FOUND).send();
+    })
+    .catch((erro) => next(erro));
+};
+
+exports.SearchAllItensServicos = (req, res, next) => {
+  Equipamentos.findAll({ include: [{ model: ItensServicos, as: "itens" }]})
+    .then((equipamento) => {
+      res.status(status.OK).send(equipamento);
+    })
+    .catch((erro) => next(erro));
+};
+
+exports.SearchOneItensServicos = (req, res, next) => {
+  const id = req.params.id;
+
+  Equipamentos.findByPk(id, { include: [{ model: ItensServicos, as: "itens" }]})
+    .then((equipamento) => {
+      if (equipamento) {
+        res.status(status.OK).send(equipamento);
       }
       res.status(status.NOT_FOUND).send();
     })

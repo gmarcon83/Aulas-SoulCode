@@ -1,5 +1,6 @@
 const Colaboradores = require("../models/colaborador");
 const status = require("http-status");
+const EnvolvidosServicos = require("../models/envolvidosServicos");
 
 exports.Insert = (req, res, next) => {
   Colaboradores.create({
@@ -70,6 +71,27 @@ exports.Update = (req, res, next) => {
             }
           )
           .then(res.status(status.OK).send(colaborador));
+      }
+      res.status(status.NOT_FOUND).send();
+    })
+    .catch((erro) => next(erro));
+};
+
+exports.SearchAllColabEnvolvidos = (req, res, next) => {
+  Colaboradores.findAll({ include: [{ model: EnvolvidosServicos, as: "colabs" }]})
+    .then((colaborador) => {
+      res.status(status.OK).send(colaborador);
+    })
+    .catch((erro) => next(erro));
+};
+
+exports.SearchOneColabEnvolvidos = (req, res, next) => {
+  const id = req.params.id;
+
+  Colaboradores.findByPk(id, { include: [{ model: EnvolvidosServicos, as: "colabs" }]})
+    .then((colaborador) => {
+      if (colaborador) {
+        res.status(status.OK).send(colaborador);
       }
       res.status(status.NOT_FOUND).send();
     })

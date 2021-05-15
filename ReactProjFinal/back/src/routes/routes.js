@@ -38,4 +38,34 @@ router.get("/equipamentos/:id", EquipamentosController.SearchOne);
 router.put("/excluirEquipamento/:id", EquipamentosController.Delete);
 router.put("/editarEquipamento/:id", EquipamentosController.Update);
 
+// Rotas Servicos
+const ServicosController = require("../controllers/servicosController");
+router.post("/servicos", ServicosController.Insert);
+router.get("/servicos", ServicosController.SearchAll);
+router.get("/servicos/:id", ServicosController.SearchOne);
+router.put("/excluirServico/:id", ServicosController.Delete);
+router.put("/editarServico/:id", ServicosController.Update);
+
+// Rotas Envolvidos Servicos
+const EnvolvidosServicosController = require("../controllers/envolvidosServicosController");
+router.post("/envolvidosServicos", EnvolvidosServicosController.Insert);
+router.get("/envolvidosServicos", EnvolvidosServicosController.SearchAll);
+router.get("/envolvidosServicos/:id", EnvolvidosServicosController.SearchOne);
+router.put(
+  "/excluirEnvolvidosServicos/:id",
+  EnvolvidosServicosController.Delete
+);
+router.put(
+  "/editarEnvolvidosServicos/:id",
+  EnvolvidosServicosController.Update
+);
+
+// Rotas Itens Servicos
+const ItensServicosController = require("../controllers/itensServicosController");
+router.post("/itensServicos", ItensServicosController.Insert);
+router.get("/itensServicos", ItensServicosController.SearchAll);
+router.get("/itensServicos/:id", ItensServicosController.SearchOne);
+router.put("/excluirItensServicos/:id", ItensServicosController.Delete);
+router.put("/editarItensServicos/:id", ItensServicosController.Update);
+
 module.exports = router;

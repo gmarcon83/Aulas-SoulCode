@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../database/database.js");
 const ItensServicos = require("./itensServicos");
-const ItensServicos = require("./itensServicos");
+const EnvolvidosServicos = require("./envolvidosServicos");
 
 // Define o nome da tabela
 const Servicos = sequelize.define("servicos", {
@@ -43,12 +43,11 @@ Servicos.hasMany(EnvolvidosServicos, {
   as: "servs",
 });
 
-Equipamentos.hasMany(ItensServicos, {
+Servicos.hasMany(ItensServicos, {
   foreignKey: "idServico",
   onDelete: "CASCADE",
   onUpdate: "CASCADE",
   as: "servsitens",
 });
-
 
 module.exports = Servicos;

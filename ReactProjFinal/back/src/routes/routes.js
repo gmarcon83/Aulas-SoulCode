@@ -24,9 +24,9 @@ router.put("/editarCliente/:id", ClientesController.Update);
 
 // Rotas Colaboradores
 const ColaboradorController = require("../controllers/colaboradorController");
-router.post("/colaborador", ColaboradorController.Insert);
-router.get("/colaborador", ColaboradorController.SearchAll);
-router.get("/colaborador/:id", ColaboradorController.SearchOne);
+router.post("/colaboradores", ColaboradorController.Insert);
+router.get("/colaboradores", ColaboradorController.SearchAll);
+router.get("/colaboradores/:id", ColaboradorController.SearchOne);
 router.put("/excluirColaborador/:id", ColaboradorController.Delete);
 router.put("/editarColaborador/:id", ColaboradorController.Update);
 
@@ -52,11 +52,11 @@ router.post("/envolvidosServicos", EnvolvidosServicosController.Insert);
 router.get("/envolvidosServicos", EnvolvidosServicosController.SearchAll);
 router.get("/envolvidosServicos/:id", EnvolvidosServicosController.SearchOne);
 router.put(
-  "/excluirEnvolvidosServicos/:id",
+  "/excluirEnvolvidoServicos/:id",
   EnvolvidosServicosController.Delete
 );
 router.put(
-  "/editarEnvolvidosServicos/:id",
+  "/editarEnvolvidoServicos/:id",
   EnvolvidosServicosController.Update
 );
 
@@ -65,7 +65,7 @@ const ItensServicosController = require("../controllers/itensServicosController"
 router.post("/itensServicos", ItensServicosController.Insert);
 router.get("/itensServicos", ItensServicosController.SearchAll);
 router.get("/itensServicos/:id", ItensServicosController.SearchOne);
-router.put("/excluirItensServicos/:id", ItensServicosController.Delete);
-router.put("/editarItensServicos/:id", ItensServicosController.Update);
+router.put("/excluirItemServicos/:id", ItensServicosController.Delete);
+router.put("/editarItemServicos/:id", ItensServicosController.Update);
 
 module.exports = router;

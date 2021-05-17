@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 function MainUsuarios() {
-  const [usuarios, setUsuarios] = useState({
-    usuarios: {
+  const [usuarios, setUsuarios] = useState([
+    {
+      id: "",
       nome: "",
       tipo: "",
     },
-  });
+  ]);
 
   useEffect(() => {
     axios.get("http://localhost:3303/ordemservico/usuarios")

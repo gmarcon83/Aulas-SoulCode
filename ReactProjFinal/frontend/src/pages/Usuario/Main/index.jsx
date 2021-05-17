@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 
 function MainUsuarios() {
-  const [usuarios, setUsuarios] = useState([
-    {
-      id: "",
-      nome: "",
-      tipo: "",
-    },
-  ]);
+  const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
     axios.get("http://localhost:3303/ordemservico/usuarios")
@@ -49,6 +43,9 @@ function MainUsuarios() {
           }
         </tbody>
       </table>
+      <p>
+        <Link to="/">Voltar</Link>
+      </p>
     </>
   );
 }

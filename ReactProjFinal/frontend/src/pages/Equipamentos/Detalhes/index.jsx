@@ -45,15 +45,13 @@ function DetalhesCliente(props) {
             <td> {moment(cliente.createdAt).format("DD/MM/YYYY")}</td>
             <td> {moment(cliente.editatedAt).format("DD/MM/YYYY")}</td>
             <td>
-              <p className="text-center">
-              <Link to={`/equipamentosCliente/${cliente.id}`} className="btn btn-primary w-75">Equipamentos</Link>
-              </p>
+              <p className="text-center"> - </p>
               <p className="text-center"> - </p>
               <p className="text-center">
-                <Link to={`/editarCliente/${cliente.id}`} className="btn btn-warning w-75">Editar</Link>
+                <Link to={`/editarCliente/${cliente.id}`} className="btn btn-warning w-50">Editar</Link>
               </p>
               <p className="text-center">
-                <Link to={`/excluirCliente/${cliente.id}`} className="btn btn-danger w-75">Excluir</Link>
+                <Link to={`/excluirCliente/${cliente.id}`} className="btn btn-danger w-50">Excluir</Link>
               </p>
             </td>
           </tr>

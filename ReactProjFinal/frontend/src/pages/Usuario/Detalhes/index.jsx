@@ -19,8 +19,14 @@ function DetalhesUsuario(props) {
 
   return (
     <>
-      <h3>Usuários</h3>
-      <Link to={"/inserirUsuario"}>Novo Usuário</Link>
+        <div className="d-flex align-items-center justify-content-between">
+          <h3>Detalhes do Usuário</h3>
+          <p>
+            <Link to="/usuarios" className="btn btn-success mt-3">
+              Voltar
+            </Link>
+          </p>
+        </div>
 
       <table className="table table-striped">
         <thead>
@@ -29,6 +35,7 @@ function DetalhesUsuario(props) {
             <th scope="col">Ações</th>
             <th scope="col">Criado em</th>
             <th scope="col">Editado em</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -38,21 +45,18 @@ function DetalhesUsuario(props) {
             <td> {moment(usuario.createdAt).format("DD/MM/YYYY")}</td>
             <td> {moment(usuario.editatedAt).format("DD/MM/YYYY")}</td>
             <td>
-              <p> - </p>
-              <p> - </p>
-              <p>
-                <Link to={`/editarUsuario/${usuario.id}`}>Editar</Link>
+              <p className="text-center"> - </p>
+              <p className="text-center"> - </p>
+              <p className="text-center">
+                <Link to={`/editarUsuario/${usuario.id}`} className="btn btn-warning w-50">Editar</Link>
               </p>
-              <p>
-                <Link to={`/excluirUsuario/${usuario.id}`}>Excluir</Link>
+              <p className="text-center">
+                <Link to={`/excluirUsuario/${usuario.id}`} className="btn btn-danger w-50">Excluir</Link>
               </p>
             </td>
           </tr>
         </tbody>
       </table>
-      <p>
-        <Link to="/usuarios">Voltar</Link>
-      </p>
     </>
   );
 }

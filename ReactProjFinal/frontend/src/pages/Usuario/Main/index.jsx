@@ -27,7 +27,7 @@ function MainUsuarios() {
           <tr>
             <th scope="col">Nome</th>
             <th scope="col">Tipo</th>
-            <th scope="col">Mais Informações</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -35,8 +35,8 @@ function MainUsuarios() {
             <tr key={usuario.id}>
               <td>{usuario.login}</td>
               <td>{usuario.admin ? "Administrador" : "Usuário"}</td>
-              <td>
-                <Link to={`/detalhesUsuario/${usuario.id}`}>Detahes</Link>
+              <td className="d-flex justify-content-end">
+                <Link to={`/detalhesUsuario/${usuario.id}`} className="btn btn-warning">Detalhes</Link>
               </td>
             </tr>
           ))}

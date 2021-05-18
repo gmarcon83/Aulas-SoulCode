@@ -21,6 +21,24 @@ function InserirUsuario(props) {
     setState({ usuario: { ...state.usuario, [name]: value } });
   };
 
+  const handleSubmit = (event) => {
+    const req = state.usuario;
+    axios({
+      method: "post",
+      url: "http://localhost:3303/ordemservico/usuarios",
+      data: req,
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((data) => {
+        if (data) {
+          alert("Dados inseridos com sucesso");
+          setRedirect(true);
+        }
+      })
+      .catch(() => console.log("Erro ao inserir dados"));
+      event.preventDefault();
+  };
+
   return (
     <>
       {redirect ? <Redirect to="/usuarios" /> : null}
@@ -33,7 +51,7 @@ function InserirUsuario(props) {
             </Link>
           </p>
         </div>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="login">Login</label>
             <input

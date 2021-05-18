@@ -32,12 +32,11 @@ function EditarUsuario(props) {
   }, []);
 
 
-  // TODO Arrumar Editar
   const handleSubmit = (event) => {
     const req = state.usuario;
     const id = state.usuario.id
     axios({
-      method: "post",
+      method: "put",
       url: `http://localhost:3303/ordemservico/editarUsuario/${id}`,
       data: req,
       headers: { "Content-Type": "application/json" },

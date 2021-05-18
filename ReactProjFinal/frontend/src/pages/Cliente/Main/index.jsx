@@ -17,7 +17,7 @@ function MainClientes() {
       <div className="d-flex align-items-center justify-content-between">
         <h3>Clientes</h3>
         <div>
-          <Link to={"/inserirCliente"} className="btn btn-primary mt-3 mx-3">Novo Usuário</Link>
+          <Link to={"/inserirCliente"} className="btn btn-primary mt-3 mx-3">Novo Cliente</Link>
           <Link to="/" className="btn btn-success mt-3">Voltar</Link>
         </div>
       </div>

@@ -49,7 +49,7 @@ function Recharts4() {
     const arr = state;
     arr[e.target.placeholder] = { nome: e.target.name, valor: e.target.value };
 
-    // Precisa isso pra forcar o refresh do componente, se não não funciona
+    // Precisa isso pra forcar o refresh do componente
     setTroca(!troca)
   };
 

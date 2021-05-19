@@ -9,28 +9,60 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import axios from "axios";
+import "./style.css";
 
-function Recharts3() {
-  const [state, setstate] = useState({
-    servicos: [],
-  });
+function Recharts4() {
+  const [troca, setTroca] = useState(true);
 
-  useEffect(() => {
-    axios.get("http://localhost:3303/ordemservico/servicos").then((res) => {
-      const servicos = res.data;
-      setstate({ servicos });
+  const [state, setState] = useState([
+    {
+      nome: "jan",
+      valor: "255",
+    },
+    {
+      nome: "fev",
+      valor: "150",
+    },
+    {
+      nome: "mar",
+      valor: "650",
+    },
+    {
+      nome: "abr",
+      valor: "720",
+    },
+    {
+      nome: "mai",
+      valor: "350",
+    },
+    {
+      nome: "jun",
+      valor: "250",
+    },
+  ]);
+
+  const [espelho, setEspelho] = useState(Object.assign({}, state));
+
+  const capturaInput = (e) => {
+    console.log(e.target);
+    setEspelho({
+      ...state,
+      [e.target.id]: { name: e.target.name, valor: e.target.value },
     });
-  }, []);
+  };
 
-console.log(state.servicos)
+  const handleOnClick = () =>{
+    const convert = Object.values(espelho);
+    setState(convert)
+  }
+
   return (
     <div className="altura">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           width={500}
           height={300}
-          data={state.servicos}
+          data={state}
           margin={{
             top: 5,
             right: 30,
@@ -39,8 +71,8 @@ console.log(state.servicos)
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="id" />
-          <YAxis />
+          <XAxis dataKey="nome" />
+          <YAxis domain={[0, 'dataMax + 1000']} />
           <Tooltip />
           <Legend />
           <Line
@@ -51,8 +83,24 @@ console.log(state.servicos)
           />
         </LineChart>
       </ResponsiveContainer>
+      <form action="" className="row">
+        {state.map((data, index) => {
+          return (
+            <input
+              className="col-2 text-center"
+              onChange={capturaInput}
+              id={index}
+              key={index}
+              placeholder={data.valor}
+              type="number"
+              name={data.nome}
+              onBlur={handleOnClick}
+            />
+          );
+        })}
+      </form>
     </div>
   );
 }
 
-export default Recharts3;
+export default Recharts4;

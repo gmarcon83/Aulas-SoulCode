@@ -12,7 +12,7 @@ function EquipamentosRoutes() {
     <>
       <Switch>
         <Route exact path="/equipamentosCliente/:id" component={MainEquipamentos}/>
-        <Route exact path="/inserirEquipamento" component={InserirEquipamento}/>
+        <Route exact path="/inserirEquipamento/:id" component={InserirEquipamento}/>
         <Route exact path="/detalhesEquipamento/:id" component={DetalhesEquipamento}/>
         <Route exact path="/editarEquipamento/:id" component={EditarEquipamento}/>
         <Route exact path="/excluirEquipamento/:id" component={ExcluirEquipamento}/>

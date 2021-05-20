@@ -48,7 +48,9 @@ function DetalhesCliente(props) {
               <p className="text-center">
               <Link to={`/equipamentosCliente/${cliente.id}`} className="btn btn-primary w-75">Equipamentos</Link>
               </p>
-              <p className="text-center"> - </p>
+              <p className="text-center">
+              <Link to={`/gerarRelatorio/${cliente.id}`} className="btn btn-primary w-75">Gerar Relatorio</Link>
+              </p>
               <p className="text-center">
                 <Link to={`/editarCliente/${cliente.id}`} className="btn btn-warning w-75">Editar</Link>
               </p>

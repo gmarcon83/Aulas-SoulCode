@@ -4,6 +4,7 @@ import ClientesRoutes from '../routes/ClientesRoutes'
 import UsuariosRoutes from '../routes/UsuariosRoutes'
 import EquipamentosRoutes from '../routes/EquipamentosRoutes'
 import RechartsRoutes from '../routes/RechartsRoutes'
+import PDFRoutes from '../routes/PDFRoutes'
 import Home from './Home'
 
 function Content() {
@@ -17,6 +18,7 @@ function Content() {
         <ClientesRoutes/>
         <EquipamentosRoutes/>
         <RechartsRoutes/>
+        <PDFRoutes/>
       </div>
     </div>
   )

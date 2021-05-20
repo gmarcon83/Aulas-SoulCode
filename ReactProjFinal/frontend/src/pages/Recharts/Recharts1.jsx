@@ -51,6 +51,38 @@ const data = [
 function Recharts1() {
   const [state, setState] = useState(data);
 
+  const [espelho, setEspelho] = useState(Object.assign({}, state));
+
+  const handleInputChange = (evento) => {
+    const e = evento.target;
+
+    if (e.alt === "1") {
+      setEspelho({
+        ...espelho,
+        [e.id]: {
+          mes: espelho[e.id].mes,
+          margem: e.value,
+          meta: espelho[e.id].meta,
+        },
+      });
+    } else {
+      setEspelho({
+        ...espelho,
+        [e.id]: {
+          mes: espelho[e.id].mes,
+          margem: espelho[e.id].margem,
+          meta: e.value,
+        },
+      });
+    }
+  };
+
+  const handleOnBlur = () =>{
+    const convert = Object.values(espelho);
+    setState(convert)
+  }
+
+  console.log(espelho);
   return (
     <>
       <div className="altura">
@@ -58,7 +90,7 @@ function Recharts1() {
           <LineChart
             width={500}
             height={300}
-            data={data}
+            data={state}
             margin={{
               top: 5,
               right: 30,
@@ -93,6 +125,8 @@ function Recharts1() {
                   type="number"
                   name={data.name}
                   placeholder={data.margem}
+                  onChange={handleInputChange}
+                  onBlur={handleOnBlur}
                   alt="1"
                   id={index}
                 />
@@ -102,7 +136,8 @@ function Recharts1() {
                   type="number"
                   name={data.mes}
                   placeholder={data.meta}
-                  alt="1"
+                  onChange={handleInputChange}
+                  onBlur={handleOnBlur}
                   id={index}
                 />
               </div>

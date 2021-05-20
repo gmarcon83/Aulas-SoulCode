@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios"
+import axios from "axios";
 import {
   Page,
   Text,
@@ -49,7 +49,6 @@ function Exemplo2(props) {
   });
 
   const id = props.id;
-
   useEffect(() => {
     axios
       .get(`http://localhost:3003/ordemservico/clientesEquips/${id}`)
@@ -59,37 +58,49 @@ function Exemplo2(props) {
       });
   }, [id]);
 
-  const {equipamentos} = state;
-  const {equips} = equipamentos;
+  const { equipamentos } = state;
+  const { equips } = equipamentos;
 
-  console.log(state)
   return (
     <>
       <Document>
         <Page size="A4" style={styles.page}>
           <View style={styles.section}>
-            {/* <Image source={} style={styles.img}></Image> */}
+            {/* <Image source={logo} style={styles.img}></Image> */}
             <Text style={styles.title}>
               Relatório de Clientes e seus equipamentos
             </Text>
             <Text>______________________________________________</Text>
-            <Text>Id</Text>
-            <Text>Nome</Text>
-            <Text>Telefone</Text>
-            <Text>Criado</Text>
-            <Text>Editado</Text>
+            <Text>Id {equipamentos.id}</Text>
+            <Text>Nome {equipamentos.nome}</Text>
+            <Text>Telefone {equipamentos.telefone}</Text>
+            <Text>
+              Criado em {moment(equipamentos.createdAt).format("DD/MM/YYYY")}
+            </Text>
+            <Text>
+              Editado em {moment(equipamentos.updatedAt).format("DD/MM/YYYY")}
+            </Text>
           </View>
           <View style={styles.section}>
             <Text style={styles.title}>Equipamentos</Text>
             <Text>______________________________________________</Text>
-            <Text>Id</Text>
-            <Text>Nome</Text>
-            <Text>Marca</Text>
-            <Text>Modelo</Text>
-            <Text>Tipo</Text>
-            <Text>Criado</Text>
-            <Text>Editado</Text>
+            {equips.map((data, index) => {
+              <View key={index}>
+                <Text>Id {data.id}</Text>
+                <Text>Nome {data.nome}</Text>
+                <Text>Marca {data.marca}</Text>
+                <Text>Modelo {data.modelo}</Text>
+                <Text>Tipo {data.tipo}</Text>
+                <Text>
+                  Criado em {moment(data.createdAt).format("DD/MM/YYYY")}
+                </Text>
+                <Text>
+                  Editado em {moment(data.updatedAt).format("DD/MM/YYYY")}
+                </Text>
+              </View>;
+            })}
           </View>
+          ;
           <View style={styles.rodape}>
             <Text>Equipamentos</Text>
             <Text>SoulCode Academy - Todos os direitos reservados.</Text>

@@ -1,14 +1,16 @@
-import React from "react"
-import Header from "./components/Header/Header"
-import Content from "./components/Content"
-import Footer from "./components/Footer/Footer"
+import React from "react";
+import Dashboard from "./pages/Recharts/Dashboard";
+//import Header from "./components/Header/Header";
+//import Content from "./components/Content";
+//import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <Header />
+      <Dashboard />
+      {/* <Header />
       <Content />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

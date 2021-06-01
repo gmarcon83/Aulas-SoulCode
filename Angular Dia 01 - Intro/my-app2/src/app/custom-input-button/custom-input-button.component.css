@@ -4,11 +4,15 @@
   margin: 0.5rem auto 1rem;
   display: block;
   border: 0;
-  color: white;
-  background-color: chocolate;
+  color: black;
+  font-family: "fira code";
+  font-weight: 500;
+  border: 2px solid black;
+  background-color: transparent;
 }
 
 .custom-input-button:hover {
   background-color: sienna;
   cursor: pointer;
+  outline: none;
 }

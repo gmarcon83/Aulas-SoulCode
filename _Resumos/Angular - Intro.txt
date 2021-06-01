@@ -1,0 +1,11 @@
+Iniciando projeto
+
+  ng new nome-projeto
+
+Executando projeto
+
+  ng server --open
+
+Gerando componente
+
+ ng g c NomeComponente

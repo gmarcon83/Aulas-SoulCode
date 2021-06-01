@@ -1,10 +1,12 @@
-// Declarando interface
+Interface -> serve para declarar os tipos de um objeto
 
-  MyInterface{
-    name: string,
-    age: number,
-    role: string,
-  }
+// Exemplo de interface
+
+    MyInterface{
+      name: string,
+      age: number,
+      role: string,
+    }
 
 // Declarando tipo
 
@@ -33,4 +35,3 @@ class User implements MyInterface {
 }
 
 // Declarando função
-

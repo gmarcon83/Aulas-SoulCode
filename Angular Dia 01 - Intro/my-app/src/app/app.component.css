@@ -27,6 +27,17 @@
   padding: 1rem;
   flex-grow: 1;
   display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    " fn    ln  "
+    "email email"
+    "pass  pass "
+    " btn   btn ";
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
 }

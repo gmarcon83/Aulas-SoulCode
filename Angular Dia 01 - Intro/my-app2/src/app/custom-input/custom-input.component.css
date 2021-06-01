@@ -1,0 +1,25 @@
+.custom-input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.custom-input-label {
+}
+
+.custom-input {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.25rem 0;
+  margin-top: 0.25rem;
+  font-size: 1.2rem;
+  border: 0;
+  border-bottom: 2px solid black;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-bottom: 2px solid blue;
+}

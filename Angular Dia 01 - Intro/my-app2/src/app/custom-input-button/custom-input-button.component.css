@@ -1,0 +1,14 @@
+.custom-input-button {
+  width: 40%;
+  padding: 0.5rem;
+  margin: 0.5rem auto 1rem;
+  display: block;
+  border: 0;
+  color: white;
+  background-color: chocolate;
+}
+
+.custom-input-button:hover {
+  background-color: sienna;
+  cursor: pointer;
+}

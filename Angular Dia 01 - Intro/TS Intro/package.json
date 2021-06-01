@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "tsnd --transpile-only --ignore-watch node_modules index.ts"
+  },
+  "dependencies": {
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.6"
+  }
+}

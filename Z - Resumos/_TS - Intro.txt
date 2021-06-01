@@ -1,0 +1,36 @@
+// Declarando interface
+
+  MyInterface{
+    name: string,
+    age: number,
+    role: string,
+  }
+
+// Declarando tipo
+
+  let myInterface: MyInterface = null
+
+// Declarando Classe
+
+class User implements MyInterface {
+  private name: string; <- Private declara que o atributo é acessivel apenas
+  age: number;             internamente na classe;
+  role: string;
+
+  constructor(name: string, age:number, role: string){
+    this.name: name
+    this.age: age
+    this.role: role
+  }
+
+  getName(): string{
+    return this.name
+  }
+
+  setName(name: string): {
+    this.name = name
+  }
+}
+
+// Declarando função
+

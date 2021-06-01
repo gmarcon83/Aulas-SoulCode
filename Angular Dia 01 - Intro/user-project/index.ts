@@ -94,4 +94,21 @@ class User implements UserProps {
   setIsAdmin(isAdmin: boolean): void {
     this.isAdmin = isAdmin;
   }
+
+  toString(): string {
+    return JSON.stringify(this);
+  }
 }
+
+const user = new User(
+  "Renato",
+  "Pereira",
+  "renato3x",
+  "renato@gmail.com",
+  "123",
+  "654687351",
+  "(65) 555-5855",
+  true
+);
+
+console.log(user.toString());

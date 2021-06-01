@@ -29,7 +29,7 @@
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr) 0.6fr;
   grid-template-areas:
     " fn    ln  "
     "email email"

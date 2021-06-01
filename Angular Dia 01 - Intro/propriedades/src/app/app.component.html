@@ -1,0 +1,15 @@
+<h1>O nome do projeto é {{title}}</h1>
+
+<h2>Dados do Cliente</h2>
+<ul>
+  <li>Nome: {{user.name}}</li>
+  <li>Idade: {{user.age}}</li>
+  <li>Gênero: {{user.gender}}</li>
+</ul>
+
+<button [disabled]="isDisabled">Botão</button>
+
+<button (click)="save($event)">Salvar</button>
+
+<input type="text" [(ngModel)]="inputField" name="text-input">
+<p>{{ inputField }}</p>

@@ -1,0 +1,12 @@
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px black;
+  padding-right: 4px;
+}
+
+.card > p {
+  text-align: center;
+}

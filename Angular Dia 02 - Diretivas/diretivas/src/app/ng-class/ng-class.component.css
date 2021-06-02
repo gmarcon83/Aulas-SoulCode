@@ -1,13 +1,12 @@
 .box {
-  width: 40px;
-  height: 100px;
   background: purple;
   color: aqua;
+  width: max-content;
+  border: 1px solid black;
 }
 
-.box {
-  width: 40px;
-  height: 100px;
+.box-red {
   background: red;
   color: aqua;
+  width: max-content;
 }

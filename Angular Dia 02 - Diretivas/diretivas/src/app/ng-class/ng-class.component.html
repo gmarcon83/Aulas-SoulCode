@@ -1,1 +1,13 @@
-<p>ng-class works!</p>
+<div [ngClass]="{box: addBox, 'box-red': addBoxRed}">
+  <p>Algum texto</p>
+</div>
+
+<label>
+  box
+  <input type="checkbox" value="true" (change)="changeBox($event)">
+</label>
+
+<label>
+  box-red
+  <input type="checkbox" value="true" (change)="changeBoxRed($event)">
+</label>

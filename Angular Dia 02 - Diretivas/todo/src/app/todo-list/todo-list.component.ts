@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-list.component.css'],
 })
 export class TodoListComponent {
-  // criarToDo()
+  toDos = [];
 
-  toDos = [
-    {
+  criarToDo(event: any) {
+    event.preventDefault();
+    let toDo = {
       titulo: 'Exemplo 1',
       conteudo: 'Lorem ipsum dot net lest.',
       finalizado: false,
@@ -21,19 +22,7 @@ export class TodoListComponent {
       setRemovido(removido: boolean) {
         this.removido = removido;
       },
-    },
-    {
-      titulo: 'Exemplo 2',
-      conteudo: 'Lorem ipsum dot net lest.',
-      finalizado: true,
-      removido: false,
-
-      setFinalizado(finalizado: boolean) {
-        this.finalizado = finalizado;
-      },
-      setRemovido(removido: boolean) {
-        this.removido = removido;
-      },
-    },
-  ];
+    };
+    (this.toDos as object[]).push(toDo);
+  }
 }

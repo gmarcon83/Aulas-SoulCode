@@ -10,5 +10,13 @@ export class TodoItemComponent {
     titulo: '',
     conteudo: '',
     finalizado: false,
+    removido: false,
+
+    setFinalizado(finalizado: boolean) {
+      this.finalizado = finalizado;
+    },
+    setRemovido(removido: boolean) {
+      this.removido = removido;
+    },
   };
 }

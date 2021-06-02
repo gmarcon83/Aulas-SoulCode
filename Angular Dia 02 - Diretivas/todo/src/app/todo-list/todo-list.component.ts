@@ -11,11 +11,27 @@ export class TodoListComponent {
       titulo: 'Exemplo 1',
       conteudo: 'Lorem ipsum dot net lest.',
       finalizado: false,
+      removido: false,
+
+      setFinalizado(finalizado: boolean) {
+        this.finalizado = finalizado;
+      },
+      setRemovido(removido: boolean) {
+        this.removido = removido;
+      },
     },
     {
       titulo: 'Exemplo 2',
       conteudo: 'Lorem ipsum dot net lest.',
       finalizado: true,
+      removido: false,
+
+      setFinalizado(finalizado: boolean) {
+        this.finalizado = finalizado;
+      },
+      setRemovido(removido: boolean) {
+        this.removido = removido;
+      },
     },
   ];
 }

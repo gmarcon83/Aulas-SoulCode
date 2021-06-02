@@ -1,4 +1,9 @@
-<li class="card">
+<li class="card" *ngIf="!toDo.removido">
   <div class="card-title">{{toDo.titulo}}</div>
-  <div class="card-content">{{toDo.conteudo}}</div>
+  <div class="card-content">{{toDo.conteudo}}
+  </div>
+  <div class=" card-controle">
+    <button class="custom-button" (click)="toDo.setFinalizado(true)">Concluido</button>
+    <button class=" custom-button" (click)="toDo.setRemovido(true)">Excluir</button>
+  </div>
 </li>

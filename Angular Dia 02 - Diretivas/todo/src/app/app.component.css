@@ -1,0 +1,24 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  border-bottom: 3px solid black;
+  text-align: center;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.lista {
+  border: 3px solid black;
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+}

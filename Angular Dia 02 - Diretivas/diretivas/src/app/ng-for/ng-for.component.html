@@ -1,0 +1,7 @@
+<div *ngFor="let user of users; let i = index">
+  <p>id: {{i}} - {{user.name}}</p>
+  <ul>
+    <li>Idade: {{user.age}}</li>
+    <li>Admin: {{user.isAdmin ? "Sim" : "Não"}}</li>
+  </ul>
+</div>

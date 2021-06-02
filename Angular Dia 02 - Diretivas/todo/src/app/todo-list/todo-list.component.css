@@ -8,6 +8,7 @@ ul {
   border: 2px solid black;
   box-shadow: 1px 1px 0 black, 2px 2px 0 black;
   padding: 1em;
+  width: 500px;
 }
 
 .form-group {

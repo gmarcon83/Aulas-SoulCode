@@ -1,3 +1,16 @@
+<form class="formulario">
+  <div class="form-group">
+    <label for="titulo">Título</label>
+    <input type="text" id="titulo">
+  </div>
+
+  <div class="form-group">
+    <label for="desc">Descrição</label>
+    <input type="text" id="desc">
+  </div>
+  <button class="form-btn">Salvar</button>
+</form>
+
 <ul *ngFor="let toDo of toDos">
   <app-todo-item [toDo]="toDo"></app-todo-item>
 </ul>

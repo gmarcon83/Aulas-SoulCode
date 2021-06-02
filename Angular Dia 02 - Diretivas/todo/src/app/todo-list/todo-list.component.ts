@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-list.component.css'],
 })
 export class TodoListComponent {
+  // criarToDo()
+
   toDos = [
     {
       titulo: 'Exemplo 1',

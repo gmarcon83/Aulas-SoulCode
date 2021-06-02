@@ -1,0 +1,12 @@
+<label>
+  <input type="checkbox" (change)="showCard = !showCard ">
+  Mostrar card
+</label>
+
+<ng-template #myTemplate>
+  <h1>Sem card</h1>
+</ng-template>
+
+<div class="card" *ngIf="showCard; else myTemplate">
+  <p>Texto do Card</p>
+</div>

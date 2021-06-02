@@ -1,18 +1,18 @@
 .custom-input-button {
   width: 40%;
   padding: 0.5rem;
-  margin: 0.5rem auto 1rem;
+  margin: 1rem auto;
   display: block;
   border: 0;
   color: black;
-  font-family: "fira code";
-  font-weight: 500;
-  border: 2px solid black;
+  font-family: "press start 2p";
+  border: 3px solid black;
   background-color: transparent;
 }
 
 .custom-input-button:hover {
-  background-color: sienna;
   cursor: pointer;
   outline: none;
+  color: white;
+  background-color: black;
 }

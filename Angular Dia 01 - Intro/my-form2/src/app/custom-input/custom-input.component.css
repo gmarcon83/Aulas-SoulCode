@@ -1,21 +1,22 @@
 .custom-input-group {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 1rem 0;
 }
 
 .custom-input {
+  font-family: "press start 2p";
   margin: 0;
   padding: 0%;
   box-sizing: border-box;
   width: 100%;
-  padding: 0.25rem 0;
-  font-size: 1.2rem;
+  padding: 0.5rem 0 0.25rem;
+  font-size: 1rem;
   border: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
 }
 
 .custom-input:focus {
   outline: none;
-  border-bottom: 2px solid sienna;
+  border-bottom: 3px dotted black;
 }

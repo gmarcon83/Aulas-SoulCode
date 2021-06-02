@@ -1,13 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 html {
   font-size: 16px;
-  font-family: "fira code";
-  font-weight: 500;
+  font-family: "press start 2p";
+  font-weight: 400;
 }
 
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }

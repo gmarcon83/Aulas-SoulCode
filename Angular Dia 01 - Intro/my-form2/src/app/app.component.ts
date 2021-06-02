@@ -10,6 +10,7 @@ export class AppComponent {
   inputNome = 'Nome Completo';
   inputEmail = 'Email';
   inputSenha = 'Senha';
-  inputTexto = 'text';
-  inputPassword = 'password';
+  inputTipoTexto = 'text';
+  inputTipoEmail = 'email';
+  inputTipoSenha = 'password';
 }

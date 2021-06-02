@@ -10,15 +10,14 @@
 }
 
 .container form {
-  border: 2px solid black;
+  border: 3px solid black;
   width: 35rem;
-  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
 }
 
 .form-title {
-  border-bottom: 2px solid black;
+  border-bottom: 3px solid black;
   text-align: center;
   padding: 1rem 0;
   margin: 0;

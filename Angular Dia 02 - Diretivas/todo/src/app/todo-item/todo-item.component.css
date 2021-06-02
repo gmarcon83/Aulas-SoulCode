@@ -1,0 +1,13 @@
+.card {
+  border: 2px solid black;
+  box-shadow: 1px 1px 0 black, 2px 2px 0 black;
+}
+
+.card-title {
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.card-content {
+  padding: 1rem;
+}

@@ -9,6 +9,7 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NgContainerComponent } from './ng-container/ng-container.component';
     NgSwitchComponent,
     NgForComponent,
     NgTemplateComponent,
-    NgContainerComponent
+    NgContainerComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule

@@ -35,3 +35,16 @@
   color: white;
   background-color: black;
 }
+
+.removido {
+  opacity: 0.5;
+  background-color: rgb(236, 236, 236);
+}
+
+.removido .card-title {
+  text-decoration: line-through;
+}
+
+.removido .card-content {
+  text-decoration: line-through;
+}

@@ -1,3 +1,5 @@
-ngModel -> Armazenda o valor de um input em uma variável.
+ngModel -> Armazena o valor de um input em uma variável.
 
-  Ex: <input type="text" [(ngModel)]="nomeVar">
+  Ex: <input type="text" [(ngModel)]="nomeVar" name="precisa de um">
+
+  OBS: Precisa importar o { FormsModule } de '@angular/forms'

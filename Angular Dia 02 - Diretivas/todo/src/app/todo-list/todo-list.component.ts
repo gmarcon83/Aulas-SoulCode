@@ -6,21 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./todo-list.component.css'],
 })
 export class TodoListComponent {
+  inpTitulo = '';
+  inpDesc = '';
   toDos = [];
 
   criarToDo(event: any) {
-    let formTitulo = document.getElementById('titulo') as HTMLInputElement;
-    let formDesc = document.getElementById('desc') as HTMLInputElement;
-
-    if (formTitulo.value === '' || formDesc.value === '') {
-      alert('Não deixe campos vazios.');
-      return;
-    }
-
     event.preventDefault();
     let toDo = {
-      titulo: formTitulo.value,
-      conteudo: formDesc.value,
+      titulo: this.inpTitulo,
+      conteudo: this.inpDesc,
       finalizado: false,
       removido: false,
 
@@ -33,7 +27,7 @@ export class TodoListComponent {
     };
     (this.toDos as object[]).push(toDo);
 
-    formTitulo.value = '';
-    formDesc.value = '';
+    this.inpTitulo = '';
+    this.inpDesc = '';
   }
 }

@@ -1,0 +1,3 @@
+ngModel -> Armazenda o valor de um input em uma variável.
+
+  Ex: <input type="text" [(ngModel)]="nomeVar">

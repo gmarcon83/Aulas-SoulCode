@@ -1,12 +1,12 @@
 <form class="formulario">
   <div class="form-group">
     <label for="titulo">Título</label>
-    <input type="text" id="titulo">
+    <input type="text" name="titulo" [(ngModel)]="inpTitulo">
   </div>
 
   <div class="form-group">
     <label for="desc">Descrição</label>
-    <input type="text" id="desc">
+    <input type="text" name="desc" [(ngModel)]="inpDesc">
   </div>
   <button class="form-btn" (click)="criarToDo($event)">Salvar</button>
 </form>

@@ -19,6 +19,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CallToActionComponent } from './call-to-action/call-to-action.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TestimonialComponent,
     FooterComponent,
     MainComponent,
+    CallToActionComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

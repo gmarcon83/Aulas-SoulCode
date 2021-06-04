@@ -1,0 +1,50 @@
+header {
+  position: sticky;
+  top: 0;
+  min-height: var(--header-min-height);
+  background-color: var(--acento);
+  color: white;
+}
+
+nav {
+  --v-padding: 0.5rem;
+  padding: var(--v-padding) 0;
+  min-height: calc(var(--header-min-height) - (var(--v-padding) * 2));
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+li:nth-child(2) {
+  margin-left: auto;
+}
+
+.item-nav {
+  min-width: max-content;
+  cursor: pointer;
+}
+
+.item-nav:hover {
+  color: black;
+}
+
+.marca {
+  font-size: 1.5rem;
+}
+
+.btn-nav {
+  background-color: #00000033;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.btn-nav:hover {
+  background-color: #00000088;
+}

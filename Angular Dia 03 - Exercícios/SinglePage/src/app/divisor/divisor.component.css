@@ -1,0 +1,4 @@
+div {
+  border-bottom: 2px solid var(--acento);
+  min-width: 11rem;
+}

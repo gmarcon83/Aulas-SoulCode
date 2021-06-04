@@ -54,6 +54,9 @@ img {
   --fundo-e1: #f8f8f8;
   --fundo-e2: #e8e8e8;
   --fundo-e3: #eeeeee;
+
+  --texto-cinza: #8f8f8f;
+  --linha-espacada: 1.4rem;
 }
 
 .container {

@@ -1,5 +1,45 @@
-ngModel -> Armazena o valor de um input em uma variável.
+Directives = Instruções para o Angular que colocamos no meio do DOM. Podem ser
+             tanto directives que ja vem com o Angular como directives que nós
+             mesmo criamos.
 
-  Ex: <input type="text" [(ngModel)]="nomeVar" name="precisa de um">
 
-  OBS: Precisa importar o { FormsModule } de '@angular/forms'
+Estruturais: Modificam o DOM e devem ser precedidadas de um *
+
+  ngIf
+
+    Mostra um componente ou não no DOM. Devemos assinar uma expressão que re-
+    torna um booleano.
+
+    Ex: <p *ngIf="estaLogado">Bom dia {{userName}}!</p>
+
+
+  ngFor
+
+    Itera uma array e retorna um elemento para cada item da array.
+
+    Ex: <ul *ngFor="let item of array">
+          <li>{{item.nome}}</li>
+        </ul>
+
+
+De atributo: Mudam o elemento em que estão colocadas, aparecem entre [ ].
+
+  ngStyle
+
+    Manipula os estilos aplicados a um elemento.
+
+    Ex: <p [ngStyle]="{backgroundColor: getColor()}">Status</p>
+
+
+  ngClass
+
+    Adiciona ou remove classes de um elemento.
+
+    Ex: <p [ngClass]="{nomeClasse: expQueRetornaBool}">Status</p>
+
+
+  ngModel -> Armazena o valor de um input em uma variável.
+
+    Ex: <input type="text" [(ngModel)]="nomeVar" name="precisa de um">
+
+    OBS: Precisa importar o { FormsModule } de '@angular/forms'

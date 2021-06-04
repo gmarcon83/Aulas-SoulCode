@@ -45,7 +45,7 @@ entrouInput = true
 
 Two-Way-Binding
 
-  OBS: FormsModule precisa estar importado para Two-Way-Binding funcionar.
+  OBS: FormsModule precisa estar importado para ngModel funcionar.
 
   Comunica as mudanças de um lado para o outro. Se atribuimos algum input a uma
   variável. Quando mudamos o input mudamos a variável, quando mudamos a variável

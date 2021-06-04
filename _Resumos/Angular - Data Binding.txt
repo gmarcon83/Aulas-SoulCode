@@ -1,0 +1,54 @@
+Databinding = Comunicação entre a parte lógica e os templates HTML.
+
+Tipos:
+
+  Lógica -> HTML
+    String Interpolation: {{data}}
+    Property Binding: [property]="data"
+
+  Lógica <- HTML
+    Event Binding: (event)="expressão/função"
+
+  Lógica <-> HTML
+    Two-Way-Binding: [(ngModel)]="data"
+
+
+String Interpolation
+
+  Fica entre {{ }}, pode ser uma variável, uma função ou expressão que resolva
+  em uma string, não pode ser expressão de bloco (ternario: ok, if: não).
+
+  Ex: <p>Bom dia {{userName}}!</p>
+
+
+Property Binding
+
+  Serve para manipular as propriedades de um elemento HTML. Colocamos colchetes
+  em volta da propriedade e assinalamos uma expressão a ela. Serve tanto para
+  as propriedades "normais" do HTML como para directives e outros componentes
+  Angular.
+
+  Ex: <button [disabled]="isDisabled">
+      <p [innerText]="serverStatus"></p>
+
+
+Event Binding
+entrouInput = true
+  Atribui algo a um evento HTML, usamos (nomeEventoSemOn)="executa".
+
+  Ex: <button (click)="confirmou = true">Confirmar</button>
+
+  OBS: Para passar os dados emitidos por um evento, usamos $event.
+
+  Ex: <input (focus)="entrouInput($event)"/>
+
+
+Two-Way-Binding
+
+  OBS: FormsModule precisa estar importado para Two-Way-Binding funcionar.
+
+  Comunica as mudanças de um lado para o outro. Se atribuimos algum input a uma
+  variável. Quando mudamos o input mudamos a variável, quando mudamos a variável
+  mudamos o input. A sintaxe é [(directive)]="umaVariavel".
+
+  Ex: <input [(ngModel)="userName"]/>

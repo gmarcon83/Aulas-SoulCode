@@ -20,6 +20,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CallToActionComponent } from './call-to-action/call-to-action.component';
+import { DivisorComponent } from './divisor/divisor.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CallToActionComponent } from './call-to-action/call-to-action.component
     FooterComponent,
     MainComponent,
     CallToActionComponent,
+    DivisorComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

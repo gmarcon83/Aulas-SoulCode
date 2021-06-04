@@ -21,6 +21,12 @@ Estruturais: Modificam o DOM e devem ser precedidadas de um *
           <li>{{item.nome}}</li>
         </ul>
 
+    OBS: Podemos retornar um index do loop usando "; let varInd = index".
+
+    Ex: <ul *ngFor="let item of array; let i = index">
+          <li>{{ i + 1 }} - {{ item.nome }}</li>
+        </ul>
+
 
 De atributo: Mudam o elemento em que estão colocadas, aparecem entre [ ].
 

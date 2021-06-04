@@ -1,0 +1,42 @@
+Lifecycle Hooks -> são chamados em determinados momentos da vida do componente.
+
+
+ngOnChanges()
+
+  Roda na criação do componente e a cada alteração de estado do mesmo;
+
+
+ngOnInit()
+
+  Executado uma vez quando o componente inicializa;
+
+
+ngDoCheck()
+
+  Quando o componente é checado por mudanças;
+
+
+ngAfterContentInit()
+
+  Chamado uma vez, após o ngDoCheck() é chamado;
+
+
+ngAfterContentChecked()
+
+  Depois que o ngDoCheck() e do ngAfterContentInit();
+
+
+ngAfterViewInit()
+
+  Chamado apenas uma vez após ngAfterContentChecked();
+
+
+ngAfterViewChecked()
+
+  Chamado na inicialização e a cada vez que o angular checa as visualizações do
+  do componente e seus filhos por alteração;
+
+
+noOnDestroy()
+
+  É chamado antes do componente ser removido do DOM;

@@ -38,13 +38,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AboutComponent,
     TestimonialComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
   ],
-  imports: [
-    BrowserModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

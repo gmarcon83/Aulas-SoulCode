@@ -1,3 +1,26 @@
 footer {
   min-height: var(--footer-min-height);
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+fa-icon {
+  font-size: 2rem;
+  color: #00000033;
+  cursor: pointer;
+}
+
+fa-icon:hover {
+  color: #000;
+}

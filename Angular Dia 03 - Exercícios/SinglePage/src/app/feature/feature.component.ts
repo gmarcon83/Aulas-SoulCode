@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { faAd } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-feature',
   templateUrl: './feature.component.html',
-  styleUrls: ['./feature.component.css']
+  styleUrls: ['./feature.component.css'],
 })
 export class FeatureComponent implements OnInit {
+  @Input() card = { icone: faAd, titulo: '', texto: '' };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+fa-icon {
+  color: black;
+  font-size: 3rem;
+}
+
+p {
+  text-align: center;
+  font-weight: 300;
+  color: var(--texto-cinza);
+  line-height: var(--linha-espacada);
+  max-width: 42ch;
+}
+
+strong {
+  color: black;
+  font-size: 1.1rem;
+}

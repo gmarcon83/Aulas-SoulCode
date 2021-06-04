@@ -1,0 +1,15 @@
+.fundo {
+  background-color: var(--fundo-e1);
+  color: black;
+  border-top: 1px solid var(--fundo-e3);
+  border-bottom: 1px solid var(--fundo-e3);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 0;
+}

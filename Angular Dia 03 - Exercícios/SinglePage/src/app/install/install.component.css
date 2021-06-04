@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+fa-icon {
+  color: white;
+  font-size: 2rem;
+  background-color: var(--acento);
+  padding: 0.75rem 0.75rem 0.55rem 0.65rem;
+  border-radius: 50%;
+}
+
+.texto {
+  color: var(--texto-cinza);
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-weight: 300;
+  line-height: var(--linha-espacada);
+  max-width: 65ch;
+}

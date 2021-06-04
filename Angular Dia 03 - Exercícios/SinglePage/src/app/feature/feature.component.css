@@ -16,6 +16,7 @@ p {
   font-weight: 300;
   color: var(--texto-cinza);
   line-height: var(--linha-espacada);
+  max-width: 30ch;
 }
 
 strong {

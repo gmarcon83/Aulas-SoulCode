@@ -20,4 +20,5 @@ p {
   max-width: 75ch;
   text-align: center;
   padding: 0 0 1rem;
+  line-height: var(--linha-espacada);
 }
